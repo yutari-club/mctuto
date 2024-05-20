@@ -10,7 +10,26 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "no_coding.md"
+        "no_coding.md",
+        "block01/lesson01/agent-move.md",
+        "block01/lesson01/agent-up.md",
+        "block01/lesson01/agent.md",
+        "block01/lesson01/last-room.md",
+        "block01/lesson01/welcome.md",
+        "block01/lesson02/blocked-path.md",
+        "block01/lesson02/garbage.md",
+        "block01/lesson02/new.md",
+        "block01/lesson02/new_tracks.md",
+        "block01/lesson02/tracks.md",
+        "block01/lesson03/chasm.md",
+        "block01/lesson03/higher-ground.md",
+        "block01/lesson03/locate-cub.md",
+        "block01/lesson03/separated-family.md",
+        "block01/lesson03/tower.md",
+        "block01/lesson04/bamboo_border.md",
+        "block01/lesson04/flower.md",
+        "block01/lesson04/hideaway.md",
+        "block01/lesson04/secure_area.md"
     ],
     "testFiles": [
         "test.ts"
