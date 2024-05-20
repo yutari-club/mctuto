@@ -8,7 +8,8 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "no_coding.md"
     ],
     "testFiles": [
         "test.ts"
@@ -19,5 +20,6 @@
     },
     "supportedTargets": [
         "minecraft"
-    ]
+    ],
+    "preferredEditor": "blocksprj"
 }
