@@ -22,3 +22,7 @@ MakeCode でこのリポジトリを編集します。
 
 * for PXT/minecraft
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
+```package
+rubyblock=github:Mming-Lab/rubyblock1#master
+```
