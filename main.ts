@@ -1,1 +1,3 @@
-
+player.onChat("jump", function () {
+	
+})
