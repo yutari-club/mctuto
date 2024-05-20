@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "builder": "*"
+        "builder": "*",
+        "rubyblock1": "github:Mming-Lab/rubyblock1#b0d5d67e7eef14b8ec16432a367d2dea3d80ce40"
     },
     "files": [
         "main.blocks",
@@ -21,5 +22,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
