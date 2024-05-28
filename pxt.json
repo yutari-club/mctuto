@@ -29,7 +29,8 @@
         "block01/lesson04/bamboo_border.md",
         "block01/lesson04/flower.md",
         "block01/lesson04/hideaway.md",
-        "block01/lesson04/secure_area.md"
+        "block01/lesson04/secure_area.md",
+        "firststeps01/01.md"
     ],
     "testFiles": [
         "test.ts"
