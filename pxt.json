@@ -29,7 +29,9 @@
         "block01/lesson04/flower.md",
         "block01/lesson04/hideaway.md",
         "block01/lesson04/secure_area.md",
-        "firststeps01/01.md"
+        "firststeps01/01.md",
+        "web/01_Mobs/01_ChickenRain.md",
+        "web/02_SuperPower/01_FlowerTrail.md"
     ],
     "testFiles": [
         "test.ts"
