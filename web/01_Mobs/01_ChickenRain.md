@@ -1,4 +1,5 @@
 ### @hideIteration true
+### @flyoutOnly true
 
 # ニワトリの雨(あめ)
 
