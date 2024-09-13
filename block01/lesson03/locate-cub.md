@@ -5,17 +5,14 @@
 ### @explicitHints 1
 
 
-# Locate the cub!
+# 子(こ)ぐまを見(み)つけろ！
 
 ## Step(ステップ) 1 
-``||loops:while||``コマンドと``|agent:agent detect|`コマンドを使用することで、エージェントがどこまで進んでいるのか分からずにパスを掘るようにプログラムすることができます。</br>
-エージェントは ``||agent:destroy forward & up||`` で雪の中を歩けるようになります！終わったら、**Play**ボタンを押してコードをコンパイルしてください。</br>
-あなたのコードをマインクラフトで実行することを忘れないでください。
+``||loops:もし⬣ならくりかえす||``と``||agent:160:■がエージェントの⬬にある||``を使(つか)うことで、どこまで続(つづ)くかわからない道(みち)を掘(ほ)ることができます。</br>
+雪(ゆき)をかき分(わ)けて歩(ある)けるようにするには``||100:エージェントに⬬を破壊(はかい)させる||``を使(つか)います。</br>
+
 
 #### ~ tutorialhint 
-コーディングのスニペットの形を見てください。</br>
-``||agent:agent move forward||``を使用する。
-
 ```template
 player.onChat("cub", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
