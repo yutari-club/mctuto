@@ -9,7 +9,7 @@
 
 ## Step(ステップ) 1
 砂地(すなち)の境目(さかいめ)に**3**本(ほん)の竹(たけ)を植(う)えるようにプログラムしましょう。</br>
-``||agent: 30:向(む)きを変(か)える||``を忘(わ)れないようにしてください。</br>
+``||agent:向(む)きを変(か)える||``を忘(わ)れないようにしてください。</br>
 
 #### ~ tutorialhint
 2つの**くりかえし**があり、ループは入(い)れ子(こ)になっています。
@@ -26,6 +26,6 @@ player.onChat("bamboo", function () {
 ```
 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```
 

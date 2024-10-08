@@ -12,7 +12,7 @@
 竹(たけ)の１ブロック内側(うちがわ)に一辺(へん)**14**輪(りん)のタンポポを植(う)えさせてください。</br>
 
 #### ~ tutorialhint 
-また、``||agent:180:ブロックを設定(せってい)させる||``を忘(わ)れないでください。
+また、``||agent:ブロックを設定(せってい)させる||``を忘(わ)れないでください。
 
 
 ```ghost
@@ -29,5 +29,5 @@ player.onChat("flower", function () {
 
 ``` 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```

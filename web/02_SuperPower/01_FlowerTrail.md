@@ -100,7 +100,7 @@ player.onTravelled(WALK, function () {
 ### マイクラに戻(も)って、大(おお)きな花(はな)の道(みち)を見(み)てみましょう。
 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```
 ```template
 {}

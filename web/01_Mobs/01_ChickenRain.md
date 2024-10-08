@@ -93,5 +93,5 @@ player.onChat("pp", function () {
 ### ニワトリの雨(あめ)プログラミングの完成(かんせい)です！
 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```

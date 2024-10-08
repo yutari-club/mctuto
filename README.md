@@ -24,5 +24,5 @@ MakeCode でこのリポジトリを編集します。
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```

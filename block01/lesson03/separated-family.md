@@ -9,7 +9,7 @@
 
 ## Step(ステップ) 1 
 氷(こおり)の裂(さ)け目(め)に橋(はし)を架(か)けてください。</br>
-``||agent:180:ブロックやアイテムをスロットに設定(せってい)||``を使(つか)って、エージェントに必要(ひつよう)な材料(ざいりょう)を持(も)たせます。</br>
+``||agent:ブロックやアイテムをスロットに設定(せってい)||``を使(つか)って、エージェントに必要(ひつよう)な材料(ざいりょう)を持(も)たせます。</br>
 
 #### ~ tutorialhint 
 ``||loops:もし⬣ならくりかえす||``で**⬣ではない**を使(つか)ってください。</br>
@@ -29,5 +29,5 @@ player.onChat("family", function () {
 
 ``` 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```

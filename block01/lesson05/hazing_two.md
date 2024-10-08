@@ -27,5 +27,5 @@ player.onChat("run", function () {
 
 ``` 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```

@@ -10,7 +10,7 @@
 ## ステップ1
 エージェントは**9**ブロックの**鉄格子**を**2**段に配置する必要がある。</br>
 鉄格子は**4**辺全てに配置する必要があります。</br>
-このとき、``||agent:20:エージェントを上に移動||``を使って2段目を作ることを忘れないでください。</br>
+このとき、``||agent:エージェントを上に移動||``を使って2段目を作ることを忘れないでください。</br>
 
 #### ~ tutorialhint
 **3**つの ``||loops:くりかえし||``を入れ子にします。</br>
@@ -33,5 +33,5 @@ player.onChat("chicken", function () {
 
 ``` 
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```

@@ -10,5 +10,5 @@
 player.say("おいで、エージェント!")
 ```
 ```package
-rubyblock=github:Mming-Lab/rubyblock1#master
+rubyblock=github:yutari-club/rubyblock#master
 ```
