@@ -6,7 +6,7 @@
 ### @explicitHints 1
 
 
-# Hazing Two
+# 撃退２
 
 ## ステップ1
 ステップ1はヘイズ2。

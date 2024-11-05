@@ -4,7 +4,7 @@
 ### @explicitHints 1
 
 
-# Hazing One
+# 撃退１
 
 ## ステップ1
 ``||agent:agent set block||`` を**tripwire**に設定し、カウントを**64**に設定する。
