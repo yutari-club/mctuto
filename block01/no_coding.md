@@ -1,5 +1,6 @@
-### @hideIteration true 
-### @flyoutOnly 1
+### @flyoutOnly true
+### @hideIteration true
+### @explicitHints true
 
 
 # No code is required for this activity. 

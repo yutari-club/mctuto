@@ -1,6 +1,6 @@
-### @hideIteration true 
-### @flyoutOnly 1
-### @explicitHints 1
+### @flyoutOnly true
+### @hideIteration true
+### @explicitHints true
 
 # このアクティビティにコードは必要ない。
 ## Step 1
