@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Deep Stone 
+# ディープストーン
+<!-- # Deep Stone  -->
 
 ## Step 1
-Fix this coding snippet. Here is the Agent's objective: dig down into the surface until it hits a **gold** block on the **left**. On the way down, the Agent will detect if **stone** is in front of it, and collect it.
+このコーディングを修正してください。これがエージェントの目的です：**左**にある**金**ブロックにぶつかるまで地表を掘り下げます。降りていく途中、エージェントは**石**が手前にあるかどうかを検知し、それを回収します。
+<!-- Fix this coding snippet. Here is the Agent's objective: dig down into the surface until it hits a **gold** block on the **left**. On the way down, the Agent will detect if **stone** is in front of it, and collect it. -->
 
 ```template
 player.onChat("dig", function () {
@@ -23,5 +25,7 @@ player.onChat("dig", function () {
     }
 })
 ```
-
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```
 

@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Planet visit
+# 惑星訪問
+<!-- # Planet visit -->
 
 ## Step 1
-Select the right code to run! You have only one attempt, so be careful!
+実行する正しいコードを選択してください！試行回数は1回だけなので、注意してください！
+<!-- Select the right code to run! You have only one attempt, so be careful! -->
 
 
 

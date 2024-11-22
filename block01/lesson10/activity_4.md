@@ -5,11 +5,12 @@
 ### @explicitHints 1
 
 
-# Surroundings 
+# 周囲の環境
+<!-- # Surroundings  -->
 
 ## Step 1
-Time to work on your skills on the Holodeck!
-
+ホロデッキでスキルを磨く時間だ！
+<!-- Time to work on your skills on the Holodeck! -->
 
 
 ```ghost
@@ -29,4 +30,7 @@ player.onChat("3", function () {
         agent.move(FORWARD, 1)
     }
 })
+```
+```package
+rubyblock=github:yutari-club/rubyblock#master
 ```

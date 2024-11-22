@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Holodeck 
+<!-- # Holodeck  -->
+# 仮想現実空間[ホロデッキ]
 
 ## Step 1
-Use this holodeck to sharpen your skills! 
+この仮想現実空間[ホロデッキ]で腕を磨け！
+<!-- Use this holodeck to sharpen your skills!  -->
 
 ```ghost
 player.onChat("3", function () {
@@ -25,4 +27,7 @@ agent.collectAll()
 agent.place(FORWARD)
 agent.setItem(GRASS, 1, 1)
 })
+```
+```package
+rubyblock=github:yutari-club/rubyblock#master
 ```

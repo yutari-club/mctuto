@@ -5,10 +5,13 @@
 ### @explicitHints 1
 
 
-# Repair the Rover 
+# ローバーを修理する
+<!-- # Repair the Rover  -->
 
 ## Step 1
-Fix this coding snippet. Here is the objective: while **inspecting** for a block of **air** and **not** finding it, the Agent needs to **move right**. If the Agent finds the block of **lapis lazuli** **in front**, it needs to **move right**, **turn left**, then **move right**. After that the Agent needs to say, "Found the break!" and **place a block of redstone forward**.
+このコーディングスニペットを修正してください。これが目的である：**空気**のブロックを**検査**し、**見つからなかった場合、エージェントは**右へ移動**する必要がある。もしエージェントが**ラピスラズリ**のブロックを**正面**に見つけたら、**右に移動**し、**左に曲がり**、次に**右に移動**する必要がある。その後、エージェントは「ブレイクを発見！」と言い、**前方にレッドストーンのブロックを置く**必要がある。
+
+<!-- Fix this coding snippet. Here is the objective: while **inspecting** for a block of **air** and **not** finding it, the Agent needs to **move right**. If the Agent finds the block of **lapis lazuli** **in front**, it needs to **move right**, **turn left**, then **move right**. After that the Agent needs to say, "Found the break!" and **place a block of redstone forward**. -->
 
 
 
@@ -26,4 +29,7 @@ player.onChat("repair", function () {
     agent.setItem(GRASS, 1, 1)
     agent.place(FORWARD)
 })
+```
+```package
+rubyblock=github:yutari-club/rubyblock#master
 ```

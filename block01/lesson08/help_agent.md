@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Iron
+# 鉄
+<!-- # Iron -->
 
 ## Step 1
-While the Agent **inspects the block down** and this block is not **iron ore**, it needs to **move forward**. If the Agent **detects a block forward**, then it needs to **destroy forward**. When the Agent locates iron, program it to **collect** it. Note that in order to collect a block, Agent needs to destroy it first. 
+エージェントは**下のブロックを検査**し、このブロックが**鉄鉱石**でない間は、**前方に移動**する必要がある。もしエージェントが**前方にブロックを発見**したら、**前方に破壊**する必要があります。エージェントが鉄を見つけたら、それを**収集**するようにプログラムしてください。ブロックを回収するためには、エージェントはまずそれを破壊する必要があることに注意してください。
+<!-- While the Agent **inspects the block down** and this block is not **iron ore**, it needs to **move forward**. If the Agent **detects a block forward**, then it needs to **destroy forward**. When the Agent locates iron, program it to **collect** it. Note that in order to collect a block, Agent needs to destroy it first.  -->
 
 ```ghost
 player.onChat("4", function () {
@@ -22,4 +24,7 @@ player.onChat("4", function () {
     agent.destroy(DOWN)
     agent.collectAll()
 })
+```
+```package
+rubyblock=github:yutari-club/rubyblock#master
 ```

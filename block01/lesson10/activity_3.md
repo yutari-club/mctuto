@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Surroundings 
+# 周囲の環境
+<!-- # Surroundings  -->
 
 ## Step 1
-While **inspecting the block down** that is **not packed ice**, program the Agent to locate, **destroy** and **collect** the following blocks: **iron**, **gold**, **emerald** and **diamond**. 
+氷で覆われていない**ブロックダウン**を検査しながら、以下のブロックを見つけ、**破壊**し、**収集**するようにエージェントをプログラムする： **鉄**、金**、エメラルド**、ダイヤモンド**。
+<!-- While **inspecting the block down** that is **not packed ice**, program the Agent to locate, **destroy** and **collect** the following blocks: **iron**, **gold**, **emerald** and **diamond**.  -->
 
 
 
@@ -30,4 +32,6 @@ player.onChat("3", function () {
     }
 })
 ```
-
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```

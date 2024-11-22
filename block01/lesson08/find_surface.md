@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Reach magma
+<!-- # Reach magma -->
+# マグマに到達する
 
 ## Step 1
-Program the Agent to **move forward**. While the Agent **inspects** block **down** and it is **not magma**, the Agent needs to **move down**. 
+エージェントに**前進**するようにプログラムしてください。エージェントがブロック**下**を**検査**し、それが**マグマ**でない間、エージェントは**下に移動**する必要があります。
+<!-- Program the Agent to **move forward**. While the Agent **inspects** block **down** and it is **not magma**, the Agent needs to **move down**.  -->
 
 
 ```ghost
@@ -19,4 +21,6 @@ player.onChat("magma", function () {
     }
 })
 ```
-
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```

@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Simulation  
+# シミュレーション 
+<!-- # Simulation   -->
 
 ## Step 1
-Welcome to Simulations! Program your Agent to collect the gold blocks and destroy obstacles on its way.
+シミュレーションへようこそ！金塊を集め、障害物を破壊するようにエージェントをプログラムしよう。
+<!-- Welcome to Simulations! Program your Agent to collect the gold blocks and destroy obstacles on its way. -->
 
 
 ```template
@@ -39,4 +41,7 @@ player.onChat("5", function () {
     agent.destroy(FORWARD)
     agent.collectAll()
 })
+```
+```package
+rubyblock=github:yutari-club/rubyblock#master
 ```

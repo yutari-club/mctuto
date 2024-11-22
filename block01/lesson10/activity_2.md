@@ -5,10 +5,13 @@
 ### @explicitHints 1
 
 
-# Surroundings 
+# 周囲の環境
+<!-- # Surroundings  -->
 
 ## Step 1
-While **inspecting the block down** that is **not** **packed ice**, if the Agent **detects the block right**, then it needs to **move forward**. Otherwise it needs to **move right**. Within the same loop, if the Agent **inspects the block down** and it is either **cobblestone** **or** **gravel**, then it needs to **destroy down** and **collect all**. 
+パックド・アイス**ではない**ブロックを下に**検査**している間、もしエージェントがブロックを右に**検出したら、**前進**する必要がある。そうでなければ、**右に移動**する必要がある。同じループの中で、もしエージェントが**下のブロックを**検出して、それが**石畳**か**砂利**であれば、**下のブロックを**破壊**し、**すべて**収集**する必要があります。
+
+<!-- While **inspecting the block down** that is **not** **packed ice**, if the Agent **detects the block right**, then it needs to **move forward**. Otherwise it needs to **move right**. Within the same loop, if the Agent **inspects the block down** and it is either **cobblestone** **or** **gravel**, then it needs to **destroy down** and **collect all**.  -->
 
 
 
@@ -40,4 +43,7 @@ player.onChat("2", function () {
         }
     }
 })
+```
+```package
+rubyblock=github:yutari-club/rubyblock#master
 ```

@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Collaborative activity
+# 協働活動
+<!-- # Collaborative activity -->
 
 ## Step 1
-Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use!
+スペースに必要なブロックを選びます。レッスンで使用したすべてのブロックが用意されています！
+<!-- Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use! -->
 
 
 ```ghost
@@ -38,7 +40,8 @@ player.onChat("run", function () {
         agent.move(FORWARD, 1)
     }
 })
-})
-
 ``` 
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```
 

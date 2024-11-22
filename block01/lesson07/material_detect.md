@@ -5,10 +5,14 @@
 ### @explicitHints 1
 
 
-# Detecting your first material
+# 最初の材料を探す
+<!-- # Detecting your first material -->
+
 
 ## Step 1
-The Agent needs to **destroy** and then **collect** the **gold** block. 
+エージェントはブロックを**破壊**し、**金**ブロックを**回収**する必要がある。
+<!-- The Agent needs to **destroy** and then **collect** the **gold** block.  -->
+
 
 ```template
 player.onChat("material", function () {
@@ -33,5 +37,7 @@ player.onChat("1", function () {
 })
 ```
 
-
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```
 
