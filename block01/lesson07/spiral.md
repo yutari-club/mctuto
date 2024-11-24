@@ -9,9 +9,11 @@
 # 渦巻き
 
 ## Step 1
-エージェントが**前方のブロックを**検査中**で、そのブロックが**金ブロック**でない場合、エージェントは**前進**する必要がある。エージェントが**前方のブロックを**検出していない**場合、エージェントも前方に移動する必要があり、そうでなければ**左折**する必要がある。エージェントが**金のブロック**に到達したら、それを**破壊**し、**回収**する必要がある。
-<!-- While the Agent is **inspecting the block forward** and the block is **not** the **gold block**, the Agent needs to **move forward**. If the Agent does **not** detect a block forward, the Agent also needs to move forward, otherwise it needs to **turn left**. When the Agent reaches the **gold block**, it needs to **destroy** and **collect** it.  -->
+エージェントの**前のブロック**が**金ブロック**では**ない**場合、エージェントは金ブロックを探すための行動します。<br>
+エージェントの**前**に**ブロックがない**場合は**前進**し、ブロックがある場合は**左折**します。<br>
+エージェントが**金ブロック**に到達したら、**破壊**し、**回収**します。<br>
 
+<!-- While the Agent is **inspecting the block forward** and the block is **not** the **gold block**, the Agent needs to **move forward**. If the Agent does **not** detect a block forward, the Agent also needs to move forward, otherwise it needs to **turn left**. When the Agent reaches the **gold block**, it needs to **destroy** and **collect** it.  -->
 
 ```ghost
 player.onChat("3", function () {

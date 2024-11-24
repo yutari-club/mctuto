@@ -33,3 +33,6 @@ player.onTravelled(FALL, function () {
 })
 ```
 
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```

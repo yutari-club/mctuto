@@ -18,3 +18,6 @@ player.onTravelled(SWIM_LAVA, function () {
     mobs.clearEffect(mobs.target(NEAREST_PLAYER))
 })
 ```
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```

@@ -43,3 +43,6 @@ loops.forever(function () {
     }
 })
 ```
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```

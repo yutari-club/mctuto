@@ -34,7 +34,8 @@ mobs.target(NEAREST_PLAYER),
 STONE,
 1
 )
-})
 ```
-
+```package
+rubyblock=github:yutari-club/rubyblock#master
+```
 
