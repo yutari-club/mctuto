@@ -9,7 +9,7 @@
 # 周辺環境
 
 ## Step 1
-エージェントの下のブロックが**石**である間、エージェントは行動します。<br>
+エージェントの下のブロックが**石**である間、エージェントは行動を続けます。<br>
 もしエージェントの前にブロックがない場合はエージェントは**前進**し、ブロックがある場合は**左折**する必要がある。
 
 <!-- While the Agent is **inspecting the block down** and the block is **stone**, the Agent needs to **move forward**. If the Agent does **not** detect a block forward, the Agent needs to **move forward**, otherwise it needs to **turn left**.  -->
