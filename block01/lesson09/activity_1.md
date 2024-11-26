@@ -9,12 +9,14 @@
 <!-- # Locating stone  -->
 
 ## Step 1
-このコーディングスニペットを修正してください。エージェントに必要なことは以下の通りです： **左に**4回**移動**し、**下に破壊**し、**下に移動**する。もしエージェントが前方に**石**ブロックを検出したら、「石を見つけた！」と言い、**前方に破壊**し、**すべて**回収する必要があります。石が**検出されなかった場合、エージェントは「ここに石はありません！」と言う必要があります。下に移動するたびに、エージェントは**1ブロック上に**移動する必要があります。この活動を**4**回繰り返す必要がある．
+このコーディングスニペットを修正してください。<br>
+エージェントに必要なことは以下の通り：**左**に**4**回移動し、**下**を**破壊**し、**下**に**1**ブロック**移動**する。<br>
+エージェントが**前方**に**石**の**ブロック**を発見したら、「石を発見！」と言い、**前方**を**破壊**し、すべてを**回収**する必要があります。<br>
+石が見つからない場合、エージェントは「ここに石はありません！」と言う必要があります。<br>
+下に移動した後、エージェントは**1**ブロック**上**に移動する必要があります。<br>
+このアクティビティを**4**回繰り返す必要があります。
+
 <!-- Fix this coding snippet. Here is what the Agent needs to do: **move** to the **left 4 times**, **destroy down**, **move down**. If the Agent detects a **stone** block forward, it needs to say "Found the stone!", **destroy forward** and **collect all**. If the stone is **not detected**, the Agent needs to say, "No stone here!". Each time after moving down, the Agent needs to **move 1 block up** to the surface. This activity needs to repeat **4** times. -->
-
-
-
-
 
 ```template
 player.onChat("stone", function () {
@@ -23,11 +25,11 @@ player.onChat("stone", function () {
         agent.destroy(DOWN)
         agent.move(DOWN, 1)
         if (agent.inspect(AgentInspection.Block, FORWARD) != STONE) {
-            player.say("Found the stone!")
+            player.say("石を発見！")
             agent.destroy(FORWARD)
             agent.collectAll()
         } else {
-            player.say("No stone here!")
+            player.say("ここに石はありません！")
         }
         agent.move(UP, 1)
     }
