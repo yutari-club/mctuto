@@ -6,10 +6,10 @@
 
 
 <!-- # Holodeck  -->
-# 仮想現実空間[ホロデッキ]
+# シミュレーター
 
 ## Step 1
-この仮想現実空間[ホロデッキ]で腕を磨け！
+このシミュレーターで腕を磨け！
 <!-- Use this holodeck to sharpen your skills!  -->
 
 ```ghost
@@ -24,11 +24,12 @@ player.onChat("3", function () {
     agent.destroy(FORWARD)
     agent.collectAll()
     agent.setItem(GRASS, 1, 1)
-agent.place(FORWARD)
-agent.till(FORWARD)
-agent.collect(IRON_SHOVEL)
-agent.setSlot(1)
-agent.transfer(1, 1, 2)
+    agent.place(FORWARD)
+    agent.till(FORWARD)
+    agent.collect(IRON_SHOVEL)
+    agent.setSlot(1)
+    agent.transfer(1, 1, 2)
+     player.say("")
 })
 ```
 ```package
