@@ -29,7 +29,7 @@ player.onChat("3", function () {
     agent.collect(IRON_SHOVEL)
     agent.setSlot(1)
     agent.transfer(1, 1, 2)
-     player.say("")
+    player.say("")
 })
 ```
 ```package

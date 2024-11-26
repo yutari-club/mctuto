@@ -9,9 +9,13 @@
 <!-- # Collaborative activity -->
 
 ## Step 1
-スペースに必要なブロックを選びます。レッスンで使用したすべてのブロックが用意されています！
+宇宙空間で作業するために必要なブロックを選択します。<br>
+レッスンで使用したすべてのブロックが用意されています！<br>
 <!-- Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use! -->
 
+```template
+{}
+```
 
 ```ghost
 player.onChat("run", function () {
@@ -39,6 +43,7 @@ player.onChat("run", function () {
         }
         agent.move(FORWARD, 1)
     }
+     player.say("")
 })
 ``` 
 ```package

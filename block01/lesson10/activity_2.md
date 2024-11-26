@@ -9,8 +9,9 @@
 <!-- # Surroundings  -->
 
 ## Step 1
-パックド・アイス**ではない**ブロックを下に**検査**している間、もしエージェントがブロックを右に**検出したら、**前進**する必要がある。そうでなければ、**右に移動**する必要がある。同じループの中で、もしエージェントが**下のブロックを**検出して、それが**石畳**か**砂利**であれば、**下のブロックを**破壊**し、**すべて**収集**する必要があります。
-
+**下**が**氷塊**ブロックで**ない**ことを検査しながら、もしエージェントが**右**にブロックを**検出**したら、**前進**する必要がある。
+そうでなければ**右**に**移動**する必要がある。
+同じループの中で、もしエージントが**下**のブロックを**検査**し、それが**丸石**か**砂利**であれば、**下**に**破壊**し、すべてを**収集**する必要があります。
 <!-- While **inspecting the block down** that is **not** **packed ice**, if the Agent **detects the block right**, then it needs to **move forward**. Otherwise it needs to **move right**. Within the same loop, if the Agent **inspects the block down** and it is either **cobblestone** **or** **gravel**, then it needs to **destroy down** and **collect all**.  -->
 
 
@@ -42,6 +43,7 @@ player.onChat("2", function () {
             agent.collectAll()
         }
     }
+    player.say("")
 })
 ```
 ```package

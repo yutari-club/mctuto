@@ -8,10 +8,14 @@
 # 周囲の環境
 <!-- # Surroundings  -->
 
+
 ## Step 1
-ホロデッキでスキルを磨く時間だ！
+このシミュレーターで腕を磨け！
 <!-- Time to work on your skills on the Holodeck! -->
 
+```template
+{}
+```
 
 ```ghost
 player.onChat("3", function () {
@@ -29,6 +33,7 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
+    player.say("")
 })
 ```
 ```package

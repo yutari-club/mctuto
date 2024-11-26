@@ -4,13 +4,16 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-
+# シミュレーター
 <!-- # Holodeck  -->
-# 仮想現実空間[ホロデッキ]
 
 ## Step 1
-この仮想現実空間[ホロデッキ]で腕を磨け！
+このシミュレーターで腕を磨け！
 <!-- Use this holodeck to sharpen your skills!  -->
+
+```template
+{}
+```
 
 ```ghost
 player.onChat("3", function () {
@@ -21,11 +24,12 @@ player.onChat("3", function () {
             agent.turn(LEFT_TURN)
         }
     }
-agent.place(FORWARD)
-agent.destroy(FORWARD)
-agent.collectAll()
-agent.place(FORWARD)
-agent.setItem(GRASS, 1, 1)
+    agent.place(FORWARD)
+    agent.destroy(FORWARD)
+    agent.collectAll()
+    agent.place(FORWARD)
+    agent.setItem(GRASS, 1, 1)
+    player.say("")
 })
 ```
 ```package

@@ -9,10 +9,13 @@
 <!-- # Surroundings  -->
 
 ## Step 1
-氷で覆われていない**ブロックダウン**を検査しながら、以下のブロックを見つけ、**破壊**し、**収集**するようにエージェントをプログラムする： **鉄**、金**、エメラルド**、ダイヤモンド**。
+
+**下**が**氷塊**ブロックで**ない**ことを検査しながら、**鉄**、**金**、**エメラルド**、**ダイヤモンド**のブロックを見つけ、破壊し、回収するようにエージェントをプログラムする。
 <!-- While **inspecting the block down** that is **not packed ice**, program the Agent to locate, **destroy** and **collect** the following blocks: **iron**, **gold**, **emerald** and **diamond**.  -->
 
-
+```template
+{}
+```
 
 ```ghost
 player.onChat("3", function () {
@@ -30,6 +33,7 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
+    player.say("")
 })
 ```
 ```package

@@ -72,7 +72,7 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("Found Ore Deposit!")
+    player.say("鉱床発見！")
 })
 ```
 ```ghost
@@ -133,7 +133,7 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("Found Ore Deposit!")
+    player.say("鉱床発見！")
 })
 ```
 
