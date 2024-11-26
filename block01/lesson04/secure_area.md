@@ -30,6 +30,7 @@ player.onChat("fence", function () {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
     }
+    player.say("")
 })
 ``` 
 ```package

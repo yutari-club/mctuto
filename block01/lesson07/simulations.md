@@ -40,6 +40,7 @@ player.onChat("5", function () {
     }
     agent.destroy(FORWARD)
     agent.collectAll()
+    player.say("")
 })
 ```
 ```package

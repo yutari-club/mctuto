@@ -22,6 +22,7 @@ player.onChat("path", function () {
         agent.destroy(FORWARD)
         agent.collectAll()
     }
+    player.say("")
 })
 ``` 
 ```package

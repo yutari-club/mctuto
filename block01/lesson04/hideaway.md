@@ -22,6 +22,7 @@ player.onChat("bamboo", function () {
         agent.move(FORWARD, 1)
     }
     agent.turn(RIGHT_TURN)
+    player.say("")
 })
 ```
 

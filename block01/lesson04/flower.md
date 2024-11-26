@@ -24,6 +24,7 @@ player.onChat("flower", function () {
             agent.move(FORWARD, 1)
         }
         agent.turn(RIGHT_TURN)
+        player.say("")
     }
 })
 

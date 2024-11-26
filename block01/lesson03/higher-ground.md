@@ -33,6 +33,7 @@ player.onChat("tower", function () {
         agent.move(UP, 1)
     }
     agent.move(DOWN, 10)
+    player.say("")
 })
 
 ``` 

@@ -22,6 +22,7 @@ player.onChat("garbage", function () {
         agent.destroy(FORWARD)
         agent.collectAll()
     }
+    player.say("")
 })
 ```
 ```package

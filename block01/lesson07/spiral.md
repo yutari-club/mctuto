@@ -26,6 +26,7 @@ player.onChat("3", function () {
     }
     agent.destroy(FORWARD)
     agent.collectAll()
+    player.say("")
 })
 ```
 ```package

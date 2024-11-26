@@ -20,6 +20,7 @@ player.onChat("foliage", function () {
         	
         }
     }
+    player.say("")
 })
 
 ```

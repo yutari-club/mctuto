@@ -34,6 +34,7 @@ player.onChat("3D", function () {
         agent.collectAll()
         agent.move(UP, 3)
     }
+    player.say("")
 })
 ```
 ```package

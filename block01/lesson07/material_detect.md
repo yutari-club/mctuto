@@ -34,6 +34,7 @@ player.onChat("1", function () {
             agent.collectAll()
         }
     }
+    player.say("")
 })
 ```
 

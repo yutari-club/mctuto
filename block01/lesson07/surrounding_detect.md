@@ -32,6 +32,7 @@ player.onChat("inspect", function () {
             agent.turn(LEFT_TURN)
         }
     }
+    player.say("")
 })
 ```
 ```package

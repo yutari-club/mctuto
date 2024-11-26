@@ -20,6 +20,7 @@ player.onChat("hazing", function () {
     while (!(agent.detect(AgentDetection.Block, FORWARD))) {
     	
     }
+    player.say("")
 })
 
 ``` 

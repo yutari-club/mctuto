@@ -30,6 +30,7 @@ player.onChat("chicken", function () {
         }
         agent.move(UP, 1)
     }
+    player.say("")
 })
 
 ``` 

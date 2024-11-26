@@ -31,6 +31,7 @@ player.onChat("hazing", function () {
         agent.place(DOWN)
         agent.move(FORWARD, 1)
     }
+    player.say("")
 })
 ```
 ```package

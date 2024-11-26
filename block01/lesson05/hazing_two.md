@@ -23,6 +23,7 @@ player.onChat("run", function () {
         agent.move(FORWARD, 1)
         agent.destroy(UP)
     }
+    player.say("")
 })
 
 ``` 
