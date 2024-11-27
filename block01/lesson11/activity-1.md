@@ -9,7 +9,10 @@
 <!-- # Planet visit -->
 
 ## Step 1
-実行する正しいコードを選択してください！試行回数は1回だけなので、注意してください！
+
+３つのコードがあります。<br>
+地形とコードから正しい処理のコードを選択してください！<br>
+試行回数は1回だけなので、注意してください！<br>
 <!-- Select the right code to run! You have only one attempt, so be careful! -->
 
 
