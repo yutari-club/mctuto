@@ -5,11 +5,12 @@
 ### @explicitHints 1
 
 
-<!-- # Holodeck  -->
 # シミュレーター
+<!-- # Holodeck  -->
 
 ## Step 1
-このシミュレーターで腕(うで)を磨(みが)け！
+
+このシミュレーターで腕を磨け！
 <!-- Use this holodeck to sharpen your skills!  -->
 
 ```ghost

@@ -5,12 +5,12 @@
 ### @explicitHints 1
 
 
-# 協働活動
+# 協働(きょうどう)活動(かつどう)
 <!-- # Collaborative activity -->
 
 ## Step 1
-宇宙空間で作業するために必要なブロックを選択します。<br>
-レッスンで使用したすべてのブロックが用意されています！<br>
+宇宙(うちゅう)空間(くうかん)で作業(さぎょう)するために必要(ひつよう)なブロックを選択(せんたく)します。<br>
+レッスンで使用(しよう)したすべてのブロックが用意(ようい)されています！<br>
 <!-- Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use! -->
 
 ```template

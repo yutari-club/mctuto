@@ -1,25 +1,35 @@
 ### @codeStart players set @s makecode 0
 ### @codeStop players set @s makecode 1
 
-### @hideIteration true 
+### @hideIteration true
 ### @explicitHints 1
 
 
-# 周囲(しゅうい)の環境(かんきょう)
-<!-- # Surroundings  -->
-
+# 協働活動
+<!-- # Collaborative activity -->
 
 ## Step 1
-このシミュレーターで腕(うで)を磨(みが)け！
-<!-- Time to work on your skills on the Holodeck! -->
+宇宙空間で作業するために必要なブロックを選択します。<br>
+レッスンで使用したすべてのブロックが用意されています！<br>
+<!-- Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use! -->
 
 ```template
 {}
 ```
 
 ```ghost
-player.onChat("3", function () {
-    agent.setItem(STONE, 64, 1)
+player.onChat("run", function () {
+    agent.turn(LEFT_TURN)
+    agent.move(FORWARD, 1)
+    while (!(agent.detect(AgentDetection.Block, FORWARD))) {
+    	
+    }
+    agent.place(FORWARD)
+    agent.destroy(FORWARD)
+    agent.setItem(GRASS, 1, 1)
+    for (let index = 0; index < 4; index++) {
+    	
+    }
     while (agent.inspect(AgentInspection.Block, DOWN) != PACKED_ICE) {
         if (agent.inspect(AgentInspection.Block, DOWN) == IRON_ORE || agent.inspect(AgentInspection.Block, DOWN) == GOLD_ORE) {
             agent.turn(LEFT_TURN)
@@ -33,9 +43,10 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("")
+     player.say("")
 })
-```
+``` 
 ```package
 rubyblock=github:yutari-club/rubyblock#master
 ```
+

@@ -4,13 +4,16 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-
-<!-- # Holodeck  -->
 # シミュレーター
+<!-- # Holodeck  -->
 
 ## Step 1
-このシミュレーターで腕(うで)を磨(みが)け！
+このシミュレーターで腕を磨け！
 <!-- Use this holodeck to sharpen your skills!  -->
+
+```template
+{}
+```
 
 ```ghost
 player.onChat("3", function () {
@@ -21,14 +24,11 @@ player.onChat("3", function () {
             agent.turn(LEFT_TURN)
         }
     }
+    agent.place(FORWARD)
     agent.destroy(FORWARD)
     agent.collectAll()
-    agent.setItem(GRASS, 1, 1)
     agent.place(FORWARD)
-    agent.till(FORWARD)
-    agent.collect(IRON_SHOVEL)
-    agent.setSlot(1)
-    agent.transfer(1, 1, 2)
+    agent.setItem(GRASS, 1, 1)
     player.say("")
 })
 ```

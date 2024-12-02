@@ -10,7 +10,7 @@
 
 ## Step 1
 
-このシミュレーターで腕を磨け！
+このシミュレーターで腕(うで)を磨(みが)け！
 <!-- Use this holodeck to sharpen your skills!  -->
 
 ```ghost
