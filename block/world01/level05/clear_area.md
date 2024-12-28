@@ -13,6 +13,10 @@
 それを**16**回(かい)繰(く)り返(かえ)します。</br>
 
 #### ~ tutorialhint 
+```template
+{}
+```
+
 ```blocks
 player.onChat("foliage", function () {
     for (let index = 0; index < 8; index++) {

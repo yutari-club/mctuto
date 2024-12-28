@@ -36,6 +36,7 @@ player.onChat("collect", function () {
     agent.destroy(DOWN)
     agent.collectAll()
 })
+player.say("")
 ```
 
 ```package

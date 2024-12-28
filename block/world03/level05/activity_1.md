@@ -5,7 +5,7 @@
 ### @explicitHints 1
 
 
-# 種を蒔く！
+# 種を植える！
 <!-- # Plant a Seed! -->
 
 ## Step 1
@@ -20,6 +20,7 @@ player.onChat("plantSeed", function () {
     agent.till(FORWARD)
     agent.place(FORWARD)
 })
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

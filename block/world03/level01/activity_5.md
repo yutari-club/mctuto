@@ -20,6 +20,10 @@
 <!-- Make it rain while you dance in Minecraft! To make it happen you will need to use several event handlers. 1. Create your variables, for example: **walk**, **jump** and/or **break**. 2. Select the event handlers, for example ``||player: on player fall||``, ``||player: on player walk||``. 3. Set your new ``||variables||`` to ``||logic: true||`` inside each corresponding event block. 4. Use a ``||loop: forever||`` block and drag an ``||logic: if statement||``  inside of it. Set all your conditions to ``||logic:true||`` and add ``||gameplay: weather||`` block set to  **rain** to it.  -->
 
 ### ~ tutorialHint
+```template
+{}
+``` 
+
 ```blocks
 let walk = false
 player.onTravelled(WALK, function () {
@@ -51,6 +55,7 @@ loops.forever(function () {
         gameplay.setWeather(RAIN)
     }
 })
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

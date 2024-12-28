@@ -36,6 +36,7 @@ player.onChat("town_hall", function (length, width, height) {
         agent.move(UP, 1)
     }
 })
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

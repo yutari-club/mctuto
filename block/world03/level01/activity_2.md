@@ -11,12 +11,14 @@
 ## Step 1
 あなたの挑戦は、とても高く``||mobs:跳躍||``して、近づくことのできないエリアまで登ることだ。
 <!-- Your challenge is to ``||mobs:jump||`` really high to climb up to the inaccessible area.  -->
-
-
+```template
+{}
+``` 
 ```ghost
 loops.forever(function () {
     mobs.applyEffect(JUMP_BOOST, mobs.target(NEAREST_PLAYER), 10, 1)
     mobs.clearEffect(mobs.target(NEAREST_PLAYER))
+    player.say("")
 })
 ```
 ```package

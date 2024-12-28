@@ -14,6 +14,9 @@
 #### ~ tutorialhint 
 また、``||agent:ブロックを設定(せってい)させる||``を忘(わ)れないでください。
 
+```template
+{}
+```
 
 ```ghost
 player.onChat("flower", function () {

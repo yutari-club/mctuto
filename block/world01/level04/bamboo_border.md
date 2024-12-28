@@ -12,6 +12,7 @@
 まずは実行(じっこう)してみてください。</br>
 このコードを改造(かいぞう)して、パンダのエリアの**4**辺(へん)に竹(たけ)を植(う)えてください。</br>
 
+
 ```template
 player.onChat("bamboo", function () {
     agent.setItem(BAMBOO, 64, 1)

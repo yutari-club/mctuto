@@ -27,6 +27,9 @@ This way whenever you place blocks, the game will be counting how many blocks yo
 鉄、金、エメラルド、ダイヤモンドのいずれかを選択できる。
 <!-- You can select iron, gold, emerald or diamond.  -->
 
+```template
+{}
+``` 
 ```blocks
 let count = 0
 blocks.onBlockPlaced(EMERALD_BLOCK, function () {
@@ -42,11 +45,8 @@ blocks.onBlockBroken(STONE, function () {
     player.say(count)
 })
 let count = 0
-mobs.give(
-mobs.target(NEAREST_PLAYER),
-STONE,
-1
-)
+mobs.give(mobs.target(NEAREST_PLAYER), STONE, 1)
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

@@ -22,7 +22,9 @@
 ```ghost
 player.onTravelled(SNEAK, function () {
     mobs.applyEffect(INVISIBILITY, mobs.target(NEAREST_PLAYER), 3, 1)
+    player.say("")
 })
+
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

@@ -14,6 +14,10 @@
 
 #### ~ tutorialhint
 エージェントが右側(みぎがわ)にブロックを置(お)き、土(つち)ブロックを破壊(はかい)するようにする。</br>
+ 
+```template
+{}
+```
 
 ```blocks
 player.onChat("fence", function () {

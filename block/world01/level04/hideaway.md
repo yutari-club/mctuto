@@ -13,7 +13,11 @@
 
 #### ~ tutorialhint
 2つの**くりかえし**があり、ループは入(い)れ子(こ)になっています。
- 
+
+```template
+{}
+```
+
 ```ghost
 player.onChat("bamboo", function () {
     for (let index = 0; index < 3; index++) {

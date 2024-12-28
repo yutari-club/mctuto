@@ -16,6 +16,10 @@
 #### ~ tutorialhint
 **3**つの ``||loops:くりかえし||``を入(い)れ子(こ)にします。</br>
 エージェントのインベントリに64個(こ)以上(いじょう)のブロックがあることを確認(かくにん)してください！</br>
+ 
+```template
+{}
+```
 
 ```ghost
 player.onChat("chicken", function () {

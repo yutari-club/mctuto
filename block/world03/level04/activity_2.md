@@ -48,6 +48,7 @@ player.onChat("build-simple", function (size, height) {
         agent.move(UP, 1)
     }
 })
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

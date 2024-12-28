@@ -27,6 +27,7 @@ player.onTravelled(WALK, function () {
     }
 })
 gameplay.setWeather(RAIN)
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

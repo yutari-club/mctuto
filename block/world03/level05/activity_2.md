@@ -8,11 +8,11 @@
 <!-- # Build a Town Hall! -->
 
 ## Step 1
-**plantSeed**関数を作成しました。<br>
+**種植え**関数を作成しました。<br>
 これは、前のアクティビティで使用したコードです。<br>
 次に ``||player:入力した時||`` コマンドをワークスペースにドラッグし、**run**という名前を付けます。<br>
-``||loops:くりかえし||``を追加し、**高度なブロック**セクションをクリックし、**関数**をクリックし、``||functions:呼び出し plantSeed||``をループにドラッグします。<br>
-エージェントが**plantSeed**関数を何回繰り返す必か数えてください。
+``||loops:くりかえし||``を追加し、**高度なブロック**セクションをクリックし、**関数**をクリックし、``||functions:呼び出し 種植え||``をループにドラッグします。<br>
+エージェントが**種植え**関数を何回繰り返す必か数えてください。
 
 <!-- We created a function **plantSeed** for you. 
 It is simply the code that you used for the previous activity. 
@@ -28,9 +28,9 @@ It is also a good practice to leave notes about the code that's written, like th
 
 ```template
 /**
- * 数を使えば、コードを簡単に再利用できる。
+ * 関数を使えば、コードを簡単に再利用できる。
  */
-function plantSeed () {
+function 種植え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     agent.place(DOWN)
@@ -44,6 +44,7 @@ player.onChat("plantSection", function () {
     }
     agent.move(FORWARD, 1)
 })
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

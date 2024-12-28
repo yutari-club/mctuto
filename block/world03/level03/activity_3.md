@@ -53,6 +53,7 @@ let blockB = 0
 let blockA = 0
 blockA = BLOCK_OF_QUARTZ
 blockB = LAPIS_LAZULI_BLOCK
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master

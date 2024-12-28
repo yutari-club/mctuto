@@ -25,13 +25,16 @@ This way whenever you jump in the world, the block will get reset.  -->
 座標指定には``||positions: ワールド||``座標を使うことを忘れないでください。
 <!-- Don't forget to use ``||positions: world||`` positions to indicate the coordinates.  -->
 
+```template
+{}
+``` 
+
 ```blocks
 let count = 0
 player.onTravelled(WALK, function () {
     count += 1
     blocks.place(count, world(100, 68, 100))
 })
-
 
 ```
 
@@ -46,6 +49,7 @@ player.onTravelled(FALL, function () {
     count = 0
     blocks.place(count, world(100, 68, 100))
 })
+player.say("")
 ```
 
 ```package

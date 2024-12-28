@@ -5,10 +5,12 @@
 ### @explicitHints 1
 
 
-# Beets!
+# ビート!
+<!-- # Beets! -->
 
 ## Step 1
-It is your time to shine! 
+今が輝くときだ！
+<!-- It is your time to shine!  -->
 
 ```ghost
 blocks.onBlockBroken(GRASS, function () {
@@ -59,6 +61,7 @@ agent.collectAll()
 mobs.spawn(PRIMED_TNT, world(0, 0, 0))
 mobs.spawn(CHICKEN, pos(0, 0, 0))
 agent.setItem(GRASS, 1, 1)
+player.say("")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master
