@@ -30,5 +30,5 @@ Datasets.setOfData_OO(datasetType.historical, function() {})
 ```
 
 ```package
-aicustomblocks=github:fountainstudios/AICustomBlocks
+aicustomblocks=github:yutari-club/mctuto
 ```

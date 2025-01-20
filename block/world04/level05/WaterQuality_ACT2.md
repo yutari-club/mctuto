@@ -25,5 +25,5 @@ Datasets.setOfData_WQ(datasetType.historical, function() {})
 ```
 
 ```package
-aicustomblocks=github:fountainstudios/AICustomBlocks
+aicustomblocks=github:yutari-club/mctuto
 ```

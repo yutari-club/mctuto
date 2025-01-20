@@ -32,5 +32,5 @@ Output.locateFarm_SF()
 ```
 
 ```package
-aicustomblocks=github:fountainstudios/AICustomBlocks
+aicustomblocks=github:yutari-club/mctuto
 ```

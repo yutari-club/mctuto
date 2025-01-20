@@ -26,5 +26,5 @@ Datasets.setOfData_MTB(function() {})
 ```
 
 ```package
-aicustomblocks=github:fountainstudios/AICustomBlocks
+aicustomblocks=github:yutari-club/mctuto
 ```

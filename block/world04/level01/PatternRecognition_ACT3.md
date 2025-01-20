@@ -32,5 +32,5 @@ Output.locateOcelots_PR()
 ```
 
 ```package
-aicustomblocks=github:fountainstudios/AICustomBlocks
+aicustomblocks=github:yutari-club/mctuto
 ```

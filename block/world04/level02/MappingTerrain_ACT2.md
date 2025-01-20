@@ -19,5 +19,5 @@ Datasets.setOfData_MT(function() {})
 ```
 
 ```package
-aicustomblocks=github:fountainstudios/AICustomBlocks
+aicustomblocks=github:yutari-club/mctuto
 ```

@@ -30,5 +30,5 @@ Output.locatePollution_WQ()
 ```
 
 ```package
-aicustomblocks=github:fountainstudios/AICustomBlocks
+aicustomblocks=github:yutari-club/mctuto
 ```
