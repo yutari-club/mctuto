@@ -30,6 +30,7 @@ player.onChat("family", function () {
         agent.turn(LEFT_TURN)
     }
     player.say("")
+    agent.destroy(FORWARD)
 })
 
 ``` 
