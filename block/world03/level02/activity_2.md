@@ -10,8 +10,8 @@
 
 ## Step 1
 
-あなたのスーパー・プログラミング・パワーを使って、出題される課題を克服してください。。<br>
-解決する方法はたくさんあるかもしれません。
+君のプログラミングのスーパーパワーを使って、この課題を乗り越えてみよう！<br>
+いろんな方法で解決できるかもしれないから、いろいろ試してみてね。
 <!-- Use your coding superpowers to overcome the challenges presented. Remember, there might be a lot of ways to solve them.  -->
 
 ```ghost

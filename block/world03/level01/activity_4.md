@@ -15,7 +15,10 @@
 <br>
 リセットには別のイベントブロックを使います。<br>
 ``||player:落下した時||``を使ってブロックをリセットするには、``||variables:変数countを 0 にする|``を配置し、その下には``||player:歩いた時||`` 内の``||blocks:置く||``と同じブロックを作ります。（0=空気)<br>
-こうすれば、ワールドでジャンプするたびにブロックがリセットされる。
+<br>
+配置するしたブロックが床のブロックと同じになるように歩きてください。<br>
+リセットしたい場合は、ジャンプしてください。
+
 
 <!-- Use ``||player:on player walk||`` event to set a block at a specific set of ``||positions: world||``coordinates, which are **100, 68, 100**.<br>
 Create a ``||variable||`` and name it **count**. <br>

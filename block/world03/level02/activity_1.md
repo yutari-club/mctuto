@@ -8,8 +8,9 @@
 <!-- # Pass the dinosaur! -->
 
 ## Step 1
-恐竜の横を``||player:スニーク||`` で通り抜けるには、自分が``||mobs:透明||``になる必要がある。<br>
-あなたはこれを成功させることができますか？
+
+恐竜の横を``||player:スニーク||`` で通り抜けるには、``||mobs:透明||``になる必要があります<br>
+できますか？
 
 <!-- You need to ``||player:sneak past||`` the dinosaur by making yourself ``||mobs:invisible||``. Can you make this happen?  -->
 
