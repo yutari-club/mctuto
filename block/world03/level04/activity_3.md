@@ -12,9 +12,9 @@
 ``||variables: 変数||``に正しいパラメータを設定します。<br>
 変数を``||player: 入力した時||`` に追加するのを忘れないでください。<br>
 
-Use **stone** as your building material, create **3** ``||variable: variables||`` and name them **width**, **length** and **height**; 
+<!-- Use **stone** as your building material, create **3** ``||variable: variables||`` and name them **width**, **length** and **height**; 
 set the ``||variable: variables||`` to the correct parameters. 
-Don't forget to add your variables to the ``||player: on chat||`` command.
+Don't forget to add your variables to the ``||player: on chat||`` command. -->
 
 ```ghost
 player.onChat("town_hall", function (length, width, height) {
