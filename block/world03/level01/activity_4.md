@@ -8,12 +8,15 @@
 <!-- # Change the world! -->
 
 ## Step 1
-``||player:歩いた時||`` イベントを使って、**ワールド座標：100, 68, 100**にブロックをセットする。<br>
+``||player:歩いた時||`` イベントを使って、``||positions:ワールド 100 68 100||`` に``||blocks:置く||``を設置する。<br>
 ``||variables:変数||`` を作り、**count**と名付ける。<br>
-``||variables:変数を増やす||`` ブロックをドラッグして、``||blocks:置く||``ブロックに``||variables:count||``を追加すると、1ずつ増えて、そのブロックIDに関連するブロックが配置される。1=石、2=草、3=土など。<br>
-リセットするには、別のイベントブロック、たとえば ``||player:落下した時||``を使います。<br>
-``||変数を⬭にする|``に**0**を設定し、同じワールド座標で ``||variables:count||`` 変数がセットされた``||blocks:置く||``ブロックを追加します。0=空気<br>
+``||variables:変数countを 1 だけ増やす|||`` ブロックを``||blocks:置く||``の上にドラッグする。<br>
+``||blocks:置く||``の**ブロックのアイコン**を``||variables:count||``に変更する。これにより、ブロックIDが1ずつ増えてに対応するブロックが設置されます。（例：1=石、2=草、3=土など）<br>
+<br>
+リセットには別のイベントブロックを使います。<br>
+``||player:落下した時||``を使ってブロックをリセットするには、``||variables:変数countを 0 にする|``を配置し、その下には``||player:歩いた時||`` 内の``||blocks:置く||``と同じブロックを作ります。（0=空気)<br>
 こうすれば、ワールドでジャンプするたびにブロックがリセットされる。
+
 <!-- Use ``||player:on player walk||`` event to set a block at a specific set of ``||positions: world||``coordinates, which are **100, 68, 100**.<br>
 Create a ``||variable||`` and name it **count**. <br>
 Drag the ``||change count by 1||`` block and ``||blocks:place||`` block with an added ``||count||`` variable, this will increase by 1 and place a block that's associated with that block ID. 1=Stone, 2=Grass, 3=Dirt, etc. <br>

@@ -9,7 +9,7 @@
 # クライミング
 
 ## Step 1
-あなたの挑戦は、とても高く``||mobs:跳躍||``して、近づくことのできないエリアまで登ることだ。
+あなたのミッションは、高く``||mobs:跳躍||``して、届かない場所に登ることです。
 <!-- Your challenge is to ``||mobs:jump||`` really high to climb up to the inaccessible area.  -->
 ```template
 {}
