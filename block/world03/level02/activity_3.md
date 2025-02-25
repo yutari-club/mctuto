@@ -16,9 +16,14 @@
 
 <!-- You need to make the lightning strike while you are standing on the **gold plates**. First, you need to set the ``||gameplay: weather||`` to rain ``||loops: on start||``. Then placing ``||logic: if||``, ``||blocks: test for||`` and ``||mobs: spawn a lightning bolt||`` inside ``||player: on walk||`` to make the lightning strike at the exact moment.  -->
 
+
 ### ~ tutorialHint
 感圧板（軽）は**0、-1、0**の座標であなたの下にある。
 <!-- The gold plates are beneath you at **0, -1, 0** coordinates.  -->
+
+```template
+{}
+``` 
 
 ```ghost
 player.onTravelled(WALK, function () {

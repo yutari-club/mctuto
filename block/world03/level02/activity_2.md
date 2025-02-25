@@ -14,6 +14,10 @@
 いろんな方法で解決できるかもしれないから、いろいろ試してみてね。
 <!-- Use your coding superpowers to overcome the challenges presented. Remember, there might be a lot of ways to solve them.  -->
 
+```template
+{}
+``` 
+
 ```ghost
 player.onTravelled(SNEAK, function () {
     mobs.applyEffect(INVISIBILITY, mobs.target(NEAREST_PLAYER), 3, 1)

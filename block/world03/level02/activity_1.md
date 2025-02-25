@@ -14,6 +14,9 @@
 
 <!-- You need to ``||player:sneak past||`` the dinosaur by making yourself ``||mobs:invisible||``. Can you make this happen?  -->
 
+```template
+{}
+``` 
 
 ### ~ tutorialHint
 マインクラフトでスニークするには、shiftとWを押してみてください。

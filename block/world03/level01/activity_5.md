@@ -26,11 +26,11 @@
 4. Use a ``||loop: forever||`` block and drag an ``||logic: if statement||``  inside of it. 
 Set all your conditions to ``||logic:true||`` and add ``||gameplay: weather||`` block set to  **rain** to it.  -->
 
-### ~ tutorialHint
 ```template
 {}
 ``` 
 
+### ~ tutorialHint
 ```blocks
 let walk = false
 player.onTravelled(WALK, function () {
