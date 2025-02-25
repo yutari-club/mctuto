@@ -27,6 +27,7 @@ player.onTravelled(SNEAK, function () {
     GRASS,
     1
     )
+    mobs.clearEffect(mobs.target(NEAREST_PLAYER))
 })
 player.onChat("jump", function () {
 	

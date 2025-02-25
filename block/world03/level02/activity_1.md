@@ -28,7 +28,7 @@ player.onTravelled(SNEAK, function () {
     mobs.applyEffect(INVISIBILITY, mobs.target(NEAREST_PLAYER), 3, 1)
     player.say("")
 })
-
+mobs.clearEffect(mobs.target(NEAREST_PLAYER))
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master
