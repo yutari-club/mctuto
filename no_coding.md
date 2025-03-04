@@ -7,7 +7,7 @@
 このアクティビティにコードは必要ない。
 
 ```template
-{}
+player.say("プログラミング大好き")
 ```
 ```package
 rubyblock=github:yutari-club/rubyblock#master
