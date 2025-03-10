@@ -15,4 +15,4 @@
 	  <source src="04_草刈り.mp4" type="video/mp4" />
 	</video>
 
-# [動物保護](../video01)
+# [戻る](../video01)
