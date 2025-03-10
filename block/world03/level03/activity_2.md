@@ -21,7 +21,8 @@
 - ``||agent:移動させる|``
 
 マインクラフトの水は傾斜があると流れますので、エージェントは ** 左、右、下**の順で配置する必要があります。<br>
-これらすべてのアクションを、``||loops:繰り返し||``ループ内に配置して、``||variables: 長さ||`` の回数だけ繰り返します。
+これらすべてのアクションを、``||loops:繰り返し||``ループ内に配置して、``||variables: 長さ||`` の回数だけ繰り返します。<br>
+
 
 <!-- Now within an ``||player: on chat command||`` you need to add all the actions that the Agent needs to perform in order to build **1** part: ``||agent: set block pillar of quartz||`` at the count of **64**, ``||agent: place||`` and ``||agent: move forward||``. Water in Minecraft will flow if there is a slope, so the Agent needs to **place left, right and down**. Place all these actions within a ``||loops: repeat||`` loop that **repeats** ``||variable: length||`` times.  -->
 
@@ -31,7 +32,7 @@
 <!-- Now nest the first ``||loops: repeat||`` loop within another ``||loops: repeat||`` loop that repeats ``||variables:segments||`` times. Try it out in Minecraft! -->
 
 ### ~ tutorialHint
-||agent: 下に移動|| ブロックを内側のループの前に追加して、コードを動かせるようにします！
+``||agent: 下に移動||`` ブロックを内側のループの前に追加して、コードを動かせるようにします！
 <!-- Add ``||agent: agent move down||`` block before the inner loop to make the code work! -->
 
 ```template
