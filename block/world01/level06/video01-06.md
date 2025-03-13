@@ -4,7 +4,7 @@
 1. **橋(はし)を架(か)る**
 	<br>
 	<video controls>
-	  <source src="[01_橋を架る.mp4" type="video/mp4" />
+	  <source src="01_橋を架る.mp4" type="video/mp4" />
 	</video>
 1. **迷路(めいろ)を完成(かんせい)させる**
 	<br>
