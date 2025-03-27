@@ -27,4 +27,4 @@
 	  <source src="05_塔を建てる.mp4" type="video/mp4" />
 	</video>
 
-# [戻る](../video01)
+# [戻る](../video01.html)

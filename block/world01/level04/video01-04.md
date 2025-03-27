@@ -22,4 +22,4 @@
 	  <source src="04_場所をきれいにする.mp4" type="video/mp4" />
 	</video>
 
-# [戻る](../video01)
+# [戻る](../video01.html)
