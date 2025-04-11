@@ -6,3 +6,5 @@
 1. [ガニメデ&土星](./level04/video02-04.html)
 1. [天王星＆海王星](./level05/video02-05.html)
 1. [惑星をもう一度](./level06/video02-06.html)
+
+# [戻る](../video.html)
