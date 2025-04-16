@@ -14,7 +14,8 @@
 <!-- Time to work on your skills on the Holodeck! -->
 
 ```template
-{}
+player.onChat("skills", function () {
+})
 ```
 
 ```ghost

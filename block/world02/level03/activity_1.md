@@ -18,6 +18,10 @@
 
 <!-- Fix this coding snippet. Here is what the Agent needs to do: **move** to the **left 4 times**, **destroy down**, **move down**. If the Agent detects a **stone** block forward, it needs to say "Found the stone!", **destroy forward** and **collect all**. If the stone is **not detected**, the Agent needs to say, "No stone here!". Each time after moving down, the Agent needs to **move 1 block up** to the surface. This activity needs to repeat **4** times. -->
 
+#### ~ tutorialhint 
+
+太文字(ふともじ)が正(ただ)しくプログラミングされているか確認(かくにん)しよう
+
 ```template
 player.onChat("stone", function () {
     for (let index = 0; index < 3; index++) {

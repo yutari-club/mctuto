@@ -10,8 +10,8 @@
 
 ## Step 1
 このコーディングスニペットを修正(しゅうせい)してください。<br>
-エージェントの目的(もくてき)：**左(ひだり)**の**金(きん)**ブロックにぶつかるまで地表(ちひょう)を掘(ほ)り下(さ)げます。<br>
-下(くだ)っていく途中(とちゅう)で、エージェントは手前(てまえ)に**石(いし)**があるかどうかを検知(けんち)し、それを回収(かいしゅう)します。<br>
+エージェントの目的(もくてき)：エージェントの**左(ひだり)**に**金(きん)**ブロックが見つかるまで大地(だいち)を掘(ほ)り下(さ)げます。<br>
+途中(とちゅう)で、エージェントは前(まえ)に**石(いし)**があるかどうかを検知(けんち)し、それを回収(かいしゅう)します。<br>
 
 <!-- Fix this coding snippet. Here is the Agent's objective: dig down into the surface until it hits a **gold** block on the **left**. On the way down, the Agent will detect if **stone** is in front of it, and collect it. -->
 

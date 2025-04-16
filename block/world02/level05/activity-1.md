@@ -12,9 +12,8 @@
 
 ３つのコードがあります。<br>
 地形(ちけい)とコードから正(ただ)しい処理(しょり)のコードを選択(せんたく)してください！<br>
-試行(しこう)回数(かいすう)は1回(かい)だけなので、注意(ちゅうい)してください！<br>
+選(えら)べるチャンスはは1回(かい)だけなので、注意(ちゅうい)してください！
 <!-- Select the right code to run! You have only one attempt, so be careful! -->
-
 
 
 ```template
@@ -75,7 +74,6 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("鉱床(こうしょう)発見(はっけん)！")
 })
 ```
 ```ghost

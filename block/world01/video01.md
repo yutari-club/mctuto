@@ -6,3 +6,5 @@
 1. [パンダの生息地](./level04/video01-04.html)
 1. [灰色オオカミ](./level05/video01-05.html)
 1. [バイオームへもう一度](./level06/video01-06.html)
+
+# [戻る](../video.html)

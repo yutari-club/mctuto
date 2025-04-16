@@ -12,7 +12,8 @@
 <!-- Use this holodeck to sharpen your skills!  -->
 
 ```template
-{}
+player.onChat("skills", function () {
+})
 ```
 
 ```ghost

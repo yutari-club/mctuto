@@ -13,6 +13,10 @@
 このシミュレーターで腕(うで)を磨(みが)け！
 <!-- Use this holodeck to sharpen your skills!  -->
 
+```template
+{}
+```
+
 ```ghost
 player.onChat("3", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
