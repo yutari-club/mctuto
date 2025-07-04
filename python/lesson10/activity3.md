@@ -26,7 +26,7 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 Write some code to calculate the answers to these four expressions. You need to get the Agent to the gold block, do this by placing a diamond or dirt
 block, from the chest, depending on the answer of the expression. From left to right, if the answer is 1 place a diamond block, if its 0 place a dirt block. 
 ```python

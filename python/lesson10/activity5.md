@@ -25,5 +25,5 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 Can you make the Agent move over every block in the area sideways, row by row, without it turning? 

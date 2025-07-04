@@ -9,9 +9,12 @@
 <!-- # Deep Stone  -->
 
 ## Step 1
-このコーディングスニペットを修正してください。<br>
+このコーディングスニペットを修正してみよう。<br>
+
 エージェントの目的：**左**の**金**ブロックにぶつかるまで地表を掘り下げます。<br>
-下っていく途中で、エージェントは手前に**石**があるかどうかを検知し、それを回収します。<br>
+
+下っていく途中で、エージェントは手前に**石**があるかどうかを検知し、それを回収するよ。<br>
+
 
 <!-- Fix this coding snippet. Here is the Agent's objective: dig down into the surface until it hits a **gold** block on the **left**. On the way down, the Agent will detect if **stone** is in front of it, and collect it. -->
 

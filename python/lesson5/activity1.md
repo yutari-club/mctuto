@@ -1,5 +1,5 @@
 ### @explicitHints true
-# Activity 1 -  Too heavy!
+# アクティビティ 1 - 重すぎる！
 
 ```python
 for i in range(2):
@@ -9,11 +9,12 @@ agent.move(FORWARD, 5)
 agent.place(FORWARD)
 ```
 
-## Step 1
-**Part 1:** Write some code so that the Agent will pick up the box and move **6** blocks **forward** and then place it **forward**.
+## ステップ 1
+**パート 1:** エージェントが箱を拾って**6**ブロック**前**に進み、**前**に置くようなコードを書いてみよう。
 
-## Step 2
-**Part 2:** Edit the same code so that the Agent goes back to the starting point. It needs to do the same thing but **4** times. Use a `||loops: for||` loop at the beginning. 
-The boxes will be automatically stacked. 
+## ステップ 2
+**パート 2:** 同じコードを編集して、エージェントがスタート地点に戻るようにしよう。<br>
+同じことを**4**回やる必要があるよ。最初に`||loops: for||`ループを使ってみよう。<br>
+箱は自動的に積み重なるよ。 
 ### ~ tutorialhint 
-Don't forget to indent everything after the loop using the **tab** key on the keyboard.
+ループの後にあるすべてをキーボードの**tab**キーを使ってインデントするのを忘れないでね。

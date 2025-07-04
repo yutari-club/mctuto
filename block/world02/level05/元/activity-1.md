@@ -11,8 +11,11 @@
 ## Step 1
 
 ３つのコードがあります。<br>
-地形とコードから正しい処理のコードを選択してください！<br>
-試行回数は1回だけなので、注意してください！<br>
+
+地形とコードから正しい処理のコードを選択してみよう！<br>
+
+試行回数は1回だけなので、注意してみよう！<br>
+
 <!-- Select the right code to run! You have only one attempt, so be careful! -->
 
 

@@ -10,8 +10,11 @@
 
 ## Step 1
 エージェントの**前のブロック**が**金ブロック**では**ない**場合、エージェントは金ブロックを探すための行動を続けます。<br>
-エージェントの**前**に**ブロックがない**場合は**前進**し、ブロックがある場合は**左折**します。<br>
-エージェントが**金ブロック**に到達したら、**破壊**し、**回収**します。<br>
+
+エージェントの**前**に**ブロックがない**場合は**前進**し、ブロックがある場合は**左折**するよ。<br>
+
+エージェントが**金ブロック**に到達したら、**破壊**し、**回収**するよ。<br>
+
 
 <!-- While the Agent is **inspecting the block forward** and the block is **not** the **gold block**, the Agent needs to **move forward**. If the Agent does **not** detect a block forward, the Agent also needs to move forward, otherwise it needs to **turn left**. When the Agent reaches the **gold block**, it needs to **destroy** and **collect** it.  -->
 

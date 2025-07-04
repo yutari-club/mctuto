@@ -9,8 +9,9 @@
 <!-- # Plant a Seed! -->
 
 ## Step 1
-まず、エージェントのインベントリを開き、種を渡します。<br>
-次に ``||player: 入力した時||`` コマンドを作成し、``||agent: 前を耕させる||`` and ``||agent: 前へ置かせる||``を追加します。
+まず、エージェントのインベントリを開き、種を渡するよ。<br>
+
+次に ``||player: 入力した時||`` コマンドを作成し、``||agent: 前を耕させる||`` and ``||agent: 前へ置かせる||``を追加するよ。
 
 <!-- First, interact with the Agent to open its inventory and give it the seeds. 
 Then create ``||player: on chat||`` command and add ``||agent: till forward||`` and ``||agent: place forward||``.  -->

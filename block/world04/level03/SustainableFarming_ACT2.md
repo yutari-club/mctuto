@@ -8,19 +8,20 @@
 ### @explicitHints true
 ### @flyoutOnly 0
 
-# Activity 2 – Out of this world.
+# アクティビティ 2 – この世のものではない
 
-## Step 1
-Now that we have placed all of the satellite beacons, we need to **control** the satellite and code a **current** dataset from the information 
-that is sent back.
+## ステップ 1
+衛星ビーコンをすべて設置したので、今度は衛星を**コントロール**して、<br>
+送り返されてくる情報から**現在の**データセットをコーディングする必要があるよ。
 
-## Step 2 
-First use a `||Input: control satelite||` coding block, inside of an `||loops: on start||` coding block. Inside of that place a `||Datasets: make dataset||`
-coding block, and set that block to be a `||Datasets: current||` dataset.
+## ステップ 2 
+まず`||loops: on start||コーディングブロックの中に`||Input: control satelite||コーディングブロックを使ってみよう。<br>
+その中に`||Datasets: make dataset||コーディングブロックを置いて、そのブロックを`||Datasets: current||データセットに設定しよう。
 
-## Step 2 
-Then place all of the `||Input: location satellite data||` inside. Now when run you will be able to see the satellite camera panning over the village 
-as its gathering data for the current dataset.
+## ステップ 3 
+次にすべての`||Input: location satellite data||をその中に置いてみよう。<br>
+これで実行すると、現在のデータセットのためのデータを集めながら、<br>
+衛星カメラが村の上をパンしている様子を見ることができるよ。
 
 ```ghost
 Input.beacon1_SF()

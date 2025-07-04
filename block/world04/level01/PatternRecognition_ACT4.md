@@ -1,4 +1,4 @@
-# Activity 4 – Who is that ocelot?
+# アクティビティ 4 – そのオセロットはだれ？
 
 ### @explicitHints true
 ### @hideIteration true 
@@ -8,7 +8,8 @@
 player.say
 ```
 
-## Step 1
-Now that we know the locations of the ocelots we need to find them to see if the AI was correct. Take the map from the chest, on the back of the jeep,
-and use it to find the **three** ocelots that we photographed earlier. Try to get close to each ocelots to confirm that they are infact the same animals 
-as before. **No coding is required for this Activity. **
+## ステップ 1
+オセロットの位置が分かったので、今度はAIが正しかったかどうか確かめるために実際に探しに行こう。<br>
+ジープの後ろのチェストからマップを取って、前に写真を撮った**3匹**のオセロットを探してみよう。<br>
+それぞれのオセロットに近づいて、前と同じ動物かどうか確かめてみよう。<br>
+**このアクティビティにはコーディングは必要ないよ。**

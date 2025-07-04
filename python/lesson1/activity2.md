@@ -1,16 +1,18 @@
 ### @explicitHints true
 ### @hideIteration true 
 
-# Activity 2 - Whats missing?
+# アクティビティ 2 - 何が足りないかな？
 
 ```python
 player.say()
 ```
 
-## Step 1
-Find out what syntax is missing from the codes on the tv monitors, then place the matching syntax blocks, from the chest, on the gold.
-Check the command syntax by using the `||player: say||` command from the `||player:player||` group on the left side of the coding window.
+## ステップ 1
+テレビモニターのコードから何の文法が足りないかを見つけよう。<br>
+
+チェストから合う文法ブロックを取って金ブロックの上に置いてみよう。
+コーディング画面の左側にある`||player:player||`グループの`||player: say||`コマンドを使って、コマンドの文法を確かめてみよう。
 
 #### ~ tutorialhint 
-If you want to remove the syntax blocks, use the **try again** button by talking to the developer. 
+文法ブロックを取り除きたいときは、開発者に話しかけて**もう一度**ボタンを使ってね。 
 

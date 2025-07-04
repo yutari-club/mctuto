@@ -13,8 +13,8 @@
 Step 1 is to do hazing two.  
 
 ## ステップ2
-完了したら、**Play**ボタンを押してコードをコンパイルします。</br>
-コードをMinecraftで実行するのを忘れないでください。</br>
+完了したら、**Play**ボタンを押してコードをコンパイルするよ。</br>
+コードをMinecraftで実行するのを忘れないでしてね。</br>
 
 ```blocks
 player.onChat("run", function () {

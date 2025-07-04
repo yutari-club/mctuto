@@ -11,11 +11,15 @@
 ## Step 1
 
 **種植え**と**畝**の2つの関数が用意されている。
-``||player: チャットを入力した時||`` を作成し、その中で``||functions: 呼び出し 畝||``を呼び出します。<br>
+``||player: チャットを入力した時||`` を作成し、その中で``||functions: 呼び出し 畝||``を呼び出するよ。<br>
+
 ``||agent: エージェントの周りのブロック||``の種類を調べる ``||logic: もし||``を追加する。<br>
-もし下にあるブロックが ``||blocks: ラピスラズビ||``であれば、``||agent: 右向き||``、 ``||agent: 前に移動||``、 ``||agent: 右向き||``が必要です。 <br>
-``||logic: でなければ||``の中では ``||agent: 下のブロック||``が``||blocks: クオーツ||``なら``||agent: 左向き||``、 ``||agent: 前に移動||``、 ``||agent: 左向き||``とします。 <br>
-最後に ``||functions: 呼び出し 畝||``を配置します。
+
+もし下にあるブロックが ``||blocks: ラピスラズビ||``であれば、``||agent: 右向き||``、 ``||agent: 前に移動||``、 ``||agent: 右向き||``が必要だよ。 <br>
+
+``||logic: でなければ||``の中では ``||agent: 下のブロック||``が``||blocks: クオーツ||``なら``||agent: 左向き||``、 ``||agent: 前に移動||``、 ``||agent: 左向き||``とするよ。 <br>
+
+最後に ``||functions: 呼び出し 畝||``を配置するよ。
 <!-- Two functions **plantSeed** and **plantSection** are provided for youの. 
 Create a new ``||player: on chat||`` command and ``||functions: call plantSection||`` within it. 
 Add an ``||logic: if||`` statement that checks if ``||agent: agent inspects block down||`` .  
@@ -59,8 +63,10 @@ function 種植え () {
 */
 ```
 ## Step 2
-``||player:チャットを入力した時||``に``||logic:もし||`` ステートメントを追加してください。<br>
-``||logic:もし||``の **真**に ``||logic:" " = " "||``を追加します。<br>
+``||player:チャットを入力した時||``に``||logic:もし||`` ステートメントを追加してみよう。<br>
+
+``||logic:もし||``の **真**に ``||logic:" " = " "||``を追加するよ。<br>
+
 もし``||agent:下のブロック||``が ``||blocks:ラピスラズビ||``と**等しい (=)**場合、``||agent:右折||``、``||agent:前に移動||``、 ``||agent:右折||``を行う必要があります。
 
 <!-- Add an ``||logic:if||`` statement to the ``||player:on chat||`` command. 
@@ -111,8 +117,11 @@ function 種植え () {
 
 ## Step 3
 ``||logic:もし|``ロックの**+**記号を2回クリックする。<br>
-**でなければ**を削除するには **-** をクリックします。<br>
+
+**でなければ**を削除するには **-** をクリックするよ。<br>
+
 ``||logic:でなければもし||``の**偽**に ``||logic:" " = " "||``ブロックを追加する。<br>
+
 もし ``||agent:下のブロック|`` が ``||blocks:クォーツブロック|`` と **等しい (=)** ならば、エージェントは``||agent:左折||``と``||agent:前に移動||``、``||agent:左折||``が必要である。 
 
 
@@ -169,7 +178,7 @@ function 種植え () {
 ```
 
 ## Step 4
-最後に ``||functions: 呼び出し 畝||`` を ``||player:チャットを入力した時||`` コマンドの下に ``||logic:もし||`` を追加します。 
+最後に ``||functions: 呼び出し 畝||`` を ``||player:チャットを入力した時||`` コマンドの下に ``||logic:もし||`` を追加するよ。 
 
 <!-- Finally add another ``||functions: call plantSection||`` within the ``||player:on chat||`` command outside of the ``||logic:if||`` statement.   -->
 
@@ -219,7 +228,7 @@ function 種植え () {
 */
 
 /**
-* Ifブロックの＋ボタンをクリックすると、Elseを追加できます。
+* Ifブロックの＋ボタンをクリックすると、Elseを追加できるよ。
 */
 
 ```

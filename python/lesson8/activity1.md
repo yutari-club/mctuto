@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# Activity 1 - One row at a time. 
+# アクティビティ 1 - 一列ずつ作ってみよう 
 
 ```python
 agent.till(RIGHT)
@@ -8,22 +8,22 @@ agent.move(FORWARD, 5)
 agent.set_slot(1)
 ```
 
-## Step 1
-**Part 1:** Write some code to make the Agent move forward while tilling and planting saplings, on the **grass** blocks, to its left. Example of 
-function structure: 
+## ステップ 1
+**パート 1:** エージェントが前進しながら、左側の**草**ブロックで耕して苗を植えるコードを書いてみよう。<br>
+関数の構造の例： 
 ```python
 def function_name():
     agent.till(RIGHT)
 ```
 
 ### ~ tutorialhint 
-Remember to describe, in a comment, what your function does.  
+関数が何をするかをコメントで説明するのを忘れないでね。  
 
-## Step 2 
-**Part 2:** Add to the code to make the Agent use fertilizer on the saplings, **6** times each.
+## ステップ 2 
+**パート 2:** エージェントが苗に肥料を**6**回ずつ使うようにコードに追加しよう。
 ### ~ tutorialhint 
-The Agent has fertilizer in its **second** inventory slot. Switch between the Agent's **first** and **second** slots using the `||agent:set active slot||`
-command.  
+エージェントのインベントリの**2番目**のスロットに肥料が入っているよ。<br>
+`||agent:set active slot||`コマンドを使ってエージェントの**1番目**と**2番目**のスロットを切り替えてみよう。  
 
 ```template
 //Replace with your functions below #

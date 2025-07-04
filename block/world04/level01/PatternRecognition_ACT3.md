@@ -8,20 +8,21 @@
 ### @explicitHints true
 ### @flyoutOnly 0
 
-# Activity 3 – Professional Tracker.
+# アクティビティ 3 – プロの追跡者
 
-## Step 1
-We now need to code the AI that is going to track the ocelots. 
-You will need to use the **current** data that is coming in from the savannah, 
-and **compare** it against your **historical** dataset that you compiled in the last Activity.
+## ステップ 1
+今度はオセロットを追跡するAIをコーディングする必要があるよ。<br>
+サバンナから入ってくる**現在の**データを使って、<br>
+前のアクティビティで作った**過去の**データセットと**比較**してみよう。
 
-## Step 2
-First use a `||AI: semi-supervised machine learning||` coding block and place a `||Datasets: input datasets||` coding block inside.
-After that, place a `||Datasets: compare datasets||` coding block. Set to **current** dataset and then **historical**.
+## ステップ 2
+まず`||AI: semi-supervised machine learning||`コーディングブロックを使って、その中に`||Datasets: input datasets||`コーディングブロックを置いてみよう。<br>
+その後、`||Datasets: compare datasets||`コーディングブロックを置いて、**現在の**データセット、それから**過去の**データセットに設定しよう。
 
-## Step 3
-Then place a `||AI: analyze pattern data||` coding block. Followed by a `||Output: locate ocelots||` coding block. 
-Now when you run the code a map of the ocelots locations will appear.
+## ステップ 3
+次に`||AI: analyze pattern data||`コーディングブロックを置いてみよう。<br>
+その後に`||Output: locate ocelots||`コーディングブロックを置こう。<br>
+これでコードを実行すると、オセロットの位置を示すマップが表示されるよ。
 
 ```ghost
 Datasets.compare_PR()

@@ -1,4 +1,4 @@
-# Activity 4 – Green thumb.
+# アクティビティ 4 – 緑の手
 
 ### @explicitHints true
 ### @hideIteration true 
@@ -8,7 +8,7 @@
 player.say
 ```
 
-## Step 1
-Now that the AI has predicted the best locations to farm, 
-go to the corrects plots and tell the farmers to plant there by pressing the button on the gold block.
-**No coding is required for this Activity.**
+## ステップ 1
+AIが農業に最適な場所を予測したので、<br>
+正しい区画に行って、金ブロックのボタンを押して農家の人たちにそこに植えるように伝えよう。<br>
+**このアクティビティにはコーディングは必要ないよ。**

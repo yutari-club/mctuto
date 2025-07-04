@@ -24,7 +24,7 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 **Activity 1 - Game controls:**
 There are two 'buttons' on the controller, blue is to make the Agent move left and red is to make the Agent move right. Write some code 
 so that when you stand on the red or blue blocks the Agent moves in the correct direction. Use the test for block command below, to check if a block 
@@ -36,7 +36,7 @@ blocks.test_for_block(BLOCK_NAME, pos(0, 0, 0))
 ### ~ tutorialhint
 A `||loops:while||` loop with the condition set to **True** will repeat continuously. Do **not** delete any pregiven code in the coding window.
 
-## Step 2
+## ステップ 2
 **Activity 2 - Firing system -**
 **Part 1:** Write another function to make the Agent shoot the gold blocks above it.
 Use a `||mobs: mob spawn||` command with **FIREWORKS_ROCKET** to shoot. Each gold block shot needs to be replaced with an **AIR** block, to make it disappear.
@@ -46,7 +46,7 @@ The two commands together look like:
 ```python 
 positions.add(agent.get_position(), pos(0, 0, 0))
 ```
-## Step 3
+## ステップ 3
 **Part 2:** Add to the code to make the Agent shoot at the second row of gold blocks, using an additional `||logic: elif||`
 conditional. 
 

@@ -10,9 +10,12 @@
 
 ## Step 1
 提供されたサンプルコードを使って1列のブロックを配置する。<br>
+
 その後、エージェントは同じ手順を**4回**繰り返す必要があり、次に``||agent: 上に移動||`` に移動してさらに**繰り返し**ます。<br>
-``||variables: height||``を取得し、``||loops: くりかえす||``に追加します。<br>
-このコードで**1軒**の家を建てることができます。
+
+``||variables: height||``を取得し、``||loops: くりかえす||``に追加するよ。<br>
+
+このコードで**1軒**の家を建てることができるよ。
 
 <!-- Use the provided sample code to place 1 row of blocks. 
 Then Agent needs to repeat the same procedure **4 times**, then ``||agent: move up||`` and **repeat** it more. 

@@ -4,16 +4,16 @@
 .
 ```
 
-# Activity 1 - Sorting things out. 
+# アクティビティ 1 - 整理整頓しよう 
 
-## Step 1
-Create **two** new variables called **b** and **c**. The value of **b** should be **melon** and the value of **c** should be **apple**. 
+## ステップ 1
+**b**と**c**という**2つ**の新しい変数を作ってみよう。**b**の値は**melon**に、**c**の値は**apple**にしよう。 
 ### ~ tutorialhint
 Remember to use quotes with strings.
  
-## Step 2
-Look at the monitor on the wall and change the fruit variable value to match the sequence. 
-Run the code and press the matching fruit buttons in the same sequence as in the chat, untill all of the lights turn on. 
+## ステップ 2
+壁のモニターを見て、フルーツ変数の値をその順番に合わせて変更しよう。 
+コードを実行して、チャットに表示された順番と同じようにフルーツボタンを押して、すべてのライトが点くようにしよう。 
 
 ```template
 //Replace the lines below with your code #

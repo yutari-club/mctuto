@@ -1,19 +1,19 @@
 ### @explicitHints true
 ### @hideIteration true 
-# Activity 3 - One step at a time.
+# アクティビティ 3 - 一歩ずつ作ってみよう
 
 ```python
 blocks.place(GRASS_BLOCK, pos(0, 0, 0))
 blocks.block_with_data(GRASS_BLOCK, 0)
 ```
 
-## Step 1
-Write some code to construct a whole staircase, out of **brick blocks** (bricks). You will need to change the **second** and **third** coordinate of the **second** parameter in all of the three `||blocks: place block at position||` commands. You will also need to update the data values in the `||blocks: block with data||` commands. Remember, each data value equals direction with stairs.
+## ステップ 1
+**レンガブロック**で階段全体を作るコードを書いてみよう。3つの`||blocks: place block at position||`コマンドすべてで、**2番目**のパラメーターの**2番目**と**3番目**の座標を変更する必要があるよ。`||blocks: block with data||`コマンドのデータ値も更新してね。覚えておこう、それぞれのデータ値は階段の向きと同じだよ。
 
 ### ~ tutorialhint 
-Look at the walls to see the east, west, north and south directions.
-For data values: 
-0 = W  
-1 = E   
-2 = N  
-3 = S
+壁を見て、東、西、北、南の方向を確認してね。
+データ値について： 
+0 = 西  
+1 = 東   
+2 = 北  
+3 = 南

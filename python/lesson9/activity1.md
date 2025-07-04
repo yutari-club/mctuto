@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# Activity 1 - Game controls.  
+# アクティビティ 1 - ゲームコントロール  
 
 ```python
 agent.move(FORWARD, 5)
@@ -15,12 +15,12 @@ while True:
     pass
 ```
 
-## Step 1
-There are two 'buttons' on the controller, **blue** is to make the Agent move left and **red** is to make the Agent move right. Write a code 
-so that when you stand on the red or blue blocks the Agent moves in the correct direction.  
+## ステップ 1
+コントローラーには2つの「ボタン」があるよ。**青**はエージェントを左に動かし、**赤**はエージェントを右に動かすよ。<br>
+赤や青のブロックの上に立ったときにエージェントが正しい方向に動くコードを書いてみよう。  
 
 ### ~ tutorialhint
-A `||loops:while||` loop with the condition set to **True** will repeat continuously. 
+条件を**True**に設定した`||loops:while||`ループは継続的に繰り返すよ。 
 
 ```template
 //Replace with your functions below #

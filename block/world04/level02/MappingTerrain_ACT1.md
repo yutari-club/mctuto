@@ -1,4 +1,4 @@
-# Activity 1 – Flying high.
+# アクティビティ 1 – 高く飛んでみよう
 
 ### @explicitHints true
 ### @hideIteration true 
@@ -7,8 +7,8 @@
 ```python
 player.say
 ```
-## Step 1
-Data needs to be gathered about the forest, by taking pictures.
-Whilst flying over the forest use your camera, that's in your hotbar, to take pictures of the terrain. 
-**No coding is required for this activity.**
+## ステップ 1
+森についてのデータを集めるために、写真を撮る必要があるよ。<br>
+森の上を飛んでいる間に、ホットバーにあるカメラを使って地形の写真を撮ってみよう。<br>
+**このアクティビティにはコーディングは必要ないよ。**
 

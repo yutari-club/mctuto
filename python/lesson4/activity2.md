@@ -1,31 +1,32 @@
 ### @explicitHints true
 
-# Activity 2 - Dietary requirement.
+# アクティビティ 2 - 犬のエサやりをしよう
 
 ```python
 blocks.place()
 ```
 
-## Step 1
-Give the **first** dog everything that's already in the predefined list by changing the values of the first **4** `||blocks:place block at position||`
-commands. So that they each place, in order, one of the items in the list. Then give the food from the chest to dog number one.
+## ステップ 1
+最初の**4つ**の`||blocks:place block at position||`コマンドの値を変更して、<br>
+**最初**の犬に、あらかじめ決められたリストにあるものをすべてあげよう。<br>
+それぞれがリストの中のアイテムを順番に置くようにして、チェストからエサを1番目の犬にあげよう。
 
 ### ~ tutorialhint 
-To drop items from the hot bar press the [**Q**] key on your keyboard. 
+ホットバーからアイテムを落とすには、キーボードの[**Q**]キーを押してね。 
 
-## Step 2
-Give the **second** dog everything that's already in the list with additonal vitamins added. 
-Do this by using the **append** method to add the variable **Vitamins** to the end of the list.
-Then change the value of the last `||blocks: place block at position||` command so that it places the vitamins in the machine, and 
-then give the food to dog number two.
+## ステップ 2
+**2番目**の犬には、リストにあるものすべてと、追加でビタミンをあげよう。<br>
+**append**メソッドを使って**Vitamins**変数をリストの最後に追加してみよう。<br>
+最後の`||blocks: place block at position||`コマンドの値を変更して、<br>
+マシンにビタミンを置き、2番目の犬にエサをあげよう。
 
-## Step 3
-Give the **third** dog everything that's already in the list but with no **beef**. 
-Do this by using the **pop** method to remove the variable **Beef** from the list.
-Then give the food to dog number three.
+## ステップ 3
+**3番目**の犬には、リストにあるものすべてをあげるけど、**beef**は抜いてあげよう。<br>
+**pop**メソッドを使って**Beef**変数をリストから削除してみよう。<br>
+それから3番目の犬にエサをあげよう。
 
 ### ~ tutorialhint 
-With the **pop** method you must use the list position value and **not** its name. 
+**pop**メソッドでは、変数の名前ではなく、リストの位置の値を使う必要があるよ。 
 
 ```template
 Bone = world(-21, 45, -31)

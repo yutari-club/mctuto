@@ -25,7 +25,7 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 Calculate these four sums using code. You need to get the Agent to the gold block, do this by placing a diamond or dirt block depending on the answer of the sums.  If the answer is 1 place a diamond block, if its 0 place a dirt block. 
 
 

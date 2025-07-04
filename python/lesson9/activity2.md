@@ -25,7 +25,7 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 Make the Agent place the Redstone lamps on top of the Redstone blocks lights while walking forwards on the walkway.
 
 ### ~ tutorialhint

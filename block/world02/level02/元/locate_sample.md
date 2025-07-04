@@ -9,8 +9,10 @@
 <!-- # Locate the Sample!  -->
 
 ## Step 1
-エージェントがブロックの**下**を**検査**し、**青氷**を**発見しない間**は、エージェントに**破壊**と**下への移動**を行わせるプログラムをします。<br>
+エージェントがブロックの**下**を**検査**し、**青氷**を**発見しない間**は、エージェントに**破壊**と**下への移動**を行わせるプログラムをするよ。<br>
+
 エージェントが**青氷**を見つけたら、**破壊**してサンプルを**回収**する必要があります。 <br>
+
 見つけるのは『**青氷**』！氷ではないことに気を付けよう。
 <!-- **While** the Agent **inspects the block down** and does **not** find **blue ice**, program the Agent to **destroy** and **move down**. When the Agent locates the **blue ice**, it needs to **destroy down** and **collect** the sample.  -->
 

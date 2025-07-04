@@ -9,8 +9,10 @@
 <!-- # Collaborative activity -->
 
 ## Step 1
-宇宙空間で作業するために必要なブロックを選択します。<br>
+宇宙空間で作業するために必要なブロックを選択するよ。<br>
+
 レッスンで使用したすべてのブロックが用意されています！<br>
+
 <!-- Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use! -->
 
 ```template

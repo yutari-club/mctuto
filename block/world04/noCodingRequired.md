@@ -3,9 +3,9 @@
 ```python
 player.say
 ```
-# No coding required.
+# コーディングは必要ないよ
 ## Introduction @unplugged
-No coding is required. Please go back to the map.
+コーディングは必要ないよ。マップに戻ってね。
 
-## Step 1 
-No coding is required. Please go back to the map.
+## ステップ 1 
+コーディングは必要ないよ。マップに戻ってね。

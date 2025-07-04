@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# Activity 1 - Water barrier. 
+# アクティビティ 1 - 水の壁を作ろう 
 
 ```python
 agent.turn(LEFT_TURN)
@@ -11,13 +11,13 @@ while True:
       pass
 ```
 
-## Step 1
-**Part 1:** Write some code to make the Agent move forward when there is Redstone dust in front of it. 
+## ステップ 1
+**パート 1:** エージェントの前にレッドストーンダストがあるときに前進するコードを書いてみよう。 
 
-## Step 2 
-**Part 2:** Add a sequence to the code so that the Agent places a two-block high wall to its right as it moves. 
+## ステップ 2 
+**パート 2:** エージェントが移動しながら右側に2ブロックの高さの壁を置くようにコードにシーケンスを追加しよう。 
 ### ~ tutorialhint
-You do not have to give the Agent any blocks, it already has the required blocks in its inventory.  
+エージェントにブロックを渡す必要はないよ。すでにインベントリに必要なブロックが入っているからね。  
 ```template
 //Replace the lines below with your code #     
 //While loop with an Agent detect condition |Part 1

@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# Activity 3 - Pasture of trees. 
+# アクティビティ 3 - Pasture of trees. 
 
 ```python
 agent.turn(RIGHT_TURN)
@@ -18,11 +18,11 @@ elif:
     pass
 ```
 
-## Step 1
+## ステップ 1
 **Part 1:** Write three new functions with different sequences, one to make the Agent **move forward**, one to **turn left**, and one to **turn right**. 
 Then use these functions in a `||loops:for||` loop to make the Agent pass over every block in the area, row by row, until it reaches the gold block.
 
-## Step 2 
+## ステップ 2 
 **Part 2:** Add to the code to make the Agent till the grass blocks that it passes over and plant a sapling.
 Do this by adding an `||logic:if else||` conditional, that inspects for grass blocks, in the function that moves the Agent forward. 
 

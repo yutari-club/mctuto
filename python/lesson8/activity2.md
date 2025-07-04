@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# Activity 2 - Breaking boulders.
+# アクティビティ 2 - Breaking boulders.
 
 ```python
 agent.destroy(FORWARD)
@@ -16,7 +16,7 @@ else:
     pass
 ```
 
-## Step 1
+## ステップ 1
 **Part 1:** Write some code to make the Agent move forward while breaking and collecting each **stone** block in its way.
 ### ~ tutorialhint
 Agent inspect condition command structure:  
@@ -24,7 +24,7 @@ Agent inspect condition command structure:
 agent.inspect(AgentInspection.BLOCK, DIRECTION) == BLOCK_TYPE
 ```
 
-## Step 2 
+## ステップ 2 
 **Part 2:** Add to the code to now make the Agent till and plant saplings on the **grass** blocks.  
 ### ~ tutorialhint
 Agent inspect condition command structure:  

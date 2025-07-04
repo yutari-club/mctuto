@@ -1,4 +1,4 @@
-# Activity 4 – A Wild Ride.
+# アクティビティ 4 – ワイルドな旅
 
 ### @explicitHints true
 ### @hideIteration true 
@@ -8,6 +8,7 @@
 player.say
 ```
 
-## Step 1
-In this Activity, you need to go to the different locations that the AI found and close them down. 
-You need to use banners to signify that the areas are closed and nobody can access them. **No coding is required for this Activity.** 
+## ステップ 1
+このアクティビティでは、AIが見つけたいろいろな場所に行って、そこを閉鎖する必要があるよ。<br>
+バナーを使って、そのエリアが閉鎖されていて誰も入れないことを示す必要があるんだ。<br>
+**このアクティビティにはコーディングは必要ないよ。** 

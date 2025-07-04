@@ -11,7 +11,9 @@
 ## Step 1
 
 **金**ブロックの上に立っている間に**自分自身**に雷を落とさなければならない。<br>
+
 まず、``||loops: 最初だけ||``にダメージを受けないように``||gameplay: ゲームモード適用||``を配置して、**クリエイティブ**に設定する。さらに``||gameplay: 天気||``を配置して、**雨**に設定する。<br>
+
 次に``||player: 歩いた時||``の中に``||logic: もし||``と``||blocks: 存在する|``、``||mobs: スポーンさせる|``を配置して、雷[**ライトニング ボルト**]を正確なタイミングで落とす。
 
 <!-- You need to make the lightning strike while you are standing on the **gold plates**. First, you need to set the ``||gameplay: weather||`` to rain ``||loops: on start||``. Then placing ``||logic: if||``, ``||blocks: test for||`` and ``||mobs: spawn a lightning bolt||`` inside ``||player: on walk||`` to make the lightning strike at the exact moment.  -->

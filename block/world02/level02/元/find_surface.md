@@ -9,7 +9,8 @@
 # 溶岩に到達する
 
 ## Step 1
-エージェントがステーションから出るように、はじめに**１ブロック前進**させてください。<br>
+エージェントがステーションから出るように、はじめに**１ブロック前進**させてしてね。<br>
+
 エージェントが**下**のブロックを**検査**し、それが**溶岩**でない間、エージェントは**下に移動**する必要があります。
 <!-- Program the Agent to **move forward**. While the Agent **inspects** block **down** and it is **not magma**, the Agent needs to **move down**.  -->
 

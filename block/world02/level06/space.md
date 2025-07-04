@@ -9,8 +9,10 @@
 <!-- # Collaborative activity -->
 
 ## Step 1
-宇宙(うちゅう)空間(くうかん)で作業(さぎょう)するために必要(ひつよう)なブロックを選択(せんたく)します。<br>
+宇宙空間で作業するために必要なブロックを選択するよ。<br>
+
 レッスンで使用(しよう)したすべてのブロックが用意(ようい)されています！<br>
+
 <!-- Select the blocks you need to work in space. You will find all the blocks we have used throughout the lessons for you to use! -->
 
 ```template

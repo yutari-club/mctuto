@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# Activity 1 - Animal categorizing.
+# アクティビティ 1 - 動物を分類してみよう
 
 ```python
 blocks.place()
@@ -8,9 +8,9 @@ mobs.spawn()
 world(0, 0, 0)
 ```
 
-## Step 1
-Write some code with a list, named **My_list**, of the animals going from **left** to **right** in the Minecraft world. 
-Place **4** more `||mobs:spawn mob at position||` commands after the one that's already given. Use the information from the signs 
+## ステップ 1
+Minecraftワールドで**左**から**右**へ並んでいる動物たちを、**My_list**という名前のリストに書き出すコードを作ってみよう。 
+すでにあるコマンドの後に、`||mobs:spawn mob at position||`コマンドを**4つ**追加で配置してみよう。 Use the information from the signs 
 on the pens to complete these commands. 
 
 ### ~ tutorialhint 

@@ -9,7 +9,7 @@ location1 = pos(0, 3, 0)
 ```
 
 #TESTING GROUNDS 2
-## Step 1
+## ステップ 1
 TESTING GROUND 2
 
 ```ghost

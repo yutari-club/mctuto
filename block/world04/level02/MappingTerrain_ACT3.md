@@ -1,18 +1,20 @@
 ### @explicitHints true
 ### @flyoutOnly 0
 
-# Activity 3 – Detecting Anomalies.
+# アクティビティ 3 – 異常を発見しよう
 
-## Step 1
-In this Activity, you have to use the dataset that you made, inside a machine learning algorithm. The algorithm needs to search for anomalies in the dataset
-and outline them on the map. First use an `||AI: machine learning||` coding block inside of a `||loops: on start||` coding block.
+## ステップ 1
+このアクティビティでは、作ったデータセットを機械学習アルゴリズムの中で使う必要があるよ。<br>
+アルゴリズムはデータセットの中の異常を探して、マップ上に輪郭を描く必要があるんだ。<br>
+まず`||loops: on start||コーディングブロックの中に`||AI: machine learning||コーディングブロックを使ってみよう。
 
-## Step 2
-Inside of that, place an `||Datasets: input dataset||` coding block. Then place an `||AI: analyze data||` coding block.
+## ステップ 2
+その中に`||Datasets: input dataset||コーディングブロックを置いてみよう。<br>
+それから`||AI: analyze data||コーディングブロックを置こう。
 
-## Step 3
-We have now imported and analyzed the data, the algorithm should have a result. However, so that we can see the result on the map place an 
-`||Output: show locations||` coding block.
+## ステップ 3
+データを読み込んで分析したので、アルゴリズムに結果が出ているはずだよ。<br>
+でもマップ上で結果を見ることができるように、`||Output: show locations||コーディングブロックを置いてみよう。
 
 
 ```ghost

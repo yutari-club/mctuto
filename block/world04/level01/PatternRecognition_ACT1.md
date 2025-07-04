@@ -1,4 +1,4 @@
-# Activity 1 – Into the bush.
+# アクティビティ 1 – ジャングルの中へ
 
 ### @explicitHints true
 ### @hideIteration true 
@@ -8,10 +8,11 @@
 player.say
 ```
 
-## Step 1
-We are in the middle of a savannah studying the movement patterns of ocelots. 
-We want to use AI to help us in this endeavor, which would greatly aid the conservation efforts directed towards these animals. 
-We first need to make a photographic dataset of the ocelots as each has a unique coat pattern. We will then be able to track each ocelot by comparing 
-the data that we have, against the new data comming in from all over the savannah. 
-Use the map, from the chest on the back of the jeep, to find the different trap cameras. Then use each camera to photograph an ocelot by 
-pressing the button at the back. **No coding is required for this Activity.**
+## ステップ 1
+私たちはサバンナの真ん中でオセロットの動きを研究しているよ。<br>
+AIを使ってこの研究を手伝ってもらいたいんだ。そうすることで、この動物たちを守る取り組みにとても役立つよ。<br>
+まずはオセロットの写真データセットを作る必要があるんだ。どのオセロットも特別な毛の模様を持っているからね。<br>
+そうすることで、サバンナ中から入ってくる新しいデータと比較して、それぞれのオセロットを追跡できるようになるよ。<br>
+ジープの後ろのチェストからマップを取って、いろいろな罠カメラを探してみよう。<br>
+それから、それぞれのカメラでオセロットの写真を撮ってみよう。後ろのボタンを押すんだよ。<br>
+**このアクティビティにはコーディングは必要ないよ。**

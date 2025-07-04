@@ -8,14 +8,14 @@
 ### @explicitHints true
 ### @flyoutOnly 0
 
-# Activity 2 – Straight from the tap.
+# アクティビティ 2 – 蓛口から直接
 
-## Step 1
-Now that you have collected water samples from the surrounding rivers, code a **current** dataset with the water data from each of the locations.
+## ステップ 1
+周囲の川から水のサンプルを集めたので、今度はそれぞれの場所の水データで**現在の**データセットをコーディングしよう。
 
-## Step 2 
-Start by using a `||Datasets: make dataset||` coding block, set to `||Datasets: current||`. Inside of that, place all of the `||Input: water data||`
-from each of the locations. 
+## ステップ 2 
+`||Datasets: current||に設定した`||Datasets: make dataset||コーディングブロックを使って始めよう。<br>
+その中に、それぞれの場所の`||Input: water data||をすべて置いてみよう。 
 
 ```ghost
 Input.waterData1_WQ()

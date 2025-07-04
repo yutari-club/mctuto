@@ -9,15 +9,22 @@
 <!-- # Make it rain! -->
 
 ## Step 1
-マインクラフトで踊りながら雨を降らせましょう！<br>
+マインクラフトで踊りながら雨を降らせよう！<br>
+
 これを実現するには、いくつかのイベントハンドラを使う必要があります。<br>
 
-1. 例えば**walk**、**jump**、**break**などの変数を作成します。<br>
-1. イベントハンドラを選択します。例えば``||player:プレイヤーが落下した時||``、``||player:プレイヤー歩いた時||`` などです。<br>
-1. 対応する各イベントブロック内で、新しい``||variables:変数||``を``||logic:真||``設定します。<br>
-1. ``||loops:ずっと||``ブロックを使用し、その中に``||logic:if文||``をドラッグします。<br>
 
-すべての条件を``||logic:真||``設定し、``||gameplay: 現在の天気を||``ブロックを**雨**に設定します。<br>
+1. 例えば**walk**、**jump**、**break**などの変数を作成するよ。<br>
+
+1. イベントハンドラを選択するよ。例えば``||player:プレイヤーが落下した時||``、``||player:プレイヤー歩いた時||`` などだよ。<br>
+
+1. 対応する各イベントブロック内で、新しい``||variables:変数||``を``||logic:真||``設定するよ。<br>
+
+1. ``||loops:ずっと||``ブロックを使用し、その中に``||logic:if文||``をドラッグするよ。<br>
+
+
+すべての条件を``||logic:真||``設定し、``||gameplay: 現在の天気を||``ブロックを**雨**に設定するよ。<br>
+
 
 <!-- Make it rain while you dance in Minecraft! To make it happen you will need to use several event handlers. 
 1. Create your variables, for example: **walk**, **jump** and/or **break**. 

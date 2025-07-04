@@ -9,8 +9,10 @@
 
 ## Step 1
 ３つの関数、``||functions: 種植え||``と``||functions: 畝||``、``||functions: 方向転換||``が用意されいます。<br>
-まず、新しい``||player: チャットを入力した時||``を作成し、``||loops:もし、くりかえし||`` を追加します。<br>
-``||loops:もし、くりかえし||``の条件は、``||agent:下のブロック||``が**金ブロック** ではない場合、 ``||functions: 呼び出し||``で必要な関数を呼び出します。
+
+まず、新しい``||player: チャットを入力した時||``を作成し、``||loops:もし、くりかえし||`` を追加するよ。<br>
+
+``||loops:もし、くりかえし||``の条件は、``||agent:下のブロック||``が**金ブロック** ではない場合、 ``||functions: 呼び出し||``で必要な関数を呼び出するよ。
 
 <!-- You are provided with three functions: ``||functions: plantSeed||``, ``||functions: plantSection||`` and ``||functions: checkTurn||``. 
 First, create  a new ``||player: on chat||`` command and add your condition: ``||loops:while||`` the Agent is ``||agent:inspecting the block down||``, and it is not a **gold block**, ``||functions: call||`` the necessary functions.  -->

@@ -25,5 +25,5 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 Make the Agent move forward to the gold block while breaking the melons but leaving the pumpkins alone. 

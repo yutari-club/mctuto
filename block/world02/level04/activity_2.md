@@ -5,13 +5,15 @@
 ### @explicitHints 1
 
 
-# 石(いし)を収集(しゅうしゅう)
+# 石を収集
 <!-- # Surroundings  -->
 
 ## Step 1
-**下(した)**が**氷塊(ひょうかい)**ブロックで**ない**ことを検査(けんさ)しながら、もしエージェントが**右(みぎ)**にブロックを**検出(けんしゅつ)**したら、**前進(ぜんしん)**する必要(ひつよう)がある。<br>
-そうでなければ**右(みぎ)**に**移動(いどう)**する必要(ひつよう)がある。<br>
-同(おな)じループの中(なか)で、もしエージントが**下(した)**のブロックを**検査(けんさ)**し、それが**丸石(まるいし)**か**砂利(じゃり)**であれば、**下(した)**に**破壊(はかい)**し、すべてを**収集(しゅうしゅう)**する必要(ひつよう)があります。
+**下**が**氷塊**ブロックで**ない**ことを検査しながら、もしエージェントが**右**にブロックを**検出**したら、**前進**する必要がある。<br>
+
+そうでなければ**右**に**移動**する必要がある。<br>
+
+同(おな)じループの中で、もしエージントが**下**のブロックを**検査**し、それが**丸石(まるいし)**か**砂利(じゃり)**であれば、**下**に**破壊**し、すべてを**収集**する必要があります。
 <!-- While **inspecting the block down** that is **not** **packed ice**, if the Agent **detects the block right**, then it needs to **move forward**. Otherwise it needs to **move right**. Within the same loop, if the Agent **inspects the block down** and it is either **cobblestone** **or** **gravel**, then it needs to **destroy down** and **collect all**.  -->
 
 

@@ -9,7 +9,8 @@
 
 ## Step 1
 あなたの課題は``||player:溶岩を歩いて||``渡ること。<br>
-**最も近いプレーヤー**に``||mobs:火炎耐性||``を与えてください。
+
+**最も近いプレーヤー**に``||mobs:火炎耐性||``を与えてしてね。
 <!-- Your challenge is to ``||player:swim||`` across the lava lake. Try ``||mobs:applying fire resistance||`` to the **nearest player**. -->
 ```template
 {}

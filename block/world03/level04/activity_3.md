@@ -9,8 +9,11 @@
 
 ## Step 1
 **石**を建築材料として使用し、**3**つの``||variables: 変数||``作成し、それらに幅、長さ、高さの名前をつける。<br>
-``||variables: 変数||``に正しいパラメータを設定します。<br>
-変数を``||player: 入力した時||`` に追加するのを忘れないでください。<br>
+
+``||variables: 変数||``に正しいパラメータを設定するよ。<br>
+
+変数を``||player: 入力した時||`` に追加するのを忘れないでしてね。<br>
+
 
 <!-- Use **stone** as your building material, create **3** ``||variable: variables||`` and name them **width**, **length** and **height**; 
 set the ``||variable: variables||`` to the correct parameters. 

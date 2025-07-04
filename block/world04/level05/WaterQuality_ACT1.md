@@ -1,4 +1,4 @@
-# Activity 1 – Widespread illness.
+# アクティビティ 1 – 幅広い病気
 
 ### @explicitHints true
 ### @hideIteration true 
@@ -8,9 +8,10 @@
 player.say
 ```
 
-## Step 1
-The people in the village have been getting sick, all with the same symptoms. We suspect that it is the water that everybody is 
-drinking. It must be contaminated in some way. We want to use AI to find the locations where the pollutants are coming from. 
-However, before we can do this we need to collect water samples, from the rivers around the village, for a database.
-Get into the boat and use the water bottles from the chest, when you are at each of the locations, to a collect water sample. 
-**No coding is required for this Activity.**
+## ステップ 1
+村の人たちが病気になっていて、みんな同じ症状を示しているよ。<br>
+みんなが飲んでいる水が原因だと思うんだ。きっと何かの方法で汚染されているに違いない。<br>
+AIを使って汚染物質がどこから来ているのかを探したいんだ。<br>
+でもその前に、データベースを作るために村の周りの川から水のサンプルを集める必要があるよ。<br>
+ボートに乗って、それぞれの場所でチェストから水ボトルを使って水のサンプルを集めてみよう。<br>
+**このアクティビティにはコーディングは必要ないよ。**

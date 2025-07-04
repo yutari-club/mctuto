@@ -8,20 +8,20 @@
 ### @explicitHints true
 ### @flyoutOnly 0
 
-# Activity 3 – Predictive analysis.
+# アクティビティ 3 – 予測分析
 
-## Step 1
-We now need to code the AI that is going to find the best planting locations. 
-You will need to use the **current** dataset that you compiled in the last Activity 
-and **compare** it against a **historical** dataset that the satellite station already has.
+## ステップ 1
+今度は最適な植付け場所を探し出すAIをコーディングする必要があるよ。<br>
+前のアクティビティで作った**現在の**データセットを使って、<br>
+衛星ステーションがすでに持っている**過去の**データセットと**比較**してみよう。
 
-## Step 2
-First use a `||AI: semi-supervised machine learning||` coding block and place an `||Datasets: input datasets||` coding block inside.
-After that, place a `||Datasets: compare datasets||` coding block. Set to **current** dataset and then **historical**.
+## ステップ 2
+まず`||AI: semi-supervised machine learning||コーディングブロックを使って、その中に`||Datasets: input datasets||コーディングブロックを置いてみよう。<br>
+その後、`||Datasets: compare datasets||コーディングブロックを置いて、**現在の**データセット、それから**過去の**データセットに設定しよう。
 
-## Step 3
-Then place a `||AI: run predictive analysis||` coding block, followed by a `||Output: find best farming locations||` coding block. 
-Now when you run the code the AI will find and light up the best farming locations.
+## ステップ 3
+次に`||AI: run predictive analysis||コーディングブロックを置いて、その後に`||Output: find best farming locations||コーディングブロックを置こう。<br>
+これでコードを実行すると、AIが最適な農業場所を見つけて光らせてくれるよ。
 
 ```ghost
 Datasets.compare_SF()

@@ -26,7 +26,7 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 In the coding window you have a been given a code that does not work. Delete the quotes (**'**) from the begining and end of each line. 
 This code is supposed to plant flowers on each block of grass by making the Agent move through the area row by row.
 Can you finish the code by adding a conditional and debugging the main loop?

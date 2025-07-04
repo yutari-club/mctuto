@@ -10,7 +10,8 @@
 ## Step 1
 
 恐竜の横を``||player:スニーク||`` で通り抜けるには、``||mobs:透明||``になる必要があります<br>
-できますか？
+
+できるよか？
 
 <!-- You need to ``||player:sneak past||`` the dinosaur by making yourself ``||mobs:invisible||``. Can you make this happen?  -->
 
@@ -19,7 +20,7 @@
 ``` 
 
 ### ~ tutorialHint
-マインクラフトでスニークするには、shiftとWを押してみてください。
+マインクラフトでスニークするには、shiftとWを押してみてしてね。
 <!-- Try pressing shift and W to sneak in Minecraft.  -->
 
 

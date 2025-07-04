@@ -25,7 +25,7 @@ while True:
     pass
 ```
 
-## Step 1
+## ステップ 1
 Make the Agent mine the diamond ore behind it, and then drop the mined diamond into the collection area at the other end. Make the Agent return, 
 mine the emerald ore that will appear and drop it in the collection area. 
 

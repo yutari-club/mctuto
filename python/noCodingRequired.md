@@ -4,7 +4,7 @@
 player.say
 ```
 ## Introduction @unplugged
-    No coding is needed now, please go back to the map by exiting the coding window.
+    今はコーディングは必要ないよ。コーディングウィンドウを閉じてマップに戻ってね。
 
-## Step 1 
-    No coding is needed now, please go back to the map by exiting the coding window.
+## ステップ 1 
+    今はコーディングは必要ないよ。コーディングウィンドウを閉じてマップに戻ってね。

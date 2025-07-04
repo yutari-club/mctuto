@@ -9,12 +9,13 @@
 ### @flyoutOnly 0
 ### @hideIteration true 
 
-# Activity 3 – Testing it out.
+# アクティビティ 4 – テストしてみよう
 
-## Step 1
-We need to see if the generated routes that the AI compiled are correct. To do that, use an `||AI:autonomous navigation algorithm||`
-coding block inside of an `||loops:on start||` coding block. Inside of that, specify (using the coding blocks in the `||Output: OUTPUT||` tab) 
-which sensors the Agent should reach. The sensors that the Agent needs to reach are **2** and **4**. 
+## ステップ 1
+AIが作成したルートが正しいかどうかを確かめる必要があるよ。<br>
+そのために、`||loops:on start||コーディングブロックの中に`||AI:autonomous navigation algorithm||コーディングブロックを使ってみよう。<br>
+その中で、エージェントが到達すべきセンサーを`||Output: OUTPUT||タブのコーディングブロックを使って指定しよう。<br>
+エージェントが到達する必要があるセンサーは**2**と**4**だよ。 
 
 ```ghost
 AI.ml_OO2(function(){})

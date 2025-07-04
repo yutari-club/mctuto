@@ -5,12 +5,12 @@
 ### @explicitHints 1
 
 
-# 最初(さいしょ)の材料(ざいりょう)を探(さが)す
+# 最初の材料(ざいりょう)を探す
 <!-- # Detecting your first material -->
 
 
 ## Step 1
-エージェントは**金(きん)**ブロックを**破壊(はかい)**し、**回収(かいしゅう)**する必要(ひつよう)がある。
+エージェントは**金**ブロックを**破壊**し、**回収**する必要がある。
 <!-- The Agent needs to **destroy** and then **collect** the **gold** block.  -->
 
 

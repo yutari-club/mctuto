@@ -1,7 +1,7 @@
 ### @explicitHints true
 ### @hideIteration true 
 
-# What's that syntax!? 
+# この文法は何だろう？ 
 
 ```python
 agent.move(FORWARD, 5)
@@ -26,9 +26,9 @@ while True:
     pass
 ```
 
-## Step 1
-The code below is missing all of its syntax, add the correct syntax in the coding window to make the code run. 
-Then place the matching missing syntax blocks in the world.
+## ステップ 1
+下のコードには文法が足りていないよ。コーディングウィンドウで正しい文法を追加して、コードが動くようにしよう。
+それから、対応する足りない文法ブロックをワールドに配置してね。
 ```python
 for i in range 10
     agent move FORWARD 1

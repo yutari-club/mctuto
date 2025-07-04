@@ -1,5 +1,5 @@
 ### @explicitHints true
-# Activity 2 - Spin cycle.
+# アクティビティ 2 - 洗濯機の回転
 
 ```python
 for i in range(2):
@@ -11,17 +11,18 @@ agent.turn(LEFT)
 
 ```
 
-## Step 1
-**Part 1:** Write some code so that the Agent will pick up the dirty laundry, move **forward** into the machine, spin left **20** times and then get out of
-the machine to place the clean laundry on the other side of where the dirty laundry was.
+## ステップ 1
+**パート 1:** エージェントが汚れた洗濯物を拾って、洗濯機に**前進**し、<br>
+左に**20**回回転してから洗濯機から出て、<br>
+汚れた洗濯物があった場所の反対側にきれいな洗濯物を置くコードを書いてみよう。
 
-## Step 2
-**Part 2:** Edit the same code so that the Agent does the same thing but for **3** loads of laundry. Do this by using a `||loops: for||` loop before all of the other 
-code.
+## ステップ 2
+**パート 2:** 同じコードを編集して、エージェントが同じことを**3**回分の洗濯物に対して行うようにしよう。<br>
+他のコードの前に`||loops: for||`ループを使ってやってみよう。
 
 ### ~ tutorialhint 
-Don't forget that, in this case, two loops should not have the same variable name, so rename the second loop. 
-To indent a large piece of code highlight all the code you want to indent and press the **tab** key. 
+この場合、2つのループは同じ変数名を使ってはいけないので、2番目のループの名前を変更するのを忘れないでね。<br>
+大きなコードをインデントするには、インデントしたいコードをすべて選択して**tab**キーを押してね。 
 
 ```template
 //Replace the lines below with your code #    

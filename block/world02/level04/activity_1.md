@@ -4,12 +4,13 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-# 壁(かべ)に沿(そ)って探索(たんさく)
+# 壁に沿って探索
 <!-- # Surroundings  -->
 
 ## Step 1
-**下(した)**のブロックが**氷塊(ひょうかい)**であることを**検査(けんさ)している間(あいだ)**、エージェントが**ブロック**を**右(みぎ)**に検出(けんしゅつ)した場合(ばあい)は**前進(ぜんしん)**する必要(ひつよう)がある。<br>
-そうでなければ**右(みぎ)**に**移動(いどう)**する必要(ひつよう)がある。
+**下**のブロックが**氷塊**であることを**検査している間**、エージェントが**ブロック**を**右**に検出した場合は**前進**する必要がある。<br>
+
+そうでなければ**右**に**移動**する必要がある。
 <!-- While  **inspecting the block down** that is **packed ice**, **if** the Agent **detects the block right**, it needs to **move forward**. Otherwise it needs to **move right**.  -->
 
 ```template

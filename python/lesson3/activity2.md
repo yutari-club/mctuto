@@ -3,14 +3,14 @@
 
 ### @explicitHints true
 ### @hideIteration true 
-# Activity 2 - Ideal planting spot.
+# アクティビティ 2 - 理想的な植える場所
 
 ```python
 blocks.place()
 ```
-# Activity 2 - Ideal planting spot.
+# アクティビティ 2 - 理想的な植える場所
 
-## Step 1
+## ステップ 1
 Look at each of the **5** different location variables and see what crops are at these coordinates. Then create
 **5** `||blocks: place block at position||` commands ,with either **PUMPKIN** or **MELON_BLOCK**, at the correct location variable 
 to match the crop at the coordinate. To see the coordinates and coding window at same time, click on the half coding window button in the top left-hand corner. 

@@ -1,15 +1,16 @@
 ### @explicitHints true
 ### @flyoutOnly 0
 
-# Activity 2 – Mapping everything out.
+# アクティビティ 2 – 全部をマッピングしよう
 
-## Step 1
-In this Activity, you have to combine all of the pictures you have taken into **one** large `||datasets: dataset||`. All of this data will then be compiled and
-shown as a large map of the forest. First use a `||datasets: make dataset||` coding block inside of a `||loops: on start||` coding block. 
+## ステップ 1
+このアクティビティでは、撮った写真をすべて**一つ**の大きな`||datasets: dataset||に組み合わせる必要があるよ。<br>
+このデータをすべてまとめて、森の大きなマップとして表示するよ。<br>
+まず`||loops: on start||コーディングブロックの中に`||datasets: make dataset||コーディングブロックを使ってみよう。 
 
-## Step 2
-Place **all** of the data taken from the **three** locations inside the `||datasets: make dataset||` coding block. The `||Input: picture data||` 
-coding blocks are located in the in the `||Input: INPUT||` tab. 
+## ステップ 2
+**3つ**の場所から収集したデータを**すべて**`||datasets: make dataset||コーディングブロックの中に置いてみよう。<br>
+`||Input: picture data||コーディングブロックは`||Input: INPUT||タブにあるよ。 
 
 ```ghost
 Input.location1PictureData_MT()
