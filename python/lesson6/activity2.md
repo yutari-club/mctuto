@@ -1,6 +1,6 @@
 ### @explicitHints true
  
-# アクティビティ 2 - 左か右かな？ 
+# アクティビティ 2 - 左(ひだり)か右(みぎ)かな？ 
 
 ```python
 agent.inspect(AgentInspection.BLOCK, FORWARD)
@@ -13,23 +13,23 @@ if True:
 ```
 
 ## ステップ 1
-**パート 1:** `||logic:if else||`条件文を使って、エージェントが看板に到達したときに左に曲がって、<br>
-それから金ブロックの上に前進するコードを書いてみよう。<br>
-条件として`||agent:agent inspect||`コマンドを使って、変数**left**と比較してみよう。<br>
-`||agent:agent inspect||`コマンドはこんな感じだよ： 
+**パート 1:** `||logic:if else||`条件(じょうけん)文(ぶん)を使(つか)って、エージェントが看板(かんばん)に到達(とうたつ)したときに左(ひだり)に曲(ま)がって、<br>
+それから金(きん)ブロックの上(うえ)に前進(ぜんしん)するコードを書(か)いてみよう。<br>
+条件(じょうけん)として`||agent:agent inspect||`コマンドを使(つか)って、変数(へんすう)**left**と比較(ひかく)してみよう。<br>
+`||agent:agent inspect||`コマンドはこんな感(かん)じだよ： 
 ```python
 agent.inspect(AgentInspection.BLOCK, FORWARD)
 ```
-コードにすでに用意されている変数を使ってみよう：left = BLUE_GLAZED_TERRACOTTA, right = PINK_GLAZED_TERRACOTTA
+コードにすでに用意(ようい)されている変数(へんすう)を使(つか)ってみよう：left = BLUE_GLAZED_TERRACOTTA, right = PINK_GLAZED_TERRACOTTA
 ### ~ tutorialhint 
-2つの値が等しいかどうかをチェックするには、**==**を使ってね。
+2つの値(ね)が等(ひと)しいかどうかをチェックするには、**==**を使(つか)ってね。
 
 ## ステップ 2
-**パート 2:** エージェントが金ブロックに到達するまで両方向に曲がるようにコードを編集しよう。<br>
-**if**と**else**の間に**elif**条件文を追加してやってみよう。
+**パート 2:** エージェントが金(きん)ブロックに到達(とうたつ)するまで両方向(りょうほうこう)に曲(ま)がるようにコードを編集(へんしゅう)しよう。<br>
+**if**と**else**の間(あいだ)に**elif**条件(じょうけん)文(ぶん)を追加(ついか)してやってみよう。
 ### ~ tutorialhint 
-**elif**条件文で`||agent:agent inspect||`コマンドを条件として使って、<br>
-変数**right**と比較してみよう。
+**elif**条件(じょうけん)文(ぶん)で`||agent:agent inspect||`コマンドを条件(じょうけん)として使(つか)って、<br>
+変数(へんすう)**right**と比較(ひかく)してみよう。
 
 ```template
 left = BLUE_GLAZED_TERRACOTTA

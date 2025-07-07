@@ -1,10 +1,10 @@
-# 02.惑星探索
+# 02.惑星(わくせい)探索(たんさく)
 
-1. [宇宙センター](./level01/video02-01.html)
-1. [水星＆金星](./level02/video02-02.html)
-1. [月&火星](./level03/video02-03.html)
-1. [ガニメデ&土星](./level04/video02-04.html)
-1. [天王星＆海王星](./level05/video02-05.html)
-1. [惑星をもう一度](./level06/video02-06.html)
+1. [宇宙(うちゅう)センター](./level01/video02-01.html)
+1. [水星(すいせい)＆金星(きんせい)](./level02/video02-02.html)
+1. [月(つき)&火星(かせい)](./level03/video02-03.html)
+1. [ガニメデ&土星(どせい)](./level04/video02-04.html)
+1. [天王星(てんのうせい)＆海王星(かいおうせい)](./level05/video02-05.html)
+1. [惑星(わくせい)をもう一度(いちど)](./level06/video02-06.html)
 
-# [戻る](../video.html)
+# [戻(もど)る](../video.html)

@@ -9,7 +9,7 @@
 <!-- # Simulation   -->
 
 ## Step 1
-シミュレーションへようこそ！金塊を集め、障害物を破壊するようにエージェントをプログラムしよう。<br>
+シミュレーションへようこそ！金塊(きんかい)を集(あつ)め、障害物(しょうがいぶつ)を破壊(はかい)するようにエージェントをプログラムしよう。<br>
 
 <!-- Welcome to Simulations! Program your Agent to collect the gold blocks and destroy obstacles on its way. -->
 

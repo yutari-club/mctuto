@@ -1,0 +1,76 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## プロジェクト概要
+
+このプロジェクトは、MakeCode for Minecraft を使用した教育用チュートリアルおよびプログラミング学習教材のリポジトリです。TypeScriptベースのMinecraft Educationでのプログラミング学習を支援します。
+
+## 開発言語・技術スタック
+
+- **言語**: TypeScript（ES5ターゲット）
+- **プラットフォーム**: MakeCode for Minecraft
+- **対象**: Minecraft Education Edition
+
+## プロジェクト構成
+
+### 主要ファイル
+
+- `main.ts` - メインのプログラムファイル（現在空）
+- `test.ts` - テストファイル（現在コメント1行のみ）
+- `pxt.json` - MakeCodeプロジェクトの設定ファイル
+- `tsconfig.json` - TypeScript設定（ES5ターゲット、noImplicitAny有効）
+
+### ディレクトリ構造
+
+1. **`block/`** - ブロックプログラミング用の教材
+   - `world01/` - 基本的なプログラミング学習（エージェント移動、ブロック操作）
+   - `world02/` - 中級プログラミング学習（データ収集、分析）
+   - `world03/` - 上級プログラミング学習（カスタムブロック）
+   - `world04/` - AI・機械学習関連（Pattern Recognition、Terrain Mapping、Sustainable Farming等）
+
+2. **`python/`** - Pythonプログラミング教材
+   - `lesson1/` ～ `lesson10/` - 段階的な学習教材
+
+3. **`_locales/ja/`** - 日本語ローカライゼーション
+   - MakeCode用の文字列リソース
+
+4. **`チュートリアル/`** - 日本語チュートリアル（順番とシーケンス）
+
+### カスタムブロック
+
+1. **`block/world03/customBlocks/custom.ts`**
+   - 基本的なカスタムブロック（柱状クォーツブロック破壊イベント）
+
+2. **`block/world04/customBlocks/AIBlocks.ts`**
+   - AI・機械学習関連のカスタムブロック
+   - 4つの主要な名前空間:
+     - `Input` - データ入力（センサーデータ、画像データ、水質データ等）
+     - `Datasets` - データセット管理（historical, current, live）
+     - `AI` - 機械学習アルゴリズム（supervised, unsupervised, semi-supervised）
+     - `Output` - 結果出力（位置特定、分析結果）
+
+## 開発コマンド
+
+MakeCode for Minecraftプロジェクトの性質上、特別なビルドコマンドはありません。MakeCodeエディタでの編集・実行が基本です。
+
+## 開発時の注意事項
+
+1. **言語設定**: このプロジェクトは日本語をメインとしています
+2. **コメント**: 日本語でコメントを記述
+3. **カスタムブロック**: 新しいカスタムブロックを作成する際は、適切な名前空間と色分けを使用
+4. **AI関連機能**: World04のAIブロックは教育目的のため、実際の機械学習実装ではなく、概念学習用のシミュレーション
+
+## カスタムブロックの開発パターン
+
+- `//% block="ブロック名"` - ブロック表示名の指定
+- `//% color="#色コード"` - 名前空間の色指定
+- `//% handlerStatement=1` - イベントハンドラーブロック
+- `//% weight=数値` - ブロックの表示順序
+
+## 教材の特徴
+
+- **段階的学習**: 初心者から上級者まで対応
+- **実践的**: Minecraft内での実際のプログラミング体験
+- **多言語対応**: 英語・日本語対応
+- **AI教育**: 基本的な機械学習概念の学習支援

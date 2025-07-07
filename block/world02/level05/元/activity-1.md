@@ -5,16 +5,16 @@
 ### @explicitHints 1
 
 
-# 惑星訪問
+# 惑星(わくせい)訪問(ほうもん)
 <!-- # Planet visit -->
 
 ## Step 1
 
 ３つのコードがあります。<br>
 
-地形とコードから正しい処理のコードを選択してみよう！<br>
+地形(ちけい)とコードから正(ただ)しい処理(しょり)のコードを選択(せんたく)してみよう！<br>
 
-試行回数は1回だけなので、注意してみよう！<br>
+試行(しこう)回数(かいすう)は1回(かい)だけなので、注意(ちゅうい)してみよう！<br>
 
 <!-- Select the right code to run! You have only one attempt, so be careful! -->
 
@@ -78,7 +78,7 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("鉱床発見！")
+    player.say("鉱床(こうしょう)発見(はっけん)！")
 })
 ```
 ```ghost
@@ -139,7 +139,7 @@ player.onChat("3", function () {
         }
         agent.move(FORWARD, 1)
     }
-    player.say("鉱床発見！")
+    player.say("鉱床(こうしょう)発見(はっけん)！")
 })
 ```
 

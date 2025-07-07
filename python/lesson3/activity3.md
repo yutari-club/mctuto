@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# アクティビティ 3 - 計算は合ってる？?
+# アクティビティ 3 - 計算(けいさん)は合(あ)ってる？?
 
 ```python
 player.say("hi")

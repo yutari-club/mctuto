@@ -5,29 +5,29 @@
 ### @explicitHints 1
 
 
-# 鉱石を採掘しよう！
+# 鉱石(こうせき)を採掘(さいくつ)しよう！
 <!-- # Mine the resources! -->
 
 ## Step 1
-エージェントに**金鉱石**と**鉄鉱石**を採掘させる必要があります。<br>
+エージェントに**金鉱石(きんこうせき)**と**鉄鉱石(てっこうせき)**を採掘(さいくつ)させる必要(ひつよう)があります。<br>
 
-まず、エージェントをさまざまな方向に動かすための複数の``||player:チャットコマンド||``を作成するよ。<br>
+まず、エージェントをさまざまな方向(ほうこう)に動(うご)かすための複数(ふくすう)の``||player:チャットコマンド||``を作成(さくせい)するよ。<br>
 
-例えば、**前進**、**後退**、**右**といったコマンドだよ。<br>
+例(たと)えば、**前進(ぜんしん)**、**後退(こうたい)**、**右(みぎ)**といったコマンドだよ。<br>
 
-エージェントをどのくらい動かすかを具体的に指定する代わりに、変数を使うことができるよ。<br>
+エージェントをどのくらい動(うご)かすかを具体的(ぐたいてき)に指定(してい)する代(か)わりに、変数(へんすう)を使(つか)うことができるよ。<br>
 
-ゲーム内チャットでコマンドを入力する際には、**前進**と**数字**を入力するよ。<br>
+ゲーム内(ない)チャットでコマンドを入力(にゅうりょく)する際(さい)には、**前進(ぜんしん)**と**数字(すうじ)**を入力(にゅうりょく)するよ。<br>
 
-例えば、**前進 5**と入力すると、エージェントが**5ステップ前進**するよ。<br>
+例(たと)えば、**前進(ぜんしん) 5**と入力(にゅうりょく)すると、エージェントが**5ステップ前進(ぜんしん)**するよ。<br>
 
-このように、コードを変更せずに、エージェントが何ステップ移動する必要があるかをその場で変更できるよ。<br>
+このように、コードを変更(へんこう)せずに、エージェントが何(なに)ステップ移動(いどう)する必要(ひつよう)があるかをその場(ば)で変更(へんこう)できるよ。<br>
 
 <!-- The Agent needs to mine **gold ore** and **iron ore** blocks. Try creating several ``||player:on chat||`` commands that will program the Agent to move in different directions, for example, **forward**, **back**, **right**. Instead of specifying how far you want the Agent to move, you can use variables. When typing the command in in-game chat, type **forward** and **a number**, for example **forward 5** if you want the Agent to **move 5 steps forward**. This way you can change on the fly how many steps the Agent needs to move without changing the code.  -->
 
 ### ~ tutorialHint
 
-エージェントに鉱石を採掘させるために、``||agent:破壊する||`` と ``||agent:収集する||`` ブロックを追加するのを忘れないでしてね。
+エージェントに鉱石(こうせき)を採掘(さいくつ)させるために、``||agent:破壊(はかい)する||`` と ``||agent:収集(しゅうしゅう)する||`` ブロックを追加(ついか)するのを忘(わす)れないでしてね。
 <!-- Don't forget to add ``||agent: destroy||`` and ``||agent: collect||`` blocks to program the Agent to mine the minerals.  -->
 
 ```template

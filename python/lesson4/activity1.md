@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# アクティビティ 1 - 動物を分類してみよう
+# アクティビティ 1 - 動物(どうぶつ)を分類(ぶんるい)してみよう
 
 ```python
 blocks.place()
@@ -9,8 +9,8 @@ world(0, 0, 0)
 ```
 
 ## ステップ 1
-Minecraftワールドで**左**から**右**へ並んでいる動物たちを、**My_list**という名前のリストに書き出すコードを作ってみよう。 
-すでにあるコマンドの後に、`||mobs:spawn mob at position||`コマンドを**4つ**追加で配置してみよう。 Use the information from the signs 
+Minecraftワールドで**左(ひだり)**から**右(みぎ)**へ並(なら)んでいる動物(どうぶつ)たちを、**My_list**という名前(なまえ)のリストに書(か)き出(だ)すコードを作(つく)ってみよう。 
+すでにあるコマンドの後(あと)に、`||mobs:spawn mob at position||`コマンドを**4つ**追加(ついか)で配置(はいち)してみよう。 Use the information from the signs 
 on the pens to complete these commands. 
 
 ### ~ tutorialhint 

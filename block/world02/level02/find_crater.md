@@ -4,19 +4,19 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-# 周辺環境
+# 周辺(しゅうへん)環境(かんきょう)
 <!-- # Surroundings  -->
 
 ## Step 1
-エージェントが**下にブロック**を検出している間、前進を続ける。<br>
-もしエージェントが**下のブロック**を検査し、**空気**を発見したら、``||player:メッセージを送信||`` を使い、**クレーター発見！**と言おう。
+エージェントが**下(した)にブロック**を検出(けんしゅつ)している間(あいだ)、前進(ぜんしん)を続(つづ)ける。<br>
+もしエージェントが**下(した)のブロック**を検査(けんさ)し、**空気(くうき)**を発見(はっけん)したら、``||player:メッセージを送信(そうしん)||`` を使(つか)い、**クレーター発見(はっけん)！**と言(い)おう。
 <!-- While the Agent **detects the block down**, it needs to move forward. If the Agent **inspects the block down** and finds **air**, then use ``||player:say||`` command to say **Crater found!**.  -->
 
 
 
 ```template
 player.onChat("crater", function () {
-            player.say("クレーター発見！")
+            player.say("クレーター発見(はっけん)！")
 })
 ```
 ```ghost

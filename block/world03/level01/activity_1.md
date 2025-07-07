@@ -4,13 +4,13 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-# 溶岩遊泳
+# 溶岩(ようがん)遊泳(ゆうえい)
 <!-- # Lava swim -->
 
 ## Step 1
-あなたの課題は``||player:溶岩を歩いて||``渡ること。<br>
+あなたの課題(かだい)は``||player:溶岩(ようがん)を歩(ある)いて||``渡(わた)ること。<br>
 
-**最も近いプレーヤー**に``||mobs:火炎耐性||``を与えてしてね。
+**最(もっと)も近(ちか)いプレーヤー**に``||mobs:火炎(かえん)耐性(たいせい)||``を与(あた)えてしてね。
 <!-- Your challenge is to ``||player:swim||`` across the lava lake. Try ``||mobs:applying fire resistance||`` to the **nearest player**. -->
 ```template
 {}

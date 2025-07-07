@@ -1,29 +1,29 @@
-# 01.動物保護
-## 04.パンダの生息地
+# 01.動物(どうぶつ)保護(ほご)
+## 04.パンダの生息(せいそく)地(ち)
 
-1. **エリアの確保(かくほ)**
+1. **エリアの確保(かくほ)(かくほ)**
 	<br>
 
 	<video controls>
-	  <source src="01_エリアの確保.mp4" type="video/mp4" />
+	  <source src="01_エリアの確保(かくほ).mp4" type="video/mp4" />
 	</video>
-1. **竹垣(たけがき)**
+1. **竹垣(たけがき)(たけがき)**
 	<br>
 
 	<video controls>
-	  <source src="02_竹垣.mp4" type="video/mp4" />
+	  <source src="02_竹垣(たけがき).mp4" type="video/mp4" />
 	</video>
-1. **竹(たけ)の隠(かく)れ家(が)**
+1. **竹(たけ)(たけ)の隠(こもり)(かく)れ家(け)(が)**
 	<br>
 
 	<video controls>
-	  <source src="03_竹の隠れ家.mp4" type="video/mp4" />
+	  <source src="03_竹(たけ)の隠(かく)れ家(が).mp4" type="video/mp4" />
 	</video>
-1. **場所をきれいにする！**
+1. **場所(ばしょ)をきれいにする！**
 	<br>
 
 	<video controls>
-	  <source src="04_場所をきれいにする.mp4" type="video/mp4" />
+	  <source src="04_場所(ばしょ)をきれいにする.mp4" type="video/mp4" />
 	</video>
 
-# [戻る](../video01.html)
+# [戻(もど)る](../video01.html)

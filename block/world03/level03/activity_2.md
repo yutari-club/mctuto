@@ -8,38 +8,38 @@
 # Columns!
 
 ## Step 1
-さあ、水道橋を作る時間だよ！<br>
+さあ、水道(すいどう)橋(ばし)を作(つく)る時間(じかん)だよ！<br>
 
-まず、変数``||variables: 長さ||``と``||variables: 区間||``を作りよう。<br>
+まず、変数(へんすう)``||variables: 長(なが)さ||``と``||variables: 区間(くかん)||``を作(つく)りよう。<br>
 
-次に``||loops: 最初だけ||``、``||variables: 長さ||``を **5**、``||variables: 区間||``を **6** に設定するよ。<br>
+次(つぎ)に``||loops: 最初(さいしょ)だけ||``、``||variables: 長(なが)さ||``を **5**、``||variables: 区間(くかん)||``を **6** に設定(せってい)するよ。<br>
 
 <!-- Time to build the aqueducts! First, create ``||variable: length||`` and ``||variable: segments||`` variables. Then ``||variable: set length||`` to **5** and ``||variable: set segments||`` to **6** ``||loops: on start||``.  -->
 
 ## Step 2
-次に``||player:チャットコマンド||``内で、エージェントが**1**つの部分を構築するために実行する必要があるすべてのアクションを追加するよ。<br>
+次(つぎ)に``||player:チャットコマンド||``内(うち)で、エージェントが**1**つの部分(ぶぶん)を構築(こうちく)するために実行(じっこう)する必要(ひつよう)があるすべてのアクションを追加(ついか)するよ。<br>
 
-以下のアクションを行います：<br>
+以下(いか)のアクションを行(おこな)います：<br>
 
-- ``||agent:スロットに配置させる||``: 柱状のクオーツブロックを64個
-- ``||agent:置かせる|``
-- ``||agent:移動させる|``
+- ``||agent:スロットに配置(はいち)させる||``: 柱状(ちゅうじょう)のクオーツブロックを64個(こ)
+- ``||agent:置(お)かせる|``
+- ``||agent:移動(いどう)させる|``
 
-マインクラフトの水は傾斜があると流れますので、エージェントは ** 左、右、下**の順で配置する必要があります。<br>
+マインクラフトの水(みず)は傾斜(けいしゃ)があると流(なが)れますので、エージェントは ** 左(ひだり)、右(みぎ)、下(した)**の順(じゅん)で配置(はいち)する必要(ひつよう)があります。<br>
 
-これらすべてのアクションを、``||loops:繰り返し||``ループ内に配置して、``||variables: 長さ||`` の回数だけ繰り返するよ。<br>
+これらすべてのアクションを、``||loops:繰(く)り返(かえ)し||``ループ内(ない)に配置(はいち)して、``||variables: 長(なが)さ||`` の回数(かいすう)だけ繰(く)り返(へん)するよ。<br>
 
 
 
 <!-- Now within an ``||player: on chat command||`` you need to add all the actions that the Agent needs to perform in order to build **1** part: ``||agent: set block pillar of quartz||`` at the count of **64**, ``||agent: place||`` and ``||agent: move forward||``. Water in Minecraft will flow if there is a slope, so the Agent needs to **place left, right and down**. Place all these actions within a ``||loops: repeat||`` loop that **repeats** ``||variable: length||`` times.  -->
 
 ## Step 3
-次に、最初の ``||loops:繰り返し||`` ループを、``||variables:区間||`` 回繰り返す別の ``||loops:繰り返し||`` ループの中に入れます。
-マインクラフトで試してみてしてねね！
+次(つぎ)に、最初(さいしょ)の ``||loops:繰(く)り返(かえ)し||`` ループを、``||variables:区間(くかん)||`` 回(かい)繰(く)り返(かえ)す別(べつ)の ``||loops:繰(く)り返(かえ)し||`` ループの中(なか)に入(い)れます。
+マインクラフトで試(ため)してみてしてねね！
 <!-- Now nest the first ``||loops: repeat||`` loop within another ``||loops: repeat||`` loop that repeats ``||variables:segments||`` times. Try it out in Minecraft! -->
 
 ### ~ tutorialHint
-``||agent: 下に移動||`` ブロックを内側のループの前に追加して、コードを動かせるようにするよ！
+``||agent: 下(した)に移動(いどう)||`` ブロックを内側(うちがわ)のループの前(まえ)に追加(ついか)して、コードを動(うご)かせるようにするよ！
 <!-- Add ``||agent: agent move down||`` block before the inner loop to make the code work! -->
 
 ```template

@@ -4,19 +4,19 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-# 野菜工場を建てる！
+# 野菜(やさい)工場(こうじょう)を建(た)てる！
 <!-- # Build a Town Hall! -->
 
 ## Step 1
-**種植え**関数を作成しました。<br>
+**種(たね)植(う)え**関数(かんすう)を作成(さくせい)しました。<br>
 
-これは、前のアクティビティで使用したコードだよ。<br>
+これは、前(まえ)のアクティビティで使用(しよう)したコードだよ。<br>
 
-次に ``||player:入力した時||`` コマンドをワークスペースにドラッグし、**run**という名前を付けます。<br>
+次(つぎ)に ``||player:入力(にゅうりょく)した時(とき)||`` コマンドをワークスペースにドラッグし、**run**という名前(なまえ)を付(つ)けます。<br>
 
-``||loops:くりかえし||``を追加し、**高度なブロック**セクションをクリックし、**関数**をクリックし、``||functions:呼び出し 種植え||``をループにドラッグするよ。<br>
+``||loops:くりかえし||``を追加(ついか)し、**高度(こうど)なブロック**セクションをクリックし、**関数(かんすう)**をクリックし、``||functions:呼(よ)び出(だ)し 種(たね)植(う)え||``をループにドラッグするよ。<br>
 
-エージェントが**種植え**関数を何回繰り返す必か数えてしてね。
+エージェントが**種(たね)植(う)え**関数(かんすう)を何回(なんかい)繰(く)り返(かえ)す必か数(かぞ)えてしてね。
 
 <!-- We created a function **plantSeed** for you. 
 It is simply the code that you used for the previous activity. 
@@ -25,17 +25,17 @@ Add a ``||loops: repeat||`` loop and click on the **Advanced** section then clic
 Count how many times the Agent needs to repeat **plantSeed** function.  -->
 
 ### ~ tutorialHint
-関数は**高度なブロック**セクションにあります。<br>
+関数(かんすう)は**高度(こうど)なブロック**セクションにあります。<br>
 
-また、関数についてのメモのように、書かれたコードについてコメントを残すことも良い習慣だよ。
+また、関数(かんすう)についてのメモのように、書(か)かれたコードについてコメントを残(のこ)すことも良(よ)い習慣(しゅうかん)だよ。
 <!-- Functions live in the **Advanced** section. 
 It is also a good practice to leave notes about the code that's written, like the one that we left for you about functions.  -->
 
 ```template
 /**
- * 関数を使えば、コードを簡単に再利用できる。
+ * 関数(かんすう)を使(つか)えば、コードを簡単(かんたん)に再(さい)利用(りよう)できる。
  */
-function 種植え () {
+function 種(たね)植(う)え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     agent.place(DOWN)

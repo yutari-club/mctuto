@@ -5,33 +5,33 @@
 ### @explicitHints 1
 
 
-# クォーツの採掘!
+# クォーツの採掘(さいくつ)!
 <!-- # Mining Quartz! -->
 
 ## Step 1
-残りの柱を作るのに必要な**ブロック数**を**計算**するコードを書こう。<br>
+残(のこ)りの柱(はしら)を作(つく)るのに必要(ひつよう)な**ブロック数(すう)**を**計算(けいさん)**するコードを書(か)こう。<br>
 
-**柱**は**6**本あり、各柱の**高さ**は**6**ブロックである。 <br>
+**柱(はしら)**は**6**本(ほん)あり、各(かく)柱(はしら)の**高(たか)さ**は**6**ブロックである。 <br>
 
-``||variables:高さ||``と``||variables:本数||``を作成し、``||loops:最初だけ||`` の中で正しい数値に設定し、次に 変数 ``||variables:ブロック数||`` を作成するよ。<br>
+``||variables:高(たか)さ||``と``||variables:本数(ほんすう)||``を作成(さくせい)し、``||loops:最初(さいしょ)だけ||`` の中(なか)で正(ただ)しい数値(すうち)に設定(せってい)し、次(つぎ)に 変数(へんすう) ``||variables:ブロック数(すう)||`` を作成(さくせい)するよ。<br>
 
 <!-- Write some code that will **calculate** how many **blocks** you need to build the remaining columns. 
 Here are some facts: there are **6 columns** and each column is **6 blocks high**.
 Start by creating and setting ``||variable:height||`` and ``||variable:quantity||`` variables to the correct numbers ``||loops: on start||``, then create a ``||variable:total blocks||`` variable.  -->
 
 ## Step 2
-``||logic: もし||``ブロックの条件として、``||variables:ブロック数||`` = ``||variables:高さ||`` × ``||variables:本数||``を指定して、``||player: 送信する||`` 「十分なブロックを集めました！」と言う。 <br>
+``||logic: もし||``ブロックの条件(じょうけん)として、``||variables:ブロック数(すう)||`` = ``||variables:高(たか)さ||`` × ``||variables:本数(ほんすう)||``を指定(してい)して、``||player: 送信(そうしん)する||`` 「十分(じゅうぶん)なブロックを集(あつ)めました！」と言(い)う。 <br>
 
-掛け算は ``||math:×||``で行えます。<br>
+掛(か)け算(ざん)は ``||math:×||``で行(おこな)えます。<br>
 
 <!-- Set up a condition, ``||logic: if||`` the ``||variable:total blocks||`` = ``||variable:height||`` * ``||variable:quantity||``, then ``||player: say||`` "Collected enough blocks!".  -->
 
 ## Step 3
-``||logic: もし||``ブロックの上に、``||variables:ブロック数を 1 だけ増やす||``と``||player: 送信する||``を追加するよ。``||player: 送信する||``に``||variables:ブロック数||``を設定することで何個のブロックを集めたかがわかります。<br>
+``||logic: もし||``ブロックの上(うえ)に、``||variables:ブロック数(すう)を 1 だけ増(ふ)やす||``と``||player: 送信(そうしん)する||``を追加(ついか)するよ。``||player: 送信(そうしん)する||``に``||variables:ブロック数(すう)||``を設定(せってい)することで何個(なんこ)のブロックを集(あつ)めたかがわかります。<br>
 
-次に、``||blocks: 柱状のクォーツのブロックが破壊され時||`` に、このブロックをいれることで、ブロックを壊しながら集めた数を表示できるようにするよ。<br>
+次(つぎ)に、``||blocks: 柱状(ちゅうじょう)のクォーツのブロックが破壊(はかい)され時(どき)||`` に、このブロックをいれることで、ブロックを壊(こわ)しながら集(あつ)めた数(かず)を表示(ひょうじ)できるようにするよ。<br>
 
-全てのブロックを集め終わると、「十分なブロックを集めました！」というメッセージが表示するよ。<br>
+全(すべ)てのブロックを集(あつ)め終(お)わると、「十分(じゅうぶん)なブロックを集(あつ)めました！」というメッセージが表示(ひょうじ)するよ。<br>
 
 
 

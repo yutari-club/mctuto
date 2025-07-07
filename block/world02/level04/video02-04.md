@@ -1,24 +1,24 @@
-# 02.惑星探索
+# 02.惑星(わくせい)探索(たんさく)
 
-## 04.ガニメデ&土星
+## 04.ガニメデ&土星(どせい)
 
-1. **壁に沿って探索す**
+1. **壁(かべ)に沿(そ)って探索(たんさく)す**
 	<br>
 
 	<video controls>
-	  <source src="01_壁に沿って探索.mp4" type="video/mp4" />
+	  <source src="01_壁(かべ)に沿(そ)って探索(たんさく).mp4" type="video/mp4" />
 	</video>
-1. **石を収集**
+1. **石(いし)を収集(しゅうしゅう)**
 	<br>
 
 	<video controls>
-	  <source src="02_石を収集.mp4" type="video/mp4" />
+	  <source src="02_石(いし)を収集(しゅうしゅう).mp4" type="video/mp4" />
 	</video>
-1. **鉱物(こうぶつ)を収集**
+1. **鉱物(こうぶつ)(こうぶつ)を収集(しゅうしゅう)**
 	<br>
 
 	<video controls>
-	  <source src="03_鉱物を収集.mp4" type="video/mp4" />
+	  <source src="03_鉱物(こうぶつ)を収集(しゅうしゅう).mp4" type="video/mp4" />
 	</video>
 
-# [戻る](../video02.html)
+# [戻(もど)る](../video02.html)

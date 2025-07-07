@@ -4,13 +4,13 @@
 ### @explicitHints 1
 
 
-# 撃退１
+# 撃退(げきたい)１
 
 ## ステップ1
-``||agent:agent set block||`` を**tripwire**に設定し、カウントを**64**に設定する。
+``||agent:agent set block||`` を**tripwire**に設定(せってい)し、カウントを**64**に設定(せってい)する。
 
 ## ステップ2
-``||loops:while||``ブロックを使い、``||loops:while||``ブロックの中に条件を入れる。 
+``||loops:while||``ブロックを使(つか)い、``||loops:while||``ブロックの中(なか)に条件(じょうけん)を入(い)れる。 
 
 #### ~ tutorialhint
 
@@ -25,7 +25,7 @@ player.onChat("hazing", function () {
 
 ``` 
 ## ステップ3
-``||loops:while||``ブロックの中に ``||agent: agent place||``ブロックと ``||agent: agent move||``ブロックを追加する。
+``||loops:while||``ブロックの中(なか)に ``||agent: agent place||``ブロックと ``||agent: agent move||``ブロックを追加(ついか)する。
 
 ```blocks
 player.onChat("run", function () {

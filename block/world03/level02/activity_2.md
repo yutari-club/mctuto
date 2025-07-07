@@ -10,9 +10,9 @@
 
 ## Step 1
 
-君のプログラミングのスーパーパワーを使って、この課題を乗り越えてみよう！<br>
+君(きみ)のプログラミングのスーパーパワーを使(つか)って、この課題(かだい)を乗(の)り越(こ)えてみよう！<br>
 
-いろんな方法で解決できるかもしれないから、いろいろ試してみてね。
+いろんな方法(ほうほう)で解決(かいけつ)できるかもしれないから、いろいろ試(ため)してみてね。
 <!-- Use your coding superpowers to overcome the challenges presented. Remember, there might be a lot of ways to solve them.  -->
 
 ```template

@@ -3,12 +3,12 @@
 
 ### @explicitHints true
 ### @hideIteration true 
-# アクティビティ 2 - 理想的な植える場所
+# アクティビティ 2 - 理想的(りそうてき)な植(う)える場所(ばしょ)
 
 ```python
 blocks.place()
 ```
-# アクティビティ 2 - 理想的な植える場所
+# アクティビティ 2 - 理想的(りそうてき)な植(う)える場所(ばしょ)
 
 ## ステップ 1
 Look at each of the **5** different location variables and see what crops are at these coordinates. Then create

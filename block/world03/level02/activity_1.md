@@ -4,12 +4,12 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-# 恐竜を追い越せ！
+# 恐竜(きょうりゅう)を追(お)い越(こ)せ！
 <!-- # Pass the dinosaur! -->
 
 ## Step 1
 
-恐竜の横を``||player:スニーク||`` で通り抜けるには、``||mobs:透明||``になる必要があります<br>
+恐竜(きょうりゅう)の横(よこ)を``||player:スニーク||`` で通(とお)り抜(ぬ)けるには、``||mobs:透明(とうめい)||``になる必要(ひつよう)があります<br>
 
 できるよか？
 
@@ -20,7 +20,7 @@
 ``` 
 
 ### ~ tutorialHint
-マインクラフトでスニークするには、shiftとWを押してみてしてね。
+マインクラフトでスニークするには、shiftとWを押(お)してみてしてね。
 <!-- Try pressing shift and W to sneak in Minecraft.  -->
 
 

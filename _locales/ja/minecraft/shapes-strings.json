@@ -1,0 +1,7 @@
+{
+    "shapes.circle|block": "このブロックで円を作成: %block=minecraftBlock|中心 %center=minecraftCreatePosition|半径 %radius|巻く方向 %orientation|%operator",
+    "shapes.line|block": "このブロックで線を作成: %block=minecraftBlock|開始 %p0=minecraftCreatePosition|終了 %p1=minecraftCreatePosition",
+    "shapes.sphere|block": "このブロックで球を作成: %block=minecraftBlock|中心 %center=minecraftCreatePosition|半径 %radius|%operator",
+    "shapes|block": "図形",
+    "{id:category}Shapes": "図形"
+}

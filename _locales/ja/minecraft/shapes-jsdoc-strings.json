@@ -1,0 +1,8 @@
+{
+    "shapes": "線、球およびその他の幾何学図形を作ります。",
+    "shapes.circle": "中心点を中心にブロックで円を作ります。",
+    "shapes.circle|param|radius": "円の半径。たとえば：5",
+    "shapes.line": "ある位置から別の位置までブロックの線を作ります。",
+    "shapes.sphere": "中心点を中心にブロックで球を作ります。",
+    "shapes.sphere|param|radius": "球の半径。たとえば：5"
+}

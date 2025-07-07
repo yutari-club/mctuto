@@ -9,7 +9,7 @@
 <!-- # Beets! -->
 
 ## Step 1
-今が輝くときだ！
+今(いま)が輝(かがや)くときだ！
 <!-- It is your time to shine!  -->
 
 ```ghost

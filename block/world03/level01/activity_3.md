@@ -5,22 +5,22 @@
 ### @explicitHints 1
 
 
-# 建物
+# 建物(たてもの)
 <!-- # Building -->
 
 
 ## Step 1
- ``||blocks:最初だけ||``自分に**34**個の**エメラルド**ブロックを``||mobs:与える||``。<br>
+ ``||blocks:最初(さいしょ)だけ||``自分(じぶん)に**34**個(こ)の**エメラルド**ブロックを``||mobs:与(あた)える||``。<br>
 
-新しい``||variables:変数||`` を作成し、**count**という名前にするよ。<br>
+新(あたら)しい``||variables:変数(へんすう)||`` を作成(さくせい)し、**count**という名前(なまえ)にするよ。<br>
 
-``||blocks:ブロックが置かれた時||`` ブロックを配置し、ブロックを**エメラルド**に設定するよ。<br>
+``||blocks:ブロックが置(お)かれた時(とき)||`` ブロックを配置(はいち)し、ブロックを**エメラルド**に設定(せってい)するよ。<br>
 
-``||variables:変数countを 1 だけ増やす||``ブロックを``||blocks:ブロックが置かれた時||``ブロック内にドラッグし、``||player: メッセージを送信||``ブロックを追加するよ。<br>
+``||variables:変数(へんすう)countを 1 だけ増(ふ)やす||``ブロックを``||blocks:ブロックが置(お)かれた時(とき)||``ブロック内(ない)にドラッグし、``||player: メッセージを送信(そうしん)||``ブロックを追加(ついか)するよ。<br>
 
-``||player: メッセージを送信|||``ブロック内に``||variables:count||`` を追加するよ。<br>
+``||player: メッセージを送信(そうしん)|||``ブロック内(ない)に``||variables:count||`` を追加(ついか)するよ。<br>
 
-これで、ブロックを置くたびに、置いたブロックの数をカウントしてくれます。<br>
+これで、ブロックを置(お)くたびに、置(お)いたブロックの数(かず)をカウントしてくれます。<br>
 
 
 <!-- ``||mobs:Give||`` yourself at least **34 emerald** blocks. <br>
@@ -36,7 +36,7 @@ Add ``||count||`` inside the ``||player: say||`` block.  <br>
 This way whenever you place blocks, the game will be counting how many blocks you placed.  -->
 
 ### ~ tutorialhint 
-鉄、金、エメラルド、ダイヤモンドのいずれかを選択できる。
+鉄(てつ)、金(きん)、エメラルド、ダイヤモンドのいずれかを選択(せんたく)できる。
 <!-- You can select iron, gold, emerald or diamond.  -->
 
 ```template

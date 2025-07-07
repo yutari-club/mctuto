@@ -6,15 +6,15 @@
 ### @explicitHints 1
 
 
-# 撃退２
+# 撃退(げきたい)２
 
 ## ステップ1
 ステップ1はヘイズ2。
 Step 1 is to do hazing two.  
 
 ## ステップ2
-完了したら、**Play**ボタンを押してコードをコンパイルするよ。</br>
-コードをMinecraftで実行するのを忘れないでしてね。</br>
+完了(かんりょう)したら、**Play**ボタンを押(お)してコードをコンパイルするよ。</br>
+コードをMinecraftで実行(じっこう)するのを忘(わす)れないでしてね。</br>
 
 ```blocks
 player.onChat("run", function () {

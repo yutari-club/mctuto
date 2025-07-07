@@ -6,12 +6,12 @@
 
 
 <!-- # Surroundings  -->
-# 周辺環境
+# 周辺(しゅうへん)環境(かんきょう)
 
 ## Step 1
-エージェントの下のブロックが**石**である間、エージェントは行動を続けます。<br>
+エージェントの下(した)のブロックが**石(いし)**である間(あいだ)、エージェントは行動(こうどう)を続(つづ)けます。<br>
 
-もしエージェントの前にブロックがない場合はエージェントは**前進**し、ブロックがある場合は**左折**する必要がある。
+もしエージェントの前(まえ)にブロックがない場合(ばあい)はエージェントは**前進(ぜんしん)**し、ブロックがある場合(ばあい)は**左折(させつ)**する必要(ひつよう)がある。
 
 <!-- While the Agent is **inspecting the block down** and the block is **stone**, the Agent needs to **move forward**. If the Agent does **not** detect a block forward, the Agent needs to **move forward**, otherwise it needs to **turn left**.  -->
 

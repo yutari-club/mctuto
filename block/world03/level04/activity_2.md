@@ -5,17 +5,17 @@
 ### @explicitHints 1
 
 
-# 始めて家[正方形の壁]を建てる！
+# 始(はじ)めて家(いえ)[正方形(せいほうけい)の壁(かべ)]を建(た)てる！
 <!-- # Build a starter house! -->
 
 ## Step 1
-提供されたサンプルコードを使って1列のブロックを配置する。<br>
+提供(ていきょう)されたサンプルコードを使(つか)って1列(れつ)のブロックを配置(はいち)する。<br>
 
-その後、エージェントは同じ手順を**4回**繰り返す必要があり、次に``||agent: 上に移動||`` に移動してさらに**繰り返し**ます。<br>
+その後(あと)、エージェントは同(おな)じ手順(てじゅん)を**4回(かい)**繰(く)り返(かえ)す必要(ひつよう)があり、次(つぎ)に``||agent: 上(うえ)に移動(いどう)||`` に移動(いどう)してさらに**繰(く)り返(かえ)し**ます。<br>
 
-``||variables: height||``を取得し、``||loops: くりかえす||``に追加するよ。<br>
+``||variables: height||``を取得(しゅとく)し、``||loops: くりかえす||``に追加(ついか)するよ。<br>
 
-このコードで**1軒**の家を建てることができるよ。
+このコードで**1軒(けん)**の家(うち)を建(た)てることができるよ。
 
 <!-- Use the provided sample code to place 1 row of blocks. 
 Then Agent needs to repeat the same procedure **4 times**, then ``||agent: move up||`` and **repeat** it more. 
@@ -23,7 +23,7 @@ Get the ``||variable: height||`` and add it to the ``||loops: repeat||`` block. 
 
 
 ### ~ tutorialHint
-コマンドを入力する際は、ゲーム内のチャットで数字を入力することをお忘れなく。例えば、**house 2 5**のように。
+コマンドを入力(にゅうりょく)する際(さい)は、ゲーム内(ない)のチャットで数字(すうじ)を入力(にゅうりょく)することをお忘(わす)れなく。例(たと)えば、**house 2 5**のように。
 <!-- Don't forget to input your numbers in the in-game chat when typing in the command, for example **house 2 5**.  -->
 
 ```template    

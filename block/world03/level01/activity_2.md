@@ -9,7 +9,7 @@
 # クライミング
 
 ## Step 1
-あなたのミッションは、高く``||mobs:跳躍||``して、届かない場所に登ることだよ。
+あなたのミッションは、高(たか)く``||mobs:跳躍(ちょうやく)||``して、届(とど)かない場所(ばしょ)に登(のぼ)ることだよ。
 <!-- Your challenge is to ``||mobs:jump||`` really high to climb up to the inaccessible area.  -->
 ```template
 {}

@@ -5,12 +5,12 @@
 ### @explicitHints 1
 
 
-# 周囲の環境
+# 周囲(しゅうい)の環境(かんきょう)
 <!-- # Surroundings  -->
 
 
 ## Step 1
-このシミュレーターで腕を磨け！
+このシミュレーターで腕(うで)を磨(みが)け！
 <!-- Time to work on your skills on the Holodeck! -->
 
 ```template
