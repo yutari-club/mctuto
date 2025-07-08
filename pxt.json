@@ -147,7 +147,9 @@
         "python/lesson10/activity7.md",
         "python/lesson10/activity8.md",
         "python/lesson10/activity9.md",
-        "python/lesson10/activity10.md"
+        "python/lesson10/activity10.md",
+        "_locales/ja/mctuto-strings.json",
+        "_locales/ja/mctuto-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
