@@ -1,0 +1,7 @@
+{
+    "shapes.circle|block": "このブロックで円(えん)を作成(さくせい): %block=minecraftBlock|中心(ちゅうしん) %center=minecraftCreatePosition|半径(はんけい) %radius|巻(ま)く方向(ほうこう) %orientation|%operator",
+    "shapes.line|block": "このブロックで線(せん)を作成(さくせい): %block=minecraftBlock|開始(かいし) %p0=minecraftCreatePosition|終了(しゅうりょう) %p1=minecraftCreatePosition",
+    "shapes.sphere|block": "このブロックで球(たま)を作成(さくせい): %block=minecraftBlock|中心(ちゅうしん) %center=minecraftCreatePosition|半径(はんけい) %radius|%operator",
+    "shapes|block": "図形(ずけい)",
+    "{id:category}Shapes": "図形(ずけい)"
+}
