@@ -25,6 +25,3 @@ player.onChat("garbage", function () {
     player.say("")
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
