@@ -6,12 +6,12 @@
         "builder": "*"
     },
     "files": [
+        "_locales/ja/mctuto-strings.json",
+        "_locales/ja/mctuto-jsdoc-strings.json",
         "main.blocks",
         "main.ts",
         "README.md",
         "no_coding.md",
-        "_locales/ja/mctuto-jsdoc-strings.json",
-        "_locales/ja/mctuto-strings.json",
         "block/world00/level04/01_ChickenRain.md",
         "block/world00/level04/02_FlowerTrail.md",
         "block/world01/level01/agent-move.md",
