@@ -39,7 +39,3 @@ player.onChat("jump", function () {
     mobs.spawnParticle(TOTEM_PARTICLE, agent.getPosition())
 })
 ```
-
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

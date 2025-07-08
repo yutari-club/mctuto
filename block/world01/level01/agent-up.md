@@ -46,6 +46,3 @@ player.onChat("jump", function () {
 	
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

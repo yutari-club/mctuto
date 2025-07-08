@@ -9,6 +9,3 @@
 ```template
 player.say("おいで、エージェント!")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
