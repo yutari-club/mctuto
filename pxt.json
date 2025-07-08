@@ -6,16 +6,6 @@
         "builder": "*"
     },
     "files": [
-        "_locales/ja/minecraft/builder-jsdoc-strings.json",
-        "_locales/ja/minecraft/builder-strings.json",
-        "_locales/ja/minecraft/core-jsdoc-strings.json",
-        "_locales/ja/minecraft/core-strings.json",
-        "_locales/ja/minecraft/nether-jsdoc-strings.json",
-        "_locales/ja/minecraft/nether-strings.json",
-        "_locales/ja/minecraft/shapes-jsdoc-strings.json",
-        "_locales/ja/minecraft/shapes-strings.json",
-        "_locales/ja/minecraft/sim-strings.json",
-        "_locales/ja/minecraft/target-strings.json",
         "main.blocks",
         "main.ts",
         "README.md",
@@ -163,7 +153,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.30",
+        "target": "2.0.35",
         "targetId": "minecraft"
     },
     "supportedTargets": [
