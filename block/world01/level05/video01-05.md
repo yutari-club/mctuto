@@ -23,7 +23,7 @@
 	<br>
 
 	<video controls>
-	  <source src="04_草刈(くさか)り.mp4" type="video/mp4" />
+	  <source src="04_草刈り.mp4" type="video/mp4" />
 	</video>
 
 # [戻(もど)る](../video01.html)

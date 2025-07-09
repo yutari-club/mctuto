@@ -6,25 +6,25 @@
 	<br>
 
 	<video controls>
-	  <source src="01_最初(さいしょ)の材料(ざいりょう)を探(さが)す.mp4" type="video/mp4" />
+	  <source src="01_最初の材料を探す.mp4" type="video/mp4" />
 	</video>
 1. **周辺(しゅうへん)環境(かんきょう)**
 	<br>
 
 	<video controls>
-	  <source src="02_周辺(しゅうへん)環境(かんきょう).mp4" type="video/mp4" />
+	  <source src="02_周辺環境.mp4" type="video/mp4" />
 	</video>
 1. **渦巻(うずま)き**
 	<br>
 
 	<video controls>
-	  <source src="03_渦巻(うずま)き.mp4" type="video/mp4" />
+	  <source src="03_渦巻き.mp4" type="video/mp4" />
 	</video>
 1. **3D 空間(くうかん)**
 	<br>
 
 	<video controls>
-	  <source src="04_3D空間(くうかん).mp4" type="video/mp4" />
+	  <source src="04_3D空間.mp4" type="video/mp4" />
 	</video>
 1. **シミュレーション**
 	<br>
