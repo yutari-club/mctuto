@@ -73,6 +73,3 @@ function 方向転換(ほうこうてんかん) () {
 }
 player.say("")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

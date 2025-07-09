@@ -66,6 +66,3 @@ length = 5
 Segments = 6
 player.say("")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

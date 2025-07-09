@@ -32,6 +32,4 @@ player.onChat("cub", function () {
 })
 
 ``` 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+

@@ -84,6 +84,3 @@ player.onChat("pp", function () {
 ## よくできたね！
 ### ニワトリの雨(あめ)プログラミングの完成(かんせい)だよ！
 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

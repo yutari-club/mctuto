@@ -30,6 +30,3 @@ player.onChat("1", function () {
     }
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

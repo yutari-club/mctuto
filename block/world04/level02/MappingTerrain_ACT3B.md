@@ -29,6 +29,3 @@ Output.showLocations_MTB()
 AI.ml_MTB(function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

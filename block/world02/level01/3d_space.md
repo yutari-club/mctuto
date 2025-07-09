@@ -38,6 +38,3 @@ player.onChat("3D", function () {
     player.say("")
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

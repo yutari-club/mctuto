@@ -36,6 +36,3 @@ player.onChat("repair", function () {
     agent.place(FORWARD)
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

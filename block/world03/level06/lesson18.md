@@ -63,6 +63,3 @@ mobs.spawn(CHICKEN, pos(0, 0, 0))
 agent.setItem(GRASS, 1, 1)
 player.say("")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

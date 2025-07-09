@@ -41,6 +41,3 @@ Datasets.extractPatterns_PR()
 Datasets.setOfData_PR(datasetType.historical, function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

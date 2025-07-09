@@ -41,6 +41,3 @@ player.onChat("foliage", function () {
     }
 })
 ``` 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

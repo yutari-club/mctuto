@@ -33,6 +33,3 @@ Datasets.input_OO()
 AI.genRoutes_OO()
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

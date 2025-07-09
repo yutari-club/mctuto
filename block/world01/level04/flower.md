@@ -32,6 +32,4 @@ player.onChat("flower", function () {
 })
 
 ``` 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+

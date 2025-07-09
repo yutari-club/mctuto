@@ -25,6 +25,3 @@ Output.reach3_OO()
 Output.reach4_OO()
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

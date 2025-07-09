@@ -36,7 +36,5 @@ player.onChat("chasm", function () {
 })
 
 ``` 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+
 

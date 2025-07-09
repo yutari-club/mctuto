@@ -29,6 +29,3 @@ Input.sensor4_OO()
 Datasets.setOfData_OO(datasetType.historical, function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

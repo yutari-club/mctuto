@@ -103,9 +103,7 @@ player.onTravelled(WALK, function () {
 })
 ```
 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+
 ```template
 {}
 ```

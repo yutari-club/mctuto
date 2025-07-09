@@ -33,6 +33,3 @@ player.onChat("3", function () {
     player.say("")
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

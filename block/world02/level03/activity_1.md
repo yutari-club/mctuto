@@ -44,6 +44,3 @@ player.onChat("stone", function () {
     }
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

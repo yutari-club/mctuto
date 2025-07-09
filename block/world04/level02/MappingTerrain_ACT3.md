@@ -24,6 +24,3 @@ Output.showLocations_MT()
 AI.ml_MT(function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

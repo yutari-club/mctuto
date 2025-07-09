@@ -9,6 +9,4 @@
 ```template
 player.say("プログラミング大好(だいす)き")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+

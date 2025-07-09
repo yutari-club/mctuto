@@ -40,6 +40,3 @@ mobs.target(NEAREST_PLAYER)
 )
 player.say("")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

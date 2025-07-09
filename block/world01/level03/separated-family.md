@@ -34,6 +34,4 @@ player.onChat("family", function () {
 })
 
 ``` 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+

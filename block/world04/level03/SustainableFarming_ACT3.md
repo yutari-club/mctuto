@@ -31,6 +31,3 @@ AI.analyze_SF()
 Output.locateFarm_SF()
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

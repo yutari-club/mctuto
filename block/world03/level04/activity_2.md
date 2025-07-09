@@ -53,9 +53,6 @@ player.onChat("build-simple", function (size, height) {
 })
 player.say("")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
 
 
 

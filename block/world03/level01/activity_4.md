@@ -70,6 +70,3 @@ player.onTravelled(FALL, function () {
 player.say("")
 ```
 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

@@ -24,6 +24,3 @@ Input.waterData3_WQ()
 Datasets.setOfData_WQ(datasetType.historical, function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

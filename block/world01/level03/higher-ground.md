@@ -43,8 +43,6 @@ player.onChat("tower", function () {
 })
 
 ``` 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+
 
 

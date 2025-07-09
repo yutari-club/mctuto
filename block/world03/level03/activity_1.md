@@ -56,6 +56,3 @@ let height = 0
 height = 6
 quantity = 6
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

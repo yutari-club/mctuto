@@ -19,6 +19,3 @@ Input.location3PictureData_MT()
 Datasets.setOfData_MT(function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

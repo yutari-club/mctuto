@@ -32,6 +32,3 @@ AI.analyze_PR()
 Output.locateOcelots_PR()
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

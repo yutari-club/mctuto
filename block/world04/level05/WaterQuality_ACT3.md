@@ -31,6 +31,3 @@ AI.analyze_WQ()
 Output.locatePollution_WQ()
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

@@ -32,6 +32,3 @@ player.onChat("ice", function () {
     agent.collectAll()
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

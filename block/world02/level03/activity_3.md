@@ -34,6 +34,3 @@ player.onChat("rover", function () {
     player.say("ローバーを発見(はっけん)しました!")
 })
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

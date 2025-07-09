@@ -33,6 +33,3 @@ Input.runSatelite_SF(function() {})
 Datasets.setOfData_SF(datasetType.historical, function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

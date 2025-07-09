@@ -41,6 +41,3 @@ player.onChat("town_hall", function (length, width, height) {
 })
 player.say("")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```

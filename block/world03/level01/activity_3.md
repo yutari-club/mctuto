@@ -60,7 +60,4 @@ let count = 0
 mobs.give(mobs.target(NEAREST_PLAYER), STONE, 1)
 player.say("")
 ```
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
 

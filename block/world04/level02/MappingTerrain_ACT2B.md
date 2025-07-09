@@ -25,6 +25,3 @@ Input.location3PictureData_MTB()
 Datasets.setOfData_MTB(function() {})
 ```
 
-```package
-aicustomblocks=github:yutari-club/mctuto
-```

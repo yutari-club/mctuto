@@ -30,7 +30,5 @@ player.onChat("bamboo", function () {
 })
 ```
 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
+
 

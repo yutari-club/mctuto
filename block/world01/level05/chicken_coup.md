@@ -38,6 +38,3 @@ player.onChat("chicken", function () {
 })
 
 ``` 
-```package
-rubyblock=github:yutari-club/rubyblock#master
-```
