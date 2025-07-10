@@ -1,16 +1,16 @@
-# Ocelot Enclosure: JavaScript
+# オセロットの囲い: JavaScript
 
-## Step 1
-Code an ``||player:on chat||`` command and name it **fence**.
+## ステップ 1
+``||player:on chat||`` コマンドをコーディングし、**fence** という名前を付けます。
 
 ```javascript
 player.onChat("fence", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Code a ``||builder:builder teleport||`` at the world position **-695, 9, 880**, facing **West**.
+世界位置 **-695, 9, 880** で **West** を向いた ``||builder:builder teleport||`` をコーディングします。
 
 ```javascript
 player.onChat("1", function () {
@@ -19,9 +19,9 @@ player.onChat("1", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-``||builder:Move||`` the builder **forward by 21**. 
+ビルダーを **forward by 21** で ``||builder:Move||`` します。
 
 ```javascript
     builder.face(WEST) 
@@ -29,9 +29,9 @@ player.onChat("1", function () {
 }) 
 ```
 
-## Step 4
+## ステップ 4
 
-``||builder:Turn||`` the builder to the **right**.
+ビルダーを **right** に ``||builder:Turn||`` します。
 
 ```javascript
     builder.move(FORWARD, 21)
@@ -40,9 +40,9 @@ player.onChat("1", function () {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-``||builder:Move||`` the builder **forward by 9** and ``||builder:turn||`` **right**. 
+ビルダーを **forward by 9** で ``||builder:Move||`` し、**right** に ``||builder:turn||`` します。
 
 ```javascript
     builder.turn(RIGHT_TURN)
@@ -51,9 +51,9 @@ player.onChat("1", function () {
     })
 ```
 
-## Step 6
+## ステップ 6
 
-``||builder:Move||`` the builder **forward by 21**, ``||builder:turn||`` **right**, and ``||builder:move||`` **forward by 9**.
+ビルダーを **forward by 21** で ``||builder:Move||``、**right** に ``||builder:turn||``、そして **forward by 9** で ``||builder:move||`` します。
 
 ```javascript
     builder.turn(RIGHT_TURN)
@@ -63,9 +63,9 @@ player.onChat("1", function () {
 })
 ```
 
-## Step 7
+## ステップ 7
 
-To place fencing along the perimeter of the rectangle, code the builder to ``||builder:trace||`` his former path while building with **Oak Fence** .
+長方形の周囲にフェンスを配置するには、ビルダーが **Oak Fence** で構築しながら以前のパスを ``||builder:trace||`` するようにコーディングします。
 
 ```javascript
     builder.move(FORWARD, 9)
@@ -73,9 +73,9 @@ To place fencing along the perimeter of the rectangle, code the builder to ``||b
 })
 ```
 
-## Step 8
+## ステップ 8
 
-Randomly ``||mobs:spawn||`` one **ocelot** inside the fence that was just built.
+作ったばかりのフェンス内に1匹の **ocelot** をランダムに ``||mobs:spawn||`` します。
 
 ```javascript
     builder.tracePath(OAK_FENCE)
@@ -86,9 +86,9 @@ Randomly ``||mobs:spawn||`` one **ocelot** inside the fence that was just built.
 })
 ```
 
-## Step 9
+## ステップ 9
 
-Randomly ``||mobs:spawn||`` another **ocelot** inside the fence that was just built.
+作ったばかりのフェンス内に別の **ocelot** をランダムに ``||mobs:spawn||`` します。
 
 ```javascript
     mobs.spawn(OCELOT, randpos(
@@ -102,9 +102,9 @@ Randomly ``||mobs:spawn||`` another **ocelot** inside the fence that was just bu
 })
 ```
 
-## Step 10
+## ステップ 10
 
-Randomly ``||mobs:spawn||`` two wolves inside the fence that was just built.
+作ったばかりのフェンス内に2匹のオオカミをランダムに ``||mobs:spawn||`` します。
 
 ```javascript
     mobs.spawn(OCELOT, randpos(
@@ -122,9 +122,9 @@ Randomly ``||mobs:spawn||`` two wolves inside the fence that was just built.
 })
 ```
 
-## Step 11
+## ステップ 11
 
-Return to Minecraft and test your code.
+Minecraftに戻り、コードをテストしてみましょう。
 
 ```javascript
 player.onChat("fence", function () {
@@ -156,4 +156,3 @@ player.onChat("fence", function () {
     ))
 })
 ```
-

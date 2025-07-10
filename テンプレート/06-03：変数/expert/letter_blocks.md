@@ -1,7 +1,7 @@
-# Letter Printing: Blocks
+# 文字表示: ブロック
 
-## Step 1
-Create an ``||player:on chat||`` command and name it **mix** that contains a ``||variables: new variable||`` called **starting_world_position**. Set this ``||variable:variable||`` to ``||player:player world position||``.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**mix** という名前を付けて、**starting_world_position** という ``||variables: new variable||`` を含めます。この ``||variable:variable||`` を ``||player:player world position||`` に設定します。
 
 ```blocks
 player.onChat("mix", function () {
@@ -9,9 +9,9 @@ player.onChat("mix", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Add the code to ``||blocks:print||`` a variable **word1** out of ``||blocks:grass||`` blocks at the position **(0,0,0)**, facing **West**.
+位置 **(0,0,0)** で **West** を向いて、変数 **word1** を ``||blocks:grass||`` ブロックで ``||blocks:print||`` するコードを追加します。
 
 ```blocks
 player.onChat("mix", function () {
@@ -25,9 +25,9 @@ player.onChat("mix", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Add an ``||loops:on start||`` and insert a new variable **word1**. Set the variable to **"rail"**. Set the variable **starting_world_ position** to **(0,0,0)**.
+``||loops:on start||`` を追加し、新しい変数 **word1** を挿入します。この変数を **"rail"** に設定します。変数 **starting_world_position** を **(0,0,0)** に設定します。
 
 ```blocks
 Let starting_world_position: Position = null
@@ -35,9 +35,9 @@ let word1 = ""
 word1 = "rail"
 ```
 
-## Step 4
+## ステップ 4
 
-Create an ``||player:on chat||`` command and name it **mix2**. Add another ``||variables: variable||``, set it to the **starting_world_ position**, then set it to ``||player:player world position||``. Drag that variable into the ``||player:on chat||`` **mix2** command. Inside the ``||player:on chat||`` command, add a ``||blocks:print||`` block and assign it the variable **word1** out of **smooth sandstone** at position **(0,0,0)**, facing **West**. Drag **word1** directly beneath the  **starting_world_ position** variable.
+``||player:on chat||`` コマンドを作成し、**mix2** という名前を付けます。別の ``||variables: variable||`` を追加し、**starting_world_position** に設定してから、``||player:player world position||`` に設定します。その変数を ``||player:on chat||`` **mix2** コマンドにドラッグします。``||player:on chat||`` コマンド内で、``||blocks:print||`` ブロックを追加し、位置 **(0,0,0)** で **West** を向いて変数 **word1** を **smooth sandstone** で割り当てます。**word1** を **starting_world_position** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("mix2", function () {
@@ -51,9 +51,9 @@ player.onChat("mix2", function () {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Add another ``||blocks:print||`` block and assign it the variable **word2** out of **purple wool** at position **0,0,0**, facing **West**. Drag **word2** directly beneath the **word1** variable.
+別の ``||blocks:print||`` ブロックを追加し、位置 **0,0,0** で **West** を向いて変数 **word2** を **purple wool** で割り当てます。**word2** を **word1** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("mix2", function () {
@@ -73,9 +73,9 @@ player.onChat("mix2", function () {
 })
 ```
 
-## Step 6
+## ステップ 6
 
-Add another ``||variables:variable||``, select **word2** and assign the string "road" to it. Drag the **word2** variable into the ``||loops:on start||`` command directly beneath the **word1** variable.
+別の ``||variables:variable||`` を追加し、**word2** を選択して文字列 "road" を割り当てます。**word2** 変数を ``||loops:on start||`` コマンドの **word1** 変数の直下にドラッグします。
 
 ```blocks
 let starting_world_position: Position = null
@@ -85,9 +85,9 @@ word1 = "rail"
 word2 = "road"
 ```
 
-## Step 7
+## ステップ 7
 
-Add another ``||blocks:print||``command, insert a ``||text:join||`` block and assign both **word1** and **word2**. Set the ``||blocks:print||`` to **lapiz lazuli** at position **(0,0,0)**, facing **West**. Drag the complete ``||blocks:print|`` into the ``||player:on chat||`` **mix2** command directly beneath the **word2** variable. 
+別の ``||blocks:print||`` コマンドを追加し、``||text:join||`` ブロックを挿入して **word1** と **word2** の両方を割り当てます。``||blocks:print||`` を位置 **(0,0,0)** で **West** を向いて **lapis lazuli** に設定します。完成した ``||blocks:print||`` を ``||player:on chat||`` **mix2** コマンドの **word2** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("mix2", function () {
@@ -113,9 +113,9 @@ player.onChat("mix2", function () {
 })
 ```
 
-## Step 8
+## ステップ 8
 
-Get an ``||player:on player walk||`` block and set it to **fly**. Create a new variable with the name **alphabet**, then assign it the text string **"ABCDEFGHIJKLMNOPQ"**. Drag this variable into the ``||player:on player fly||`` block.
+``||player:on player walk||`` ブロックを取得し、**fly** に設定します。**alphabet** という名前の新しい変数を作成し、テキスト文字列 **"ABCDEFGHIJKLMNOPQ"** を割り当てます。この変数を ``||player:on player fly||`` ブロックにドラッグします。
 
 ```blocks
 player.onTravelled(FLY, function () {
@@ -123,9 +123,9 @@ player.onTravelled(FLY, function () {
 })
 ```
 
-## Step 9
+## ステップ 9
 
-Add another ``||variables: variable||`` **RandomLetter**. Get a ``||math:pick random||`` block and set the range from **0** to **12**. Then, insert the complete ``||math:pick random||`` block into the **RandomLetter** variable.
+別の ``||variables: variable||`` **RandomLetter** を追加します。``||math:pick random||`` ブロックを取得し、範囲を **0** から **12** に設定します。次に、完成した ``||math:pick random||`` ブロックを **RandomLetter** 変数に挿入します。
 
 
 ```blocks
@@ -141,9 +141,9 @@ player.onTravelled(FLY, function () {
 })
 ```
 
-## Step 10
+## ステップ 10
 
-Set the **alphabet** and **RandomLetter** variables. For consistency, we set them in the same location we set all the other variables.
+**alphabet** と **RandomLetter** 変数を設定します。一貫性のため、他のすべての変数を設定する同じ場所に設定します。
 
 ```blocks
 let RandomLetter = 0
@@ -155,9 +155,9 @@ word1 = "rail"
 word2 = "road"
 ```
 
-## Step 11
+## ステップ 11
 
-Go into Minecraft and test all of your code.
+Minecraftに入り、すべてのコードをテストしてみましょう。
 
 ```blocks
 player.onChat("mix", function () {

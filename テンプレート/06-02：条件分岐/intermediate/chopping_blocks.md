@@ -1,15 +1,15 @@
-# Chopping Trees: Blocks
+# 木を切る: ブロック
 
-## Step 1
-Get an ``||player:on chat||`` command and name it **"tp"**.
+## ステップ 1
+``||player:on chat||`` コマンドを取得し、**"tp"** という名前を付けます。
 
 ```blocks
 player.onChat("tp", function () {
 })
 ```
 
-## Step 2
-Get an agent ``||agent:teleport to player||`` and drag it inside the **tp**  ``||player:on chat||`` command.
+## ステップ 2
+エージェントの ``||agent:teleport to player||`` を取得し、**tp** ``||player:on chat||`` コマンドの内側にドラッグします。
 
 ```blocks
 player.onChat("tp", function () {
@@ -17,18 +17,18 @@ player.onChat("tp", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Create another ``||player:on chat||`` command and name it **"chop"**.
+別の ``||player:on chat||`` コマンドを作成し、**"chop"** という名前を付けます。
 
 ```blocks
 player.onChat("chop", function () {
 })
 ```
 
-## Step 4
+## ステップ 4
 
-Create a new ``||variable: variable||`` and name it **height**, set it to **0**. Drag this new variable into the **chop** ``||player:on chat||`` command.
+新しい ``||variable: variable||`` を作成し、**height** という名前を付けて、**0** に設定します。この新しい変数を **chop** ``||player:on chat||`` コマンドにドラッグします。
 
 ```blocks
 let height = 0
@@ -37,9 +37,9 @@ player.onChat("chop", function () {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Get a ``||loops: while||`` loop and drag it into the workspace. Get an ``||agent:agent detect||`` block and set it to **block** and **forward**. Drag the ``||agent:detect||`` block inside the ``||loops:while||`` loop and then drag the while loop inside the **chop** ``||player:on chat||`` command directly under the **height** variable.
+``||loops: while||`` ループを取得し、ワークスペースにドラッグします。``||agent:agent detect||`` ブロックを取得し、**block** と **forward** に設定します。``||agent:detect||`` ブロックを ``||loops:while||`` ループの内側にドラッグし、次にwhileループを **chop** ``||player:on chat||`` コマンドの **height** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("chop", function () {
@@ -49,9 +49,9 @@ player.onChat("chop", function () {
     }
 ```
 
-## Step 6
+## ステップ 6
 
-Get a ``||variable: change variable||``, set it to the value of **height plus 1**. Drag the **height** variable into the ``||loops: while||`` loop.
+``||variable: change variable||`` を取得し、**height plus 1** の値に設定します。**height** 変数を ``||loops: while||`` ループにドラッグします。
 
 ```blocks
     while (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -59,9 +59,9 @@ Get a ``||variable: change variable||``, set it to the value of **height plus 1*
     }
 ```
 
-## Step 7
+## ステップ 7
 
-Get an ``||agent:agent destroy||`` and set it to **up**. Drag it into the ``||loops: while||`` loop under the change variable **height**. Get an ``||agent:agent move||`` and set it to **up by 1**. Drag it into the ``||loops: while||`` loop directly beneath the ``||agent:agent destroy||``.
+``||agent:agent destroy||`` を取得し、**up** に設定します。``||loops: while||`` ループの変数 **height** の下にドラッグします。``||agent:agent move||`` を取得し、**up by 1** に設定します。``||agent:agent destroy||`` の直下の ``||loops: while||`` ループにドラッグします。
 
 ```blocks
    let height = 0
@@ -76,9 +76,9 @@ player.onChat("chop", function () {
 ```
 
 
-## Step 8
+## ステップ 8
 
-Add a ``||loops:repeat||`` loop after the ``||loops: while||`` loop. Get the **height** variable and drag it into the **times** argument of the ``||loops:repeat||`` loop.
+``||loops: while||`` ループの後に ``||loops:repeat||`` ループを追加します。**height** 変数を取得し、``||loops:repeat||`` ループの **times** 引数にドラッグします。
 
 ```blocks
 let height = 0
@@ -95,9 +95,9 @@ player.onChat("chop", function () {
 })
 ```
 
-## Step 9
+## ステップ 9
 
-Duplicate the ``||agent:move||`` block (from above), then change it to **down**. Drag the ``||agent:agent move down||`` into the ``||loops:repeat||`` loop. Duplicate the ``||agent: agent destroy||`` (from above), then change it to **destroy forward**. Drag the ``||agent:agent destroy forward||`` into the  ``||loops:repeat||`` loop. Place it directly beneath the ``||agent:move||``.
+``||agent:move||`` ブロック（上記から）を複製し、**down** に変更します。``||agent:agent move down||`` を ``||loops:repeat||`` ループにドラッグします。``||agent: agent destroy||``（上記から）を複製し、**destroy forward** に変更します。``||agent:agent destroy forward||`` を ``||loops:repeat||`` ループにドラッグします。``||agent:move||`` の直下に配置します。
 
 ```blocks
 let height = 0
@@ -116,9 +116,9 @@ player.onChat("chop", function () {
 
 ```
 
-## Step 10
+## ステップ 10
 
-Get a ``||agent:collect all||`` block and drag it into the  ``||loops:repeat||`` loop under the ``||agent:agent destroy forward||``.
+``||agent:collect all||`` ブロックを取得し、``||agent:agent destroy forward||`` の下の ``||loops:repeat||`` ループにドラッグします。
 
 ```blocks
     }
@@ -126,9 +126,9 @@ Get a ``||agent:collect all||`` block and drag it into the  ``||loops:repeat||``
 })
 ```
 
-## Step 11
+## ステップ 11
 
-Go into Minecraft, press **t** and test the tutorial out by typing **tp** and **chop** chat commands.
+Minecraftに入り、**t** を押して、**tp** と **chop** チャットコマンドを入力してチュートリアルをテストしてみましょう。
 ```blocks
 let height = 0
 player.onChat("chop", function () {

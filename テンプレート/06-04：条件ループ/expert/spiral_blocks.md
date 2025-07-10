@@ -1,17 +1,17 @@
-# Spiral Activity: Blocks
+# 螺旋アクティビティ: ブロック
 
 
-## Step 1
-Get an ``||player:on chat||`` command and name it **“spiral”**.
+## ステップ 1
+``||player:on chat||`` コマンドを取得し、**"spiral"** という名前を付けます。
 
 ```blocks
 player.onChat("spiral", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Put a ``||loops:while||`` loop inside the ``||player:chat command||``. Get a ``||logic:comparison||``, set it to **not equals** and drag it into the ``||loops:while||`` loop in place of **true**. Get an ``||agent:agent inspect||`` block, set it to **block** and **forward** and drag it into the **left** parameter of the comparison. Get a ``||blocks:block||``, set it to **Gold** and drag it into the **right** parameter of the comparison. 
+``||player:chat command||`` の内側に ``||loops:while||`` ループを配置します。``||logic:comparison||`` を取得し、**not equals** に設定して、``||loops:while||`` ループの **true** の場所にドラッグします。``||agent:agent inspect||`` ブロックを取得し、**block** と **forward** に設定して、比較の **left** パラメータにドラッグします。``||blocks:block||`` を取得し、**Gold** に設定して、比較の **right** パラメータにドラッグします。
 
 ```blocks
 player.onChat("spiral", function () {
@@ -21,9 +21,9 @@ player.onChat("spiral", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Add an ``||logic:if-else||`` conditional inside the ``||loops:while||`` loop and replace the **true** argument in the ``||logic:if-else||`` conditional with a ``||logic:not||`` block. Add an ``||agent:agent detect||`` block set to **block** and **forward** into the ``||logic:not||``block. Add an ``||agent:agent move||`` **forward** by 1 into the ``||logic:if||`` conditional.
+``||loops:while||`` ループの内側に ``||logic:if-else||`` 条件文を追加し、``||logic:if-else||`` 条件文の **true** 引数を ``||logic:not||`` ブロックに置き換えます。``||agent:agent detect||`` ブロックを **block** と **forward** に設定して ``||logic:not||`` ブロックに追加します。``||agent:agent move||`` **forward** by 1 を ``||logic:if||`` 条件文に追加します。
 
 ```blocks
 player.onChat("spiral", function () {
@@ -37,9 +37,9 @@ player.onChat("spiral", function () {
 })
 ```
 
-## Step 4
+## ステップ 4
 
-Add an ``||agent:agent turn left||`` block into the ``||logic:else||`` conditional.
+``||agent:agent turn left||`` ブロックを ``||logic:else||`` 条件文に追加します。
 
 ```blocks
 player.onChat("spiral", function () {
@@ -53,8 +53,8 @@ player.onChat("spiral", function () {
 })
 ```
 
-## Step 5
-Press the **Play** button, go to Minecraft, type **t** and try out **spiral**. 
+## ステップ 5
+**実行** ボタンを押して、Minecraftに入り、**t** を入力して **spiral** を試してみましょう。
 
 ```blocks
 player.onChat("spiral", function () { 

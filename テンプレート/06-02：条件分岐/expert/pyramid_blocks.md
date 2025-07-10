@@ -1,8 +1,8 @@
-# Agent Pyramid: Blocks
+# エージェントのピラミッド: ブロック
 
 
-## Step 1
-Create an ``||player:on chat||`` command and name it **"pyramid"**. Click the **(+)** sign and create a new **size** variable.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"pyramid"** という名前を付けます。**(+)** 記号をクリックして新しい **size** 変数を作成します。
 
 ```blocks
 player.onChat("pyramid", function (size){ 
@@ -10,8 +10,8 @@ player.onChat("pyramid", function (size){
 }) 
 ```
 
-## Step 2
-Get an ``||logic:if-then||`` statement and drag it into the **pyramid** ``||player:on chat||`` command. Drag a ``||logic: comparison||`` into the **true** argument of the ``||logic:if-then||`` conditional  and set it to **>** (greater than). Then, insert the **size** variable into the first argument **left**. Leave the right argument empty.
+## ステップ 2
+``||logic:if-then||`` 文を取得し、**pyramid** ``||player:on chat||`` コマンドにドラッグします。``||logic: comparison||`` を ``||logic:if-then||`` 条件文の **true** 引数にドラッグし、**>**（より大きい）に設定します。次に、**size** 変数を最初の引数 **left** に挿入します。右の引数は空のままにします。
 
 ```blocks
 player.onChat("pyramid", function (size)){ 
@@ -21,9 +21,9 @@ player.onChat("pyramid", function (size)){
     } 
 ```
 
-## Step 3
+## ステップ 3
 
-Add a ``||agent:set block or item||`` into the ``||logic:if-then||`` conditional and select **Sandstone**. Drag a ``||math: return product||`` into the **count** field, set it to **multiply**, drag the **size** variable into BOTH arguments of the product (multiplication template), and set the **in slot** argument to **1**. 
+``||agent:set block or item||`` を ``||logic:if-then||`` 条件文に追加し、**Sandstone** を選択します。``||math: return product||`` を **count** フィールドにドラッグし、**multiply** に設定して、**size** 変数を積（乗算テンプレート）の両方の引数にドラッグし、**in slot** 引数を **1** に設定します。
 
 ```blocks
 player.onChat("pyramid", function (size){ 
@@ -34,9 +34,9 @@ player.onChat("pyramid", function (size){
 }) 
 ```
 
-## Step 4
+## ステップ 4
 
-Add a ``||agent:set active slot||`` block into the ``||logic:if-then||`` conditional and set the **slot** argument to 1.
+``||agent:set active slot||`` ブロックを ``||logic:if-then||`` 条件文に追加し、**slot** 引数を 1 に設定します。
 
 ```blocks
         agent.setItem(SANDSTONE, size * size, 1) 
@@ -45,9 +45,9 @@ Add a ``||agent:set active slot||`` block into the ``||logic:if-then||`` conditi
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Add a ``||agent:place on move||`` block into the ``||logic:if-then||`` conditional and set the **logical** argument to **true**.
+``||agent:place on move||`` ブロックを ``||logic:if-then||`` 条件文に追加し、**logical** 引数を **true** に設定します。
 
 ```blocks
         agent.setSlot(1) 
@@ -56,9 +56,9 @@ Add a ``||agent:place on move||`` block into the ``||logic:if-then||`` condition
 }) 
 ```
 
-## Step 6
+## ステップ 6
 
-Get a ``||loops:for||`` loop and drag it into the ``||logic:if-then||`` conditional. Create a new variable with the name **I** and drag it into the **index** of the ``||loops:for||`` loop. Add a ``||math:return difference||`` of two numbers and set it to 4 minus 1 after the Agent ``||agent:place on move||``.
+``||loops:for||`` ループを取得し、``||logic:if-then||`` 条件文にドラッグします。**I** という名前の新しい変数を作成し、``||loops:for||`` ループの **index** にドラッグします。エージェント ``||agent:place on move||`` の後に、2つの数の ``||math:return difference||`` を追加し、4引く1に設定します。
 	
 ```blocks
     agent.setAssist(PLACE_ON_MOVE, true) 
@@ -68,9 +68,9 @@ Get a ``||loops:for||`` loop and drag it into the ``||logic:if-then||`` conditio
     } 
 ```
 
-## Step 7
+## ステップ 7
 
-Add an ``||agent:agent move||`` block into the ``||loops:for||`` loop, set the first argument to **forward** and set the second argument to **size**.
+``||agent:agent move||`` ブロックを ``||loops:for||`` ループに追加し、最初の引数を **forward** に設定し、2番目の引数を **size** に設定します。
 
 ```blocks
         for (let i = 0; i <= 0 - 0; i++) { 
@@ -78,9 +78,9 @@ Add an ``||agent:agent move||`` block into the ``||loops:for||`` loop, set the f
         } 
 ```
 
-## Step 8
+## ステップ 8
 
- Add an ``||agent:agent turn||`` into the end of ``||loops:for||`` loop and set it to **left turn**.
+``||agent:agent turn||`` を ``||loops:for||`` ループの最後に追加し、**left turn** に設定します。
 
 ```blocks
 for (let i = 0; i <= 0 - 0; i++) { 
@@ -89,9 +89,9 @@ for (let i = 0; i <= 0 - 0; i++) {
         } 
 ```
 
-## Step 9
+## ステップ 9
 
-Outside the for loop, add another ``||agent:agent move||`` block, set it to **up by 1**, and then drag it into the end of the ``||logic:if-then||`` conditional .
+forループの外で、別の ``||agent:agent move||`` ブロックを追加し、**up by 1** に設定してから、``||logic:if-then||`` 条件文の最後にドラッグします。
 
 ```blocks
    } 
@@ -100,19 +100,19 @@ Outside the for loop, add another ``||agent:agent move||`` block, set it to **up
 ```
 
 
-## Step 10
+## ステップ 10
 
-Add an ``||agent:agent place on move||`` block, set it to **false**, and drag it into the end of the ``||logic:if-then||`` conditional. Add another ``||agent:agent move||`` block, set it to **forward by 1**, and drag it into the end ``||logic:if-then||`` conditional.
+``||agent:agent place on move||`` ブロックを追加し、**false** に設定して、``||logic:if-then||`` 条件文の最後にドラッグします。別の ``||agent:agent move||`` ブロックを追加し、**forward by 1** に設定して、``||logic:if-then||`` 条件文の最後にドラッグします。
 
 ```blocks
   agent.move(UP, 1) 
         agent.setAssist(PLACE_ON_MOVE, false)
 ```
 
-## Step 11
+## ステップ 11
 
 
-Get a ``||player:run chat||`` command and drag it into the workspace. Get a ``||text:join||`` and drag it into the **string** argument of the ``||player:run chat||`` command. Type **pyramid** into the first string argument of the ``||text:join||``.  Get a ``||math:return difference||`` and drag it into the second string argument of the ``||text:join||``. Add the **size** variable into the first field in the ``||math:return difference||``block, then set the second field of the ``||math:return difference||`` to **2**. Drag the completed ``||player:run chat||`` command into the end ``||logic:if-then||`` conditional.
+``||player:run chat||`` コマンドを取得し、ワークスペースにドラッグします。``||text:join||`` を取得し、``||player:run chat||`` コマンドの **string** 引数にドラッグします。``||text:join||`` の最初の文字列引数に **pyramid** と入力します。``||math:return difference||`` を取得し、``||text:join||`` の2番目の文字列引数にドラッグします。**size** 変数を ``||math:return difference||`` ブロックの最初のフィールドに追加し、``||math:return difference||`` の2番目のフィールドを **2** に設定します。完成した ``||player:run chat||`` コマンドを ``||logic:if-then||`` 条件文の最後にドラッグします。
 
 ```blocks
         agent.setAssist(PLACE_ON_MOVE, false) 
@@ -121,9 +121,9 @@ Get a ``||player:run chat||`` command and drag it into the workspace. Get a ``||
 }) 
 ```
 
-## Step 12
+## ステップ 12
 
-Go into Minecraft, type **t** and test the **pyramid** chat command. Don't forget to add a **number** after **pyramid**.
+Minecraftに入り、**t** を入力して **pyramid** チャットコマンドをテストしてみましょう。**pyramid** の後に **数字** を追加することを忘れないでください。
 
 ```blocks
 player.onChat("pyramid", function (size) { 
@@ -141,4 +141,3 @@ player.onChat("pyramid", function (size) {
     } 
 }) 
 ```
-

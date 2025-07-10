@@ -1,20 +1,20 @@
-# Agent Maze: Python
+# エージェントの迷路: Python
 
 
-## Step 1
+## ステップ 1
 
-Create an ``||logic: if then||`` statement that evaluates whether an agent detects a block in front. If it evaluates to **true**, then turn left.
+エージェントが前方にブロックを検出するかどうかを評価する ``||logic: if then||`` 文を作成します。**true** と評価された場合、左に曲がります。
 
 ```python
 if agent.detect(AgentDetection.BLOCK, FORWARD):
     agent.turn(LEFT_TURN)
 ```
 
-## Step 2
+## ステップ 2
 
-Add an ``||logic: else||`` to the ``||logic: if||`` statement, that includes an instruction to have the ``||agent:agent move||`` **forward by 1** command.  
+``||logic: if||`` 文に ``||logic: else||`` を追加し、``||agent:agent move||`` **forward by 1** コマンドの指示を含めます。
 
-**NOTE:** The full statement then becomes an ``||logic: if-else||`` statement.
+**NOTE:** 完全な文は ``||logic: if-else||`` 文になります。
 
 ```python
         agent.turn(LEFT_TURN)
@@ -22,9 +22,9 @@ Add an ``||logic: else||`` to the ``||logic: if||`` statement, that includes an 
         agent.move(FORWARD, 1)
 ```
 
-## Step 3
+## ステップ 3
 
-Place the ``||logic: if-else||`` statement within a ``||loops: forever||`` loop—so that these steps will continue until you stop them.
+``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に配置します。これにより、これらのステップは停止するまで続きます。
 
 ```python
 def on_forever():
@@ -34,8 +34,8 @@ def on_forever():
         agent.move(FORWARD, 1)
 loops.forever(on_forever)
 ```
-## Step 5
-Press the **Play** button and try out your code in Minecraft. 
+## ステップ 5
+**Play** ボタンを押し、Minecraftでコードを試してみましょう。
 
 ```ghost
 agent.teleportToPlayer()

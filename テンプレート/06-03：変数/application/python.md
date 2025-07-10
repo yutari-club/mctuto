@@ -1,7 +1,7 @@
-# Tutorial
+# チュートリアル
 
-## Step 1
-Build a sustainable house with code! Use this starter code to get you going!
+## ステップ 1
+コードで持続可能な家を建てましょう！このスターターコードを使って始めましょう！
 
 ```python
 def on_chat():
@@ -26,4 +26,3 @@ def on_chat4():
             agent.move(FORWARD, 3)
 player.on_chat("square", on_chat4)
 ```
-

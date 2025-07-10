@@ -1,8 +1,8 @@
-# Agent Pyramid: Javascript
+# エージェントのピラミッド: Javascript
 
 
-## Step 1
-Create an ``||player: on chat||`` command, name it **“pyramid”**, and set the second argument to **function (size)**.
+## ステップ 1
+``||player: on chat||`` コマンドを作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
 
 ```javascript
 player.onChat("pyramid", function (size){ 
@@ -10,9 +10,9 @@ player.onChat("pyramid", function (size){
 }) 
 ```
 
-## Step 2
+## ステップ 2
 
-Add an ``||logic:if||`` statement that evaluates whether **size** is greater than 0.
+**size** が 0 より大きいかどうかを評価する ``||logic:if||`` 文を追加します。
 
 ```javascript
 player.onChat("pyramid", function (size)){ 
@@ -22,9 +22,9 @@ player.onChat("pyramid", function (size)){
     } 
 ```
 
-## Step 3
+## ステップ 3
 
-Inside the ``||logic:if||`` statement, code the Agent to ``||agent:set block or item||`` of **sandstone** to be the value of the **size** variable multiplied by **size**—in slot 1.
+``||logic:if||`` 文の内側で、エージェントが **sandstone** の ``||agent:set block or item||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
 
 ```javascript
 player.onChat("pyramid", function (size){ 
@@ -35,9 +35,9 @@ player.onChat("pyramid", function (size){
 }) 
 ```
 
-## Step 4
+## ステップ 4
 
-Code the Agent to ``||agent:set the active slot||`` as the 1 slot.
+エージェントが 1 スロットを ``||agent:set the active slot||`` するようにコーディングします。
 
 ```javascript
         agent.setItem(SANDSTONE, size * size, 1) 
@@ -46,9 +46,9 @@ Code the Agent to ``||agent:set the active slot||`` as the 1 slot.
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Next, set the Agent ``||agent:place on move||`` to **true**.
+次に、エージェントの ``||agent:place on move||`` を **true** に設定します。
 
 ```javascript
         agent.setSlot(1) 
@@ -57,9 +57,9 @@ Next, set the Agent ``||agent:place on move||`` to **true**.
 }) 
 ```
 
-## Step 6
+## ステップ 6
 
-Add a ``||loops:for||`` loop that says the variable **i** from 0 to 4 minus 1.
+変数 **i** を 0 から 4 引く 1 までとする ``||loops:for||`` ループを追加します。
 
 ```javascript
     agent.setAssist(PLACE_ON_MOVE, true) 
@@ -69,9 +69,9 @@ Add a ``||loops:for||`` loop that says the variable **i** from 0 to 4 minus 1.
     } 
 ```
 
-## Step 7
+## ステップ 7
 
- Code the Agent to ``||agent:move forward||`` by the value of the **size** variable.
+エージェントが **size** 変数の値で ``||agent:move forward||`` するようにコーディングします。
 
 ```javascript
         for (let i = 0; i <= 0 - 0; i++) { 
@@ -79,9 +79,9 @@ Add a ``||loops:for||`` loop that says the variable **i** from 0 to 4 minus 1.
         } 
 ```
 
-## Step 8
+## ステップ 8
 
-Code the Agent to ``||agent:turn left||`` and end the ``||loops:for||`` loop. 
+エージェントが ``||agent:turn left||`` するようにコーディングし、``||loops:for||`` ループを終了します。
 
 ```javascript
 for (let i = 0; i <= 0 - 0; i++) { 
@@ -90,9 +90,9 @@ for (let i = 0; i <= 0 - 0; i++) {
         } 
 ```
 
-## Step 9
+## ステップ 9
 
-After the ``||loops:for||`` loop, but still inside the ``||logic:if||`` statement, code the Agent to **move up by 1**. 
+``||loops:for||`` ループの後、ただし ``||logic:if||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
 
 ```javascript
    } 
@@ -100,18 +100,18 @@ After the ``||loops:for||`` loop, but still inside the ``||logic:if||`` statemen
     } 
 ```
 
-## Step 10
+## ステップ 10
 
- Code the Agent ``||agent:place on move||`` to be **false**. 
+エージェントの ``||agent:place on move||`` を **false** にコーディングします。
 
 ```javascript
   agent.move(UP, 1) 
         agent.setAssist(PLACE_ON_MOVE, false)
 ```
 
-## Step 11
+## ステップ 11
 
-Place a ``||player:run chat||`` command to join the **pyramid** chat plus the value of the **size** variable minus 2.
+**pyramid** チャットに **size** 変数の値から 2 を引いた値を結合する ``||player:run chat||`` コマンドを配置します。
 
 ```javascript
         agent.setAssist(PLACE_ON_MOVE, false) 
@@ -120,9 +120,9 @@ Place a ``||player:run chat||`` command to join the **pyramid** chat plus the va
 }) 
 ```
 
-## Step 12
+## ステップ 12
 
-Go into Minecraft, type **t** and test the **pyramid** chat command.
+Minecraftに入り、**t** を入力して **pyramid** チャットコマンドをテストしてみましょう。
 
 
 ```javascript
@@ -141,4 +141,3 @@ player.onChat("pyramid", function (size) {
     } 
 }) 
 ```
-

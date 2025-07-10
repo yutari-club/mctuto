@@ -1,28 +1,28 @@
-# Agent Maze: JavaScript
+# エージェントの迷路: JavaScript
 
-## Step 1
-Code an ``||player:on chat||`` command, name it **tp**, and code the agent to ``||agent:teleport to player||``.
+## ステップ 1
+``||player:on chat||`` コマンドをコーディングし、**tp** という名前を付けて、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```javascript
 player.onChat("tp", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Code another ``||player:on chat||`` command, name it **side1**, then code the agent to  ``||agent:place on move||`` and set it to **true**. Add ``||agent:agent set item||`` command and set the count to **64**.
+別の ``||player:on chat||`` コマンドをコーディングし、**side1** という名前を付けて、エージェントが ``||agent:place on move||`` するようにコーディングし、**true** に設定します。``||agent:agent set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```javascript
 player.onChat("side1", function () { 
     agent.setAssist(PLACE_ON_MOVE, true)
-    agent.setItem(GRASS, 64, 1) 
+    agent.setItem(GRASS, 64, 1) 
    
 }) 
 ```
 
-## Step 3
+## ステップ 3
 
-Code the agent to ``||agent:move forward||`` by **4** and then **turn left**.  
+エージェントが **4** で ``||agent:move forward||`` し、次に **turn left** するようにコーディングします。
 
 ```javascript
 player.onChat("side1", function () { 
@@ -32,9 +32,9 @@ player.onChat("side1", function () {
 }) 
 ```
 
-## Step 4
+## ステップ 4
 
-Code the agent to ``||agent:move forward||`` by **5**, ``||agent:agent turn||`` **right**, and then ``||agent:agent move||`` **forward by 5** again.
+エージェントが **5** で ``||agent:move forward||``、``||agent:agent turn||`` **right**、そして再び ``||agent:agent move||`` **forward by 5** するようにコーディングします。
 
 ```javascript
 player.onChat("side1", function () { 
@@ -47,9 +47,9 @@ player.onChat("side1", function () {
     })
 ```
 
-## Step 5
+## ステップ 5
 
-Code the agent to ``||agent:place on move||`` and set it to **false**. 
+エージェントが ``||agent:place on move||`` し、**false** に設定するようにコーディングします。
 
 ```javascript
 player.onChat("side1", function () { 
@@ -63,9 +63,9 @@ player.onChat("side1", function () {
     }) 
 ```
 
-## Step 6
+## ステップ 6
 
-Code the agent to ``||agent:turn||`` **left**, ``||agent:move||`` **forward by 2**, and then ``||agent:turn||`` **left** again.
+エージェントが ``||agent:turn||`` **left**、``||agent:move||`` **forward by 2**、そして再び ``||agent:turn||`` **left** するようにコーディングします。
 
 ```javascript
 player.onChat("side1", function () { 
@@ -82,20 +82,20 @@ player.onChat("side1", function () {
 })
 ```
 
-## Step 7
+## ステップ 7
 
-Code a new ``||player:on chat||`` command and name it **side2**. Code the agent to ``||agent:place on move||`` to **true**. Add ``||agent:agent set item||`` command and set the count to **64**.
+新しい ``||player:on chat||`` コマンドをコーディングし、**side2** という名前を付けます。エージェントが ``||agent:place on move||`` を **true** にするようにコーディングします。``||agent:agent set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```javascript
 player.onChat("side2", function () { 
     agent.setAssist(PLACE_ON_MOVE, true) 
-    agent.setItem(GRASS, 64, 1) 
+    agent.setItem(GRASS, 64, 1) 
     }) 
 ```
 
-## Step 8
+## ステップ 8
 
-Code the agent to ``||agent:move||`` **forward by 7** and then ``||agent:turn||`` **left**.
+エージェントが ``||agent:move||`` **forward by 7** し、次に ``||agent:turn||`` **left** するようにコーディングします。
 
 ```javascript
 player.onChat("side2", function () { 
@@ -105,23 +105,9 @@ player.onChat("side2", function () {
 })
 ```
 
-## Step 9
+## ステップ 9
 
-Code the agent to ``||agent:move||`` **forward by 5** and then ``||agent:turn||`` **right**.
-
-```javascript
-player.onChat("side2", function () { 
-    agent.setAssist(PLACE_ON_MOVE, true) 
-    agent.move(FORWARD, 7) 
-    agent.turn(LEFT_TURN) 
-    agent.move(FORWARD, 5) 
-    agent.turn(RIGHT_TURN) 
-})
-```
-
-## Step 10
-
-Finally, code the agent to ``||agent:move||`` **forward by 3**.
+エージェントが ``||agent:move||`` **forward by 5** し、次に ``||agent:turn||`` **right** するようにコーディングします。
 
 ```javascript
 player.onChat("side2", function () { 
@@ -133,9 +119,23 @@ player.onChat("side2", function () {
 })
 ```
 
-## Step 11
+## ステップ 10
 
-Return to Minecraft, type **tp**, then type **side2** into the chat line to see the agent build your second wall.
+最後に、エージェントが ``||agent:move||`` **forward by 3** するようにコーディングします。
+
+```javascript
+player.onChat("side2", function () { 
+    agent.setAssist(PLACE_ON_MOVE, true) 
+    agent.move(FORWARD, 7) 
+    agent.turn(LEFT_TURN) 
+    agent.move(FORWARD, 5) 
+    agent.turn(RIGHT_TURN) 
+})
+```
+
+## ステップ 11
+
+Minecraftに戻り、**tp** と入力してから、チャット行に **side2** と入力して、エージェントが2番目の壁を作るのを見てみましょう。
 
 ```javascript
 player.onChat("tp", function () { 
@@ -162,4 +162,3 @@ player.onChat("side2", function () {
     agent.move(FORWARD, 3) 
 })
 ```
-

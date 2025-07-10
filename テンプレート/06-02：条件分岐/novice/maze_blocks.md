@@ -1,8 +1,8 @@
-# Agent Maze: Blocks
+# エージェントの迷路: ブロック
 
-## Step 1
+## ステップ 1
 
-Get a ``||loops: forever||`` loop and drag it into the workspace. 
+``||loops: forever||`` ループを取得し、ワークスペースにドラッグします。
 
 ```blocks
 loops.forever(function () {
@@ -18,8 +18,8 @@ agent.teleportToPlayer()
 
 ```
 
-## Step 2
-Get an ``||logic:if then||`` conditional that evaluates a ``||agent:detect||``command, set it to **block** and **forward**, then add a ``||agent:turn||`` **left** block within the ``||logic: if then||``  conditional.
+## ステップ 2
+``||agent:detect||`` コマンドを評価する ``||logic:if then||`` 条件文を取得し、**block** と **forward** に設定してから、``||logic: if then||`` 条件文の中に ``||agent:turn||`` **left** ブロックを追加します。
 
 ```blocks
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -27,11 +27,11 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
     }
 ```
 
-## Step 3
+## ステップ 3
 
-Click the **(+)** sign to add ``||logic: else||`` to the ``||logic:if then||`` conditional, then put in an ``||agent:agent move||`` **forward by 1** block.
+**(+)** 記号をクリックして ``||logic:if then||`` 条件文に ``||logic: else||`` を追加し、``||agent:agent move||`` **forward by 1** ブロックを入れます。
 
-**NOTE:** The full statement then becomes an **if-else statement.
+**NOTE:** 完全な文は **if-else文** になります。
 
 ```blocks
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -41,9 +41,9 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
     }
 ```
 
-## Step 4
+## ステップ 4
 
-Place the ``||logic:if else||`` statement within the ``||loops:forever||`` loop—so that these steps will continue until you stop them. 
+``||logic:if else||`` 文を ``||loops:forever||`` ループの中に配置します。これにより、これらのステップは停止するまで続きます。
 
 ```blocks
 loops.forever(function () {
@@ -53,6 +53,5 @@ loops.forever(function () {
         agent.move(FORWARD, 1)
     })
 ```
-## Step 5
-Press the **Play** button and try out your code in Minecraft. 
-
+## ステップ 5
+**Play** ボタンを押し、Minecraftでコードを試してみましょう。

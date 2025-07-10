@@ -1,9 +1,9 @@
 ### @hideIteration true 
 
-# Tutorial
+# チュートリアル
 
-## Step 1
-Spawn mobs that eat a particular crop. 
+## ステップ 1
+特定の作物を食べるモブをスポーンさせます。
 
 ```python
 def on_chat():

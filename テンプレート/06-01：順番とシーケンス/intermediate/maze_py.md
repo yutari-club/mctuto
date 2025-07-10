@@ -1,7 +1,7 @@
-# Agent Maze: Python
+# エージェントの迷路: Python
 
-## Step 1
-Code an ``||player:on chat||`` command, name it **tp**, and code the agent to ``||agent:teleport to player||``.
+## ステップ 1
+``||player:on chat||`` コマンドをコーディングし、**tp** という名前を付けて、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```python
 def on_chat():
@@ -9,9 +9,9 @@ def on_chat():
 player.on_chat("fence", on_chat)
 ```
 
-## Step 2
+## ステップ 2
 
-Code another ``||player:on chat||`` command, name it **side1**, then code the agent to  ``||agent:place on move||`` and set it to **true**. Add ``||agent:set item||`` command and set the count to **64**. 
+別の ``||player:on chat||`` コマンドをコーディングし、**side1** という名前を付けて、エージェントが ``||agent:place on move||`` するようにコーディングし、**true** に設定します。``||agent:set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```python
 def on_chat():
@@ -20,9 +20,9 @@ def on_chat():
 player.on_chat("side1", on_chat)
 ```
 
-## Step 3
+## ステップ 3
 
-Code the agent to ``||agent:move forward||`` by **4** and then **turn left**.  
+エージェントが **4** で ``||agent:move forward||`` し、次に **turn left** するようにコーディングします。
 
 ```python
 def on_chat2(): 
@@ -32,9 +32,9 @@ def on_chat2():
 player.on_chat("side1", on_chat2)
 ```
 
-## Step 4
+## ステップ 4
 
-Code the agent to ``||agent:move forward||`` by **5**, ``||agent:turn||`` **right**, and then ``||agent:move||`` **forward by 5** again.
+エージェントが **5** で ``||agent:move forward||``、``||agent:turn||`` **right**、そして再び ``||agent:move||`` **forward by 5** するようにコーディングします。
 
 ```python
 def on_chat2(): 
@@ -47,9 +47,9 @@ def on_chat2():
  player.on_chat("side1", on_chat2)
 ```
 
-## Step 5
+## ステップ 5
 
-Code the agent to ``||agent:place on move||`` and set it to **false**. 
+エージェントが ``||agent:place on move||`` し、**false** に設定するようにコーディングします。
 
 ```python
 def on_chat2(): 
@@ -63,9 +63,9 @@ def on_chat2():
  player.on_chat("side1", on_chat2)
 ```
 
-## Step 6
+## ステップ 6
 
-Code the agent to ``||agent:turn||`` **left**, ``||agent:move||`` **forward by 2**, and then ``||agent:turn||`` **left** again.
+エージェントが ``||agent:turn||`` **left**、``||agent:move||`` **forward by 2**、そして再び ``||agent:turn||`` **left** するようにコーディングします。
 
 ```python
 def on_chat2(): 
@@ -82,9 +82,9 @@ def on_chat2():
 player.on_chat("side1", on_chat2)
 ```
 
-## Step 7
+## ステップ 7
 
-Code a new ``||player:on chat||`` command and name it **side2**. Code the agent to ``||agent:place on move||`` to **true**. Add ``||agent:set item||`` command and set the count to **64**. 
+新しい ``||player:on chat||`` コマンドをコーディングし、**side2** という名前を付けます。エージェントが ``||agent:place on move||`` を **true** にするようにコーディングします。``||agent:set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```python
 def on_chat3(): 
@@ -93,9 +93,9 @@ def on_chat3():
  player.on_chat("side2", on_chat3)
 ```
 
-## Step 8
+## ステップ 8
 
-Code the agent to ``||agent:move||`` **forward by 7** and then ``||agent:turn||`` **left**.
+エージェントが ``||agent:move||`` **forward by 7** し、次に ``||agent:turn||`` **left** するようにコーディングします。
 
 ```python
 def on_chat3(): 
@@ -105,9 +105,9 @@ def on_chat3():
 player.on_chat("side2", on_chat3)
 ```
 
-## Step 9
+## ステップ 9
 
-Code the agent to ``||agent:move||`` **forward by 5** and then ``||agent:turn||`` **right**.
+エージェントが ``||agent:move||`` **forward by 5** し、次に ``||agent:turn||`` **right** するようにコーディングします。
 
 ```python
 def on_chat3(): 
@@ -119,9 +119,9 @@ def on_chat3():
 player.on_chat("side2", on_chat3)
 ```
 
-## Step 10
+## ステップ 10
 
-Finally, code the agent to ``||agent:move||`` **forward by 3**.
+最後に、エージェントが ``||agent:move||`` **forward by 3** するようにコーディングします。
 
 ```python
 def on_chat3(): 
@@ -134,11 +134,11 @@ def on_chat3():
 player.on_chat("side2", on_chat3)
 ```
 
-## Step 11
+## ステップ 11
 
-Return to Minecraft, type **tp**, then type **side2** into the chat line to see the agent build your second wall.
+Minecraftに戻り、**tp** と入力してから、チャット行に **side2** と入力して、エージェントが2番目の壁を作るのを見てみましょう。
 
-### Full Code: 
+### 完全なコード:
 
 ```python
 def on_chat(): 
@@ -165,4 +165,3 @@ def on_chat3():
     agent.move(FORWARD, 3) 
 player.on_chat("side2", on_chat3)
 ```
-

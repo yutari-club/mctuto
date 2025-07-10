@@ -1,8 +1,8 @@
-# Agent Destroy Passage: Python
+# エージェントによる通路破壊: Python
 
 
-## Step 1
-Code an ``||player:on chat||`` command and name it **"destroy"**.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"destroy"** という名前を付けます。
 
 ```python
 def on_chat():
@@ -10,8 +10,8 @@ def on_chat():
 player.on_chat("destroy", on_chat)
 ```
 
-## Step 2
-Add a ``||loops:while||`` loop inside the ``||player:on chat||`` command that continues as long as the agent ``||agent:detects||`` a block **forward**. 
+## ステップ 2
+``||player:on chat||`` コマンドの内側に ``||loops:while||`` ループを追加し、エージェントが前方でブロックを ``||agent:detects||`` している間、ループが続くようにします。
 
 ```python
 def on_chat():
@@ -20,8 +20,8 @@ def on_chat():
 player.on_chat("destroy", on_chat)
 ```
 
-## Step 3
-Code the agent to ``||agent:destroy||`` **forward** inside the ``||loops:while||`` loop.
+## ステップ 3
+``||loops:while||`` ループの内側で、エージェントが **forward** を ``||agent:destroy||`` するようにコーディングします。
 
 ```python
 def on_chat():
@@ -30,9 +30,9 @@ def on_chat():
 player.on_chat("destroy", on_chat)
 ```
 
-## Step 4
+## ステップ 4
 
-Code the agent to ``||agent:move forward||`` by **one** after the ``||agent:destroy forward||`` code inside the ``||loops:while||`` loop.
+``||loops:while||`` ループの内側の ``||agent:destroy forward||`` コードの後で、エージェントが **1** ブロック ``||agent:move forward||`` するようにコーディングします。
 
 ```python
 def on_chat():
@@ -42,9 +42,9 @@ def on_chat():
 player.on_chat("destroy", on_chat)
 ```
 
-## Step 5
+## ステップ 5
 
-Code the agent to ``||agent:destroy||`` **up** after it ``||agent:moves forward||`` , then **end** the ``||loops:while||`` loop.
+エージェントが ``||agent:moves forward||`` した後で **up** を ``||agent:destroy||`` するようにコーディングし、そして ``||loops:while||`` ループを **終了** します。
 
 ```python
 def on_chat():
@@ -54,9 +54,9 @@ def on_chat():
         agent.destroy(UP)
 player.on_chat("destroy", on_chat)
 ```
-## Step 6
+## ステップ 6
 
-Press the **Play** button, go to Minecraft, type **t** and try out **destroy**. 
+**実行** ボタンを押して、Minecraftに入り、**t** を入力して **destroy** を試してみましょう。
 
 ```python
 def on_chat(): 

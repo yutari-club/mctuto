@@ -1,9 +1,9 @@
 ### @hideIteration true 
 
-# Tutorial
+# チュートリアル
 
-## Step 1
-Program your agent to farm automatically in a row.
+## ステップ 1
+エージェントが列に自動的に農業を行うようにプログラムします。
 
 ```javascript
 player.onChat("run", function () {

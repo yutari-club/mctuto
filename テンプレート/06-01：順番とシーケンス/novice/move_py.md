@@ -1,7 +1,7 @@
-# Agent Move: Python
+# エージェントの移動: Python
 
-## Step 1
-Code an ``||player:on chat||`` command and name it **“tp”**.
+## ステップ 1
+``||player:on chat||`` コマンドをコーディングし、**"tp"** という名前を付けます。
 
 ```python
 def on_chat():
@@ -9,9 +9,9 @@ def on_chat():
 player.on_chat("tp", on_chat)
 ```
 
-## Step 2
+## ステップ 2
 
-Inside the **tp**  ``||player:on chat||`` command, code the agent to ``||agent:teleport to player||`` .
+**tp** ``||player:on chat||`` コマンドの内側で、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```python
 def on_chat():
@@ -19,9 +19,9 @@ def on_chat():
 player.on_chat("tp", on_chat)
 ```
 
-## Step 3
+## ステップ 3
 
-Code another ``||player:on chat||`` command and name it **“fd”**.
+別の ``||player:on chat||`` コマンドをコーディングし、**"fd"** という名前を付けます。
 
 ```python
 def on_chat2():
@@ -29,9 +29,9 @@ def on_chat2():
 player.on_chat("fd", on_chat)
 ```
 
-## Step 4
+## ステップ 4
 
-Inside the  ``||player:on chat||`` **fd** command , code the agent to ``||agent:move||`` and set it to **forward by 5**. 
+``||player:on chat||`` **fd** コマンドの内側で、エージェントが ``||agent:move||`` するようにコーディングし、**forward by 5** に設定します。
 
 ```python
 def on_chat2():
@@ -39,9 +39,9 @@ def on_chat2():
 player.on_chat("fd", on_chat2)
 ```
 
-## Step 5
+## ステップ 5
 
-Code another ``||player:on chat||`` command and name it **“lt”**.
+別の ``||player:on chat||`` コマンドをコーディングし、**"lt"** という名前を付けます。
 
 ```python
 def on_chat3():
@@ -49,9 +49,9 @@ def on_chat3():
 player.on_chat("lt", on_chat3)
 ```
 
-## Step 6
+## ステップ 6
 
-Inside the ``||player:on chat||`` **lt** command, code the agent to ``||agent:turn||`` and set it to **turn left**.
+``||player:on chat||`` **lt** コマンドの内側で、エージェントが ``||agent:turn||`` するようにコーディングし、**turn left** に設定します。
 
 ```python
 def on_chat3():
@@ -59,9 +59,9 @@ def on_chat3():
 player.on_chat("lt", on_chat3)
 ```
 
-## Step 7
+## ステップ 7
 
-Create yet another ``||player:on chat||`` command and name it **rt**.
+さらに別の ``||player:on chat||`` コマンドを作成し、**rt** という名前を付けます。
 
 ```python
 def on_chat4():
@@ -69,9 +69,9 @@ def on_chat4():
 player.on_chat("rt", on_chat4)
 ```
 
-## Step 8
+## ステップ 8
 
-Inside the **rt** chat command, code the ``||agent||`` to **turn right**.
+**rt** チャットコマンドの内側で、``||agent||`` が **turn right** するようにコーディングします。
 
 ```python
 def on_chat4():
@@ -79,9 +79,9 @@ def on_chat4():
 player.on_chat("rt", on_chat4)
 ```
 
-## Step 9
+## ステップ 9
 
-Press the **Play** button, return to Minecraft, press **t** to open the chat and type the commands **tp**, **rt**, **lt**, **fd**—one at a time—to see what happens.
+**Play** ボタンを押し、Minecraftに戻り、**t** を押してチャットを開き、コマンド **tp**、**rt**、**lt**、**fd** を一つずつ入力して何が起こるかを見てみましょう。
 
 ```python
 def on_chat():
@@ -97,4 +97,3 @@ def on_chat4():
         agent.turn(RIGHT_TURN)
 player.on_chat("rt", on_chat4)
 ```
-

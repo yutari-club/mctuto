@@ -1,7 +1,7 @@
-# Agent Pyramid: Python
+# エージェントのピラミッド: Python
 
-## Step 1
-Create an ``||player:on chat||`` command, name it **“pyramid”**, and set the second argument to **function (size)**.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
 
 ```python
 def on_chat(size):
@@ -9,9 +9,9 @@ def on_chat(size):
 player.on_chat("pyramid", on_chat)
 ```
 
-## Step 2
+## ステップ 2
 
-Add an ``||logic:if||`` statement that evaluates whether **size** is greater than 0.
+**size** が 0 より大きいかどうかを評価する ``||logic:if||`` 文を追加します。
 
 ```python
 def on_chat(size):
@@ -20,9 +20,9 @@ def on_chat(size):
 player.on_chat("pyramid", on_chat)
 ```
 
-## Step 3
+## ステップ 3
 
-Inside the ``||logic:if||`` statement, code the Agent to ``||agent:set block or item||`` of **sandstone** to be the value of the **size** variable multiplied by **size**—in slot 1.
+``||logic:if||`` 文の内側で、エージェントが **sandstone** の ``||agent:set block or item||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
 
 ```python
 if size > 0:
@@ -30,9 +30,9 @@ if size > 0:
 player.on_chat("pyramid", on_chat)
 ```
 
-## Step 4
+## ステップ 4
 
-Code the Agent to ``||agent:set the active slot||`` as the 1 slot.
+エージェントが 1 スロットを ``||agent:set the active slot||`` するようにコーディングします。
 
 ```python
 agent.set_item(SANDSTONE, size * size, 1)
@@ -40,9 +40,9 @@ agent.set_item(SANDSTONE, size * size, 1)
 player.on_chat("pyramid", on_chat)
 ```
 
-## Step 5
+## ステップ 5
 
-Next, set the Agent ``||agent:place on move||`` to **true**.
+次に、エージェントの ``||agent:place on move||`` を **true** に設定します。
 
 ```python
 agent.set_slot(1)
@@ -50,9 +50,9 @@ agent.set_slot(1)
 player.on_chat("pyramid", on_chat)
 ```
 
-## Step 6
+## ステップ 6
 
-Add a ``||loops:for||`` loop that says the variable **i** from 0 to 4 minus 1.
+変数 **i** を 0 から 4 引く 1 までとする ``||loops:for||`` ループを追加します。
 
 ```python
     agent.set_assist(PLACE_ON_MOVE, True)
@@ -62,9 +62,9 @@ Add a ``||loops:for||`` loop that says the variable **i** from 0 to 4 minus 1.
 player.on_chat("pyramid", on_chat)
 ```
 
-## Step 7
+## ステップ 7
 
- Code the Agent to ``||agent:move forward||`` by the value of the **size** variable.
+エージェントが **size** 変数の値で ``||agent:move forward||`` するようにコーディングします。
 
 ```python
         i = 0
@@ -73,9 +73,9 @@ player.on_chat("pyramid", on_chat)
             i += 1
 ```
 
-## Step 8
+## ステップ 8
 
-Code the Agent to ``||agent:turn left||`` and end the ``||loops:for||`` loop. 
+エージェントが ``||agent:turn left||`` するようにコーディングし、``||loops:for||`` ループを終了します。
 
 ```python
 while i <= 0 - 0:
@@ -84,27 +84,27 @@ while i <= 0 - 0:
             i += 1
 ```
 
-## Step 9
+## ステップ 9
 
-After the ``||loops:for||`` loop, but still inside the ``||logic:if||`` statement, code the Agent to **move up by 1**. 
+``||loops:for||`` ループの後、ただし ``||logic:if||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
 
 ```python
   i += 1
         agent.move(UP, 1)
 ```
 
-## Step 10
+## ステップ 10
 
- Code the Agent ``||agent:place on move||`` to be **false**. 
+エージェントの ``||agent:place on move||`` を **false** にコーディングします。
 
 ```python
   agent.move(UP, 1)
         agent.set_assist(PLACE_ON_MOVE, False)
 ```
 
-## Step 11
+## ステップ 11
 
-Place a ``||player:run chat||`` command to join the **pyramid** chat plus the value of the **size** variable minus 2.
+**pyramid** チャットに **size** 変数の値から 2 を引いた値を結合する ``||player:run chat||`` コマンドを配置します。
 
 ```python
         agent.set_assist(PLACE_ON_MOVE, False)
@@ -112,9 +112,9 @@ Place a ``||player:run chat||`` command to join the **pyramid** chat plus the va
 player.on_chat("pyramid", on_chat)
 ```
 
-## Step 12
+## ステップ 12
 
-Go into Minecraft, press **t** and test the **pyramid** chat command.
+Minecraftに入り、**t** を入力して **pyramid** チャットコマンドをテストしてみましょう。
 
 ```python
 def on_chat(size):
@@ -132,4 +132,3 @@ def on_chat(size):
         player.run_chat_command("pyramid" + str((size - 2)))
 player.on_chat("pyramid", on_chat)
 ```
-

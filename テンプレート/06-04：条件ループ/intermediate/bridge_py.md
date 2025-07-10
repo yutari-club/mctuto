@@ -1,8 +1,8 @@
-# Build a Bridge: Python
+# 橋を建設: Python
 
 
-## Step 1
-Code a ``||player:on chat||`` command and name it **“build”**.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"build"** という名前を付けます。
 
 ```python
 def on_chat():
@@ -10,20 +10,17 @@ def on_chat():
 player.on_chat("build", on_chat)
 ```
 
-## Step 2
-Code the agent to ``||agent:set a block||`` of **oak wood planks**, count of **64**, in slot **1** inside the ``||player:on chat||`` command.
+## ステップ 2
+``||player:on chat||`` コマンドの内側で、エージェントが **oak wood planks** の ``||agent:set a block||`` を数量 **64**、スロット **1** に設定するようにコーディングします。
 
 ```python
-player.onChat("build", function () {
-    agent.setItem(PLANKS_OAK, 64, 1)
-}def on_chat():
+def on_chat():
     agent.set_item(PLANKS_OAK, 64, 1)
 player.on_chat("build", on_chat)
-)
 ```
 
-## Step 3
-Code the agent to ``||agent:move forward||`` by **1** .
+## ステップ 3
+エージェントが **1** ブロック ``||agent:move forward||`` するようにコーディングします。
 
 ```python
 def on_chat():
@@ -32,9 +29,9 @@ def on_chat():
 player.on_chat("build", on_chat)
 ```
 
-## Step 4
+## ステップ 4
 
-Inside the ``||player:on chat||``  command, code a ``||loops:while||`` loop that starts with checking if the agent does ``||agent:not detect a block||``  **down**.
+``||player:on chat||`` コマンドの内側で、エージェントが **down** で ``||agent:not detect a block||`` かどうかをチェックすることから始まる ``||loops:while||`` ループをコーディングします。
 
 ```python
 def on_chat():
@@ -45,9 +42,9 @@ def on_chat():
 player.on_chat("build", on_chat)
 ```
 
-## Step 5
+## ステップ 5
 
-Inside the ``||loops:while||`` loop , code for the ``||agent:agent to place||`` **down**.
+``||loops:while||`` ループの内側で、``||agent:agent to place||`` **down** するようにコーディングします。
 
 ```python
 def on_chat():
@@ -58,9 +55,9 @@ def on_chat():
 player.on_chat("build", on_chat)
 ```
 
-## Step 6
+## ステップ 6
 
-After the ``||agent:place down||`` command, code for the ``||agent:agent to move||`` **forward by 1**, then end the ``||loops:while||`` loop.
+``||agent:place down||`` コマンドの後で、``||agent:agent to move||`` **forward by 1** するようにコーディングし、そして ``||loops:while||`` ループを終了します。
 
 ```python
 def on_chat():
@@ -71,9 +68,9 @@ def on_chat():
         agent.move(FORWARD, 1)
 player.on_chat("build", on_chat)
 ```
-## Step 7
+## ステップ 7
 
-Press the **Play** button, go to Minecraft, type **t** and try out **build**. 
+**実行** ボタンを押して、Minecraftに入り、**t** を入力して **build** を試してみましょう。
 
 ```python
 def on_chat(): 

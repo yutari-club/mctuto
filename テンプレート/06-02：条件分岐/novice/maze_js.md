@@ -1,8 +1,8 @@
-# Agent Maze: Javascript
+# エージェントの迷路: Javascript
 
-## Step 1
+## ステップ 1
 
-Create an ``||logic:if then||`` command that evaluates whether an agent detects a block in front. If it evaluates to **true**, then turn left.
+エージェントが前方にブロックを検出するかどうかを評価する ``||logic:if then||`` コマンドを作成します。**true** と評価された場合、左に曲がります。
 
 ```javascript
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -10,11 +10,11 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
     }
 ```
 
-## Step 2
+## ステップ 2
 
-Add an ``||logic: else||`` statement to the ``||logic: if-statement||``, and within it include an instruction to have the ``||agent:agent move||`` **forward by 1**.  
+``||logic: if-statement||`` に ``||logic: else||`` 文を追加し、その中に ``||agent:agent move||`` **forward by 1** の指示を含めます。
 
-**NOTE:** The full statement then becomes an ``||logic: if else||`` statement.
+**NOTE:** 完全な文は ``||logic: if else||`` 文になります。
 
 ```javascript
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -24,9 +24,9 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
     }
 ```
 
-## Step 3
+## ステップ 3
 
-Place the ``||logic: if-else||`` statement within a ``||loops: forever||`` loop—so that these steps will continue until you stop them.
+``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に配置します。これにより、これらのステップは停止するまで続きます。
 
 ```javascript
 loops.forever(function () {
@@ -38,8 +38,8 @@ loops.forever(function () {
 })
 ```
 
-## Step 5
-Press the **Play** button and try out your code in Minecraft. 
+## ステップ 5
+**Play** ボタンを押し、Minecraftでコードを試してみましょう。
 
 ```ghost 
 agent.teleportToPlayer()

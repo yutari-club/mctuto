@@ -1,16 +1,16 @@
-# Mega Jump: Blocks
+# メガジャンプ: ブロック
 
-## Step 1
-Rename the existing ``||player:on chat||`` command into **“jump”**. 
+## ステップ 1
+既存の ``||player:on chat||`` コマンドの名前を **"jump"** に変更します。
 
 ```blocks
 player.onChat("jump", function () { 
 }) 
 ```
 
-## Step 2
+## ステップ 2
 
-Place a ``||player:player teleport to||`` inside the ``||player:on chat||`` command **jump** and enter **100** in the **“y”** coordinate. 
+``||player:on chat||`` コマンド **jump** の中に ``||player:player teleport to||`` を配置し、**"y"** 座標に **100** を入力します。
 
 ```blocks
 player.onChat("jump", function () { 
@@ -18,14 +18,14 @@ player.onChat("jump", function () {
 }) 
 ```
 
-## Step 3
+## ステップ 3
 
-Try it out in Minecraft by typing **jump** in the chat.
+Minecraftでチャットに **jump** と入力して試してみましょう。
 
 
-## Step 4
+## ステップ 4
 
- Click the (+) inside the ``||player:on chat||`` command jump and create a new ``||variable: variable||`` named **num1**. 
+``||player:on chat||`` コマンド jump の中の (+) をクリックして、**num1** という名前の新しい ``||variable: variable||`` を作成します。
 
 ```blocks
 player.onChat("jump", function (num1) {
@@ -33,19 +33,9 @@ player.onChat("jump", function (num1) {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Get the new ``||variable||`` named num1 and drag it into the **y** coordinate of the ``||player:teleport to||``. 
-
-```blocks
-player.onChat("jump", function (num1) {
-    player.teleport(pos(0, num1, 0))
-})
-```
-
-## Step 6
-
-Try it out in Minecraft by entering **jump** and then any number in the chat.  (Example jump 50, or jump 100). 
+新しい ``||variable||`` の num1 を取得して、``||player:teleport to||`` の **y** 座標にドラッグします。
 
 ```blocks
 player.onChat("jump", function (num1) {
@@ -53,3 +43,12 @@ player.onChat("jump", function (num1) {
 })
 ```
 
+## ステップ 6
+
+Minecraftでチャットに **jump** と数字を入力して試してみましょう。（例：jump 50 または jump 100）
+
+```blocks
+player.onChat("jump", function (num1) {
+    player.teleport(pos(0, num1, 0))
+})
+```

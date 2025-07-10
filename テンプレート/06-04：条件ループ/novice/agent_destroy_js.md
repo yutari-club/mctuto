@@ -1,16 +1,16 @@
-# Agent Destroy Passage: Javascript
+# エージェントによる通路破壊: JavaScript
 
 
-## Step 1
-Code an ``||player:on chat||`` command and name it **"destroy"**.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"destroy"** という名前を付けます。
 
 ```javascript
 player.onChat("destroy", function () {
 })
 ```
 
-## Step 2
-Add a ``||loops:while||`` loop inside the ``||player:on chat ||``  command that continues as long as it ``||agent: detects||`` a block **forward**. 
+## ステップ 2
+``||player:on chat||`` コマンドの内側に ``||loops:while||`` ループを追加し、エージェントが前方で ``||agent:detects||`` ブロックを検出している間、ループが続くようにします。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -19,8 +19,8 @@ player.onChat("destroy", function () {
 })
 ```
 
-## Step 3
-Code the agent to ``||agent:destroy||`` **forward** inside the ``||loops:while||`` loop.
+## ステップ 3
+``||loops:while||`` ループの内側で、エージェントが **forward** を ``||agent:destroy||`` するようにコーディングします。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -30,9 +30,9 @@ player.onChat("destroy", function () {
 })
 ```
 
-## Step 4
+## ステップ 4
 
-Code the agent to ``||agent:move forward||`` by **one** after the ``||agent:destroy forward||`` code inside the ``||loops:while||`` loop.
+``||loops:while||`` ループの内側の ``||agent:destroy forward||`` コードの後で、エージェントが **1** ブロック ``||agent:move forward||`` するようにコーディングします。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -43,9 +43,9 @@ player.onChat("destroy", function () {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Code the agent to ``||agent:destroy||`` **up** after it ``||agent:moves forward||`` , then **end** the ``||loops:while||`` loop.
+エージェントが ``||agent:moves forward||`` した後で **up** を ``||agent:destroy||`` するようにコーディングし、そして ``||loops:while||`` ループを **終了** します。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -56,9 +56,9 @@ player.onChat("destroy", function () {
     }
 })
 ```
-## Step 6
+## ステップ 6
 
-Press the **Play** button, go to Minecraft, type **t** and try out **destroy**. 
+**実行** ボタンを押して、Minecraftに入り、**t** を入力して **destroy** を試してみましょう。
 
 ```javascript
 player.onChat("destroy", function () { 
@@ -73,4 +73,3 @@ player.onChat("destroy", function () {
 ```ghost
 agent.teleportToPlayer()
 ```
-

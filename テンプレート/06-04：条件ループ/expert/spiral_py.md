@@ -1,8 +1,7 @@
+# 螺旋アクティビティ: Python
 
-# Spiral Activity: Python
-
-## Step 1
-Code an ``||player:on chat||`` command and name it **“spiral”**.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"spiral"** という名前を付けます。
 
 ```python
 def on_chat():
@@ -10,9 +9,9 @@ def on_chat():
 player.on_chat("spiral", on_chat)
 ```
 
-## Step 2
+## ステップ 2
 
-Code a ``||loops:while||`` loop that begins with: while the ``||agent: agent inspects||`` a block **forward** is not equal to a block of **gold**.
+エージェントが ``||agent:agent inspects||`` ブロック **forward** が **gold** のブロックと等しくない間の ``||loops:while||`` ループをコーディングします。
 
 ```python
 def on_chat():
@@ -21,9 +20,9 @@ def on_chat():
 player.on_chat("spiral", on_chat)
 ```
 
-## Step 3
+## ステップ 3
 
-Code an ``||logic:if-else||`` statement to go inside the ``||loops:while||`` loop that starts with: if the agent ``||agent: does NOT detect||`` a block **forward** then ``||agent:moves||`` **forward** by **1**. 
+``||loops:while||`` ループの内側に入る ``||logic:if-else||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
 
 ```python
 def on_chat():
@@ -35,9 +34,9 @@ def on_chat():
 player.on_chat("spiral", on_chat)
 ```
 
-## Step 4
+## ステップ 4
 
-In the ``||logic:else||`` clause of the ``||logic:if-else||`` statement, write that the ``||agent:agent turns||`` **left**. 
+``||logic:if-else||`` 文の ``||logic:else||`` 句で、``||agent:agent turns||`` **left** するように記述します。
 
 ```python
 def on_chat():
@@ -49,8 +48,8 @@ def on_chat():
 player.on_chat("spiral", on_chat)
 ```
 
-## Step 5
-Press the **Play** button, go to Minecraft, type **t** and try out **spiral**. 
+## ステップ 5
+**実行** ボタンを押して、Minecraftに入り、**t** を入力して **spiral** を試してみましょう。
 
 ```python
 def on_chat(): 
@@ -66,4 +65,3 @@ player.on_chat("spiral", on_chat)
 ```ghost
 agent.teleportToPlayer()
 ```
-

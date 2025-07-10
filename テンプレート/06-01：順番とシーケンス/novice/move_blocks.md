@@ -1,16 +1,16 @@
-# Agent Move: Blocks
+# エージェントの移動: ブロック
 
-## Step 1
-Create an ``||player:on chat||`` command and name it **“tp”**.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"tp"** という名前を付けます。
 
 ```blocks
 player.onChat("tp", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Get an ``||agent:agent teleport to player||`` and drag it inside the **tp**  ``||player:on chat||`` command.
+``||agent:agent teleport to player||`` を取得し、**tp** ``||player:on chat||`` コマンドの内側にドラッグします。
 
 ```blocks
 player.onChat("tp", function () {
@@ -18,18 +18,18 @@ player.onChat("tp", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Get another ``||player:on chat||`` command and name it **“fd”**.
+別の ``||player:on chat||`` コマンドを取得し、**"fd"** という名前を付けます。
 
 ```blocks
 player.onChat("fd", function () {
 })
 ```
 
-## Step 4
+## ステップ 4
 
-Get an ``||agent:agent move||`` and set it to **forward by 5**. 
+``||agent:agent move||`` を取得し、**forward by 5** に設定します。
 
 ```blocks
 player.onChat("fd", function () {
@@ -37,18 +37,18 @@ player.onChat("fd", function () {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Get another ``||player:on chat||`` command and name it **“lt”**.
+別の ``||player:on chat||`` コマンドを取得し、**"lt"** という名前を付けます。
 
 ```blocks
 player.onChat("lt", function () {
 })
 ```
 
-## Step 6
+## ステップ 6
 
-Get an ``||agent:agent turn||`` and set it to **turn left**. Drag it into the ``||player:on chat||`` **lt** command.
+``||agent:agent turn||`` を取得し、**turn left** に設定します。それを ``||player:on chat||`` **lt** コマンドにドラッグします。
 
 ```blocks
 player.onChat("lt", function () {
@@ -56,19 +56,9 @@ player.onChat("lt", function () {
 })
 ```
 
-## Step 7
+## ステップ 7
 
-Get another ``||player:on chat||`` command and name it **“rt”**.
-
-```blocks
-player.onChat("rt", function () {
-    agent.turn(RIGHT_TURN)
-})
-```
-
-## Step 8
-
-Get another ``||agent:agent turn||`` block, set it to **turn right**, and then drag the ``||agent:agent||`` **turn right** into the ``||player:on chat||`` **rt** command.
+別の ``||player:on chat||`` コマンドを取得し、**"rt"** という名前を付けます。
 
 ```blocks
 player.onChat("rt", function () {
@@ -76,10 +66,20 @@ player.onChat("rt", function () {
 })
 ```
 
+## ステップ 8
 
-## Step 9
+別の ``||agent:agent turn||`` ブロックを取得し、**turn right** に設定してから、``||agent:agent||`` **turn right** を ``||player:on chat||`` **rt** コマンドにドラッグします。
 
-Press the **Play** button, return to Minecraft, press **t** to open the chat and type the commands **tp**, **rt**, **lt**, **fd**—one at a time—to see what happens.
+```blocks
+player.onChat("rt", function () {
+    agent.turn(RIGHT_TURN)
+})
+```
+
+
+## ステップ 9
+
+**Play** ボタンを押し、Minecraftに戻り、**t** を押してチャットを開き、コマンド **tp**、**rt**、**lt**、**fd** を一つずつ入力して何が起こるかを見てみましょう。
 
 
 ```blocks
@@ -96,4 +96,3 @@ player.onChat("rt", function () {
 
 })
 ```
-

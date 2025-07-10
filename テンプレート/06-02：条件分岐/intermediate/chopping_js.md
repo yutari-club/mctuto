@@ -1,17 +1,17 @@
-# Chopping Trees: Javascript
+# 木を切る: Javascript
 
-## Step 1
+## ステップ 1
 
-Create an ``||player:on chat||`` command and name it **"tp"**.
+``||player:on chat||`` コマンドを作成し、**"tp"** という名前を付けます。
 
 ```javascript
 player.onChat("tp", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Inside the ``||player:on chat||`` command, code the agent to ``||agent:teleport||`` to the player.
+``||player:on chat||`` コマンドの内側で、エージェントがプレイヤーに ``||agent:teleport||`` するようにコーディングします。
 
 ```javascript
 player.onChat("tp", function () {
@@ -19,18 +19,18 @@ player.onChat("tp", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Create another ``||player: on chat||`` command and name it **"chop"**.
+別の ``||player: on chat||`` コマンドを作成し、**"chop"** という名前を付けます。
 
 ```javascript
 player.onChat("chop", function () {
 })
 ```
 
-## Step 4
+## ステップ 4
 
-Create a new ``||variable: variable||``, name it **height**, and set it to **0**.
+新しい ``||variable: variable||`` を作成し、**height** という名前を付けて、**0** に設定します。
 
 ```javascript
 let height = 0
@@ -45,9 +45,9 @@ player.onChat("chop", function () {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Inside the **chop** ``||player:on chat||`` command—directly under the **height** variable—create a ``||loops:while||`` loop that begins with: **while the agent detects a block forward**.
+**chop** ``||player:on chat||`` コマンドの内側の **height** 変数の直下に、**while the agent detects a block forward** で始まる ``||loops:while||`` ループを作成します。
 
 ```javascript
 player.onChat("chop", function () {
@@ -57,9 +57,9 @@ player.onChat("chop", function () {
     }
 ```
 
-## Step 6
+## ステップ 6
 
-Add to the ``||loops:while||`` loop to change the **height** ``||variable: variable||`` to the value of **height plus 1**.
+``||loops:while||`` ループに追加して、**height** ``||variable: variable||`` を **height plus 1** の値に変更します。
 
 ```javascript
     while (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -67,11 +67,11 @@ Add to the ``||loops:while||`` loop to change the **height** ``||variable: varia
     }
 ```
 
-## Step 7
+## ステップ 7
 
-In the ``||loops:while||`` loop—under the change variable **height**—code the agent to  **destroy up**. 
+``||loops:while||`` ループの中で、変数 **height** の下に、エージェントが **destroy up** するようにコーディングします。
 
-Also, add a line to have the **agent move up by 1**.
+また、**agent move up by 1** の行を追加します。
 
 ```javascript
     height += 1
@@ -80,18 +80,18 @@ Also, add a line to have the **agent move up by 1**.
     }
 ```
 
-## Step 8
+## ステップ 8
 
-Add a ``||loops:for||`` loop  after the ``||loops:while||`` loop. Insert the **height** variable into the **times** argument of the ``||loops:repeat||`` loop.
+``||loops:while||`` ループの後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:repeat||`` ループの **times** 引数に挿入します。
 
 ```javascript
 for (let index = 0; index < height; index++) {
     } 
 ```
 
-## Step 9
+## ステップ 9
 
-Inside the ``||loops:for||`` loop,  add a line for **agent move down by 1** and **agent destroy forward**.
+``||loops:for||`` ループの内側に、**agent move down by 1** と **agent destroy forward** の行を追加します。
 
 ```javascript
 for (let index = 0; index < height; index++) {
@@ -100,9 +100,9 @@ for (let index = 0; index < height; index++) {
     }
 ```
 
-## Step 10
+## ステップ 10
 
-After the ``||loops:for||`` loop, code the agent to ``||agent:collect all||`` .
+``||loops:for||`` ループの後に、エージェントが ``||agent:collect all||`` するようにコーディングします。
 
 ```javascript
     }
@@ -110,9 +110,9 @@ After the ``||loops:for||`` loop, code the agent to ``||agent:collect all||`` .
 })
 ```
 
-## Step 11
+## ステップ 11
 
-Go into Minecraft, type **t** and test out the **tp**, and **chop** chat commands. 
+Minecraftに入り、**t** を入力して **tp** と **chop** チャットコマンドをテストしてみましょう。
 
 ```javascript
 player.onChat("farm", function () { 

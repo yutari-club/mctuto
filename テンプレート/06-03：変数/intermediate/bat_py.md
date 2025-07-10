@@ -1,7 +1,7 @@
-# Bat Cave: Python
+# コウモリの洞窟: Python
 
-## Step 1
-Add an ``||player:on chat||`` command and name it **cave**.
+## ステップ 1
+``||player:on chat||`` コマンドを追加し、**cave** という名前を付けます。
 
 ```python
 def on_chat():
@@ -9,9 +9,9 @@ def on_chat():
 player.on_chat("cave", on_chat)
 ```
 
-## Step 2
+## ステップ 2
 
-Code the player to  ``||player:say||``by typing **"Dig a cave"**, and drag it into the ``||player:on chat||`` command.
+プレイヤーが **"Dig a cave"** と入力して ``||player:say||`` するようにコーディングし、``||player:on chat||`` コマンドにドラッグします。
 
 ```python
 def on_chat(): 
@@ -19,9 +19,9 @@ def on_chat():
 player.on_chat("cave", on_chat) 
 ```
 
-## Step 3
+## ステップ 3
 
-Set the time of day to **day**.
+時刻を **day** に設定します。
 
 ```python
 def on_chat(): 
@@ -30,9 +30,9 @@ def on_chat():
 player.on_chat("cave", on_chat) 
 ```
 
-## Step 4
+## ステップ 4
 
-Code the player to ``||blocks:fill with||`` an **air** block with these positions: **from  = -1.0,-1** and **to = 1,2,1**. Code it to **replace**.
+プレイヤーが **air** ブロックで ``||blocks:fill with||`` するようにコーディングします。位置は **from = -1.0,-1** から **to = 1,2,1** です。**replace** に設定します。
 
 ```python
 def on_chat(): 
@@ -42,9 +42,9 @@ def on_chat():
 player.on_chat("cave", on_chat) 
 ```
 
-## Step 5
+## ステップ 5
 
-Repeat the fill step **50** times.
+fill ステップを **50** 回繰り返します。
 
 ```python
 def on_chat():
@@ -55,9 +55,9 @@ def on_chat():
 player.on_chat("cave", on_chat)
 ```
 
-## Step 6
+## ステップ 6
 
-Set a ``||variables:new variable||`` and name it **bat_cave**, then set that variable to the  ``||player:player world position||``.
+``||variables:new variable||`` を設定し、**bat_cave** という名前を付けて、その変数を ``||player:player world position||`` に設定します。
 
 ```python
         batcave: Position = None
@@ -70,9 +70,9 @@ def on_chat():
 player.on_chat("cave", on_chat)
 ```
 
-## Step 7
+## ステップ 7
 
-Code the player to ``||player:say||`` “You have 10 seconds to go out before the bats arrive.”
+プレイヤーが "You have 10 seconds to go out before the bats arrive." と ``||player:say||`` するようにコーディングします。
 
 ```python
 batcave = player.position()
@@ -80,9 +80,9 @@ batcave = player.position()
 player.on_chat("cave", on_chat)
 ```
 
-## Step 8
+## ステップ 8
 
-``||loops: Pause||`` the code for **10** seconds (10,000 ms).
+コードを **10** 秒（10,000 ms）間 ``||loops: Pause||`` します。
 
 ```python
 player.say("You have 10 seconds to get out before the bats arrive.")
@@ -90,9 +90,9 @@ player.say("You have 10 seconds to get out before the bats arrive.")
 player.on_chat("cave", on_chat)
 ```
 
-## Step 9
+## ステップ 9
 
-After the pause, code the player to say **“Watch out for bats!”**.
+一時停止の後、プレイヤーが **"Watch out for bats!"** と言うようにコーディングします。
 
 ```python
     loops.pause(10000)
@@ -100,17 +100,17 @@ After the pause, code the player to say **“Watch out for bats!”**.
 player.on_chat("cave", on_chat)
 ```
 
-## Step 10
+## ステップ 10
 
-Set the ``||gameplay:time||`` to **dusk**.
+``||gameplay:time||`` を **dusk** に設定します。
 
 ```python
 gameplay.timeSet(gameplay.time(DUSK))
 ```
 
-## Step 11
+## ステップ 11
 
-``||mobs:Spawn||`` a bat at the **bat_cave** variable.
+**bat_cave** 変数の位置でbatを ``||mobs:Spawn||`` します。
 
 ```python
 gameplay.time_set(gameplay.time(DUSK))
@@ -118,9 +118,9 @@ gameplay.time_set(gameplay.time(DUSK))
 player.on_chat("cave", on_chat)
 ```
 
-## Step 12
+## ステップ 12
 
-Repeat the **bat** ``||mobs:spawn animal||`` **200** times.
+**bat** ``||mobs:spawn animal||`` を **200** 回繰り返します。
 
 ```python
 for index2 in range(200):
@@ -128,9 +128,9 @@ for index2 in range(200):
 player.on_chat("cave", on_chat)
 ```
 
-## Step 13
+## ステップ 13
 
-Go into Minecraft and type **cave** in the chat to see all the code run.
+Minecraftに入り、チャットに **cave** と入力してすべてのコードが実行されるのを見てみましょう。
 
 ```python
 batcave: Position = None 
@@ -161,4 +161,3 @@ def on_chat():
 
 player.on_chat("cave", on_chat) 
 ```
-

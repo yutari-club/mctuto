@@ -1,16 +1,16 @@
-# Agent Move: JavaScript
+# エージェントの移動: JavaScript
 
-## Step 1
-Code an ``||player:on chat||`` command and name it **“tp”**.
+## ステップ 1
+``||player:on chat||`` コマンドをコーディングし、**"tp"** という名前を付けます。
 
 ```javascript
 player.onChat("tp", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Inside the **tp**  ``||player:on chat||`` command, code the agent to ``||agent:teleport to player||`` .
+**tp** ``||player:on chat||`` コマンドの内側で、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```javascript
 player.onChat("tp", function () {
@@ -18,18 +18,18 @@ player.onChat("tp", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Code another ``||player:on chat||`` command and name it **“fd”**.
+別の ``||player:on chat||`` コマンドをコーディングし、**"fd"** という名前を付けます。
 
 ```javascript
 player.onChat("fd", function () {
 })
 ```
 
-## Step 4
+## ステップ 4
 
-Inside the  ``||player:on chat||`` **fd** command , code the agent to ``||agent:move||`` and set it to **forward by 5**. 
+``||player:on chat||`` **fd** コマンドの内側で、エージェントが ``||agent:move||`` するようにコーディングし、**forward by 5** に設定します。
 
 ```javascript
 player.onChat("fd", function () {
@@ -37,18 +37,18 @@ player.onChat("fd", function () {
 })
 ```
 
-## Step 5
+## ステップ 5
 
-Code another ``||player:on chat||`` command and name it **“lt”**.
+別の ``||player:on chat||`` コマンドをコーディングし、**"lt"** という名前を付けます。
 
 ```javascript
 player.onChat("lt", function () {
 })
 ```
 
-## Step 6
+## ステップ 6
 
-Inside the ``||player:on chat||`` **lt** command, code the agent to ``||agent:turn||`` and set it to **turn left**.
+``||player:on chat||`` **lt** コマンドの内側で、エージェントが ``||agent:turn||`` するようにコーディングし、**turn left** に設定します。
 
 ```javascript
 player.onChat("lt", function () {
@@ -56,19 +56,9 @@ player.onChat("lt", function () {
 })
 ```
 
-## Step 7
+## ステップ 7
 
-Create yet another ``||player:on chat||`` command and name it **“rt”**.
-
-```javascript
-player.onChat("rt", function () {
-    agent.turn(RIGHT_TURN)
-})
-```
-
-## Step 8
-
-Inside the **rt** chat command, code the ``||agent:agent||`` to **turn right**.
+さらに別の ``||player:on chat||`` コマンドを作成し、**"rt"** という名前を付けます。
 
 ```javascript
 player.onChat("rt", function () {
@@ -76,9 +66,19 @@ player.onChat("rt", function () {
 })
 ```
 
-## Step 9
+## ステップ 8
 
-Press the **Play** button, return to Minecraft, press **t** to open the chat and type the commands **tp**, **rt**, **lt**, **fd**—one at a time—to see what happens.
+**rt** チャットコマンドの内側で、``||agent:agent||`` が **turn right** するようにコーディングします。
+
+```javascript
+player.onChat("rt", function () {
+    agent.turn(RIGHT_TURN)
+})
+```
+
+## ステップ 9
+
+**Play** ボタンを押し、Minecraftに戻り、**t** を押してチャットを開き、コマンド **tp**、**rt**、**lt**、**fd** を一つずつ入力して何が起こるかを見てみましょう。
 
 ```javascript
 player.onChat("lt", function () {
@@ -94,4 +94,3 @@ player.onChat("rt", function () {
 
 })
 ```
-

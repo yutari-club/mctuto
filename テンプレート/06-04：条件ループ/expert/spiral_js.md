@@ -1,17 +1,17 @@
-# Spiral Activity: Javascript
+# 螺旋アクティビティ: JavaScript
 
 
-## Step 1
-Code an ``||player:on chat||`` command and name it **“spiral”**.
+## ステップ 1
+``||player:on chat||`` コマンドを作成し、**"spiral"** という名前を付けます。
 
 ```javascript
 player.onChat("spiral", function () {
 })
 ```
 
-## Step 2
+## ステップ 2
 
-Code a ``||loops:while||`` loop that begins with: while the ``||agent:agent inspects||`` a block **forward** is not equal to a block of **gold**.
+エージェントが ``||agent:agent inspects||`` ブロック **forward** が **gold** のブロックと等しくない間の ``||loops:while||`` ループをコーディングします。
 
 ```javascript
 player.onChat("spiral", function () {
@@ -21,9 +21,9 @@ player.onChat("spiral", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Code an ``||logic:if-else||`` statement to go inside the ``||loops:while||`` loop that starts with: if the agent ``||agent:does NOT detect||`` a block **forward** then ``||agent:moves||`` **forward** by **1**. 
+``||loops:while||`` ループの内側に入る ``||logic:if-else||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
 
 ```javascript
 player.onChat("spiral", function () {
@@ -37,9 +37,9 @@ player.onChat("spiral", function () {
 })
 ```
 
-## Step 4
+## ステップ 4
 
-In the ``||logic:else||`` clause of the ``||logic:if-else statement||``, write that the ``||agent:turns||`` **left**. 
+``||logic:if-else statement||`` の ``||logic:else||`` 句で、``||agent:turns||`` **left** するように記述します。
 
 ```javascript
 player.onChat("spiral", function () {
@@ -53,8 +53,8 @@ player.onChat("spiral", function () {
 })
 ```
 
-## Step 5
-Press the **Play** button, go to Minecraft, type **t** and try out **spiral**. 
+## ステップ 5
+**実行** ボタンを押して、Minecraftに入り、**t** を入力して **spiral** を試してみましょう。
 
 ```javascript
 player.onChat("spiral", function () { 
