@@ -1,25 +1,24 @@
+# イベントを楽しもう: ブロック
 
-# Fun with Events: Blocks
-
-## Step 1
-Get an ``||player: on player walk||`` block and a ``||mobs:spawn||`` block and drag them to the workspace. Drag a ``||mobs: projectile||`` block into the **animal parameter** of the ``||mobs:spawn||`` block and select **fireworks rocket**.
+## ステップ 1
+``||player: on player walk||``ブロックと``||mobs:spawn||``ブロックを取得してワークスペースにドラッグします。``||mobs: projectile||``ブロックを``||mobs:spawn||``ブロックの**animal parameter**にドラッグし、**fireworks rocket**を選択します。
 
 ```blocks
 player.onTravelled(WALK, function () { 
     mobs.spawn(FIREWORKS_ROCKET, pos(0, 0, 0)) 
 }) 
 ```
-## Step 2
+## ステップ 2
 
-Change the (y) coordinate of the position to **10 blocks** above the players position (0, **10**, 0).
+位置の(y)座標をプレイヤーの位置から**10ブロック**上に変更します(0, **10**, 0)。
 
 ```blocks
 player.onTravelled(WALK, function () { 
     mobs.spawn(FIREWORKS_ROCKET, pos(0, 10, 0)) 
 }) 
 ```
-## Step 3
-Drag a ``||loops:repeat||`` loop into the ``||player:on player walk||`` and set it to **25 times**. The ``||mobs:spawn||`` block should be inside the ``||loops:repeat||`` loop.
+## ステップ 3
+``||loops:repeat||``ループを``||player:on player walk||``にドラッグし、**25回**に設定します。``||mobs:spawn||``ブロックは``||loops:repeat||``ループの中に入れます。
 
 ```blocks
 player.onTravelled(WALK, function () {
@@ -29,11 +28,11 @@ player.onTravelled(WALK, function () {
 })
 ```
 
-## Step 4
-Get an ``||blocks:on broken||`` block and drag it into the workspace, then select the **oak wood** block.
+## ステップ 4
+``||blocks:on broken||``ブロックを取得してワークスペースにドラッグし、**oak wood**ブロックを選択します。
 
-## Step 5
-Add a ``||mobs:spawn||`` block, set it to **chicken** and change the (y) coordinate of the position to **10 blocks** above the player's position (0, **10**, 0).
+## ステップ 5
+``||mobs:spawn||``ブロックを追加し、**chicken**に設定して、位置の(y)座標をプレイヤーの位置から**10ブロック**上に変更します(0, **10**, 0)。
 
 ```blocks
 blocks.onBlockBroken(PLANKS_OAK, function () { 
@@ -41,8 +40,8 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 }) 
 ```
 
-## Step 6
-Add a ``||loops:repeat||`` loop into the ``||blocks:on broken||`` block around the ``||mobs:spawn||`` block, set the ``||loops:repeat||`` loop to **25 times**.
+## ステップ 6
+``||loops:repeat||``ループを``||blocks:on broken||``ブロックの中で``||mobs:spawn||``ブロックの周りに追加し、``||loops:repeat||``ループを**25回**に設定します。
 
 ```blocks
 blocks.onBlockBroken(PLANKS_OAK, function () { 
@@ -52,25 +51,25 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 }) 
 ```
 
-## Step 7
+## ステップ 7
 
-Get an ``||player:on item used||`` and drag it into the workspace, set it to **Golden Apple**.
+``||player:on item used||``を取得してワークスペースにドラッグし、**Golden Apple**に設定します。
 
-## Step 8
+## ステップ 8
 
-Get an ``||mobs: apply to||`` block, drag it into the workspace, select **levitation**, set the duration to **10** and the amplifier to **5**.
+``||mobs: apply to||``ブロックを取得してワークスペースにドラッグし、**levitation**を選択し、持続時間を**10**、増幅器を**5**に設定します。
 
-## Step 9
+## ステップ 9
 
-Get an ``||mobs:all animal||`` block, set it to **chicken** and drag it into the **to** argument of the ``||mobs: apply to||``, then drag the completed ``||mobs:apply to||`` block into the ``||player: on item used||``.  
+``||mobs:all animal||``ブロックを取得し、**chicken**に設定して``||mobs: apply to||``の**to**引数にドラッグし、完成した``||mobs:apply to||``ブロックを``||player: on item used||``にドラッグします。
 
 ```blocks
 player.onItemInteracted(GOLDEN_APPLE, function () { 
     mobs.applyEffect(LEVITATION, mobs.entitiesByType(CHICKEN), 10, 5) 
 }) 
 ```
-## Step 10
-Press the **Play** button, go into Minecraft and test out all the events.
+## ステップ 10
+**Play**ボタンを押してMinecraftに入り、すべてのイベントをテストします。
 
 
 ```blocks
@@ -89,4 +88,3 @@ player.onItemInteracted(GOLDEN_APPLE, function () {
     mobs.applyEffect(LEVITATION, mobs.entitiesByType(CHICKEN), 10, 5) 
 }) 
 ```
-

@@ -1,8 +1,8 @@
-# Chicken Rain: Javascript
+# にわとりの雨: JavaScript
 
 
-## Step 1
-Create an ``||player:on chat||`` command and name it **“chicken”**.
+## ステップ 1
+``||player:on chat||``コマンドを作成して、**"chicken"**と名前をつけます。
 
 ```javascript
 player.onChat("chicken", function (){ 
@@ -10,13 +10,13 @@ player.onChat("chicken", function (){
 }) 
 ```
 
-## Step 2
+## ステップ 2
 
-Inside the ``||player:on chat||`` command, spawn a chicken **10** blocks above the head of the player at (0, **10**, 0). 
+``||player:on chat||``コマンドの中で、プレイヤーの頭の上**10**ブロックの位置(0, **10**, 0)ににわとりを出現させます。
 
-**NOTE:** The **~** character in the position indicates that the coordinates are relative to the position of the player.
+**注意:** 位置の**~**文字は、座標がプレイヤーの位置からの相対座標であることを示します。
 
-Go to Minecraft, press **t** to open the chat and type "chicken". Look up to see a single chicken drop from the sky **10** blocks above your player.
+Minecraftに行って、**t**を押してチャットを開き、「chicken」と入力します。上を見上げると、プレイヤーの**10**ブロック上から1匹のにわとりが空から落ちてくるのが見えます。
 
 ```javascript
 player.onChat("chicken", function () { 
@@ -24,11 +24,11 @@ player.onChat("chicken", function () {
 }) 
 ```
 
-## Step 3
+## ステップ 3
 
-Place a ``||loops: for loop||`` around the spawn code to repeat the spawn code **100 times**.
+出現コードを**100回**繰り返すために、出現コードの周りに``||loops: for loop||``を配置します。
 
-Go to Minecraft, press **t** to open the chat and type **"chicken"**. Look up to see 100 chickens drop from the sky **10** blocks above your player.
+Minecraftに行って、**t**を押してチャットを開き、**"chicken"**と入力します。上を見上げると、プレイヤーの**10**ブロック上から100匹のにわとりが空から落ちてくるのが見えます。
 
 ```javascript
 player.onChat("chicken", function () {
@@ -37,6 +37,4 @@ player.onChat("chicken", function () {
     }
 })
 ```
-
-
 

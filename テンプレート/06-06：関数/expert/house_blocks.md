@@ -1,15 +1,15 @@
-# House Functions: Blocks
+# 家の関数: ブロック
 
-## Step 1
-Add a ``||functions:function||`` and name it **walls**. 
+## ステップ 1
+``||functions:function||`` を追加して、**walls** と名前を付けます。
 
 ```blocks
 function walls () {
 }
 ```
 
-## Step 2
-Add a ``||agent:set block or item||`` command and place it within **walls** function. Set it to **Acacia Wood Planks** with the count of **64** in slot **1**.
+## ステップ 2
+``||agent:set block or item||`` コマンドを追加し、**walls** 関数の中に配置します。**Acacia Wood Planks** を **64** 個、スロット **1** に設定します。
 
 ```blocks
 function walls () {
@@ -17,8 +17,8 @@ function walls () {
 }
 ```
 
-## Step 3
-Get a ``||loops:repeat||`` loop, set it to **3** times, and drag it into the **walls** ``||functions:function||`` below the ``||agent:set block or item||`` block. Add an ``||agent:agent move||`` block inside the ``||loops:repeat||`` loop and set it to **up by 1**.
+## ステップ 3
+``||loops:repeat||`` ループを取得し、**3** 回に設定して、**walls** ``||functions:function||`` の中の ``||agent:set block or item||`` ブロックの下にドラッグします。``||agent:agent move||`` ブロックを ``||loops:repeat||`` ループの中に追加し、**up by 1** に設定します。
 
 ```blocks
 function walls () {
@@ -29,8 +29,8 @@ function walls () {
 }
 ```
 
-## Step 4
-Get another ``||loops:repeat||`` loop, set it to **4** times, and drag it inside the first ``||loops:repeat||`` loop—beneath the first ``||agent:agent move||`` block. Add a ``||agent:turn right||`` into the second ``||loops:repeat||`` loop.
+## ステップ 4
+別の ``||loops:repeat||`` ループを取得し、**4** 回に設定して、最初の ``||loops:repeat||`` ループの中、最初の ``||agent:agent move||`` ブロックの下にドラッグします。2番目の ``||loops:repeat||`` ループに ``||agent:turn right||`` を追加します。
 
 ```blocks
 function walls () {
@@ -44,8 +44,8 @@ function walls () {
 }) 
 ```
 
-## Step 5
-Get a third ``||loops:repeat||`` loop, drag it inside the second ``||loops:repeat||`` loop and place it above the ``||agent: agent turn right||`` block. Set the third ``||loops:repeat||`` loop to repeat **4** times. Add an ``||agent:agent place||`` block to the innermost ``||loops:repeat||`` loop and set it to **down**. Add an ``||agent:agent move||`` block, set it to **forward by 1** and drag it inside the innermost ``||loops:repeat||`` loop under the ``||agent:place||`` down.
+## ステップ 5
+3番目の ``||loops:repeat||`` ループを取得し、2番目の ``||loops:repeat||`` ループの中の ``||agent: agent turn right||`` ブロックの上にドラッグします。3番目の ``||loops:repeat||`` ループを **4** 回に設定します。最も内側の ``||loops:repeat||`` ループに ``||agent:agent place||`` ブロックを追加し、**down** に設定します。``||agent:agent move||`` ブロックを追加し、**forward by 1** に設定して、最も内側の ``||loops:repeat||`` ループの中の ``||agent:place||`` down の下にドラッグします。
 
 ```blocks
 function walls () {
@@ -63,8 +63,8 @@ function walls () {
 }) 
 ```
 
-## Step 6
-Get a new ``||functions:function||`` and name it **roof**.   
+## ステップ 6
+新しい ``||functions:function||`` を取得して、**roof** と名前を付けます。
 
 ```blocks
 function roof () {
@@ -72,8 +72,8 @@ function roof () {
 }
 ```
 
-## Step 7
-Get a ``||agent:set block or item||`` block, set it to **brick slab** and then set the count to **64** and slot to **1** and drag it into the **roof** ``||functions:function||``. Add an ``||agent:agent move||`` block and set it to **up** by **1**.
+## ステップ 7
+``||agent:set block or item||`` ブロックを取得し、**brick slab** に設定してから、数を **64**、スロットを **1** に設定し、**roof** ``||functions:function||`` の中にドラッグします。``||agent:agent move||`` ブロックを追加し、**up** by **1** に設定します。
 
 ```blocks
 function roof () {
@@ -82,9 +82,9 @@ function roof () {
 }) 
 ```
 
-## Step 8
-Get a ``||loops:repeat||`` loop and drag it inside the **roof** ``||functions:function||``. Set it to repeat **4** times. Add an ``||agent:agent move||`` block and set it to **back by 4**. Also add another ``||agent:agent move||`` block and set it to **right by 1**.  
-	
+## ステップ 8
+``||loops:repeat||`` ループを取得し、**roof** ``||functions:function||`` の中にドラッグします。**4** 回に設定します。``||agent:agent move||`` ブロックを追加し、**back by 4** に設定します。また、別の ``||agent:agent move||`` ブロックを追加し、**right by 1** に設定します。
+
 ```blocks
 function roof () {
     agent.setItem(BRICKS_SLAB, 64, 1) 
@@ -96,8 +96,8 @@ function roof () {
 }) 
 ```
 
-## Step 9
-Get another ``||loops:repeat||`` loop, set it to repeat **4** times. Add a ``||agent:place down||`` block, followed by a ``||agent:move||`` block, set it to **forward by 1**. Drag this ``||loops:repeat||`` loop inside the previous repeat loop — above the ``||agent:agent move||`` block **back by 4**.
+## ステップ 9
+別の ``||loops:repeat||`` ループを取得し、**4** 回に設定します。``||agent:place down||`` ブロックを追加し、次に ``||agent:move||`` ブロックを追加して **forward by 1** に設定します。この ``||loops:repeat||`` ループを前の repeat loop の中、``||agent:agent move||`` ブロック **back by 4** の上にドラッグします。
 
 ```blocks
 function roof () {
@@ -114,11 +114,11 @@ function roof () {
 }) 
 ```
 
-## Step 10
-Drag an ``||player:on chat||`` command into the workspace and name it **house**. Add a ``||functions:function||``, and have it call both the **walls** and **roof** ``||advanced:functions||``.
+## ステップ 10
+``||player:on chat||`` コマンドをワークスペースにドラッグし、**house** と名前を付けます。``||functions:function||`` を追加し、**walls** と **roof** の ``||advanced:functions||`` の両方を呼び出します。
 
-## Step 11
-Press the **Play** button, go into Minecraft and test out the **house** command.
+## ステップ 11
+**Play** ボタンを押して、Minecraftに入り、**house** コマンドをテストしてみましょう。
 
 ```blocks
 function walls () {
@@ -151,4 +151,3 @@ player.onChat("house", function () {
     roof()
 })
 ```
-

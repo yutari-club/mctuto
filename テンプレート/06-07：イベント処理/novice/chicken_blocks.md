@@ -1,8 +1,8 @@
-# Chicken Rain: Blocks
+# にわとりの雨: ブロック
 
 
-## Step 1
-Get an ``||player:on chat||`` command and name it **"chicken"**.
+## ステップ 1
+``||player:on chat||``コマンドを取得して、**"chicken"**と名前をつけます。
 
 ```blocks
 player.onChat("chicken", function (){ 
@@ -10,9 +10,9 @@ player.onChat("chicken", function (){
 }) 
 ```
 
-## Step 2
+## ステップ 2
 
-Get a ``||mobs:spawn animal||`` and drag it into the ``||player:on chat||`` command. Select a **chicken** for the ``||mobs:spawn animal||`` and leave the coordinates as (0, 0, 0)—which is the current player position in 3D (x, y, z).
+``||mobs:spawn animal||``を取得して、``||player:on chat||``コマンドの中にドラッグします。``||mobs:spawn animal||``で**chicken**を選んで、座標は(0, 0, 0)のままにします。これは3D空間(x, y, z)でのプレイヤーの現在位置です。
 
 ```blocks
 player.onChat("chicken", function () { 
@@ -20,11 +20,11 @@ player.onChat("chicken", function () {
 }) 
 ```
 
-## Step 3
+## ステップ 3
 
-To change the ``||mobs:spawn animal||`` position for the chicken to 10 blocks **above** the head of the player, set the second number (Y) in the coordinates to **10** (0, 10, 0). 
+にわとりがプレイヤーの頭の上10ブロック**上**に出現するように、``||mobs:spawn animal||``の位置を変更します。座標の2番目の数字(Y)を**10**に設定します(0, 10, 0)。
 
-**NOTE:** The **~** character in the position indicates that the coordinates are relative to the position of the player.
+**注意:** 位置の**~**文字は、座標がプレイヤーの位置からの相対座標であることを示します。
 
 ```blocks
 player.onChat("chicken", function () { 
@@ -32,15 +32,15 @@ player.onChat("chicken", function () {
 }) 
 ```
 
-## Step 4
+## ステップ 4
 
-Go to Minecraft, press **t** to open the chat and type "chicken". Look up to see a single chicken drop from the sky 10 blocks above your player.
+Minecraftに行って、**t**を押してチャットを開き、「chicken」と入力します。上を見上げると、プレイヤーの10ブロック上から1匹のにわとりが空から落ちてくるのが見えます。
 
-## Step 5
+## ステップ 5
 
-The chicken is lonely. Get a ``||loops:repeat||`` block and set it to **100** times. Drag the ``||mobs:spawn animal||`` into the ``||loops:repeat||`` **100**, and then drag the ``||loops:repeat||`` 100 into the **chicken** ``||player:on chat||`` command.
+にわとりが1匹だけだとさみしいです。``||loops:repeat||``ブロックを取得して、**100**回に設定します。``||mobs:spawn animal||``を``||loops:repeat||`` **100**の中にドラッグして、それから``||loops:repeat||`` 100を**chicken**の``||player:on chat||``コマンドの中にドラッグします。
 
-Go to Minecraft, press **t** to open the chat and type chicken. Look up to see 100 chickens drop from the sky from 10 blocks above your player.
+Minecraftに行って、**t**を押してチャットを開き、「chicken」と入力します。上を見上げると、プレイヤーの10ブロック上から100匹のにわとりが空から落ちてくるのが見えます。
 
 ```blocks
 player.onChat("chicken", function () { 

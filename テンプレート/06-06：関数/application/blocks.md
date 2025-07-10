@@ -1,7 +1,7 @@
-# Tutorial
+# チュートリアル
 
-## Step 1
-Build a block in the city with code!
+## ステップ 1
+コードで街の中のブロックを作ります！
 
 ```ghost
 function apartments () {

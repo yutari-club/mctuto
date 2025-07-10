@@ -1,7 +1,7 @@
-# Tutorial
+# チュートリアル
 
-## Step 1
-Run the events to write your story. 
+## ステップ 1
+イベントを実行してストーリーを書きます。
 
 ```javascript
 player.onTravelled(WALK, function () {

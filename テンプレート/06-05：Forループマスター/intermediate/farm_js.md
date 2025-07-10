@@ -1,7 +1,7 @@
-# Farm: Javascript
+# 農場: JavaScript
 
-## Step 1
-Code an ``||player: on chat||`` command and name it **tp**. Code the agent ``||agent:to teleport to player||``. 
+## ステップ 1
+``||player: on chat||`` コマンドを作って、名前を **tp** にします。エージェントが ``||agent:プレイヤーにテレポート||`` するようにプログラムします。
 
 ```javascript
 player.onChat("tp", function () {
@@ -9,8 +9,8 @@ player.onChat("tp", function () {
 })
 ```
 
-## Step 2
-Code an ``||player:on chat||`` command and name it **farm**.
+## ステップ 2
+``||player:on chat||`` コマンドを作って、名前を **farm** にします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -18,8 +18,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 3
-Code the ``||agent:agent||`` to set **carrots** at the count of **64** in slot **1**. 
+## ステップ 3
+``||agent:エージェント||`` が **ニンジン** を **64個** スロット **1** に設定するようにプログラムします。
 
 ```javascript
 player.onChat("farm", function () {
@@ -27,8 +27,8 @@ player.onChat("farm", function () {
 })
 ```
 
-## Step 4
-Code a ``|loops:for||`` loop that repeats **2** times. 
+## ステップ 4
+``||loops:for||`` ループを作って、**2回** 繰り返すようにします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -39,8 +39,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 5
-Code the ``||agent:agent||`` to move **back by 7** inside the ``||loops:for||`` loop.
+## ステップ 5
+``||loops:for||`` ループの中で、``||agent:エージェント||`` が **後ろに7歩** 移動するようにプログラムします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -51,8 +51,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 6
-After the ``||agent:agent move||`` **back** code, code the ``||agent: agent||`` to move **right by 4**.
+## ステップ 6
+``||agent:エージェント移動||`` **後ろ** コードの後に、``||agent: エージェント||`` が **右に4歩** 移動するようにプログラムします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -64,8 +64,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 7
-Code a ``||loops:for||`` loop that repeats **7** times. Place it inside the first ``||loops:for||`` loop but above the ``||agent:move||`` move back code.
+## ステップ 7
+``||loops:for||`` ループを作って、**7回** 繰り返すようにします。これを最初の ``||loops:for||`` ループの中に置きますが、``||agent:移動||`` 後ろコードの上に置きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -80,8 +80,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 8
-Code the ``||agent:agent||`` to till **forward** inside the inner ``||loops:for||`` loop.
+## ステップ 8
+内側の ``||loops:for||`` ループの中で、``||agent:エージェント||`` が **前** を耕すようにプログラムします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -96,8 +96,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 9
-After the ``||agent:agent till||``, code the ``||agent:agent||`` to move **forward by 1** .
+## ステップ 9
+``||agent:エージェント耕す||`` の後に、``||agent:エージェント||`` が **前に1歩** 移動するようにプログラムします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -113,8 +113,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 10
-After the ``||agent:agent move||`` forward, code to have the ``||agent:agent||`` place down. 
+## ステップ 10
+``||agent:エージェント移動||`` 前の後に、``||agent:エージェント||`` が下に置くようにプログラムします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -131,8 +131,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 11
-Press the **Play** button, go into Minecraft and test out all the events.
+## ステップ 11
+**Play** ボタンを押して、Minecraftに入って、すべてのイベントをテストします。
 
 
 ```javascript

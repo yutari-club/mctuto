@@ -1,8 +1,8 @@
-# Linked Walls: Python
+# つながる壁: Python
 
-## Step 1
+## ステップ 1
 
-Code an ``||player:on chat||`` command and name it “**position**”.
+``||player:on chat||``コマンドをコードし、**"position"**と名前をつけます。
 
 ```python
 def on_chat():
@@ -10,8 +10,8 @@ def on_chat():
 player.on_chat("position", on_chat)
 ```
 
-## Step 2
-Create a variable **PlayerPosition** and set it to the ``||positions:world||`` position. 
+## ステップ 2
+変数**PlayerPosition**を作成し、``||positions:world||``位置に設定します。
 
 ```python
 PlayerPosition: Position = None
@@ -20,8 +20,8 @@ def on_chat():
 player.on_chat("position", on_chat)
 ```
 
-## Step 3
-Inside the ``||player:on chat||`` command,  create a variable **from_position** and set it equal to **PlayerPosition** plus (**6,0,0**).
+## ステップ 3
+``||player:on chat||``コマンドの中で、変数**from_position**を作成し、**PlayerPosition**に（**6,0,0**）を加えた値と等しく設定します。
 	
 ```python
 PlayerPosition: Position = None
@@ -32,8 +32,8 @@ def on_chat():
 player.on_chat("position", on_chat)
 ```
 
-## Step 4
-Inside the ``||player:on chat||`` command,  create a variable **to_position** and set it equal to the variable **PlayerPosition** plus (**-6,13,0**). 
+## ステップ 4
+``||player:on chat||``コマンドの中で、変数**to_position**を作成し、変数**PlayerPosition**に（**-6,13,0**）を加えた値と等しく設定します。
 
 ```python
 PlayerPosition: Position = None
@@ -46,8 +46,8 @@ def on_chat():
 player.on_chat("position", on_chat)
 ```
 
-## Step 5
-Code another ``||player:on chat||`` command and name it “**wall**”.
+## ステップ 5
+別の``||player:on chat||``コマンドをコードし、**"wall"**と名前をつけます。
 
 ```python
 def on_chat():
@@ -55,8 +55,8 @@ def on_chat():
 player.on_chat("wall", on_chat)
 ```
 
-## Step 6
-Inside the **wall** ``||player:on chat||`` command, code a ``||blocks:fill and replace||`` and set it to **glass** from the **from_position** variable to the **to_position** variable. 
+## ステップ 6
+**wall**の``||player:on chat||``コマンドの中で、``||blocks:fill and replace||``をコードし、**from_position**変数から**to_position**変数まで**glass**に設定します。
 
 ```python
 def on_chat():
@@ -64,8 +64,8 @@ def on_chat():
 player.on_chat("wall", on_chat)
 ```
 
-## Step 7
-Using ``||blocks: on block broken||``, code an event such that when a **glass** block is broken, a **diamond** block is ``||blocks:placed||`` at a ``||positions: pick random position||`` in the range beginning with the **from_position** variable to the **to_position** variable. 
+## ステップ 7
+``||blocks: on block broken||``を使って、**glass**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: pick random position||``に**diamond**ブロックを``||blocks:placed||``するイベントをコードします。
 
 ```python
 def block_broken_glass():
@@ -73,8 +73,8 @@ def block_broken_glass():
 blocks.on_block_broken(GLASS, block_broken_glass)
 ```
 
-## Step 8
-Using ``||blocks: on block broken||``, code an event such that when a **diamond** block is broken, an **orange wool** block is ``||blocks:placed||`` at a ``||positions: random position||`` in the range beginning with the **from_position** variable to the **to_position** variable. 
+## ステップ 8
+``||blocks: on block broken||``を使って、**diamond**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: random position||``に**orange wool**ブロックを``||blocks:placed||``するイベントをコードします。
 
 ```python
 def block_broken_diamond():
@@ -82,8 +82,8 @@ def block_broken_diamond():
 blocks.on_block_broken(DIAMOND_BLOCK, block_broken_diamond)
 ```
 
-## Step 9
-Press the **Play** button, go into Minecraft and test out all the events. Start with **position**, then **wall**. Break a **glass block** and see what happens.
+## ステップ 9
+**Play**ボタンを押してMinecraftに入り、すべてのイベントをテストします。**position**から始めて、次に**wall**を使います。**glassブロック**を壊して何が起こるかを見てみましょう。
 
 ```python
 from_position: Position = None

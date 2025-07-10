@@ -1,7 +1,7 @@
-# House for Loops: Blocks
+# 家のForループ: ブロック
 
-## Step 1
-Get an ``||player:on chat||`` command and name it **teleport**. Get an ``||agent:agent teleport to player||`` and drag it into the ``||player:on chat||`` command.  
+## ステップ 1
+``||player:on chat||`` コマンドを取って、名前を **teleport** にします。``||agent:エージェントプレイヤーにテレポート||`` を取って、``||player:on chat||`` コマンドの中にドラッグします。
 
 ```blocks
 player.onChat("tp", function () { 
@@ -9,8 +9,8 @@ player.onChat("tp", function () {
 }) 
 ```
 
-## Step 2
-Get a new ``||player:on chat||`` command and name it **walls**.
+## ステップ 2
+新しい ``||player:on chat||`` コマンドを取って、名前を **walls** にします。
 
 ```blocks
 player.onChat("walls", function () { 
@@ -18,8 +18,8 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 3
-Get a ``||agent:set block or item||`` command and drag it into the **walls** ``||player: on chat||`` command. Select **Acacia Wood Planks**, then set the count to **64** and slot to **1**.
+## ステップ 3
+``||agent:ブロックまたはアイテム設定||`` コマンドを取って、**walls** の ``||player: on chat||`` コマンドの中にドラッグします。**アカシアの木の板** を選んで、数を **64** 、スロットを **1** に設定します。
 
 ```blocks
 player.onChat("walls", function () { 
@@ -27,8 +27,8 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 4
-Get a ``||loops:repeat||`` loop, set it to **3** times, and drag it into the **walls** ``||player:on chat||`` command—below the ``||agent:set block or item||``. Add an ``||agent:agent move||`` inside the ``||loops:repeat||`` loop and set it to **up by 1**.
+## ステップ 4
+``||loops:繰り返し||`` ループを取って、**3** 回に設定し、**walls** の ``||player:on chat||`` コマンドの中にドラッグします。``||agent:ブロックまたはアイテム設定||`` の下に置きます。``||loops:繰り返し||`` ループの中に ``||agent:エージェント移動||`` を追加して、**上に1歩** に設定します。
 
 ```blocks
   player.onChat("walls", function () { 
@@ -39,8 +39,8 @@ Get a ``||loops:repeat||`` loop, set it to **3** times, and drag it into the **w
 }) 
 ```
 
-## Step 5
-Get another ``||loops:repeat||`` loop, set it to **4** times, and drag it inside the first ``||loops:repeat||`` loop—beneath the first ``||agent:move||``. Add an ``||agent:agent turn right||`` into the second ``||loops:repeat||`` loop.
+## ステップ 5
+もう一つの ``||loops:繰り返し||`` ループを取って、**4** 回に設定し、最初の ``||loops:繰り返し||`` ループの中にドラッグします。最初の ``||agent:移動||`` の下に置きます。2番目の ``||loops:繰り返し||`` ループに ``||agent:エージェント右に回転||`` を追加します。
 
 ```blocks
 player.onChat("walls", function () { 
@@ -54,11 +54,11 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 6
-Get a third ``||loops:repeat||`` loop and drag it inside the second ``||loops:repeat||`` loop and set it above the ``||agent: turn right||``. Set the third ``||loops:repeat||`` loop to repeat **4** times. 
+## ステップ 6
+3番目の ``||loops:繰り返し||`` ループを取って、2番目の ``||loops:繰り返し||`` ループの中にドラッグし、``||agent: 右に回転||`` の上に置きます。3番目の ``||loops:繰り返し||`` ループを **4** 回繰り返すように設定します。
 
-## Step 7
-Add a ``||agent:agent place||`` block to the innermost ``||loops:repeat||`` loop and set it to **down**. Add an ``||agent:agent move||``block, set it to **forward by 1** and drag it inside the innermost ``||loops:repeat||`` loop under the ``||agent:place||`` down block.
+## ステップ 7
+一番内側の ``||loops:繰り返し||`` ループに ``||agent:エージェント置く||`` ブロックを追加して、**下** に設定します。``||agent:エージェント移動||`` ブロックを追加して、**前に1歩** に設定し、一番内側の ``||loops:繰り返し||`` ループの中の ``||agent:置く||`` 下ブロックの下にドラッグします。
 
 ```blocks
 player.onChat("walls", function () { 
@@ -76,8 +76,8 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 8
-Get a new ``||player:on chat||`` command and name it **roof**.   
+## ステップ 8
+新しい ``||player:on chat||`` コマンドを取って、名前を **roof** にします。
 
 ```blocks
 player.onChat("roof", function () { 
@@ -85,8 +85,8 @@ player.onChat("roof", function () {
 }) 
 ```
 
-## Step 9
-Get a ``||agent:set block or item||``command, set it to **Bricks slab** and then set the count to **64** and slot to **1** and drag it into the **roof** ``||player:on chat||`` command. Add an ``||agent:agent move||`` block and set it to up by **1**.
+## ステップ 9
+``||agent:ブロックまたはアイテム設定||`` コマンドを取って、**レンガハーフブロック** に設定し、数を **64** 、スロットを **1** に設定して、**roof** の ``||player:on chat||`` コマンドの中にドラッグします。``||agent:エージェント移動||`` ブロックを追加して、**上に1歩** に設定します。
 
 ```blocks
 player.onChat("roof", function () {
@@ -95,9 +95,9 @@ player.onChat("roof", function () {
 })
 ```
 
-## Step 10
-Get a ``||loops:repeat||`` loop and drag it inside the **roof** ``||player:on chat||`` command. Set it to repeat **4** times. Add an ``||agent:agent move||`` block and set it to **back by 4**. Also, add an ``||agent:agent move||`` block and set it to **right by 1**.  
-	
+## ステップ 10
+``||loops:繰り返し||`` ループを取って、**roof** の ``||player:on chat||`` コマンドの中にドラッグします。**4** 回繰り返すように設定します。``||agent:エージェント移動||`` ブロックを追加して、**後ろに4歩** に設定します。また、``||agent:エージェント移動||`` ブロックを追加して、**右に1歩** に設定します。
+
 ```blocks
 player.onChat("roof", function () { 
     agent.setItem(BRICKS_SLAB, 64, 1) 
@@ -109,8 +109,8 @@ player.onChat("roof", function () {
 }) 
 ```
 
-## Step 11
-Get another ``||loops:repeat||`` loop, set it to repeat **4** times. Add an ``||agent:agent place down||`` and also an ``||agent:agent move||`` and set it to **forward by 1**. Drag this ``||loops:repeat||`` loop inside the previous repeat loop, above the ``||agent:agent move||`` **back by 4**.
+## ステップ 11
+もう一つの ``||loops:繰り返し||`` ループを取って、**4** 回繰り返すように設定します。``||agent:エージェント下に置く||`` と ``||agent:エージェント移動||`` を追加して、**前に1歩** に設定します。この ``||loops:繰り返し||`` ループを前の繰り返しループの中にドラッグし、``||agent:エージェント移動||`` **後ろに4歩** の上に置きます。
 
 ```blocks
 player.onChat("roof", function () { 
@@ -127,8 +127,8 @@ player.onChat("roof", function () {
 }) 
 ```
 
-## Step 12
-Press the **Play** button, go into Minecraft and test out **walls** and **roof**. 
+## ステップ 12
+**Play** ボタンを押して、Minecraftに入って、**walls** と **roof** をテストします。
 
 ```blocks
 player.onChat("tp", function () { 

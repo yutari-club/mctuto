@@ -1,9 +1,9 @@
 ### @hideIteration true 
 
-# Tutorial
+# チュートリアル
 
-## Step 1
-Be creative and build your own pixel art with code!
+## ステップ 1
+クリエイティブになって、コードで自分のピクセルアートを作りましょう！
 
 
 ```javascript

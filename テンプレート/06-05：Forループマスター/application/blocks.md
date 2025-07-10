@@ -1,10 +1,10 @@
 ### @hideIteration true 
 
-# Tutorial
+# チュートリアル
 
-## Step 1
+## ステップ 1
 
-Be creative and build your own pixel art with code!
+クリエイティブになって、コードで自分のピクセルアートを作りましょう！
 
 
 

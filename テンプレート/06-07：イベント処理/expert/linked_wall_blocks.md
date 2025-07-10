@@ -1,7 +1,7 @@
-# Linked Walls: Blocks
+# つながる壁: ブロック
 
-## Step 1
-Rename the existing ``||player:on chat||`` command into “**position**”.
+## ステップ 1
+既存の``||player:on chat||``コマンドの名前を**"position"**に変更します。
 
 ```blocks
 player.onChat("position", function () { 
@@ -9,8 +9,8 @@ player.onChat("position", function () {
 }) 
 ```
 
-## Step 2
-Create a ``|||variable:new variable||`` and name it **PlayerPosition**. Then, drag a ``||player:player world position||`` into the “**0**” parameter of the set variable.
+## ステップ 2
+``|||variable:new variable||``を作成し、**PlayerPosition**と名前をつけます。次に、``||player:player world position||``を変数の設定の"**0**"パラメーターにドラッグします。
 
 ```blocks
 let PlayerPosition: Position = null 
@@ -19,10 +19,10 @@ player.onChat("position", function () {
 }) 
 ```
 
-## Step 3
-Create another ``|||variable: variable||`` and name it **from_position**. Then, drag an ``||positions:+ (add position)||`` block into the “**0**” argument of the set variable. 
+## ステップ 3
+別の``|||variable: variable||``を作成し、**from_position**と名前をつけます。次に、``||positions:+ (add position)||``ブロックを変数の設定の"**0**"引数にドラッグします。
 
-Drag this ``||variable:variable||`` into the end of the ``||player:on chat||`` command. Get the **PlayerPosition** ``||variable:variable||`` and drag it into the top set of coordinates in the new **from_position** variable. Set the **bottom** coordinates to (**6**, 0, 0).
+この``||variable:variable||``を``||player:on chat||``コマンドの最後にドラッグします。**PlayerPosition**の``||variable:variable||``を取得して、新しい**from_position**変数の上の座標セットにドラッグします。**下の**座標を（**6**, 0, 0）に設定します。
 
 ```blocks
 let PlayerPosition: Position = null 
@@ -36,10 +36,10 @@ player.onChat("position", function () {
 }) 
 ```
 
-## Step 4
-Create another ``|||variable: variable||`` and name it **to_position**. Then, drag an ``||positions:+ (add position)||`` into the “**0**” argument of the set variable.
+## ステップ 4
+別の``|||variable: variable||``を作成し、**to_position**と名前をつけます。次に、``||positions:+ (add position)||``を変数の設定の"**0**"引数にドラッグします。
 
-Drag this ``||variable:variable||`` into the end of the ``||player:on chat||`` command. Get the **PlayerPosition** ``||variable:variable||`` and drag it into the top set of coordinates in the new **to_position** variable. Set the **bottom** coordinates to (**-6, 13, 0**).
+この``||variable:variable||``を``||player:on chat||``コマンドの最後にドラッグします。**PlayerPosition**の``||variable:variable||``を取得して、新しい**to_position**変数の上の座標セットにドラッグします。**下の**座標を（**-6, 13, 0**）に設定します。
 
 ```blocks
 let from_position: Position = null 
@@ -57,8 +57,8 @@ player.onChat("position", function () {
 }) 
 ```
 
-## Step 5
-Get another ``||player:on chat||`` command and name it “**wall**”.
+## ステップ 5
+別の``||player:on chat||``コマンドを取得し、**"wall"**と名前をつけます。
 
 ```blocks
 player.onChat("wall", function () { 
@@ -66,8 +66,8 @@ player.onChat("wall", function () {
 }) 
 ```
 
-## Step 6
-Insert a ``||blocks:fill with||`` block and set it to **Glass**. Take the  **from_position** ``||variable:variable||`` and drag it into the **from** argument of the **Glass** ``||blocks:fill||`` command. Also, take the  **to_position** ``||variable:variable||`` and drag it into the **to** argument of the **Glass** ``||blocks:fill||`` command. 
+## ステップ 6
+``||blocks:fill with||``ブロックを挿入し、**Glass**に設定します。**from_position**の``||variable:variable||``を取得して、**Glass**の``||blocks:fill||``コマンドの**from**引数にドラッグします。また、**to_position**の``||variable:variable||``を取得して、**Glass**の``||blocks:fill||``コマンドの**to**引数にドラッグします。
 
 ```blocks
 player.onChat("wall", function () { 
@@ -80,8 +80,8 @@ player.onChat("wall", function () {
 }) 
 ```
 
-## Step 7
-Get an ``||blocks: on block broken||`` command, set it to **Glass**. Insert a ``||blocks:place||`` block and set to **Diamond**. Drag a ``||positions:pick random position||`` block into the **at** argument of the **Diamond** ``||blocks:place||`` block. Get the **from_position** variable and drag it into the **from** argument of the **Diamond** ``||blocks:place||`` block. Get the variable **to_position** and drag it into the **to** argument of the **Diamond** ``||blocks:place||`` block.
+## ステップ 7
+``||blocks: on block broken||``コマンドを取得し、**Glass**に設定します。``||blocks:place||``ブロックを挿入し、**Diamond**に設定します。``||positions:pick random position||``ブロックを**Diamond**の``||blocks:place||``ブロックの**at**引数にドラッグします。**from_position**変数を取得して、**Diamond**の``||blocks:place||``ブロックの**from**引数にドラッグします。**to_position**変数を取得して、**Diamond**の``||blocks:place||``ブロックの**to**引数にドラッグします。
 
 ```blocks
 blocks.onBlockBroken(AIR, function () { 
@@ -92,8 +92,8 @@ blocks.onBlockBroken(AIR, function () {
 }) 
 ```
 
-## Step 8
-Duplicate the ``||blocks:on block broken||`` block structure. Change the **Glass** to **Diamond** and the **Diamond** ``||blocks:place||`` block to **Orange Wool**.
+## ステップ 8
+``||blocks:on block broken||``ブロック構造をコピーします。**Glass**を**Diamond**に変更し、**Diamond**の``||blocks:place||``ブロックを**Orange Wool**に変更します。
 
 ```blocks
 blocks.onBlockBroken(DIAMOND_BLOCK, function () { 
@@ -104,8 +104,8 @@ blocks.onBlockBroken(DIAMOND_BLOCK, function () {
 }) 
 ```
 
-## Step 9
-Press the **Play** button, go into Minecraft and test out all the events. Start with **position**, then **wall**. Break a **glass block** and see what happens.
+## ステップ 9
+**Play**ボタンを押してMinecraftに入り、すべてのイベントをテストします。**position**から始めて、次に**wall**を使います。**glassブロック**を壊して何が起こるかを見てみましょう。
 
 ```blocks
 let from_position: Position = null 
@@ -143,4 +143,3 @@ blocks.onBlockBroken(DIAMOND_BLOCK, function () {
     )) 
 }) 
 ```
-

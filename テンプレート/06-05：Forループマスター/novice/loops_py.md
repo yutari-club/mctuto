@@ -1,7 +1,7 @@
-# Loops: Python
+# ループ: Python
 
-## Step 1
-Code an ``||player:on item used||`` event and set it to  **Bone**.
+## ステップ 1
+``||player:on item used||`` イベントをコードして、**Bone**に設定してください。
 
 ```python
 def item_interacted_bone():
@@ -9,8 +9,8 @@ def item_interacted_bone():
 player.on_item_interacted(BONE, item_interacted_bone)
 ```
 
-## Step 2
-Within the ``||player: on item used||`` event, code a ``||loops:for||`` loop, that repeats **6** times.
+## ステップ 2
+``||player: on item used||`` イベントの中に、**6** 回繰り返す ``||loops:for||`` ループをコードしてください。
 
 ```python
 def item_interacted_bone():
@@ -19,8 +19,8 @@ def item_interacted_bone():
 player.on_item_interacted(BONE, item_interacted_bone)
 ```
 
-## Step 3
-Inside the ``||loops:for||`` loop, spawn a **Zombie Horse** at (0,0,0).
+## ステップ 3
+``||loops:for||`` ループの中で、**Zombie Horse**を(0,0,0)にスポーンしてください。
 
 ```python
 def item_interacted_bone():
@@ -29,8 +29,8 @@ def item_interacted_bone():
 player.on_item_interacted(BONE, item_interacted_bone)
 ```
 
-## Step 4
-Code another ``||loops:for||`` loop inside the **Bone** ``||player:on item used||`` that repeats **4** times.
+## ステップ 4
+**Bone** ``||player:on item used||`` の中に、**4** 回繰り返す別の ``||loops:for||`` ループをコードしてください。
 
 ```python
 def item_interacted_bone():
@@ -41,8 +41,8 @@ def item_interacted_bone():
 player.on_item_interacted(BONE, item_interacted_bone)
 ```
 
-## Step 5
-Inside the ``||loops:for||`` loop, spawn a **skeleton horse** at (0,0,0).  
+## ステップ 5
+``||loops:for||`` ループの中で、**skeleton horse**を(0,0,0)にスポーンしてください。  
 
 ```python
 def item_interacted_bone():
@@ -53,8 +53,8 @@ def item_interacted_bone():
 player.on_item_interacted(BONE, item_interacted_bone)
 ```
 
-## Step 6
-Press the Play button, go into Minecraft and test out all the events.
+## ステップ 6
+Playボタンを押して、Minecraftに入って全てのイベントをテストしてください。
 
 ```python
 def item_interacted_bone():

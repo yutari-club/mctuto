@@ -1,7 +1,7 @@
-# House for Loops: Javascript
+# 家のForループ: JavaScript
 
-## Step 1
-Code an ``||player:on chat||`` command that makes the ``||agent:teleport to player||``. Name it **tp**. 
+## ステップ 1
+``||player:on chat||`` コマンドを作って、``||agent:プレイヤーにテレポート||`` するようにします。名前を **tp** にします。 
 
 ```javascript
 player.onChat("tp", function () { 
@@ -9,8 +9,8 @@ player.onChat("tp", function () {
 }) 
 ```
 
-## Step 2
-Code another ``||player:on chat||`` command and name it **walls**.
+## ステップ 2
+別の ``||player:on chat||`` コマンドを作って、名前を **walls** にします。
 
 ```javascript
 player.onChat("walls", function () { 
@@ -18,8 +18,8 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 3
-Code a ``||agent:set block or item||`` of **acacia wood planks** at a count of **64** in slot **1** inside the **walls** ``||player: on chat||`` command.
+## ステップ 3
+**walls** の ``||player: on chat||`` コマンドの中で、``||agent:ブロックまたはアイテム設定||`` を使って **アカシアの木の板** を数 **64** でスロット **1** に設定します。
 
 ```javascript
 player.onChat("walls", function () { 
@@ -27,8 +27,8 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 4
-Inside the **walls** ``||player:on chat||`` command, code a ``||loops:for||`` loop that repeats **3** times the ``||agent:move||`` **up by 1** step.
+## ステップ 4
+**walls** の ``||player:on chat||`` コマンドの中で、``||agent:移動||`` **上に1歩** を **3回** 繰り返す ``||loops:for||`` ループを作ります。
 
 ```javascript
   player.onChat("walls", function () { 
@@ -39,8 +39,8 @@ Inside the **walls** ``||player:on chat||`` command, code a ``||loops:for||`` lo
 }) 
 ```
 
-## Step 5
-Inside the first ``||loops:for||`` loop and under the  ``||agent:move||`` code, code another ``||loops:for||`` loop that has ``||agent:agent turn right||`` step that repeats **4** times.
+## ステップ 5
+最初の ``||loops:for||`` ループの中で、``||agent:移動||`` コードの下に、``||agent:エージェント右に回転||`` を **4回** 繰り返す別の ``||loops:for||`` ループを作ります。
 
 ```javascript
 player.onChat("walls", function () { 
@@ -54,8 +54,8 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 6
-Inside the second ``||loops:for||`` loop but above the ``||agent:turn right||`` code, code a third ``||loops:for||`` loop that repeats **4** times the steps of ``||agent:place||`` down and ``||agent:move||`` **forward by 1**.
+## ステップ 6
+2番目の ``||loops:for||`` ループの中で、``||agent:右に回転||`` コードの上に、``||agent:置く||`` 下と ``||agent:移動||`` **前に1歩** を **4回** 繰り返す3番目の ``||loops:for||`` ループを作ります。
 
 ```javascript
 player.onChat("walls", function () { 
@@ -73,8 +73,8 @@ player.onChat("walls", function () {
 }) 
 ```
 
-## Step 7
-Code a new ``||player:on chat||`` command and name it **roof**.   
+## ステップ 7
+新しい ``||player:on chat||`` コマンドを作って、名前を **roof** にします。   
 
 ```javascript
 player.onChat("roof", function () { 
@@ -82,8 +82,8 @@ player.onChat("roof", function () {
 }) 
 ```
 
-## Step 8
-Code the ``||agent:set block or item||`` to set a **Bricks slab** at a count of **64** in slot **1** and then code the agent to ``||agent:move||`` **up by 1**.
+## ステップ 8
+``||agent:ブロックまたはアイテム設定||`` を使って **レンガハーフブロック** を数 **64** でスロット **1** に設定し、エージェントが ``||agent:移動||`` **上に1歩** するようにプログラムします。
 
 ```javascript
 player.onChat("roof", function () { 
@@ -92,8 +92,8 @@ player.onChat("roof", function () {
 }) 
 ```
 
-## Step 9
-Inside the **roof** ``||player:on chat||`` command, code a ``||loops:for||`` loop to repeat **4** times the steps of ``||agent:agent move||`` **back by 4** ``||agent:agent move||`` **right by 1**.  
+## ステップ 9
+**roof** の ``||player:on chat||`` コマンドの中で、``||agent:エージェント移動||`` **後ろに4歩** と ``||agent:エージェント移動||`` **右に1歩** を **4回** 繰り返す ``||loops:for||`` ループを作ります。  
 	
 ```javascript
 player.onChat("roof", function () { 
@@ -106,8 +106,8 @@ player.onChat("roof", function () {
 }) 
 ```
 
-## Step 10
-Inside the previous ``||loops:for||`` loop—above the ``||agent:move||`` **back** step—code another ``||loops:for||`` loop to repeat **4** times the steps of  ``||agent:place down||`` and ``||agent:move||`` **forward by 1**.
+## ステップ 10
+前の ``||loops:for||`` ループの中で、``||agent:移動||`` **後ろ** の上に、``||agent:下に置く||`` と ``||agent:移動||`` **前に1歩** を **4回** 繰り返す別の ``||loops:for||`` ループを作ります。
 
 ```javascript
 player.onChat("roof", function () { 
@@ -124,8 +124,8 @@ player.onChat("roof", function () {
 }) 
 ```
 
-## Step 11
-Press the **Play** button, go into Minecraft and test out **walls** and **roof**.
+## ステップ 11
+**Play** ボタンを押して、Minecraftに入って、**walls** と **roof** をテストします。
 
 ```javascript
 player.onChat("tp", function () {

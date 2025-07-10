@@ -1,7 +1,7 @@
-# Fun with Events: Javascript
+# イベントを楽しもう: JavaScript
 
-## Step 1
-Code an event for the case when a ``||player:player||`` walks, **projectile fireworks rockets** will spawn at the position of (0,**10**,0).
+## ステップ 1
+``||player:player||``が歩いたときに、**projectile fireworks rockets**が位置(0,**10**,0)に出現するイベントをコードします。
 
 ```javascript
 player.onTravelled(WALK, function () {
@@ -9,8 +9,8 @@ player.onTravelled(WALK, function () {
 })
 ```
 
-## Step 2
-Add a ``||loops:for||`` loop around the spawn code to run it **25 times**.
+## ステップ 2
+出現コードを**25回**実行するために、出現コードの周りに``||loops:for||``ループを追加します。
 
 ```javascript
 player.onTravelled(WALK, function () {
@@ -20,8 +20,8 @@ player.onTravelled(WALK, function () {
 })
 ```
 
-## Step 3
-Code an event for the case when an **oak wood** is ``||blocks:onBlockBroken||``, a **chicken** will spawn at position (0,10,0). 
+## ステップ 3
+**oak wood**が``||blocks:onBlockBroken||``されたときに、**chicken**が位置(0,10,0)に出現するイベントをコードします。
 
 ```javascript
 blocks.onBlockBroken(PLANKS_OAK, function () {
@@ -29,8 +29,8 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 })
 ```
 
-## Step 4
-Add a  ``||loops:for||`` loop around the spawn code and have it  repeat **25 times**. 
+## ステップ 4
+出現コードの周りに``||loops:for||``ループを追加して、**25回**繰り返すようにします。
 
 ```javascript
 blocks.onBlockBroken(PLANKS_OAK, function () {
@@ -40,8 +40,8 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 })
 ```
 
-## Step 5
-Code an event for the case when a **golden apple** is ``||player: on item used||``, ``||mobs:apply||`` **levitation** is applied to **all chickens** for a duration of **10** and at **5** blocks high. 
+## ステップ 5
+**golden apple**が``||player: on item used||``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントをコードします。
 
 ```javascript
 player.onItemInteracted(GOLDEN_APPLE, function () {
@@ -49,8 +49,8 @@ player.onItemInteracted(GOLDEN_APPLE, function () {
 })
 ```
 
-## Step 6
-Press the **Play** button, go into Minecraft and test out all the events. 
+## ステップ 6
+**Play**ボタンを押してMinecraftに入り、すべてのイベントをテストします。
 
 
 ```javascript
@@ -69,4 +69,3 @@ player.onItemInteracted(GOLDEN_APPLE, function () {
     mobs.applyEffect(LEVITATION, mobs.entitiesByType(CHICKEN), 10, 5)
 })
 ```
-

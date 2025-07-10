@@ -1,7 +1,7 @@
-# Agent Fun Functions: Blocks
+# エージェント楽しい関数: ブロック
 
-## Step 1
-You are given an ``||player:on chat||`` command **carrot**, the ``||player:on chat||`` command **chicken** and the ``||player:on chat||`` command **snowball**.
+## ステップ 1
+``||player:on chat||`` コマンド **carrot**、``||player:on chat||`` コマンド **chicken**、``||player:on chat||`` コマンド **snowball** が用意されています。
 
 ```template
 player.onChat("carrot", function () {
@@ -28,8 +28,8 @@ player.onChat("snowball", function () {
 })
 ```
 
-## Step 2
-Get a new ``||player:on item used||`` and select **Blaze Rod**.  Add a ``||player:run chat||`` command and name it **carrot**, get another ``||player:run chat||`` command and name it **chicken**, and get a third ``||player:run chat||`` command and name it **snowball**.
+## ステップ 2
+新しい ``||player:on item used||`` を取得して **Blaze Rod** を選択します。``||player:run chat||`` コマンドを追加して **carrot** と名前を付けます。もう一つの ``||player:run chat||`` コマンドを取得して **chicken** と名前を付けます。3つ目の ``||player:run chat||`` コマンドを取得して **snowball** と名前を付けます。
 
 ```blocks
 player.onItemInteracted(BLAZE_ROD, function () {
@@ -39,7 +39,7 @@ player.onItemInteracted(BLAZE_ROD, function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Press the **Play** button, return to Minecraft and type the commands **carrot**, **chicken**, **snowball** into the chat to see what happens.
+**Play** ボタンを押して、Minecraftに戻り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
 

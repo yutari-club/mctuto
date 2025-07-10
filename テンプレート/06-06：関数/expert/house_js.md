@@ -1,15 +1,15 @@
-# House Functions: JavaScript
+# 家の関数: JavaScript
 
-## Step 1
-Code a ``||functions:function||`` and name it **walls**. 
+## ステップ 1
+``||functions:function||`` をコードし、**walls** と名前を付けます。
 
 ```javascript
 function walls () {
 }
 ```
 
-## Step 2
-Within the **walls** function, code the agent to ``||agent:set block or item||`` and set it to **Acacia Wood Planks** at a count of **64** in slot **1**.
+## ステップ 2
+**walls** 関数の中で、エージェントに ``||agent:set block or item||`` をコードし、**Acacia Wood Planks** を **64** 個、スロット **1** に設定します。
 
 ```javascript
 function walls () {
@@ -17,8 +17,8 @@ function walls () {
 }
 ```
 
-## Step 3
-Within the **walls** function, code a ``||loops:for||`` loop that repeats **3** times an ``||agent:agent move||`` **up by 1** .
+## ステップ 3
+**walls** 関数の中で、``||agent:agent move||`` **up by 1** を **3** 回繰り返す ``||loops:for||`` ループをコードします。
 
 ```javascript
 function walls () {
@@ -29,8 +29,8 @@ function walls () {
 }
 ```
 
-## Step 4
-Code another ``||loops:for||`` loop that repeats **4** times, and drag it inside the first ``||loops:for||`` loop — beneath the first ``||agent:agent move||``. With the second loop, code an ``||agent:agent turn right||``.
+## ステップ 4
+**4** 回繰り返す別の ``||loops:for||`` ループをコードし、最初の ``||loops:for||`` ループの中、最初の ``||agent:agent move||`` の下にドラッグします。2番目のループで、``||agent:agent turn right||`` をコードします。
 
 ```javascript
 function walls () {
@@ -44,8 +44,8 @@ function walls () {
 }) 
 ```
 
-## Step 5
-Code a third ``||loops:for||`` loop, drag it inside the second ``||loops:for||`` loop and place it above the a ``||agent: turn right||``. Set the third ``||loops:for||`` loop to repeat **4** times. Within the innermost ``||loops:for||`` loop, code the agent to ``||agent:place||`` and set it to **down**. Add an agent ``||agent:move||``, set it to **forward by 1**, and drag it inside the innermost ``||loops:for||`` loop under the ``||agent:place||`` down.
+## ステップ 5
+3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:for||`` ループの中の ``||agent: turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:place||`` をコードし、**down** に設定します。エージェントの ``||agent:move||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:place||`` down の下にドラッグします。
 
 ```javascript
 function walls () {
@@ -63,8 +63,8 @@ function walls () {
 }) 
 ```
 
-## Step 6
-Code a new ``||functions:function||`` and name it **roof**.   
+## ステップ 6
+新しい ``||functions:function||`` をコードし、**roof** と名前を付けます。
 
 ```javascript
 function roof () {
@@ -72,8 +72,8 @@ function roof () {
 }
 ```
 
-## Step 7
-Code the agent to ``||agent:set block or item||``, set it to **brick slab**, set the count to **64** and the slot to **1** and drag it into the **roof** ``||functions:function||``. Also, code the agent to ``||agent:move||`` **up by 1**.
+## ステップ 7
+エージェントに ``||agent:set block or item||`` をコードし、**brick slab** に設定し、数を **64**、スロットを **1** に設定して、**roof** ``||functions:function||`` の中にドラッグします。また、エージェントに ``||agent:move||`` **up by 1** をコードします。
 
 ```javascript
 function roof () {
@@ -82,9 +82,9 @@ function roof () {
 }) 
 ```
 
-## Step 8
-Inside the **roof** ``||functions:function||``, code a ``||loops:for||`` loop and set it to repeat **4** times. Within the loop, code the agent to ``||agent:move||`` **back by 4**, and then code the agent to ``||agent:move||``  **right by 1**.
-	
+## ステップ 8
+**roof** ``||functions:function||`` の中で、``||loops:for||`` ループをコードし、**4** 回に設定します。ループの中で、エージェントに ``||agent:move||`` **back by 4** をコードし、次にエージェントに ``||agent:move||`` **right by 1** をコードします。
+
 ```javascript
 function roof () {
     agent.setItem(BRICKS_SLAB, 64, 1) 
@@ -96,8 +96,8 @@ function roof () {
 }) 
 ```
 
-## Step 9
-Code another ``||loops:for||`` loop and set it to repeat **4** times. Within this loop, add an ``||agent:agent place down||``, followed by an ``||agent:agent move||`` **forward by 1**. Place this ``||loops:for||`` loop inside the previous loop—above the ``||agent:agent move||`` **back by 4**.
+## ステップ 9
+別の ``||loops:for||`` ループをコードし、**4** 回に設定します。このループの中で、``||agent:agent place down||`` を追加し、次に ``||agent:agent move||`` **forward by 1** を追加します。この ``||loops:for||`` ループを前のループの中、``||agent:agent move||`` **back by 4** の上に配置します。
 
 ```javascript
 function roof () {
@@ -114,8 +114,8 @@ function roof () {
 }) 
 ```
 
-## Step 10
-Code an ``||player:on chat||`` command and name it **house**, and have it call both the **walls** and **roof** ``||functions:functions||``.
+## ステップ 10
+``||player:on chat||`` コマンドをコードし、**house** と名前を付けて、**walls** と **roof** の ``||functions:functions||`` の両方を呼び出すようにします。
 
 ```javascript
 player.onChat("house", function () {
@@ -125,8 +125,8 @@ player.onChat("house", function () {
 ```
 
 
-## Step 11
-Go into Minecraft and test out the **house** function.
+## ステップ 11
+Minecraftに入り、**house** 関数をテストしてみましょう。
 
 ```javascript
 function walls () {
@@ -159,4 +159,3 @@ player.onChat("house", function () {
     roof()
 })
 ```
-

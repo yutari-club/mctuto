@@ -1,7 +1,7 @@
-# Tutorial
+# チュートリアル
 
-## Step 1
-Create events in your story with code. 
+## ステップ 1
+コードでストーリーにイベントを作成します。
 
 ```ghost 
 player.onTravelled(WALK, function () {

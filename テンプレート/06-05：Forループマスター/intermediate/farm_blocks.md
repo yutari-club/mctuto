@@ -1,7 +1,7 @@
-# Farm: Blocks
+# 農場: ブロック
 
-## Step 1
-Rename an ``||player: on chat||`` command into **tp**. Drag ``||agent:agent teleport||`` into the **tp** ``||player: on chat||`` command.
+## ステップ 1
+``||player: on chat||`` コマンドを **tp** に名前を変えてください。``||agent:agent teleport||`` を **tp** ``||player: on chat||`` コマンドの中にドラッグしてください。
 
 ```blocks
 player.onChat("tp", function () {
@@ -9,9 +9,9 @@ player.onChat("tp", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Get another ``||player:on chat||`` command and name it **farm**.
+別の ``||player:on chat||`` コマンドを取得して、**farm** と名前をつけてください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -19,8 +19,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 4
-Get a ``||agent:set block or item||`` block and drag it into the **farm** ``||player:on chat||`` command. Select **carrots**, then set the count to **64** and slot to **1**.
+## ステップ 4
+``||agent:set block or item||`` ブロックを取得して、**farm** ``||player:on chat||`` コマンドの中にドラッグしてください。**carrots**を選択して、数を **64** 、スロットを **1** に設定してください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -28,8 +28,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 5
-Below the ``||agent:set block or item||`` block, place a ``||loops:repeat||`` loop, set it to repeat **2** times, and drag it into the **farm** ``||player: on chat||`` command.
+## ステップ 5
+``||agent:set block or item||`` ブロックの下に、``||loops:repeat||`` ループを配置してください。**2** 回繰り返すように設定して、**farm** ``||player: on chat||`` コマンドの中にドラッグしてください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -40,8 +40,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 6
-Get an ``||agent:agent move||`` block, set it to **back by 7** and drag it inside the ``||loops:repeat||`` loop.
+## ステップ 6
+``||agent:agent move||`` ブロックを取得して、**back by 7** に設定し、``||loops:repeat||`` ループの中にドラッグしてください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -52,8 +52,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 7
-Get another ``||agent:agent move||``, set it to **right by 4** and drag it inside the ``||loops:repeat||`` loop and place it at the bottom of the loop.
+## ステップ 7
+別の ``||agent:agent move||`` を取得して、**right by 4** に設定し、``||loops:repeat||`` ループの中にドラッグしてループの一番下に配置してください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -65,8 +65,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 8
-Get another ``||loops:repeat||`` loop, set it to repeat **7** times, and drag it inside the existing ``||loops:repeat||`` loop but above the ``||agent:move||`` **back by 7**.
+## ステップ 8
+別の ``||loops:repeat||`` ループを取得して、**7** 回繰り返すように設定し、既存の ``||loops:repeat||`` ループの中にドラッグしてください。ただし、``||agent:move||`` **back by 7** の上に配置してください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -81,8 +81,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 9
-Add a ``||agent:till||`` block, set it to **forward**, then drag it inside the second/inner repeat loop.  
+## ステップ 9
+``||agent:till||`` ブロックを追加して、**forward** に設定し、二番目の内側リピートループの中にドラッグしてください。  
 
 ```blocks
 player.onChat("farm", function () { 
@@ -97,8 +97,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 10
-Add a ``||agent:move||`` block, set it to **forward by 1**, then drag it inside the second/inner repeat loop.
+## ステップ 10
+``||agent:move||`` ブロックを追加して、**forward by 1** に設定し、二番目の内側リピートループの中にドラッグしてください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -114,8 +114,8 @@ player.onChat("farm", function () {
 }) 
 ```
 
-## Step 11
-Add a ``||agent:place||`` block, set it to **down**, then drag it inside the second/inner repeat loop.
+## ステップ 11
+``||agent:place||`` ブロックを追加して、**down** に設定し、二番目の内側リピートループの中にドラッグしてください。
 
 ```blocks
 player.onChat("farm", function () {
@@ -132,8 +132,8 @@ player.onChat("farm", function () {
 })
 ```
 
-## Step 12
-Press the **Play** button, go into Minecraft and test out all the events.
+## ステップ 12
+**Play** ボタンを押して、Minecraftに入って全てのイベントをテストしてください。
 
 ```blocks
 player.onChat("farm", function () {

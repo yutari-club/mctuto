@@ -1,7 +1,7 @@
-# Loops: Blocks
+# ループ: ブロック
 
-## Step 1
-Get an ``||player:on item used||`` command and choose **Bone**.
+## ステップ 1
+``||player:on item used||`` コマンドを取得して、**Bone**を選択してください。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -9,8 +9,8 @@ player.onItemInteracted(BONE, function () {
 }) 
 ```
 
-## Step 2
-Get a ``||loops:repeat||`` loop, drag it into the **Bone** ``||player:on item used||`` and set it to repeat **6** times.
+## ステップ 2
+``||loops:repeat||`` ループを取得して、**Bone** ``||player:on item used||`` の中にドラッグします。そして **6** 回繰り返すように設定してください。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -20,10 +20,10 @@ player.onItemInteracted(BONE, function () {
 }) 
 ```
 
-## Step 3
-Get a ``||mobs:spawn animal at||`` block and drag it into the ``||loops:repeat||`` loop. Select **Zombie Horse** and set the  position to (0,0,0). 
+## ステップ 3
+``||mobs:spawn animal at||`` ブロックを取得して、``||loops:repeat||`` ループの中にドラッグします。**Zombie Horse**を選択して、位置を(0,0,0)に設定してください。
 
-**NOTE:** This will repeat 6 times inside the loop.
+**注意:** これはループの中で6回繰り返されます。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -33,8 +33,8 @@ player.onItemInteracted(BONE, function () {
 }) 
 ```
 
-## Step 4
-Get another ``||loops:repeat||`` loop, drag it into the **Stone Ax** ``||player: on item used||`` and set it to repeat **4** times.
+## ステップ 4
+別の ``||loops:repeat||`` ループを取得して、**Bone** ``||player: on item used||`` の中にドラッグします。そして **4** 回繰り返すように設定してください。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -47,10 +47,10 @@ player.onItemInteracted(BONE, function () {
 }) 
 ```
 
-## Step 5
-Get another  ``||mobs:spawn animal at||`` block and drag it into the new ``||loops:repeat||`` loop. Select **Skeleton Horse** and set the position to (0,0,0). 
+## ステップ 5
+別の ``||mobs:spawn animal at||`` ブロックを取得して、新しい ``||loops:repeat||`` ループの中にドラッグします。**Skeleton Horse**を選択して、位置を(0,0,0)に設定してください。
 
-**NOTE:** This will repeat **4** times inside the loop.
+**注意:** これはループの中で **4** 回繰り返されます。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -63,8 +63,8 @@ player.onItemInteracted(BONE, function () {
 }) 
 ```
 
-## Step 6
-Press the **Play** button, go into Minecraft and test out all the events. Check out the items that you have in the chest. 
+## ステップ 6
+**Play** ボタンを押して、Minecraftに入って全てのイベントをテストしてください。チェストの中にあるアイテムを確認してください。 
 
 ```blocks
 player.onItemInteracted(BONE, function () { 

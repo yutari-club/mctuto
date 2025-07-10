@@ -1,7 +1,7 @@
-# Agent Fun Functions: JavaScript
+# エージェント楽しい関数: JavaScript
 
-## Step 1
-You are given the following code for “carrots,” “chicken,” and “snowball” ``||player:on chat||`` commands.
+## ステップ 1
+"carrots"、"chicken"、"snowball" の ``||player:on chat||`` コマンドのコードが用意されています。
 
 ```template
 player.onChat("carrot", function () {
@@ -28,8 +28,8 @@ player.onChat("snowball", function () {
 })
 ```
 
-## Step 2
-Code when a **blaze rod** is ``||player: used||`` that the **carrot**, **chicken**, and **snowball** ``||player:on chat||`` commands run. 
+## ステップ 2
+**blaze rod** が ``||player: used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:on chat||`` コマンドが実行されるようにコードを書きます。
 
 ```javascript
 player.onItemInteracted(BLAZE_ROD, function () {
@@ -39,8 +39,8 @@ player.onItemInteracted(BLAZE_ROD, function () {
 })
 ```
 
-## Step 3
-Press the **Play** button, return to Minecraft and type the commands **carrot**, **chicken**, **snowball** into the chat to see what happens.
+## ステップ 3
+**Play** ボタンを押して、Minecraftに戻り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
 
 ```javascript
 player.onChat("carrot", function () {
@@ -71,4 +71,3 @@ player.onItemInteracted(BLAZE_ROD, function () {
     player.runChatCommand("snowball")
 })
 ```
-

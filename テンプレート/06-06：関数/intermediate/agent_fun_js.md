@@ -1,7 +1,7 @@
-# Modifying Agent Fun Functions: Javascript
+# エージェント楽しい関数の改造: JavaScript
 
-## Step 1
-You are given an ``||player:on chat||`` command **carrot**, the ``||player:on chat||`` command **chicken** and the ``||player:on chat||`` command **snowball**.
+## ステップ 1
+``||player:on chat||`` コマンド **carrot**、``||player:on chat||`` コマンド **chicken**、``||player:on chat||`` コマンド **snowball** が用意されています。
 
 ```template
 player.onChat("carrot", function () {
@@ -28,8 +28,8 @@ player.onChat("snowball", function () {
 })
 ```
 
-## Step 2
-Rename the given **carrot** ``||player:on chat||`` command to **torches**.  Modify the ``||agent:set block or item||`` to **Torch** at the count of **32** in slot **1**.
+## ステップ 2
+用意されている **carrot** ``||player:on chat||`` コマンドの名前を **torches** に変更します。``||agent:set block or item||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
 
 ```javascript
 player.onChat("torches", function () {
@@ -37,11 +37,11 @@ player.onChat("torches", function () {
 })
 ```
 
-## Step 3
+## ステップ 3
 
-Modify the existing ``||loops:for||`` loops to complete 12 planting cycles.
+既存の ``||loops:for||`` ループを変更して、12回の植え付けサイクルを完了します。
 
-**NOTE:**: This can be accomplished by either (4x3) or (3x4) loops.
+**注意**: これは (4x3) または (3x4) のループで実現できます。
 
 ```javascript
 player.onChat("torches", function () {
@@ -56,8 +56,8 @@ player.onChat("torches", function () {
 })
 ```
 
-## Step 4
-Modify the code when a blaze rod is ``||player:on item used||`` such that all three ``||player:on chat||`` commands—**carrot**, **chicken**, and **snowball**—will now run the **torches** ``||player:on chat|`` command instead of the **carrot** chat command. 
+## ステップ 4
+blaze rod が ``||player:on item used||`` されたときのコードを変更して、3つの ``||player:on chat||`` コマンド **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにします。
 
 ```javascript
 player.onItemInteracted(BLAZE_ROD, function () { 
@@ -67,11 +67,11 @@ player.onItemInteracted(BLAZE_ROD, function () {
 })
 ```
 
-## Step 5
-Press the **Play** button, return to Minecraft and type the commands **torches**, **chicken**, **snowball** into the chat to see what happens. 
+## ステップ 5
+**Play** ボタンを押して、Minecraftに戻り、チャットに **torches**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
 
-## Step 6
-Press the **Play** button, return to your coding and modify the other given ``||player:on chat||`` commands **chicken** and **snowball**. 
+## ステップ 6
+**Play** ボタンを押して、コーディングに戻り、用意されている他の ``||player:on chat||`` コマンド **chicken** と **snowball** を変更します。
 
-## Step 7
-Return to Minecraft and type the **chicken** and **snowball** commands into the chat to see what happens. 
+## ステップ 7
+Minecraftに戻り、チャットに **chicken** と **snowball** コマンドを入力して何が起こるか見てみましょう。
