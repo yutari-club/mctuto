@@ -10,7 +10,7 @@ player.onChat("cave", function () {
 
 ## ステップ 2
 
-プレイヤーが **"Dig a cave"** と入力して ``||player:say||`` するようにコーディングし、``||player:チャットコマンド||``にドラッグします。
+プレイヤーが **"Dig a cave"** と入力して ``||player:say||`` するようにコードを書いて、``||player:チャットコマンド||``にドラッグしましょう。
 
 ```javascript
 player.onChat("cave", function () {
@@ -20,7 +20,7 @@ player.onChat("cave", function () {
 
 ## ステップ 3
 
-時刻を **day** に設定します。
+時刻を **day** に設定しましょう。
 
 ```javascript
 player.onChat("cave", function () {
@@ -31,7 +31,7 @@ player.onChat("cave", function () {
 
 ## ステップ 4
 
-プレイヤーが **air** ブロックで ``||blocks:fill with||`` するようにコーディングします。位置は **from = -1.0,-1** から **to = 1,2,1** です。**replace** に設定します。
+プレイヤーが **air** ブロックで ``||blocks:fill with||`` するようにコードを書きます。位置は **from = -1.0,-1** から **to = 1,2,1** です。**replace** に設定しましょう。
 
 ```javascript
 player.onChat("cave", function () {
@@ -48,7 +48,7 @@ player.onChat("cave", function () {
 
 ## ステップ 5
 
-fill ステップを **50** 回繰り返します。
+fill ステップを **50** 回繰り返しましょう。
 
 ```javascript
 player.onChat("cave", function () {
@@ -67,7 +67,7 @@ player.onChat("cave", function () {
 
 ## ステップ 6
 
-``||variables:new variable||`` を設定し、**bat_cave** という名前を付けて、その変数を ``||player:player world position||`` に設定します。
+``||variables:new variable||`` を設定して、**bat_cave** という名前を付けて、その変数を ``||player:player world position||`` に設定しましょう。
 
 ```javascript
 let batcave: Position = null
@@ -88,7 +88,7 @@ player.onChat("cave", function () {
 
 ## ステップ 7
 
-プレイヤーが "You have 10 seconds to go out before the bats arrive." と ``||player:say||`` するようにコーディングします。
+プレイヤーが "You have 10 seconds to go out before the bats arrive." と ``||player:say||`` するようにコードを書きます。
 
 ```javascript
 player.say("You have 10 seconds to get out before the bats arrive.")
@@ -96,7 +96,7 @@ player.say("You have 10 seconds to get out before the bats arrive.")
 
 ## ステップ 8
 
-コードを **10** 秒（10,000 ms）間 ``||loops: Pause||`` します。
+コードを **10** 秒（10,000 ms）間 ``||loops: Pause||`` しましょう。
 
 ```javascript
 player.say("You have 10 seconds to get out before the bats arrive.")
@@ -106,7 +106,7 @@ player.on_chat("cave", on_chat)
 
 ## ステップ 9
 
-一時停止の後、プレイヤーが "Watch out for bats!" と言うようにコーディングします。
+一時停止の後、プレイヤーが "Watch out for bats!" と言うようにコードを書きます。
 
 ```spy
 loops.pause(10000)
@@ -116,7 +116,7 @@ player.on_chat("cave", on_chat)
 
 ## ステップ 10
 
-時刻を **dusk** に設定します。
+時刻を **dusk** に設定しましょう。
 
 ```javascript
 gameplay.timeSet(gameplay.time(DUSK))
@@ -124,7 +124,7 @@ gameplay.timeSet(gameplay.time(DUSK))
 
 ## ステップ 11
 
-**bat_cave** 変数の位置でbatを ``||mobs:Spawn||`` します。
+**bat_cave** 変数の位置でbatを ``||mobs:Spawn||`` しましょう。
 
 ```javascript
 mobs.spawn(BAT, batcave)
@@ -132,7 +132,7 @@ mobs.spawn(BAT, batcave)
 
 ## ステップ 12
 
-**bat** ``||mobs:spawn animal||`` を **200** 回繰り返します。
+**bat** ``||mobs:spawn animal||`` を **200** 回繰り返しましょう。
 
 ```javascript
 for (let index = 0; index < 200; index++) {
@@ -142,7 +142,7 @@ for (let index = 0; index < 200; index++) {
 
 ## ステップ 13
 
-Minecraftに入り、チャットに **cave** と入力してすべてのコードが実行されるのを見てみましょう。
+Minecraftに入って、チャットに **cave** と入力してすべてのコードが実行されるのを見てみましょう。
 
 
 ```javascript

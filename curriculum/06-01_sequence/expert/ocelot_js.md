@@ -1,7 +1,7 @@
 # オセロットの囲い: JavaScript
 
 ## ステップ 1
-``||player:チャットコマンド||``をコーディングし、**fence** という名前を付けます。
+``||player:チャットコマンド||``のコードを書いて、**fence** という名前を付けます。
 
 ```javascript
 player.onChat("fence", function () {
@@ -10,7 +10,7 @@ player.onChat("fence", function () {
 
 ## ステップ 2
 
-世界位置 **-695, 9, 880** で **West** を向いた ``||builder:builder teleport||`` をコーディングします。
+世界位置 **-695, 9, 880** で **West** を向いた ``||builder:builder teleport||`` のコードを書きましょう。
 
 ```javascript
 player.onChat("1", function () {
@@ -65,7 +65,7 @@ player.onChat("1", function () {
 
 ## ステップ 7
 
-長方形の周囲にフェンスを配置するには、ビルダーが **Oak Fence** で構築しながら以前のパスを ``||builder:trace||`` するようにコーディングします。
+長方形の周りにフェンスを置くには、ビルダーが **Oak Fence** で構築しながら以前のパスを ``||builder:trace||`` するコードを書きましょう。
 
 ```javascript
     builder.move(FORWARD, 9)
@@ -75,7 +75,7 @@ player.onChat("1", function () {
 
 ## ステップ 8
 
-作ったばかりのフェンス内に1匹の **ocelot** をランダムに ``||mobs:spawn||`` します。
+作ったばかりのフェンスの中に1匹の **ocelot** をランダムに ``||mobs:spawn||`` しましょう。
 
 ```javascript
     builder.tracePath(OAK_FENCE)
@@ -88,7 +88,7 @@ player.onChat("1", function () {
 
 ## ステップ 9
 
-作ったばかりのフェンス内に別の **ocelot** をランダムに ``||mobs:spawn||`` します。
+作ったばかりのフェンスの中に別の **ocelot** をランダムに ``||mobs:spawn||`` しましょう。
 
 ```javascript
     mobs.spawn(OCELOT, randpos(
@@ -104,7 +104,7 @@ player.onChat("1", function () {
 
 ## ステップ 10
 
-作ったばかりのフェンス内に2匹のオオカミをランダムに ``||mobs:spawn||`` します。
+作ったばかりのフェンスの中に2匹のオオカミをランダムに ``||mobs:spawn||`` しましょう。
 
 ```javascript
     mobs.spawn(OCELOT, randpos(

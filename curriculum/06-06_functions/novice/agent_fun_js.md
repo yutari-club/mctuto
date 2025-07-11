@@ -29,7 +29,7 @@ player.onChat("snowball", function () {
 ```
 
 ## ステップ 2
-**blaze rod** が ``||player: used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きます。
+**blaze rod** が ``||player: used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きましょう。
 
 ```javascript
 player.onItemInteracted(BLAZE_ROD, function () {

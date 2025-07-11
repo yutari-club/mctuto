@@ -35,7 +35,7 @@ player.onChat("jump", function (num1) {
 
 ## ステップ 5
 
-新しい ``||variable||`` の num1 を取得して、``||player:teleport to||`` の **y** 座標にドラッグします。
+新しい ``||variable||`` の num1 を取って、``||player:teleport to||`` の **y** 座標にドラッグしましょう。
 
 ```blocks
 player.onChat("jump", function (num1) {

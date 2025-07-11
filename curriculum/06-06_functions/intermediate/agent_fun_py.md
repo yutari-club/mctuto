@@ -58,7 +58,7 @@ player.on_chat("torches", on_chat)
 ```
 
 ## ステップ 4
-blaze rod が ``||player:○○が使われた時||`` されたときのコードを変更して、3つの ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにします。
+blaze rod が ``||player:○○が使われた時||`` されたときのコードを変更して、3つの ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにしましょう。
 
 ```python
 def item_interacted_blaze_rod():
@@ -72,7 +72,7 @@ player.on_item_interacted(BLAZE_ROD, item_interacted_blaze_rod)
 **Play** ボタンを押して、Minecraftに戻り、チャットに **torches**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
 
 ## ステップ 6
-**Play** ボタンを押して、コーディングに戻り、用意されている他の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更します。
+**Play** ボタンを押して、コードを書くところに戻り、用意されている他の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更しましょう。
 
 ## ステップ 7
 **Play** ボタンを押して、Minecraftに戻り、チャットに **chicken** と **snowball** コマンドを入力して何が起こるか見てみましょう。

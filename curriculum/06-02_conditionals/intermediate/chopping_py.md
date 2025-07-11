@@ -2,7 +2,7 @@
 
 ## ステップ 1
 
-``||player:チャットコマンド||``を作成し、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``を作って、**"tp"** という名前を付けましょう。
 
 ```python
 def on_chat():
@@ -12,7 +12,7 @@ player.on_chat("tp", on_chat)
 
 ## ステップ 2
 
-``||player:chat||`` コマンドの内側で、エージェントがプレイヤーに ``||agent:teleport||`` するようにコーディングします。
+``||player:chat||`` コマンドの中で、エージェントがプレイヤーに ``||agent:teleport||`` するようにコードを書きましょう。
 
 ```python
 def on_chat2():
@@ -22,7 +22,7 @@ player.on_chat("tp", on_chat)
 
 ## ステップ 3
 
-別の ``||player:chat||`` コマンドを作成し、**"chop"** という名前を付けます。
+別の ``||player:chat||`` コマンドを作って、**"chop"** という名前を付けましょう。
 
 ```python
 def on_chat3():
@@ -32,7 +32,7 @@ player.on_chat("chop", on_chat)
 
 ## ステップ 4
 
-新しい ``||variable:variable||`` を作成し、**height** という名前を付けて、**0** に設定します。
+新しい ``||variable:variable||`` を作って、**height** という名前を付けて、**0** に設定しましょう。
 
 ```python
 height = 0
@@ -49,7 +49,7 @@ player.on_chat("chop", on_chat3)
 
 ## ステップ 5
 
-**chop** ``||player:チャットコマンド||``の内側の **height** 変数の直下に、**while the agent detects a block forward** で始まる ``||loops:もし〇〇ならくりかえす||``を作成します。
+**chop** ``||player:チャットコマンド||``の中の **height** 変数の直下に、**while the agent detects a block forward** で始まる ``||loops:もし〇〇ならくりかえす||``を作って。
 
 ```python
 def on_chat3():
@@ -71,7 +71,7 @@ player.on_chat("chop", on_chat3)
 
 ## ステップ 7
 
-``||loops:もし〇〇ならくりかえす||``の中で、変数 **height** の下に、エージェントが **destroy up** するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の中で、変数 **height** の下に、エージェントが **destroy up** するようにコードを書きましょう。
 
 また、**agent move up by 1** の行を追加します。
 
@@ -84,7 +84,7 @@ player.on_chat("chop", on_chat3)
 
 ## ステップ 8
 
-``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:くりかえし○○回||`` ループの **times** 引数に挿入します。
+``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加しましょう。**height** 変数を ``||loops:くりかえし○○回||`` ループの **times** 引数に挿入しましょう。
 
 ```python
     for index in range(height):
@@ -103,7 +103,7 @@ player.on_chat("chop", on_chat3)
 
 ## ステップ 10
 
-``||loops:for||`` ループの後に、エージェントが ``||agent:collect all||`` するようにコーディングします。
+``||loops:for||`` ループの後に、エージェントが ``||agent:collect all||`` するようにコードを書きましょう。
 
 ```python
     for index in range(height):
@@ -115,7 +115,7 @@ player.on_chat("chop", on_chat3)
 
 ## ステップ 11
 
-Minecraftに入り、**t** を入力して **tp** と **chop** チャットコマンドをテストしてみましょう。
+Minecraftに入り、**t** を押して**tp** と入力し、**chop** と入力してチャットコマンドをテストしてみましょう。
 
 ```python
 def on_chat(): 

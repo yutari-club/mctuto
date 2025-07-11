@@ -11,7 +11,7 @@ player.on_chat("destroy", on_chat)
 ```
 
 ## ステップ 2
-``||player:チャットコマンド||``の内側に ``||loops:もし〇〇ならくりかえす||``を追加し、エージェントが前方でブロックを ``||agent:detects||`` している間、ループが続くようにします。
+``||player:チャットコマンド||``の中に ``||loops:もし〇〇ならくりかえす||``を入れて、エージェントが前にブロックを見つけている間、ループが続くようにします。
 
 ```python
 def on_chat():
@@ -21,7 +21,7 @@ player.on_chat("destroy", on_chat)
 ```
 
 ## ステップ 3
-``||loops:もし〇〇ならくりかえす||``の内側で、エージェントが **forward** を ``||agent:破壊させる||`` するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の中で、エージェントが **前のブロック** を ``||agent:破壊させる||`` するようにコードを書きます。
 
 ```python
 def on_chat():
@@ -32,7 +32,7 @@ player.on_chat("destroy", on_chat)
 
 ## ステップ 4
 
-``||loops:もし〇〇ならくりかえす||``の内側の ``||agent:destroy forward||`` コードの後で、エージェントが **1** ブロック ``||agent:move forward||`` するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の中の ``||agent:destroy forward||`` コードの後で、エージェントが **1** ブロック ``||agent:move forward||`` するようにコードを書きます。
 
 ```python
 def on_chat():
@@ -44,7 +44,7 @@ player.on_chat("destroy", on_chat)
 
 ## ステップ 5
 
-エージェントが ``||agent:moves forward||`` した後で **up** を ``||agent:破壊させる||`` するようにコーディングし、そして ``||loops:もし〇〇ならくりかえす||``を **終了** します。
+エージェントが ``||agent:moves forward||`` した後で **上のブロック** を ``||agent:破壊させる||`` するようにコードを書き、そして ``||loops:もし〇〇ならくりかえす||``を **終了** します。
 
 ```python
 def on_chat():
@@ -56,7 +56,7 @@ player.on_chat("destroy", on_chat)
 ```
 ## ステップ 6
 
-**実行** ボタンを押して、Minecraftに入り、**t** を入力して **destroy** を試してみましょう。
+**実行** ボタンを押して、Minecraftに入り、**t** を押して **destroy** と入力して試してみましょう。
 
 ```python
 def on_chat(): 

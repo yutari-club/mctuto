@@ -1,7 +1,7 @@
 # イベントを楽しもう: JavaScript
 
 ## ステップ 1
-``||player:player||``が歩いたときに、**projectile fireworks rockets**が位置(0,**10**,0)に出現するイベントをコードします。
+``||player:player||``が歩いたときに、**projectile fireworks rockets**が位置(0,**10**,0)に出現するイベントのコードを書きましょう。
 
 ```javascript
 player.onTravelled(WALK, function () {
@@ -10,7 +10,7 @@ player.onTravelled(WALK, function () {
 ```
 
 ## ステップ 2
-出現コードを**25回**実行するために、出現コードの周りに``||loops:for||``ループを追加します。
+出現コードを**25回**実行するために、出現コードの周りに``||loops:for||``ループを追加しましょう。
 
 ```javascript
 player.onTravelled(WALK, function () {
@@ -21,7 +21,7 @@ player.onTravelled(WALK, function () {
 ```
 
 ## ステップ 3
-**oak wood**が``||blocks:onBlockBroken||``されたときに、**chicken**が位置(0,10,0)に出現するイベントをコードします。
+**oak wood**が``||blocks:onBlockBroken||``されたときに、**chicken**が位置(0,10,0)に出現するイベントのコードを書きましょう。
 
 ```javascript
 blocks.onBlockBroken(PLANKS_OAK, function () {
@@ -30,7 +30,7 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 ```
 
 ## ステップ 4
-出現コードの周りに``||loops:for||``ループを追加して、**25回**繰り返すようにします。
+出現コードの周りに``||loops:for||``ループを追加して、**25回**繰り返すようにしましょう。
 
 ```javascript
 blocks.onBlockBroken(PLANKS_OAK, function () {
@@ -41,7 +41,7 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 ```
 
 ## ステップ 5
-**golden apple**が``||player:||○○が使われた時``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントをコードします。
+**golden apple**が``||player:||○○が使われた時``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントのコードを書きましょう。
 
 ```javascript
 player.onItemInteracted(GOLDEN_APPLE, function () {

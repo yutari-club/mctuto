@@ -25,7 +25,7 @@ player.on_chat("snowball", on_chat3)
 ```
 
 ## ステップ 2
-blaze rod が ``||player:○○が使われた時||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きます。
+blaze rod が ``||player:○○が使われた時||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きましょう。
 
 ```python
 def item_interacted_blaze_rod():

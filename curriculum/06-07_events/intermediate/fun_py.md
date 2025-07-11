@@ -1,7 +1,7 @@
 # イベントを楽しもう: Python
 
 ## ステップ 1
-``||player: player||``が歩いたときに、**projectile fireworks rockets**が位置(0,**10**,0)に出現するイベントをコードします。
+``||player: player||``が歩いたときに、**projectile fireworks rockets**が位置(0,**10**,0)に出現するイベントのコードを書きましょう。
 
 ```python
 def travelled_walk():
@@ -10,7 +10,7 @@ player.on_travelled(WALK, travelled_walk)
 ```
 
 ## ステップ 2
-出現コードを**25回**実行するために、出現コードの周りに``||loops:for||``ループを追加します。
+出現コードを**25回**実行するために、出現コードの周りに``||loops:for||``ループを追加しましょう。
 
 ```python
 def travelled_walk():
@@ -20,7 +20,7 @@ player.on_travelled(WALK, travelled_walk)
 ```
 
 ## ステップ 3
-**oak wood**``||blocks:block||``が壊されたときに、**chicken**が位置(0,**10**,0)に出現するイベントをコードします。
+**oak wood**``||blocks:block||``が壊されたときに、**chicken**が位置(0,**10**,0)に出現するイベントのコードを書きましょう。
 
 ```python
 def block_broken_planks_oak():
@@ -29,7 +29,7 @@ blocks.on_block_broken(PLANKS_OAK, block_broken_planks_oak)
 ```
 
 ## ステップ 4
-出現コードの周りに``||loops:for||``ループを追加して、**25回**繰り返すようにします。
+出現コードの周りに``||loops:for||``ループを追加して、**25回**繰り返すようにしましょう。
 
 ```python
 def block_broken_planks_oak():
@@ -39,7 +39,7 @@ blocks.on_block_broken(PLANKS_OAK, block_broken_planks_oak)
 ```
 
 ## ステップ 5
-**golden apple**が``||player:||○○が使われた時``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントをコードします。
+**golden apple**が``||player:||○○が使われた時``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントのコードを書きましょう。
 
 ```python
 def item_interacted_golden_apple():

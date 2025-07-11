@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:チャットコマンド||`` を作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
+``||player:チャットコマンド||`` を作って、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定しましょう。
 
 ```javascript
 player.onChat("pyramid", function (size){ 
@@ -24,7 +24,7 @@ player.onChat("pyramid", function (size)){
 
 ## ステップ 3
 
-``||logic:もし||`` 文の内側で、エージェントが **sandstone** の ``||agent:スロットに設定させる||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
+``||logic:もし||`` 文の中で、エージェントが **sandstone** の ``||agent:スロットに設定させる||`` を **size** 変数に **size** を掛けた値にするようにコードを書きましょう—スロット1に。
 
 ```javascript
 player.onChat("pyramid", function (size){ 
@@ -37,7 +37,7 @@ player.onChat("pyramid", function (size){
 
 ## ステップ 4
 
-エージェントが 1 スロットを ``||agent:set the active slot||`` するようにコーディングします。
+エージェントが 1 スロットを ``||agent:set the active slot||`` するようにコードを書きましょう。
 
 ```javascript
         agent.setItem(SANDSTONE, size * size, 1) 
@@ -71,7 +71,7 @@ player.onChat("pyramid", function (size){
 
 ## ステップ 7
 
-エージェントが **size** 変数の値で ``||agent:move forward||`` するようにコーディングします。
+エージェントが **size** 変数の値で ``||agent:move forward||`` するようにコードを書きましょう。
 
 ```javascript
         for (let i = 0; i <= 0 - 0; i++) { 
@@ -81,7 +81,7 @@ player.onChat("pyramid", function (size){
 
 ## ステップ 8
 
-エージェントが ``||agent:turn left||`` するようにコーディングし、``||loops:for||`` ループを終了します。
+エージェントが ``||agent:turn left||`` するようにコードを書き、``||loops:for||`` ループを終了しましょう。
 
 ```javascript
 for (let i = 0; i <= 0 - 0; i++) { 
@@ -92,7 +92,7 @@ for (let i = 0; i <= 0 - 0; i++) {
 
 ## ステップ 9
 
-``||loops:for||`` ループの後、ただし ``||logic:もし||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
+``||loops:for||`` ループの後、ただし ``||logic:もし||`` 文の中で、エージェントが **move up by 1** するようにコードを書きましょう。
 
 ```javascript
    } 
@@ -102,7 +102,7 @@ for (let i = 0; i <= 0 - 0; i++) {
 
 ## ステップ 10
 
-エージェントの ``||agent:place on move||`` を **false** にコーディングします。
+エージェントの ``||agent:place on move||`` を **false** にコードを書きましょう。
 
 ```javascript
   agent.move(UP, 1) 
@@ -111,7 +111,7 @@ for (let i = 0; i <= 0 - 0; i++) {
 
 ## ステップ 11
 
-**pyramid** チャットに **size** 変数の値から 2 を引いた値を結合する ``||player:run chat||`` コマンドを配置します。
+**pyramid** チャットに **size** 変数の値から 2 を引いた値を結合する ``||player:run chat||`` コマンドを置きましょう。
 
 ```javascript
         agent.setAssist(PLACE_ON_MOVE, false) 
@@ -122,7 +122,7 @@ for (let i = 0; i <= 0 - 0; i++) {
 
 ## ステップ 12
 
-Minecraftに入り、**t** を入力して **pyramid** チャットコマンドをテストしてみましょう。
+Minecraftに入り、**t** を押して**pyramid** と入力してチャットコマンドをテストしてみましょう。
 
 
 ```javascript

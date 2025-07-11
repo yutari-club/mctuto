@@ -1,7 +1,7 @@
 # 木を切る: ブロック
 
 ## ステップ 1
-``||player:チャットコマンド||``を取得し、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``を取って、**"tp"** という名前を付けましょう。
 
 ```blocks
 player.onChat("tp", function () {
@@ -9,7 +9,7 @@ player.onChat("tp", function () {
 ```
 
 ## ステップ 2
-エージェントの ``||agent:teleport to player||`` を取得し、**tp** ``||player:チャットコマンド||``の内側にドラッグします。
+エージェントの ``||agent:teleport to player||`` を取って、**tp** ``||player:チャットコマンド||``の中にドラッグしましょう。
 
 ```blocks
 player.onChat("tp", function () {
@@ -19,7 +19,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:チャットコマンド||``を作成し、**"chop"** という名前を付けます。
+別の ``||player:チャットコマンド||``を作って、**"chop"** という名前を付けましょう。
 
 ```blocks
 player.onChat("chop", function () {
@@ -28,7 +28,7 @@ player.onChat("chop", function () {
 
 ## ステップ 4
 
-新しい ``||variable: variable||`` を作成し、**height** という名前を付けて、**0** に設定します。この新しい変数を **chop** ``||player:チャットコマンド||``にドラッグします。
+新しい ``||variable: variable||`` を作って、**height** という名前を付けて、**0** に設定しましょう。この新しい変数を **chop** ``||player:チャットコマンド||``にドラッグしましょう。
 
 ```blocks
 let height = 0
@@ -39,7 +39,7 @@ player.onChat("chop", function () {
 
 ## ステップ 5
 
-``||loops: while||`` ループを取得し、ワークスペースにドラッグします。``||agent:〇〇がある[見つける]||`` ブロックを取得し、**block** と **forward** に設定します。``||agent:〇〇がある[見つける]||`` ブロックを ``||loops:もし〇〇ならくりかえす||``の内側にドラッグし、次にwhileループを **chop** ``||player:チャットコマンド||``の **height** 変数の直下にドラッグします。
+``||loops: while||`` ループを取って、ワークスペースにドラッグしましょう。``||agent:〇〇がある[見つける]||`` ブロックを取って、**block** と **forward** に設定しましょう。``||agent:〇〇がある[見つける]||`` ブロックを ``||loops:もし〇〇ならくりかえす||``の中にドラッグし、次にwhileループを **chop** ``||player:チャットコマンド||``の **height** 変数の直下にドラッグしましょう。
 
 ```blocks
 player.onChat("chop", function () {
@@ -51,7 +51,7 @@ player.onChat("chop", function () {
 
 ## ステップ 6
 
-``||variable: change variable||`` を取得し、**height plus 1** の値に設定します。**height** 変数を ``||loops: while||`` ループにドラッグします。
+``||variable: change variable||`` を取って、**height plus 1** の値に設定しましょう。**height** 変数を ``||loops: while||`` ループにドラッグしましょう。
 
 ```blocks
     while (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -61,7 +61,7 @@ player.onChat("chop", function () {
 
 ## ステップ 7
 
-``||agent:agent destroy||`` を取得し、**up** に設定します。``||loops: while||`` ループの変数 **height** の下にドラッグします。``||agent:移動させる||`` を取得し、**up by 1** に設定します。``||agent:agent destroy||`` の直下の ``||loops: while||`` ループにドラッグします。
+``||agent:agent destroy||`` を取って、**up** に設定しましょう。``||loops: while||`` ループの変数 **height** の下にドラッグしましょう。``||agent:移動させる||`` を取って、**up by 1** に設定しましょう。``||agent:agent destroy||`` の直下の ``||loops: while||`` ループにドラッグしましょう。
 
 ```blocks
    let height = 0
@@ -78,7 +78,7 @@ player.onChat("chop", function () {
 
 ## ステップ 8
 
-``||loops: while||`` ループの後に ``||loops:くりかえし○○回||`` ループを追加します。**height** 変数を取得し、``||loops:くりかえし○○回||`` ループの **times** 引数にドラッグします。
+``||loops: while||`` ループの後に ``||loops:くりかえし○○回||`` ループを追加しましょう。**height** 変数を取って、``||loops:くりかえし○○回||`` ループの **times** 引数にドラッグしましょう。
 
 ```blocks
 let height = 0
@@ -97,7 +97,7 @@ player.onChat("chop", function () {
 
 ## ステップ 9
 
-``||agent:移動させる||`` ブロック（上記から）を複製し、**down** に変更します。``||agent:agent move down||`` を ``||loops:くりかえし○○回||`` ループにドラッグします。``||agent: agent destroy||``（上記から）を複製し、**destroy forward** に変更します。``||agent:agent destroy forward||`` を ``||loops:くりかえし○○回||`` ループにドラッグします。``||agent:移動させる||`` の直下に配置します。
+``||agent:移動させる||`` ブロック（上記から）を複製し、**down** に変更しましょう。``||agent:agent move down||`` を ``||loops:くりかえし○○回||`` ループにドラッグしましょう。``||agent: agent destroy||``（上記から）を複製し、**destroy forward** に変更しましょう。``||agent:agent destroy forward||`` を ``||loops:くりかえし○○回||`` ループにドラッグしましょう。``||agent:移動させる||`` の直下に置きましょう。
 
 ```blocks
 let height = 0
@@ -118,7 +118,7 @@ player.onChat("chop", function () {
 
 ## ステップ 10
 
-``||agent:collect all||`` ブロックを取得し、``||agent:agent destroy forward||`` の下の ``||loops:くりかえし○○回||`` ループにドラッグします。
+``||agent:collect all||`` ブロックを取って、``||agent:agent destroy forward||`` の下の ``||loops:くりかえし○○回||`` ループにドラッグしましょう。
 
 ```blocks
     }
@@ -128,7 +128,7 @@ player.onChat("chop", function () {
 
 ## ステップ 11
 
-Minecraftに入り、**t** を押して、**tp** と **chop** チャットコマンドを入力してチュートリアルをテストしてみましょう。
+Minecraftに入り、**t** を押して**tp** と入力し、**chop** と入力してチャットコマンドをテストしてみましょう。
 ```blocks
 let height = 0
 player.onChat("chop", function () {

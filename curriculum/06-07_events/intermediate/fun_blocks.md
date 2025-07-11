@@ -1,7 +1,7 @@
 # イベントを楽しもう: ブロック
 
 ## ステップ 1
-``||player: on player walk||``ブロックと``||mobs:spawn||``ブロックを取得してワークスペースにドラッグします。``||mobs: projectile||``ブロックを``||mobs:spawn||``ブロックの**animal parameter**にドラッグし、**fireworks rocket**を選択します。
+``||player: on player walk||``ブロックと``||mobs:spawn||``ブロックを取ってワークスペースにドラッグしましょう。``||mobs: projectile||``ブロックを``||mobs:spawn||``ブロックの**animal parameter**にドラッグし、**fireworks rocket**を選択します。
 
 ```blocks
 player.onTravelled(WALK, function () { 
@@ -29,7 +29,7 @@ player.onTravelled(WALK, function () {
 ```
 
 ## ステップ 4
-``||blocks:on broken||``ブロックを取得してワークスペースにドラッグし、**oak wood**ブロックを選択します。
+``||blocks:on broken||``ブロックを取ってワークスペースにドラッグし、**oak wood**ブロックを選択しましょう。
 
 ## ステップ 5
 ``||mobs:spawn||``ブロックを追加し、**chicken**に設定して、位置の(y)座標をプレイヤーの位置から**10ブロック**上に変更します(0, **10**, 0)。
@@ -53,15 +53,15 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 
 ## ステップ 7
 
-``||player:○○が使われた時||``を取得してワークスペースにドラッグし、**Golden Apple**に設定します。
+``||player:○○が使われた時||``を取ってワークスペースにドラッグし、**Golden Apple**に設定しましょう。
 
 ## ステップ 8
 
-``||mobs: apply to||``ブロックを取得してワークスペースにドラッグし、**levitation**を選択し、持続時間を**10**、増幅器を**5**に設定します。
+``||mobs: apply to||``ブロックを取ってワークスペースにドラッグし、**levitation**を選択し、持続時間を**10**、増幅器を**5**に設定しましょう。
 
 ## ステップ 9
 
-``||mobs:all animal||``ブロックを取得し、**chicken**に設定して``||mobs: apply to||``の**to**引数にドラッグし、完成した``||mobs:apply to||``ブロックを``||player:||○○が使われた時``にドラッグします。
+``||mobs:all animal||``ブロックを取って、**chicken**に設定して``||mobs: apply to||``の**to**引数にドラッグし、完成した``||mobs:apply to||``ブロックを``||player:||○○が使われた時``にドラッグしましょう。
 
 ```blocks
 player.onItemInteracted(GOLDEN_APPLE, function () { 

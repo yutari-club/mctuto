@@ -1,7 +1,7 @@
 # 農場: JavaScript
 
 ## ステップ 1
-``||player:チャットコマンド||`` を作って、名前を **tp** にします。エージェントが ``||agent:プレイヤーにテレポート||`` するようにプログラムします。
+``||player:チャットコマンド||`` を作って、名前を **tp** にします。エージェントが ``||agent:プレイヤーにテレポート||`` するようにコードを書きます。
 
 ```javascript
 player.onChat("tp", function () {
@@ -19,7 +19,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 3
-``||agent:エージェント||`` が **ニンジン** を **64個** スロット **1** に設定するようにプログラムします。
+``||agent:エージェント||`` が **ニンジン** を **64個** スロット **1** に設定するようにコードを書きます。
 
 ```javascript
 player.onChat("farm", function () {
@@ -40,7 +40,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 5
-``||loops:for||`` ループの中で、``||agent:エージェント||`` が **後ろに7歩** 移動するようにプログラムします。
+``||loops:for||`` ループの中で、``||agent:エージェント||`` が **後ろに7歩** 移動するようにコードを書きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -52,7 +52,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 6
-``||agent:エージェント移動||`` **後ろ** コードの後に、``||agent: エージェント||`` が **右に4歩** 移動するようにプログラムします。
+``||agent:エージェント移動||`` **後ろ** コードの後に、``||agent: エージェント||`` が **右に4歩** 移動するようにコードを書きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -81,7 +81,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 8
-内側の ``||loops:for||`` ループの中で、``||agent:エージェント||`` が **前** を耕すようにプログラムします。
+中の ``||loops:for||`` ループの中で、``||agent:エージェント||`` が **前** を耕すようにコードを書きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -97,7 +97,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 9
-``||agent:エージェント耕す||`` の後に、``||agent:エージェント||`` が **前に1歩** 移動するようにプログラムします。
+``||agent:エージェント耕す||`` の後に、``||agent:エージェント||`` が **前に1歩** 移動するようにコードを書きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -114,7 +114,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 10
-``||agent:エージェント移動||`` 前の後に、``||agent:エージェント||`` が下に置くようにプログラムします。
+``||agent:エージェント移動||`` 前の後に、``||agent:エージェント||`` が下に置くようにコードを書きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -132,7 +132,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 11
-**Play** ボタンを押して、Minecraftに入って、すべてのイベントをテストします。
+**Play** ボタンを押して、Minecraftに入って、すべてのイベントをテストしましょう。
 
 
 ```javascript

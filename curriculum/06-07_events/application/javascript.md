@@ -1,7 +1,7 @@
 # チュートリアル
 
 ## ステップ 1
-イベントを実行してストーリーを書きます。
+イベントを実行してストーリーを書きましょう。
 
 ```javascript
 player.onTravelled(WALK, function () {

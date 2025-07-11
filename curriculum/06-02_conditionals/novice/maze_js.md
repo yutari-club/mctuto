@@ -2,7 +2,7 @@
 
 ## ステップ 1
 
-エージェントが前方にブロックを検出するかどうかを評価する ``||logic:if then||`` コマンドを作成します。**true** と評価された場合、左に曲がります。
+エージェントが前方にブロックを検出するかどうかを評価する ``||logic:if then||`` コマンドを作って。**true** と評価された場合、左に曲がります。
 
 ```javascript
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -26,7 +26,7 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
 
 ## ステップ 3
 
-``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に配置します。これにより、これらのステップは停止するまで続きます。
+``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に置きます。これにより、これらのステップは停止するまで続きます。
 
 ```javascript
 loops.forever(function () {

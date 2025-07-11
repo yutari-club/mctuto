@@ -2,7 +2,7 @@
 
 ## ステップ 1
 
-``||player:チャットコマンド||``を作成し、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``を作って、**"tp"** という名前を付けましょう。
 
 ```javascript
 player.onChat("tp", function () {
@@ -11,7 +11,7 @@ player.onChat("tp", function () {
 
 ## ステップ 2
 
-``||player:チャットコマンド||``の内側で、エージェントがプレイヤーに ``||agent:teleport||`` するようにコーディングします。
+``||player:チャットコマンド||``の中で、エージェントがプレイヤーに ``||agent:teleport||`` するようにコードを書きましょう。
 
 ```javascript
 player.onChat("tp", function () {
@@ -21,7 +21,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:チャットコマンド||`` を作成し、**"chop"** という名前を付けます。
+別の ``||player:チャットコマンド||`` を作って、**"chop"** という名前を付けましょう。
 
 ```javascript
 player.onChat("chop", function () {
@@ -30,7 +30,7 @@ player.onChat("chop", function () {
 
 ## ステップ 4
 
-新しい ``||variable: variable||`` を作成し、**height** という名前を付けて、**0** に設定します。
+新しい ``||variable: variable||`` を作って、**height** という名前を付けて、**0** に設定しましょう。
 
 ```javascript
 let height = 0
@@ -47,7 +47,7 @@ player.onChat("chop", function () {
 
 ## ステップ 5
 
-**chop** ``||player:チャットコマンド||``の内側の **height** 変数の直下に、**while the agent detects a block forward** で始まる ``||loops:もし〇〇ならくりかえす||``を作成します。
+**chop** ``||player:チャットコマンド||``の中の **height** 変数の直下に、**while the agent detects a block forward** で始まる ``||loops:もし〇〇ならくりかえす||``を作って。
 
 ```javascript
 player.onChat("chop", function () {
@@ -69,7 +69,7 @@ player.onChat("chop", function () {
 
 ## ステップ 7
 
-``||loops:もし〇〇ならくりかえす||``の中で、変数 **height** の下に、エージェントが **destroy up** するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の中で、変数 **height** の下に、エージェントが **destroy up** するようにコードを書きましょう。
 
 また、**agent move up by 1** の行を追加します。
 
@@ -82,7 +82,7 @@ player.onChat("chop", function () {
 
 ## ステップ 8
 
-``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:くりかえし○○回||`` ループの **times** 引数に挿入します。
+``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加しましょう。**height** 変数を ``||loops:くりかえし○○回||`` ループの **times** 引数に挿入しましょう。
 
 ```javascript
 for (let index = 0; index < height; index++) {
@@ -102,7 +102,7 @@ for (let index = 0; index < height; index++) {
 
 ## ステップ 10
 
-``||loops:for||`` ループの後に、エージェントが ``||agent:collect all||`` するようにコーディングします。
+``||loops:for||`` ループの後に、エージェントが ``||agent:collect all||`` するようにコードを書きましょう。
 
 ```javascript
     }
@@ -112,7 +112,7 @@ for (let index = 0; index < height; index++) {
 
 ## ステップ 11
 
-Minecraftに入り、**t** を入力して **tp** と **chop** チャットコマンドをテストしてみましょう。
+Minecraftに入り、**t** を押して**tp** と入力し、**chop** と入力してチャットコマンドをテストしてみましょう。
 
 ```javascript
 player.onChat("farm", function () { 

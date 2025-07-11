@@ -3,7 +3,7 @@
 
 ## ステップ 1
 
-エージェントが前方にブロックを検出するかどうかを評価する ``||logic: if then||`` 文を作成します。**true** と評価された場合、左に曲がります。
+エージェントが前方にブロックを検出するかどうかを評価する ``||logic: if then||`` 文を作って。**true** と評価された場合、左に曲がります。
 
 ```python
 if agent.detect(AgentDetection.BLOCK, FORWARD):
@@ -24,7 +24,7 @@ if agent.detect(AgentDetection.BLOCK, FORWARD):
 
 ## ステップ 3
 
-``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に配置します。これにより、これらのステップは停止するまで続きます。
+``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に置きます。これにより、これらのステップは停止するまで続きます。
 
 ```python
 def on_forever():

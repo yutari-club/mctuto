@@ -1,7 +1,7 @@
 # エージェントのピラミッド: Python
 
 ## ステップ 1
-``||player:チャットコマンド||``を作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
+``||player:チャットコマンド||``を作って、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定しましょう。
 
 ```python
 def on_chat(size):
@@ -22,7 +22,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 3
 
-``||logic:もし||`` 文の内側で、エージェントが **sandstone** の ``||agent:スロットに設定させる||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
+``||logic:もし||`` 文の中で、エージェントが **sandstone** の ``||agent:スロットに設定させる||`` を **size** 変数に **size** を掛けた値にするようにコードを書きましょう—スロット1に。
 
 ```python
 if size > 0:
@@ -32,7 +32,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 4
 
-エージェントが 1 スロットを ``||agent:set the active slot||`` するようにコーディングします。
+エージェントが 1 スロットを ``||agent:set the active slot||`` するようにコードを書きましょう。
 
 ```python
 agent.set_item(SANDSTONE, size * size, 1)
@@ -64,7 +64,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 7
 
-エージェントが **size** 変数の値で ``||agent:move forward||`` するようにコーディングします。
+エージェントが **size** 変数の値で ``||agent:move forward||`` するようにコードを書きましょう。
 
 ```python
         i = 0
@@ -75,7 +75,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 8
 
-エージェントが ``||agent:turn left||`` するようにコーディングし、``||loops:for||`` ループを終了します。
+エージェントが ``||agent:turn left||`` するようにコードを書き、``||loops:for||`` ループを終了しましょう。
 
 ```python
 while i <= 0 - 0:
@@ -86,7 +86,7 @@ while i <= 0 - 0:
 
 ## ステップ 9
 
-``||loops:for||`` ループの後、ただし ``||logic:もし||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
+``||loops:for||`` ループの後、ただし ``||logic:もし||`` 文の中で、エージェントが **move up by 1** するようにコードを書きましょう。
 
 ```python
   i += 1
@@ -95,7 +95,7 @@ while i <= 0 - 0:
 
 ## ステップ 10
 
-エージェントの ``||agent:place on move||`` を **false** にコーディングします。
+エージェントの ``||agent:place on move||`` を **false** にコードを書きましょう。
 
 ```python
   agent.move(UP, 1)
@@ -104,7 +104,7 @@ while i <= 0 - 0:
 
 ## ステップ 11
 
-**pyramid** チャットに **size** 変数の値から 2 を引いた値を結合する ``||player:run chat||`` コマンドを配置します。
+**pyramid** チャットに **size** 変数の値から 2 を引いた値を結合する ``||player:run chat||`` コマンドを置きましょう。
 
 ```python
         agent.set_assist(PLACE_ON_MOVE, False)
@@ -114,7 +114,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 12
 
-Minecraftに入り、**t** を入力して **pyramid** チャットコマンドをテストしてみましょう。
+Minecraftに入り、**t** を押して**pyramid** と入力してチャットコマンドをテストしてみましょう。
 
 ```python
 def on_chat(size):

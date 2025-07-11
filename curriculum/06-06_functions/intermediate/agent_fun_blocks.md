@@ -57,7 +57,7 @@ player.onChat("torches", function () {
 ```
 
 ## ステップ 4
-新しい ``||player:○○が使われた時||`` コマンドを取得して **trident** を選択します。**torches** という名前の ``||player:run chat||`` コマンドを追加します。もう一つの ``||player:run chat||`` コマンドを追加して **chicken** と名前を付けます。もう一つの ``||player:run chat||`` コマンドを追加して **snowball** と名前を付けます。
+新しい ``||player:○○が使われた時||`` コマンドを取って **trident** を選択しましょう。**torches** という名前の ``||player:run chat||`` コマンドを追加しましょう。もう一つの ``||player:run chat||`` コマンドを追加して **chicken** と名前を付けましょう。もう一つの ``||player:run chat||`` コマンドを追加して **snowball** と名前を付けましょう。
 
 ```blocks
 player.onItemInteracted(BLAZE_ROD, function () { 
@@ -71,7 +71,7 @@ player.onItemInteracted(BLAZE_ROD, function () {
 **Play** ボタンを押して、Minecraftに戻り、チャットに **torches**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
 
 ## ステップ 6
-用意されている他の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更します。このコーディング体験では、異なる効果を選択できます。
+用意されている他の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更します。このコードを書く体験では、異なる効果を選択できます。
 
 ## ステップ 7
 **Play** ボタンを押して、Minecraftに戻り、チャットに **chicken** と **snowball** コマンドを入力して何が起こるか見てみましょう。

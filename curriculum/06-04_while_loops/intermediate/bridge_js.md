@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:チャットコマンド||``を作成し、**"build"** という名前を付けます。
+``||player:チャットコマンド||``を作って、**"build"** という名前を付けます。
 
 ```javascript
 player.onChat("build", function () {
@@ -10,7 +10,7 @@ player.onChat("build", function () {
 ```
 
 ## ステップ 2
-``||player:チャットコマンド||``の内側で、エージェントが **oak wood planks** の ``||agent:set a block||`` を数量 **64**、スロット **1** に設定するようにコーディングします。
+``||player:チャットコマンド||``の中で、エージェントが **オークの板材** を数量 **64**、スロット **1** に設定するようにコードを書きます。
 
 ```javascript
 player.onChat("build", function () {
@@ -19,7 +19,7 @@ player.onChat("build", function () {
 ```
 
 ## ステップ 3
-エージェントが **1** ブロック ``||agent:move forward||`` するようにコーディングします。
+エージェントが **1** ブロック ``||agent:move forward||`` するようにコードを書きます。
 
 ```javascript
 player.onChat("build", function () {
@@ -30,7 +30,7 @@ player.onChat("build", function () {
 
 ## ステップ 4
 
-``||player:チャットコマンド||``の内側で、エージェントが **down** で ``||agent:not detect a block||`` かどうかをチェックすることから始まる ``||loops:もし〇〇ならくりかえす||``をコーディングします。
+``||player:チャットコマンド||``の中で、エージェントが **下** にブロックがないかどうかをチェックする ``||loops:もし〇〇ならくりかえす||``をコードで書きます。
 
 ```javascript
 player.onChat("build", function () {
@@ -44,7 +44,7 @@ player.onChat("build", function () {
 
 ## ステップ 5
 
-``||loops:もし〇〇ならくりかえす||``の内側で、``||agent:agent to place||`` **down** するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の中で、エージェントが **下** にブロックを置くようにコードを書きます。
 
 ```javascript
 player.onChat("build", function () {
@@ -58,7 +58,7 @@ player.onChat("build", function () {
 
 ## ステップ 6
 
-``||agent:place down||`` コマンドの後で、``||agent:agent to move||`` **forward by 1** するようにコーディングします。そして ``||loops:もし〇〇ならくりかえす||``を終了します。
+``||agent:place down||`` コマンドの後で、エージェントが **前に1ブロック** 移動するようにコードを書きます。そして ``||loops:もし〇〇ならくりかえす||``を終了します。
 
 ```javascript
 player.onChat("build", function () {
@@ -71,7 +71,7 @@ player.onChat("build", function () {
 })
 ```
 ## ステップ 7
-**実行** ボタンを押して、Minecraftに入り、**t** を入力して **build** を試してみましょう。
+**実行** ボタンを押して、Minecraftに入り、**t** を押して **build** と入力して試してみましょう。
 
 ```javascript
 player.onChat("build", function () { 

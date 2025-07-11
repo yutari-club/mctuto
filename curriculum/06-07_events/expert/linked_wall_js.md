@@ -2,7 +2,7 @@
 
 ## ステップ 1
 
-``||player:チャットコマンド||``コマンドをコードし、**"position"**と名前をつけます。
+``||player:チャットコマンド||``コマンドのコードを書いて、**"position"**と名前をつけましょう。
 
 ```javascript
 player.onChat("position", function () {
@@ -11,7 +11,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 2
-変数**PlayerPosition**を作成し、``||positions: world||``位置に設定します。
+変数**PlayerPosition**を作って、``||positions: world||``位置に設定しましょう。
 
 ```javascript
 let PlayerPosition: Position = null 
@@ -21,7 +21,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 3
-``||player:チャットコマンド||``コマンドの中で、変数**from_position**を作成し、**PlayerPosition**に(6,0,0)を加えた値と等しく設定します。
+``||player:チャットコマンド||``コマンドの中で、変数**from_position**を作って、**PlayerPosition**に(6,0,0)を加えた値と等しく設定しましょう。
 	
 ```javascript
 let PlayerPosition: Position = null 
@@ -36,7 +36,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 4
-``||player:チャットコマンド||``コマンドの中で、変数**to_position**を作成し、変数**PlayerPosition**に(-6,13,0)を加えた値と等しく設定します。
+``||player:チャットコマンド||``コマンドの中で、変数**to_position**を作って、変数**PlayerPosition**に(-6,13,0)を加えた値と等しく設定しましょう。
 
 ```javascript
 let PlayerPosition: Position = null
@@ -56,7 +56,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 5
-別の``||player:チャットコマンド||``コマンドをコードし、**"wall"**と名前をつけます。
+別の``||player:チャットコマンド||``コマンドのコードを書いて、**"wall"**と名前をつけましょう。
 
 ```javascript
 player.onChat("wall", function () { 
@@ -65,7 +65,7 @@ player.onChat("wall", function () {
 ```
 
 ## ステップ 6
-**wall**の``||player:チャットコマンド||``コマンドの中で、``||blocks:fill and replace||``をコードし、**from_position**変数から**to_position**変数まで**glass**に設定します。
+**wall**の``||player:チャットコマンド||``コマンドの中で、``||blocks:fill and replace||``のコードを書いて、**from_position**変数から**to_position**変数まで**glass**に設定しましょう。
 
 ```javascript
 player.onChat("wall", function () {
@@ -79,7 +79,7 @@ player.onChat("wall", function () {
 ```
 
 ## ステップ 7
-``||blocks: on block broken||``を使って、**glass**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: random position||``に**diamond**ブロックを``||blocks:place||``するイベントをコードします。
+``||blocks: on block broken||``を使って、**glass**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: random position||``に**diamond**ブロックを``||blocks:place||``するイベントのコードを書きましょう。
 
 ```javascript
 blocks.onBlockBroken(GLASS, function () {
@@ -91,7 +91,7 @@ blocks.onBlockBroken(GLASS, function () {
 ```
 
 ## ステップ 8
-``||blocks: on block broken||``を使って、**diamond**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: random position||``に**orange wool**ブロックを``||blocks:place||``するイベントをコードします。
+``||blocks: on block broken||``を使って、**diamond**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: random position||``に**orange wool**ブロックを``||blocks:place||``するイベントのコードを書きましょう。
 
 ```javascript
 blocks.onBlockBroken(DIAMOND_BLOCK, function () {

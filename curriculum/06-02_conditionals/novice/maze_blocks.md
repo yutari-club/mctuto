@@ -2,7 +2,7 @@
 
 ## ステップ 1
 
-``||loops: forever||`` ループを取得し、ワークスペースにドラッグします。
+``||loops: forever||`` ループを取って、ワークスペースにドラッグしましょう。
 
 ```blocks
 loops.forever(function () {
@@ -19,7 +19,7 @@ agent.teleportToPlayer()
 ```
 
 ## ステップ 2
-``||agent:〇〇がある[見つける]||`` コマンドを評価する ``||logic:if then||`` 条件文を取得し、**block** と **forward** に設定してから、``||logic: if then||`` 条件文の中に ``||agent:turn||`` **left** ブロックを追加します。
+``||agent:〇〇がある[見つける]||`` コマンドを評価する ``||logic:if then||`` 条件文を取って、**block** と **forward** に設定してから、``||logic: if then||`` 条件文の中に ``||agent:turn||`` **left** ブロックを追加しましょう。
 
 ```blocks
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -43,7 +43,7 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
 
 ## ステップ 4
 
-``||logic:if else||`` 文を ``||loops:forever||`` ループの中に配置します。これにより、これらのステップは停止するまで続きます。
+``||logic:if else||`` 文を ``||loops:forever||`` ループの中に置きます。これにより、これらのステップは停止するまで続きます。
 
 ```blocks
 loops.forever(function () {

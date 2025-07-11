@@ -29,7 +29,7 @@ player.onChat("snowball", function () {
 ```
 
 ## ステップ 2
-新しい ``||player:○○が使われた時||`` を取得して **Blaze Rod** を選択します。``||player:run chat||`` コマンドを追加して **carrot** と名前を付けます。もう一つの ``||player:run chat||`` コマンドを取得して **chicken** と名前を付けます。3つ目の ``||player:run chat||`` コマンドを取得して **snowball** と名前を付けます。
+新しい ``||player:○○が使われた時||`` を取って **Blaze Rod** を選択しましょう。``||player:run chat||`` コマンドを追加して **carrot** と名前を付けます。もう一つの ``||player:run chat||`` コマンドを取って **chicken** と名前を付けます。3つ目の ``||player:run chat||`` コマンドを取って **snowball** と名前を付けます。
 
 ```blocks
 player.onItemInteracted(BLAZE_ROD, function () {
