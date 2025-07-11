@@ -39,7 +39,7 @@ def walls():
 ```
 
 ## ステップ 5
-3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:repeat||`` ループの中の ``||agent: agent turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:place||`` をコードし、**down** に設定します。エージェントの ``||agent:移動させる||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:place||`` down の下にドラッグします。
+3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:くりかえし○○回||`` ループの中の ``||agent: agent turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:place||`` をコードし、**down** に設定します。エージェントの ``||agent:移動させる||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:place||`` down の下にドラッグします。
 
 ```python
 def walls():

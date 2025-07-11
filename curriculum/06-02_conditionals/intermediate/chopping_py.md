@@ -84,7 +84,7 @@ player.on_chat("chop", on_chat3)
 
 ## ステップ 8
 
-``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:repeat||`` ループの **times** 引数に挿入します。
+``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:くりかえし○○回||`` ループの **times** 引数に挿入します。
 
 ```python
     for index in range(height):

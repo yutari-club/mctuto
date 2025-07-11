@@ -10,7 +10,7 @@ player.onChat("fence", function () {
 
 ## ステップ 2
 
-ツールボックスの **advanced** セクションに移動し、``||builder: builder||`` を見つけます。``||builder:teleport||`` を取得し、``||player: on chat||`` **fence** コマンドにドラッグします。``||positions: world coordinates||`` を取得し、座標を **-695, 9, 880** に設定します。``||builder:face||`` コマンドを追加し、**West (negative X)** に設定してから、``||player:チャットコマンド||`` **fence** コマンドの ``||builder:teleport||`` ブロックの下にドラッグします。
+ツールボックスの **advanced** セクションに移動し、``||builder: builder||`` を見つけます。``||builder:teleport||`` を取得し、``||player:チャットコマンド||`` **fence** コマンドにドラッグします。``||positions: world coordinates||`` を取得し、座標を **-695, 9, 880** に設定します。``||builder:face||`` コマンドを追加し、**West (negative X)** に設定してから、``||player:チャットコマンド||`` **fence** コマンドの ``||builder:teleport||`` ブロックの下にドラッグします。
 
 ```blocks
 player.onChat("1", function () {

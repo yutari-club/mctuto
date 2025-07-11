@@ -23,7 +23,7 @@ player.onChat("spiral", function () {
 
 ## ステップ 3
 
-``||loops:もし〇〇ならくりかえす||``の内側に入る ``||logic:if-else||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
+``||loops:もし〇〇ならくりかえす||``の内側に入る ``||logic:もし-でなければ||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
 
 ```javascript
 player.onChat("spiral", function () {
@@ -39,7 +39,7 @@ player.onChat("spiral", function () {
 
 ## ステップ 4
 
-``||logic:if-else statement||`` の ``||logic:else||`` 句で、``||agent:turns||`` **left** するように記述します。
+``||logic:if-else statement||`` の ``||logic:でなければ||`` 句で、``||agent:turns||`` **left** するように記述します。
 
 ```javascript
 player.onChat("spiral", function () {

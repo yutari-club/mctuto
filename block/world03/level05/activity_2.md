@@ -20,7 +20,7 @@
 
 <!-- We created a function **plantSeed** for you. 
 It is simply the code that you used for the previous activity. 
-Now drag an ``||player: on chat||`` command into the workspace and name it **run**. 
+Now drag an ``||player:チャットコマンド||`` command into the workspace and name it **run**. 
 Add a ``||loops: repeat||`` loop and click on the **Advanced** section then click **Functions** and drag a``||function:call plantSeed||`` function into your loop. 
 Count how many times the Agent needs to repeat **plantSeed** function.  -->
 

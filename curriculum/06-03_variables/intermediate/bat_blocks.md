@@ -48,7 +48,7 @@ player.onChat("cave", function () {
 
 ## ステップ 5
 
-``||loops:repeat||`` ループを取得し、**50** 回に設定します。``||blocks:fill with||`` **air** ブロックをループの中にドラッグし、次に ``||loops:repeat||`` ループ全体を ``||player:チャットコマンド||`` **cave** コマンドの ``||gameplay:time set||`` **day** コマンドの下にドラッグします。
+``||loops:くりかえし○○回||`` ループを取得し、**50** 回に設定します。``||blocks:fill with||`` **air** ブロックをループの中にドラッグし、次に ``||loops:くりかえし○○回||`` ループ全体を ``||player:チャットコマンド||`` **cave** コマンドの ``||gameplay:time set||`` **day** コマンドの下にドラッグします。
 
 ```blocks
 player.onChat("cave", function () {
@@ -68,7 +68,7 @@ player.onChat("cave", function () {
 ## ステップ 6
 
 ``||variables:set variable||`` を取得し、**bat_cave** という新しい変数を割り当てます。``||player:player world position||`` を取得して、**bat_cave** 変数にドラッグします。
-新しく完成した ``||variables:set variable||`` **bat_cave** を ``||player:チャットコマンド||`` **cave** の ``||loops:repeat||`` ループ **50** の下にドラッグします。
+新しく完成した ``||variables:set variable||`` **bat_cave** を ``||player:チャットコマンド||`` **cave** の ``||loops:くりかえし○○回||`` ループ **50** の下にドラッグします。
 
 ```blocks
 let batcave: Position = null
@@ -133,7 +133,7 @@ mobs.spawn(BAT, batcave)
 
 ## ステップ 12
 
-次に、**bat** ``||mobs:spawn animal||`` ステップを繰り返します。``||loops:repeat||`` ループを取得し、**200** 回に設定します。**bat** をループの中にドラッグします。ループ全体を ``||player:チャットコマンド||`` **cave** コマンドの ``||gameplay:time set||`` **dusk** ブロックの下にドラッグします。
+次に、**bat** ``||mobs:spawn animal||`` ステップを繰り返します。``||loops:くりかえし○○回||`` ループを取得し、**200** 回に設定します。**bat** をループの中にドラッグします。ループ全体を ``||player:チャットコマンド||`` **cave** コマンドの ``||gameplay:time set||`` **dusk** ブロックの下にドラッグします。
 
 ```blocks
 for (let index = 0; index < 200; index++) {

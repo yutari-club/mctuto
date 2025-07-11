@@ -18,7 +18,7 @@ player.onTravelled(WALK, function () {
 }) 
 ```
 ## ステップ 3
-``||loops:repeat||``ループを``||player:on player walk||``にドラッグし、**25回**に設定します。``||mobs:spawn||``ブロックは``||loops:repeat||``ループの中に入れます。
+``||loops:くりかえし○○回||``ループを``||player:on player walk||``にドラッグし、**25回**に設定します。``||mobs:spawn||``ブロックは``||loops:くりかえし○○回||``ループの中に入れます。
 
 ```blocks
 player.onTravelled(WALK, function () {
@@ -41,7 +41,7 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 ```
 
 ## ステップ 6
-``||loops:repeat||``ループを``||blocks:on broken||``ブロックの中で``||mobs:spawn||``ブロックの周りに追加し、``||loops:repeat||``ループを**25回**に設定します。
+``||loops:くりかえし○○回||``ループを``||blocks:on broken||``ブロックの中で``||mobs:spawn||``ブロックの周りに追加し、``||loops:くりかえし○○回||``ループを**25回**に設定します。
 
 ```blocks
 blocks.onBlockBroken(PLANKS_OAK, function () { 

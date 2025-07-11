@@ -19,7 +19,7 @@ player.onChat("walls", function () {
 ```
 
 ## ステップ 3
-**walls** の ``||player: on chat||`` コマンドの中で、``||agent:ブロックまたはアイテム設定||`` を使って **アカシアの木の板** を数 **64** でスロット **1** に設定します。
+**walls** の ``||player:チャットコマンド||`` の中で、``||agent:ブロックまたはアイテム設定||`` を使って **アカシアの木の板** を数 **64** でスロット **1** に設定します。
 
 ```javascript
 player.onChat("walls", function () { 

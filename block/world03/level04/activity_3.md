@@ -17,7 +17,7 @@
 
 <!-- Use **stone** as your building material, create **3** ``||variable: variables||`` and name them **width**, **length** and **height**; 
 set the ``||variable: variables||`` to the correct parameters. 
-Don't forget to add your variables to the ``||player: on chat||`` command. -->
+Don't forget to add your variables to the ``||player:チャットコマンド||`` command. -->
 
 ```ghost
 player.onChat("town_hall", function (length, width, height) {

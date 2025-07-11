@@ -21,7 +21,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player: on chat||`` コマンドを作成し、**"chop"** という名前を付けます。
+別の ``||player:チャットコマンド||`` を作成し、**"chop"** という名前を付けます。
 
 ```javascript
 player.onChat("chop", function () {
@@ -82,7 +82,7 @@ player.onChat("chop", function () {
 
 ## ステップ 8
 
-``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:repeat||`` ループの **times** 引数に挿入します。
+``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:くりかえし○○回||`` ループの **times** 引数に挿入します。
 
 ```javascript
 for (let index = 0; index < height; index++) {

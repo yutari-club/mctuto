@@ -22,7 +22,7 @@ player.on_chat("spiral", on_chat)
 
 ## ステップ 3
 
-``||loops:もし〇〇ならくりかえす||``の内側に入る ``||logic:if-else||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
+``||loops:もし〇〇ならくりかえす||``の内側に入る ``||logic:もし-でなければ||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
 
 ```python
 def on_chat():
@@ -36,7 +36,7 @@ player.on_chat("spiral", on_chat)
 
 ## ステップ 4
 
-``||logic:if-else||`` 文の ``||logic:else||`` 句で、``||agent:agent turns||`` **left** するように記述します。
+``||logic:もし-でなければ||`` 文の ``||logic:でなければ||`` 句で、``||agent:agent turns||`` **left** するように記述します。
 
 ```python
 def on_chat():

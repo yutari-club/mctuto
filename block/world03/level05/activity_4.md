@@ -15,7 +15,7 @@
 ``||loops:もし、くりかえし||``の条件(じょうけん)は、``||agent:下(した)のブロック||``が**金(きん)ブロック** ではない場合(ばあい)、 ``||functions: 呼(よ)び出(だ)し||``で必要(ひつよう)な関数(かんすう)を呼(よ)び出(だ)するよ。
 
 <!-- You are provided with three functions: ``||functions: plantSeed||``, ``||functions: plantSection||`` and ``||functions: checkTurn||``. 
-First, create  a new ``||player: on chat||`` command and add your condition: ``||loops:もし〇〇ならくりかえす||`` the Agent is ``||agent:inspecting the block down||``, and it is not a **gold block**, ``||functions: call||`` the necessary functions.  -->
+First, create  a new ``||player:チャットコマンド||`` command and add your condition: ``||loops:もし〇〇ならくりかえす||`` the Agent is ``||agent:inspecting the block down||``, and it is not a **gold block**, ``||functions: call||`` the necessary functions.  -->
 
 ```template
 /**

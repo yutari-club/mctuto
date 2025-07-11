@@ -78,7 +78,7 @@ player.onChat("chop", function () {
 
 ## ステップ 8
 
-``||loops: while||`` ループの後に ``||loops:repeat||`` ループを追加します。**height** 変数を取得し、``||loops:repeat||`` ループの **times** 引数にドラッグします。
+``||loops: while||`` ループの後に ``||loops:くりかえし○○回||`` ループを追加します。**height** 変数を取得し、``||loops:くりかえし○○回||`` ループの **times** 引数にドラッグします。
 
 ```blocks
 let height = 0
@@ -97,7 +97,7 @@ player.onChat("chop", function () {
 
 ## ステップ 9
 
-``||agent:移動させる||`` ブロック（上記から）を複製し、**down** に変更します。``||agent:agent move down||`` を ``||loops:repeat||`` ループにドラッグします。``||agent: agent destroy||``（上記から）を複製し、**destroy forward** に変更します。``||agent:agent destroy forward||`` を ``||loops:repeat||`` ループにドラッグします。``||agent:移動させる||`` の直下に配置します。
+``||agent:移動させる||`` ブロック（上記から）を複製し、**down** に変更します。``||agent:agent move down||`` を ``||loops:くりかえし○○回||`` ループにドラッグします。``||agent: agent destroy||``（上記から）を複製し、**destroy forward** に変更します。``||agent:agent destroy forward||`` を ``||loops:くりかえし○○回||`` ループにドラッグします。``||agent:移動させる||`` の直下に配置します。
 
 ```blocks
 let height = 0
@@ -118,7 +118,7 @@ player.onChat("chop", function () {
 
 ## ステップ 10
 
-``||agent:collect all||`` ブロックを取得し、``||agent:agent destroy forward||`` の下の ``||loops:repeat||`` ループにドラッグします。
+``||agent:collect all||`` ブロックを取得し、``||agent:agent destroy forward||`` の下の ``||loops:くりかえし○○回||`` ループにドラッグします。
 
 ```blocks
     }

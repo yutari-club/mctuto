@@ -11,7 +11,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 2
 
-**size** が 0 より大きいかどうかを評価する ``||logic:if||`` 文を追加します。
+**size** が 0 より大きいかどうかを評価する ``||logic:もし||`` 文を追加します。
 
 ```python
 def on_chat(size):
@@ -22,7 +22,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 3
 
-``||logic:if||`` 文の内側で、エージェントが **sandstone** の ``||agent:set block or item||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
+``||logic:もし||`` 文の内側で、エージェントが **sandstone** の ``||agent:set block or item||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
 
 ```python
 if size > 0:
@@ -86,7 +86,7 @@ while i <= 0 - 0:
 
 ## ステップ 9
 
-``||loops:for||`` ループの後、ただし ``||logic:if||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
+``||loops:for||`` ループの後、ただし ``||logic:もし||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
 
 ```python
   i += 1

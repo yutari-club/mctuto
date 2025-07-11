@@ -21,7 +21,7 @@
 
 最後(さいご)に ``||functions: 呼(よ)び出(だ)し 畝(うね)||``を配置(はいち)するよ。
 <!-- Two functions **plantSeed** and **plantSection** are provided for youの. 
-Create a new ``||player: on chat||`` command and ``||functions: call plantSection||`` within it. 
+Create a new ``||player:チャットコマンド||`` command and ``||functions: call plantSection||`` within it. 
 Add an ``||logic: if||`` statement that checks if ``||agent: agent inspects block down||`` .  
 If the block down is ``||blocks: lapis lazuli||``, then the agent needs  to ``||agent: turn right||``, ``||agent: move forward||`` and ``||agent: turn right||``.  
 ``||logic: Else||`` the agent ``||agent: inspects the block down||`` and it is ``||blocks: a block of quartz||``, then the agent needs to ``||agent: turn left||``, ``||agent: move forward||`` and ``||agent: turn left||``.  
@@ -69,8 +69,8 @@ function 種(たね)植(う)え () {
 
 もし``||agent:下(した)のブロック||``が ``||blocks:ラピスラズビ||``と**等(ひと)しい (=)**場合(ばあい)、``||agent:右折(うせつ)||``、``||agent:前(まえ)に移動(いどう)||``、 ``||agent:右折(うせつ)||``を行(おこな)う必要(ひつよう)があります。
 
-<!-- Add an ``||logic:if||`` statement to the ``||player:チャットコマンド||`` command. 
-Within the **true** of the ``||logic:if||`` block add a ``||logic:" " = " "||`` block. 
+<!-- Add an ``||logic:もし||`` statement to the ``||player:チャットコマンド||`` command. 
+Within the **true** of the ``||logic:もし||`` block add a ``||logic:" " = " "||`` block. 
 If when ``||agent:agent inspects block down||`` is **equal (=)** to ``||blocks:lapis lazuli||`` the agent needs to ``||agent: turn right||``, ``||agent:move forward||`` and ``||agent:turn right||``.  -->
 
 #### ~ tutorialhint
@@ -125,7 +125,7 @@ function 種(たね)植(う)え () {
 もし ``||agent:下(した)のブロック|`` が ``||blocks:クォーツブロック|`` と **等(ひと)しい (=)** ならば、エージェントは``||agent:左折(させつ)||``と``||agent:前(まえ)に移動(いどう)||``、``||agent:左折(させつ)||``が必要(ひつよう)である。 
 
 
-<!-- Click two times on the **+** symbols of the ``||logic:if||`` block. 
+<!-- Click two times on the **+** symbols of the ``||logic:もし||`` block. 
 Click on the ** - ** to delete the **else** block. 
 Add a ``||logic:" " = " "||`` block to the **blank** space of the ``||logic:else if||`` block. 
 If ``||agent:agent inspects block down||`` is **equal (=)** to ``||blocks:a block of quartz||``. 
@@ -180,7 +180,7 @@ function 種(たね)植(う)え () {
 ## Step 4
 最後(さいご)に ``||functions: 呼(よ)び出(だ)し 畝(うね)||`` を ``||player:チャットを入力(にゅうりょく)した時(とき)||`` コマンドの下(した)に ``||logic:もし||`` を追加(ついか)するよ。 
 
-<!-- Finally add another ``||functions: call plantSection||`` within the ``||player:チャットコマンド||`` command outside of the ``||logic:if||`` statement.   -->
+<!-- Finally add another ``||functions: call plantSection||`` within the ``||player:チャットコマンド||`` command outside of the ``||logic:もし||`` statement.   -->
 
 #### ~ tutorialhint
 ``` blocks

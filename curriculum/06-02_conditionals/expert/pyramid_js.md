@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player: on chat||`` コマンドを作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
+``||player:チャットコマンド||`` を作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
 
 ```javascript
 player.onChat("pyramid", function (size){ 
@@ -12,7 +12,7 @@ player.onChat("pyramid", function (size){
 
 ## ステップ 2
 
-**size** が 0 より大きいかどうかを評価する ``||logic:if||`` 文を追加します。
+**size** が 0 より大きいかどうかを評価する ``||logic:もし||`` 文を追加します。
 
 ```javascript
 player.onChat("pyramid", function (size)){ 
@@ -24,7 +24,7 @@ player.onChat("pyramid", function (size)){
 
 ## ステップ 3
 
-``||logic:if||`` 文の内側で、エージェントが **sandstone** の ``||agent:set block or item||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
+``||logic:もし||`` 文の内側で、エージェントが **sandstone** の ``||agent:set block or item||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
 
 ```javascript
 player.onChat("pyramid", function (size){ 
@@ -92,7 +92,7 @@ for (let i = 0; i <= 0 - 0; i++) {
 
 ## ステップ 9
 
-``||loops:for||`` ループの後、ただし ``||logic:if||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
+``||loops:for||`` ループの後、ただし ``||logic:もし||`` 文の内側で、エージェントが **move up by 1** するようにコーディングします。
 
 ```javascript
    } 
