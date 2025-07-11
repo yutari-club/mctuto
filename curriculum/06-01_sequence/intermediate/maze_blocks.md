@@ -1,7 +1,7 @@
 # エージェントの迷路: ブロック
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**tp** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**tp** という名前を付けます。
 
 ```blocks
 player.onChat("tp", function () {
@@ -10,7 +10,7 @@ player.onChat("tp", function () {
 
 ## ステップ 2
 
-``||agent:agent teleport to player||`` コマンドを取得し、``||player:on chat||`` **tp** コマンドの内側にドラッグします。
+``||agent:agent teleport to player||`` コマンドを取得し、``||player:チャットコマンド||`` **tp** コマンドの内側にドラッグします。
 
 **NOTE:** このコマンドは、エージェントをあなたの位置に呼ぶために必要です。
 
@@ -22,7 +22,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:on chat||`` コマンドを取得し、**side1** という名前を付けます。
+別の ``||player:チャットコマンド||``を取得し、**side1** という名前を付けます。
 
 ```blocks
 player.onChat("side1", function () {
@@ -31,7 +31,7 @@ player.onChat("side1", function () {
 
 ## ステップ 4
 
-``||agent:agent place on move||`` ブロックを取得し、**true** に設定します。それを ``||player:on chat||`` **side1** コマンドの内側に配置します。
+``||agent:agent place on move||`` ブロックを取得し、**true** に設定します。それを ``||player:チャットコマンド||`` **side1** コマンドの内側に配置します。
 
 ```blocks
 player.onChat("side1", function () {  
@@ -42,7 +42,7 @@ player.onChat("side1", function () {
 
 ## ステップ 5
 
-``||agent:agent move forward||`` を取得し、**4** に設定します。それを ``||player:on chat||`` **side1** コマンドの内側の前のコマンドの下に配置します。
+``||agent:agent move forward||`` を取得し、**4** に設定します。それを ``||player:チャットコマンド||`` **side1** コマンドの内側の前のコマンドの下に配置します。
 
 ```blocks
 player.onChat("side1", function () {  
@@ -53,7 +53,7 @@ player.onChat("side1", function () {
 
 ## ステップ 6
 
-``||agent:agent turn||`` コマンドを追加し、**turn left** に設定します。それを ``||player:on chat||`` **side1** コマンドにドラッグします。
+``||agent:agent turn||`` コマンドを追加し、**turn left** に設定します。それを ``||player:チャットコマンド||`` **side1** コマンドにドラッグします。
 
 ```blocks
 player.onChat("side1", function () {  
@@ -65,7 +65,7 @@ player.onChat("side1", function () {
 
 ## ステップ 7
 
-別の ``||agent:move forward||`` ブロックを追加し、**5** に設定します。それを ``||player:on chat||`` **side1** コマンドの内側の前のコマンドの下に配置します。
+別の ``||agent:move forward||`` ブロックを追加し、**5** に設定します。それを ``||player:チャットコマンド||`` **side1** コマンドの内側の前のコマンドの下に配置します。
 
 ```blocks
 player.onChat("side1", function () {  
@@ -78,7 +78,7 @@ player.onChat("side1", function () {
 
 ## ステップ 8
 
-別の ``||agent:agent turn||`` ブロックを追加し、**right** に設定します。それを ``||player:on chat||`` **side1** コマンドの内側の前のコマンドの下に配置します。
+別の ``||agent:agent turn||`` ブロックを追加し、**right** に設定します。それを ``||player:チャットコマンド||`` **side1** コマンドの内側の前のコマンドの下に配置します。
 
 ```blocks
 player.onChat("side1", function () {  
@@ -92,7 +92,7 @@ player.onChat("side1", function () {
 
 ## ステップ 9
 
-既存の ``||agent:agent move||`` **forward by 5** コマンドを右クリックし、**duplicate** を選択します。複製したエージェントを ``||player:on chat||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
+既存の ``||agent:agent move||`` **forward by 5** コマンドを右クリックし、**duplicate** を選択します。複製したエージェントを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
 
 **NOTE:** 複製機能は、ブロックでコーディングする際に時間を節約できます。
 
@@ -109,7 +109,7 @@ player.onChat("side1", function () {
 
 ## ステップ 10
 
-既存の ``||agent:place on move||`` ブロックを複製し、複製したものを ``||player:on chat||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
+既存の ``||agent:place on move||`` ブロックを複製し、複製したものを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
 
 ```blocks
 player.onChat("side1", function () {  
@@ -125,15 +125,15 @@ player.onChat("side1", function () {
 
 ## ステップ 11
 
-既存の ``||agent:agent turn||`` **left** コマンドを複製し、複製したものを ``||player:on chat||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
+既存の ``||agent:agent turn||`` **left** コマンドを複製し、複製したものを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
 
 ## ステップ 12
 
-既存の ``||agent:agent move||`` **forward** コマンドを複製し、複製したものを ``||player:on chat||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
+既存の ``||agent:agent move||`` **forward** コマンドを複製し、複製したものを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
 
 ## ステップ 13
 
-既存の ``||agent:agent turn||`` **left** を複製し、複製したものを ``||player:on chat||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
+既存の ``||agent:agent turn||`` **left** を複製し、複製したものを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
 
 ```blocks
 player.onChat("side1", function () {  
@@ -156,11 +156,11 @@ player.onChat("side1", function () {
 
 ## ステップ 15
 
-``||player:on chat||`` **side1** コマンド全体を複製し、**side2** という名前に変更します。
+``||player:チャットコマンド||`` **side1** コマンド全体を複製し、**side2** という名前に変更します。
 
 ## ステップ 16
 
-新しい ``||player:on chat||`` **side2** コマンドから最後の4つのコマンドを削除します。
+新しい ``||player:チャットコマンド||`` **side2** コマンドから最後の4つのコマンドを削除します。
 
 ```blocks
 player.onChat("side2", function () {  

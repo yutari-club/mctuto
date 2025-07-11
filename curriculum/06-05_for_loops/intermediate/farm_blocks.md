@@ -11,7 +11,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:on chat||`` コマンドを取得して、**farm** と名前をつけてください。
+別の ``||player:チャットコマンド||``を取得して、**farm** と名前をつけてください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -20,7 +20,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 4
-``||agent:set block or item||`` ブロックを取得して、**farm** ``||player:on chat||`` コマンドの中にドラッグしてください。**carrots**を選択して、数を **64** 、スロットを **1** に設定してください。
+``||agent:set block or item||`` ブロックを取得して、**farm** ``||player:チャットコマンド||``の中にドラッグしてください。**carrots**を選択して、数を **64** 、スロットを **1** に設定してください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -66,7 +66,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 8
-別の ``||loops:repeat||`` ループを取得して、**7** 回繰り返すように設定し、既存の ``||loops:repeat||`` ループの中にドラッグしてください。ただし、``||agent:move||`` **back by 7** の上に配置してください。
+別の ``||loops:repeat||`` ループを取得して、**7** 回繰り返すように設定し、既存の ``||loops:repeat||`` ループの中にドラッグしてください。ただし、``||agent:移動させる||`` **back by 7** の上に配置してください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -98,7 +98,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 10
-``||agent:move||`` ブロックを追加して、**forward by 1** に設定し、二番目の内側リピートループの中にドラッグしてください。
+``||agent:移動させる||`` ブロックを追加して、**forward by 1** に設定し、二番目の内側リピートループの中にドラッグしてください。
 
 ```blocks
 player.onChat("farm", function () { 

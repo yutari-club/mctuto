@@ -1,7 +1,7 @@
 # メガジャンプ: ブロック
 
 ## ステップ 1
-既存の ``||player:on chat||`` コマンドの名前を **"jump"** に変更します。
+既存の ``||player:チャットコマンド||``の名前を **"jump"** に変更します。
 
 ```blocks
 player.onChat("jump", function () { 
@@ -10,7 +10,7 @@ player.onChat("jump", function () {
 
 ## ステップ 2
 
-``||player:on chat||`` コマンド **jump** の中に ``||player:player teleport to||`` を配置し、**"y"** 座標に **100** を入力します。
+``||player:チャットコマンド||`` **jump** の中に ``||player:player teleport to||`` を配置し、**"y"** 座標に **100** を入力します。
 
 ```blocks
 player.onChat("jump", function () { 
@@ -25,7 +25,7 @@ Minecraftでチャットに **jump** と入力して試してみましょう。
 
 ## ステップ 4
 
-``||player:on chat||`` コマンド jump の中の (+) をクリックして、**num1** という名前の新しい ``||variable: variable||`` を作成します。
+``||player:チャットコマンド||`` jump の中の (+) をクリックして、**num1** という名前の新しい ``||variable: variable||`` を作成します。
 
 ```blocks
 player.onChat("jump", function (num1) {

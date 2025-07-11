@@ -2,7 +2,7 @@
 
 ## Step 1
 
-Code an ``||player:on chat||`` command and name it **mix**, which contains a ``||variables:variable||`` called **starting_world_position** that is set to ``||player:player world position||``.
+Code an ``||player:チャットコマンド||`` command and name it **mix**, which contains a ``||variables:variable||`` called **starting_world_position** that is set to ``||player:player world position||``.
 
 ```javascript
 player.onChat("mix", function () {
@@ -38,7 +38,7 @@ word1 = "rail"
 
 ## Step 4
 
-Create another ``||player:on chat||`` command and name it **mix2**. Create a new ``||player:on chat||`` **mix2** command.  Inside this command, ``||blocks:print||`` the variable **word1** out of **smooth sandstone** at position **(0,0,0)**, facing **West**. Also, ensure that the **starting_world_ position** variable is set to ``||player:player world position||``. 
+Create another ``||player:チャットコマンド||`` command and name it **mix2**. Create a new ``||player:チャットコマンド||`` **mix2** command.  Inside this command, ``||blocks:print||`` the variable **word1** out of **smooth sandstone** at position **(0,0,0)**, facing **West**. Also, ensure that the **starting_world_ position** variable is set to ``||player:player world position||``. 
 
 ```javascript
 player.onChat("mix2", function () {
@@ -54,7 +54,7 @@ player.onChat("mix2", function () {
 
 ## Step 5
 
-Inside the ``||player:on chat||`` **mix2** command, ``||blocks:print||`` a new **word2** variable out of **purple wool** at position **0,0,0**, facing **West**. 
+Inside the ``||player:チャットコマンド||`` **mix2** command, ``||blocks:print||`` a new **word2** variable out of **purple wool** at position **0,0,0**, facing **West**. 
 
 ```javascript
 player.onChat("mix2", function () {
@@ -76,7 +76,7 @@ player.onChat("mix2", function () {
 
 ## Step 6
 
-Outside of the ``||player:on chat||`` commands, set a new variable with the name **word2**.
+Outside of the ``||player:チャットコマンド||`` commands, set a new variable with the name **word2**.
 
 ```javascript
 let starting_world_position: Position = null
@@ -88,7 +88,7 @@ word2 = "road"
 
 ## Step 7
 
-Add ``||blocks:print|`` both **word1** and **word2** variables **lapiz lazuli** at position **(0,0,0)**, facing **West** to the **mix2** ``||player:on chat||`` command.
+Add ``||blocks:print|`` both **word1** and **word2** variables **lapiz lazuli** at position **(0,0,0)**, facing **West** to the **mix2** ``||player:チャットコマンド||`` command.
 
 ```javascript
 player.onChat("mix2", function () {

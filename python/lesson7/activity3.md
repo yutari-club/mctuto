@@ -13,10 +13,10 @@ while True:
 
 ## ステップ 1
 **Part 1:** Write some code to make the Agent follow the guideline of Redstone dust and place blocks to its left to make the small house's foundation.
-Use **two** `||loops:while||` loops with **two** sequences, one for the straight sections and one for the outside corners. 
+Use **two** `||loops:もし〇〇ならくりかえす||` loops with **two** sequences, one for the straight sections and one for the outside corners. 
 
 ## ステップ 2 
-**Part 2:** Add to the code to make the Agent build the foundation of a larger house. Write a additional `||loops:while||` loop with 
+**Part 2:** Add to the code to make the Agent build the foundation of a larger house. Write a additional `||loops:もし〇〇ならくりかえす||` loop with 
 an additional sequences for the inside corners.  
 ### ~ tutorialhint 
 When writing the sequence for the inside corners it needs to include a part where 

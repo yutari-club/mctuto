@@ -2,7 +2,7 @@
 
 ## ステップ 1
 
-``||player:on chat||``コマンドをコードし、**"position"**と名前をつけます。
+``||player:チャットコマンド||``コマンドをコードし、**"position"**と名前をつけます。
 
 ```javascript
 player.onChat("position", function () {
@@ -21,7 +21,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 3
-``||player:on chat||``コマンドの中で、変数**from_position**を作成し、**PlayerPosition**に(6,0,0)を加えた値と等しく設定します。
+``||player:チャットコマンド||``コマンドの中で、変数**from_position**を作成し、**PlayerPosition**に(6,0,0)を加えた値と等しく設定します。
 	
 ```javascript
 let PlayerPosition: Position = null 
@@ -36,7 +36,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 4
-``||player:on chat||``コマンドの中で、変数**to_position**を作成し、変数**PlayerPosition**に(-6,13,0)を加えた値と等しく設定します。
+``||player:チャットコマンド||``コマンドの中で、変数**to_position**を作成し、変数**PlayerPosition**に(-6,13,0)を加えた値と等しく設定します。
 
 ```javascript
 let PlayerPosition: Position = null
@@ -56,7 +56,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 5
-別の``||player:on chat||``コマンドをコードし、**"wall"**と名前をつけます。
+別の``||player:チャットコマンド||``コマンドをコードし、**"wall"**と名前をつけます。
 
 ```javascript
 player.onChat("wall", function () { 
@@ -65,7 +65,7 @@ player.onChat("wall", function () {
 ```
 
 ## ステップ 6
-**wall**の``||player:on chat||``コマンドの中で、``||blocks:fill and replace||``をコードし、**from_position**変数から**to_position**変数まで**glass**に設定します。
+**wall**の``||player:チャットコマンド||``コマンドの中で、``||blocks:fill and replace||``をコードし、**from_position**変数から**to_position**変数まで**glass**に設定します。
 
 ```javascript
 player.onChat("wall", function () {

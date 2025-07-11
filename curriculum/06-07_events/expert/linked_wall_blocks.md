@@ -1,7 +1,7 @@
 # つながる壁: ブロック
 
 ## ステップ 1
-既存の``||player:on chat||``コマンドの名前を**"position"**に変更します。
+既存の``||player:チャットコマンド||``コマンドの名前を**"position"**に変更します。
 
 ```blocks
 player.onChat("position", function () { 
@@ -22,7 +22,7 @@ player.onChat("position", function () {
 ## ステップ 3
 別の``|||variable: variable||``を作成し、**from_position**と名前をつけます。次に、``||positions:+ (add position)||``ブロックを変数の設定の"**0**"引数にドラッグします。
 
-この``||variable:variable||``を``||player:on chat||``コマンドの最後にドラッグします。**PlayerPosition**の``||variable:variable||``を取得して、新しい**from_position**変数の上の座標セットにドラッグします。**下の**座標を（**6**, 0, 0）に設定します。
+この``||variable:variable||``を``||player:チャットコマンド||``コマンドの最後にドラッグします。**PlayerPosition**の``||variable:variable||``を取得して、新しい**from_position**変数の上の座標セットにドラッグします。**下の**座標を（**6**, 0, 0）に設定します。
 
 ```blocks
 let PlayerPosition: Position = null 
@@ -39,7 +39,7 @@ player.onChat("position", function () {
 ## ステップ 4
 別の``|||variable: variable||``を作成し、**to_position**と名前をつけます。次に、``||positions:+ (add position)||``を変数の設定の"**0**"引数にドラッグします。
 
-この``||variable:variable||``を``||player:on chat||``コマンドの最後にドラッグします。**PlayerPosition**の``||variable:variable||``を取得して、新しい**to_position**変数の上の座標セットにドラッグします。**下の**座標を（**-6, 13, 0**）に設定します。
+この``||variable:variable||``を``||player:チャットコマンド||``コマンドの最後にドラッグします。**PlayerPosition**の``||variable:variable||``を取得して、新しい**to_position**変数の上の座標セットにドラッグします。**下の**座標を（**-6, 13, 0**）に設定します。
 
 ```blocks
 let from_position: Position = null 
@@ -58,7 +58,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 5
-別の``||player:on chat||``コマンドを取得し、**"wall"**と名前をつけます。
+別の``||player:チャットコマンド||``コマンドを取得し、**"wall"**と名前をつけます。
 
 ```blocks
 player.onChat("wall", function () { 

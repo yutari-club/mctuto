@@ -3,8 +3,13 @@
 # エージェントによる通路破壊: ブロック
 
 
+```template
+{}
+```
+
+
 ## ステップ 1
-``||player:on chat||`` コマンドの名前を **"destroy"** に変更します。
+``||player:チャットコマンド||``の名前を **"destroy"** に変更します。
 
 ```blocks
 player.onChat("destroy", function () {
@@ -12,7 +17,7 @@ player.onChat("destroy", function () {
 ```
 
 ## ステップ 2
-``||player:on chat||`` コマンドの内側に ``||loops:while||`` ループを追加します。``||agent:detect||`` ブロックを取得して、``||loops:while||`` ループの **true** の部分にドラッグします。``||agent:detect||`` ブロックを **block** と **forward** に設定します。
+``||player:チャットコマンド||``の内側に ``||loops:もし〇〇ならくりかえす||``を追加します。``||agent:〇〇がある[見つける]||`` ブロックを取得して、``||loops:もし〇〇ならくりかえす||``の **偽** の部分にドラッグします。``||agent:〇〇がある[見つける]||`` ブロックを **ブロック** と **前** に設定します。
 
 ```blocks
 player.onChat("destroy", function () {
@@ -23,7 +28,7 @@ player.onChat("destroy", function () {
 ```
 
 ## ステップ 3
-``||agent:destroy||`` ブロックを取得し、**forward** に設定して、``||loops:while||`` ループにドラッグします。
+``||agent:破壊させる||`` ブロックを取得し、**前** に設定して、``||loops:もし〇〇ならくりかえす||``にドラッグします。
 
 ```blocks
 player.onChat("destroy", function () {
@@ -35,7 +40,7 @@ player.onChat("destroy", function () {
 
 ## ステップ 4
 
-``||agent:move||`` ブロックを取得し、**forward** に **1** ブロック移動するように設定します。``||agent:move||`` ブロックを ``||agent:destroy||`` ブロックの後の ``||loops:while||`` ループにドラッグします。
+``||agent:移動させる||`` ブロックを取得し、**前(まえ)** に **1** ブロック移動するように設定します。``||agent:移動させる||`` ブロックを ``||agent:破壊させる||`` ブロックの後の ``||loops:もし〇〇ならくりかえす||``にドラッグします。
 
 ```blocks
 player.onChat("destroy", function () {
@@ -48,7 +53,7 @@ player.onChat("destroy", function () {
 
 ## ステップ 5
 
-``||agent:destroy||`` ブロックを取得し、**up** に設定します。``||agent:destroy||`` ブロックを ``||agent:move||`` の後の ``||loops:while||`` ループにドラッグします。
+``||agent:破壊させる||`` ブロックを取得し、**上(うえ)** に設定します。``||agent:破壊させる||`` ブロックを ``||agent:移動させる||`` の後の ``||loops:もし〇〇ならくりかえす||``にドラッグします。
 
 ```blocks
 player.onChat("destroy", function () {

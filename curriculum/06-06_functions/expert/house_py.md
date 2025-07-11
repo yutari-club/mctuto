@@ -39,7 +39,7 @@ def walls():
 ```
 
 ## ステップ 5
-3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:repeat||`` ループの中の ``||agent: agent turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:place||`` をコードし、**down** に設定します。エージェントの ``||agent:move||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:place||`` down の下にドラッグします。
+3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:repeat||`` ループの中の ``||agent: agent turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:place||`` をコードし、**down** に設定します。エージェントの ``||agent:移動させる||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:place||`` down の下にドラッグします。
 
 ```python
 def walls():
@@ -62,7 +62,7 @@ def roof():
 ```
 
 ## ステップ 7
-エージェントに ``||agent:set block or item||`` をコードし、**brick slab** に設定し、数を **64**、スロットを **1** に設定して、**roof** ``||functions:function||`` の中にドラッグします。また、エージェントに ``||agent:move||`` **up by 1** をコードします。
+エージェントに ``||agent:set block or item||`` をコードし、**brick slab** に設定し、数を **64**、スロットを **1** に設定して、**roof** ``||functions:function||`` の中にドラッグします。また、エージェントに ``||agent:移動させる||`` **up by 1** をコードします。
 
 ```python
 def roof():
@@ -71,7 +71,7 @@ def roof():
 ```
 
 ## ステップ 8
-**roof** ``||functions:function||`` の中で、``||loops:for||`` ループをコードし、**4** 回に設定します。ループの中で、エージェントに ``||agent:move||`` **back by 4** をコードし、次にエージェントに ``||agent:move||`` **right by 1** をコードします。
+**roof** ``||functions:function||`` の中で、``||loops:for||`` ループをコードし、**4** 回に設定します。ループの中で、エージェントに ``||agent:移動させる||`` **back by 4** をコードし、次にエージェントに ``||agent:移動させる||`` **right by 1** をコードします。
 
 ```python
 def roof():
@@ -98,7 +98,7 @@ def roof():
 ```
 
 ## ステップ 10
-``||player:on chat||`` コマンドをコードし、**house** と名前を付けて、**walls** と **roof** の ``||functions:functions||`` の両方を呼び出すようにします。
+``||player:チャットコマンド||``をコードし、**house** と名前を付けて、**walls** と **roof** の ``||functions:functions||`` の両方を呼び出すようにします。
 
 ```python
 def on_chat():

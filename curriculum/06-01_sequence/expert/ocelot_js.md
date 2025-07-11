@@ -1,7 +1,7 @@
 # オセロットの囲い: JavaScript
 
 ## ステップ 1
-``||player:on chat||`` コマンドをコーディングし、**fence** という名前を付けます。
+``||player:チャットコマンド||``をコーディングし、**fence** という名前を付けます。
 
 ```javascript
 player.onChat("fence", function () {

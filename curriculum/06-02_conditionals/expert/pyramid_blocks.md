@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**"pyramid"** という名前を付けます。**(+)** 記号をクリックして新しい **size** 変数を作成します。
+``||player:チャットコマンド||``を作成し、**"pyramid"** という名前を付けます。**(+)** 記号をクリックして新しい **size** 変数を作成します。
 
 ```blocks
 player.onChat("pyramid", function (size){ 
@@ -11,7 +11,7 @@ player.onChat("pyramid", function (size){
 ```
 
 ## ステップ 2
-``||logic:if-then||`` 文を取得し、**pyramid** ``||player:on chat||`` コマンドにドラッグします。``||logic: comparison||`` を ``||logic:if-then||`` 条件文の **true** 引数にドラッグし、**>**（より大きい）に設定します。次に、**size** 変数を最初の引数 **left** に挿入します。右の引数は空のままにします。
+``||logic:if-then||`` 文を取得し、**pyramid** ``||player:チャットコマンド||``にドラッグします。``||logic: comparison||`` を ``||logic:if-then||`` 条件文の **true** 引数にドラッグし、**>**（より大きい）に設定します。次に、**size** 変数を最初の引数 **left** に挿入します。右の引数は空のままにします。
 
 ```blocks
 player.onChat("pyramid", function (size)){ 

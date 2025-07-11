@@ -1,7 +1,7 @@
 # エージェント楽しい関数の改造: Python
 
 ## ステップ 1
-``||player:on chat||`` コマンド **carrot**、``||player:on chat||`` コマンド **chicken**、``||player:on chat||`` コマンド **snowball** が用意されています。ヒントを確認してください。
+``||player:チャットコマンド||`` **carrot**、``||player:チャットコマンド||`` **chicken**、``||player:チャットコマンド||`` **snowball** が用意されています。ヒントを確認してください。
 
 ```python
 def on_chat():
@@ -30,7 +30,7 @@ player.on_item_interacted(BLAZE_ROD, item_interacted_blaze_rod)
 ```
 
 ## ステップ 2
-用意されている **carrot** ``||player:on chat||`` コマンドの名前を **torches** に変更します。``||agent:set block or item||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
+用意されている **carrot** ``||player:チャットコマンド||``の名前を **torches** に変更します。``||agent:set block or item||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
 
 ```python
 def on_chat():
@@ -58,7 +58,7 @@ player.on_chat("torches", on_chat)
 ```
 
 ## ステップ 4
-blaze rod が ``||player:on item used||`` されたときのコードを変更して、3つの ``||player:on chat||`` コマンド **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにします。
+blaze rod が ``||player:on item used||`` されたときのコードを変更して、3つの ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにします。
 
 ```python
 def item_interacted_blaze_rod():
@@ -72,7 +72,7 @@ player.on_item_interacted(BLAZE_ROD, item_interacted_blaze_rod)
 **Play** ボタンを押して、Minecraftに戻り、チャットに **torches**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
 
 ## ステップ 6
-**Play** ボタンを押して、コーディングに戻り、用意されている他の ``||player:on chat||`` コマンド **chicken** と **snowball** を変更します。
+**Play** ボタンを押して、コーディングに戻り、用意されている他の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更します。
 
 ## ステップ 7
 **Play** ボタンを押して、Minecraftに戻り、チャットに **chicken** と **snowball** コマンドを入力して何が起こるか見てみましょう。

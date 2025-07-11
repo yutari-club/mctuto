@@ -34,7 +34,7 @@ blocks.test_for_block(BLOCK_NAME, pos(0, 0, 0))
 ```
 
 ### ~ tutorialhint
-A `||loops:while||` loop with the condition set to **True** will repeat continuously. Do **not** delete any pregiven code in the coding window.
+A `||loops:もし〇〇ならくりかえす||` loop with the condition set to **True** will repeat continuously. Do **not** delete any pregiven code in the coding window.
 
 ## ステップ 2
 **Activity 2 - Firing system -**

@@ -1,7 +1,7 @@
 # エージェントの移動: Python
 
 ## ステップ 1
-``||player:on chat||`` コマンドをコーディングし、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``をコーディングし、**"tp"** という名前を付けます。
 
 ```python
 def on_chat():
@@ -11,7 +11,7 @@ player.on_chat("tp", on_chat)
 
 ## ステップ 2
 
-**tp** ``||player:on chat||`` コマンドの内側で、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
+**tp** ``||player:チャットコマンド||``の内側で、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```python
 def on_chat():
@@ -21,7 +21,7 @@ player.on_chat("tp", on_chat)
 
 ## ステップ 3
 
-別の ``||player:on chat||`` コマンドをコーディングし、**"fd"** という名前を付けます。
+別の ``||player:チャットコマンド||``をコーディングし、**"fd"** という名前を付けます。
 
 ```python
 def on_chat2():
@@ -31,7 +31,7 @@ player.on_chat("fd", on_chat)
 
 ## ステップ 4
 
-``||player:on chat||`` **fd** コマンドの内側で、エージェントが ``||agent:move||`` するようにコーディングし、**forward by 5** に設定します。
+``||player:チャットコマンド||`` **fd** コマンドの内側で、エージェントが ``||agent:移動させる||`` するようにコーディングし、**forward by 5** に設定します。
 
 ```python
 def on_chat2():
@@ -41,7 +41,7 @@ player.on_chat("fd", on_chat2)
 
 ## ステップ 5
 
-別の ``||player:on chat||`` コマンドをコーディングし、**"lt"** という名前を付けます。
+別の ``||player:チャットコマンド||``をコーディングし、**"lt"** という名前を付けます。
 
 ```python
 def on_chat3():
@@ -51,7 +51,7 @@ player.on_chat("lt", on_chat3)
 
 ## ステップ 6
 
-``||player:on chat||`` **lt** コマンドの内側で、エージェントが ``||agent:turn||`` するようにコーディングし、**turn left** に設定します。
+``||player:チャットコマンド||`` **lt** コマンドの内側で、エージェントが ``||agent:turn||`` するようにコーディングし、**turn left** に設定します。
 
 ```python
 def on_chat3():
@@ -61,7 +61,7 @@ player.on_chat("lt", on_chat3)
 
 ## ステップ 7
 
-さらに別の ``||player:on chat||`` コマンドを作成し、**rt** という名前を付けます。
+さらに別の ``||player:チャットコマンド||``を作成し、**rt** という名前を付けます。
 
 ```python
 def on_chat4():

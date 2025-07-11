@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:on chat||`` コマンドを取得し、**"spiral"** という名前を付けます。
+``||player:チャットコマンド||``を取得し、**"spiral"** という名前を付けます。
 
 ```blocks
 player.onChat("spiral", function () {
@@ -11,7 +11,7 @@ player.onChat("spiral", function () {
 
 ## ステップ 2
 
-``||player:chat command||`` の内側に ``||loops:while||`` ループを配置します。``||logic:comparison||`` を取得し、**not equals** に設定して、``||loops:while||`` ループの **true** の場所にドラッグします。``||agent:agent inspect||`` ブロックを取得し、**block** と **forward** に設定して、比較の **left** パラメータにドラッグします。``||blocks:block||`` を取得し、**Gold** に設定して、比較の **right** パラメータにドラッグします。
+``||player:chat command||`` の内側に ``||loops:もし〇〇ならくりかえす||``を配置します。``||logic:comparison||`` を取得し、**not equals** に設定して、``||loops:もし〇〇ならくりかえす||``の **true** の場所にドラッグします。``||agent:agent inspect||`` ブロックを取得し、**block** と **forward** に設定して、比較の **left** パラメータにドラッグします。``||blocks:block||`` を取得し、**Gold** に設定して、比較の **right** パラメータにドラッグします。
 
 ```blocks
 player.onChat("spiral", function () {
@@ -23,7 +23,7 @@ player.onChat("spiral", function () {
 
 ## ステップ 3
 
-``||loops:while||`` ループの内側に ``||logic:if-else||`` 条件文を追加し、``||logic:if-else||`` 条件文の **true** 引数を ``||logic:not||`` ブロックに置き換えます。``||agent:agent detect||`` ブロックを **block** と **forward** に設定して ``||logic:not||`` ブロックに追加します。``||agent:agent move||`` **forward** by 1 を ``||logic:if||`` 条件文に追加します。
+``||loops:もし〇〇ならくりかえす||``の内側に ``||logic:if-else||`` 条件文を追加し、``||logic:if-else||`` 条件文の **true** 引数を ``||logic:not||`` ブロックに置き換えます。``||agent:agent detect||`` ブロックを **block** と **forward** に設定して ``||logic:not||`` ブロックに追加します。``||agent:agent move||`` **forward** by 1 を ``||logic:if||`` 条件文に追加します。
 
 ```blocks
 player.onChat("spiral", function () {

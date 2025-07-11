@@ -1,7 +1,7 @@
 # エージェント楽しい関数: ブロック
 
 ## ステップ 1
-``||player:on chat||`` コマンド **carrot**、``||player:on chat||`` コマンド **chicken**、``||player:on chat||`` コマンド **snowball** が用意されています。
+``||player:チャットコマンド||`` **carrot**、``||player:チャットコマンド||`` **chicken**、``||player:チャットコマンド||`` **snowball** が用意されています。
 
 ```template
 player.onChat("carrot", function () {

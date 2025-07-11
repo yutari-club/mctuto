@@ -1,7 +1,7 @@
 # メガジャンプ: Python
 
 ## ステップ 1
-**"jump"** という名前の ``||player:on chat||`` コマンドを追加します。
+**"jump"** という名前の ``||player:チャットコマンド||``を追加します。
 
 ```python
 def on_chat():

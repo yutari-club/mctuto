@@ -1,7 +1,7 @@
 # 文字表示: ブロック
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**mix** という名前を付けて、**starting_world_position** という ``||variables: new variable||`` を含めます。この ``||variable:variable||`` を ``||player:player world position||`` に設定します。
+``||player:チャットコマンド||``を作成し、**mix** という名前を付けて、**starting_world_position** という ``||variables: new variable||`` を含めます。この ``||variable:variable||`` を ``||player:player world position||`` に設定します。
 
 ```blocks
 player.onChat("mix", function () {
@@ -37,7 +37,7 @@ word1 = "rail"
 
 ## ステップ 4
 
-``||player:on chat||`` コマンドを作成し、**mix2** という名前を付けます。別の ``||variables: variable||`` を追加し、**starting_world_position** に設定してから、``||player:player world position||`` に設定します。その変数を ``||player:on chat||`` **mix2** コマンドにドラッグします。``||player:on chat||`` コマンド内で、``||blocks:print||`` ブロックを追加し、位置 **(0,0,0)** で **West** を向いて変数 **word1** を **smooth sandstone** で割り当てます。**word1** を **starting_world_position** 変数の直下にドラッグします。
+``||player:チャットコマンド||``を作成し、**mix2** という名前を付けます。別の ``||variables: variable||`` を追加し、**starting_world_position** に設定してから、``||player:player world position||`` に設定します。その変数を ``||player:チャットコマンド||`` **mix2** コマンドにドラッグします。``||player:チャットコマンド||``内で、``||blocks:print||`` ブロックを追加し、位置 **(0,0,0)** で **West** を向いて変数 **word1** を **smooth sandstone** で割り当てます。**word1** を **starting_world_position** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("mix2", function () {
@@ -87,7 +87,7 @@ word2 = "road"
 
 ## ステップ 7
 
-別の ``||blocks:print||`` コマンドを追加し、``||text:join||`` ブロックを挿入して **word1** と **word2** の両方を割り当てます。``||blocks:print||`` を位置 **(0,0,0)** で **West** を向いて **lapis lazuli** に設定します。完成した ``||blocks:print||`` を ``||player:on chat||`` **mix2** コマンドの **word2** 変数の直下にドラッグします。
+別の ``||blocks:print||`` コマンドを追加し、``||text:join||`` ブロックを挿入して **word1** と **word2** の両方を割り当てます。``||blocks:print||`` を位置 **(0,0,0)** で **West** を向いて **lapis lazuli** に設定します。完成した ``||blocks:print||`` を ``||player:チャットコマンド||`` **mix2** コマンドの **word2** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("mix2", function () {

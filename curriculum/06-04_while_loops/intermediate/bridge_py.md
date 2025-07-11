@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**"build"** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**"build"** という名前を付けます。
 
 ```python
 def on_chat():
@@ -11,7 +11,7 @@ player.on_chat("build", on_chat)
 ```
 
 ## ステップ 2
-``||player:on chat||`` コマンドの内側で、エージェントが **oak wood planks** の ``||agent:set a block||`` を数量 **64**、スロット **1** に設定するようにコーディングします。
+``||player:チャットコマンド||``の内側で、エージェントが **oak wood planks** の ``||agent:set a block||`` を数量 **64**、スロット **1** に設定するようにコーディングします。
 
 ```python
 def on_chat():
@@ -31,7 +31,7 @@ player.on_chat("build", on_chat)
 
 ## ステップ 4
 
-``||player:on chat||`` コマンドの内側で、エージェントが **down** で ``||agent:not detect a block||`` かどうかをチェックすることから始まる ``||loops:while||`` ループをコーディングします。
+``||player:チャットコマンド||``の内側で、エージェントが **down** で ``||agent:not detect a block||`` かどうかをチェックすることから始まる ``||loops:もし〇〇ならくりかえす||``をコーディングします。
 
 ```python
 def on_chat():
@@ -44,7 +44,7 @@ player.on_chat("build", on_chat)
 
 ## ステップ 5
 
-``||loops:while||`` ループの内側で、``||agent:agent to place||`` **down** するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の内側で、``||agent:agent to place||`` **down** するようにコーディングします。
 
 ```python
 def on_chat():
@@ -57,7 +57,7 @@ player.on_chat("build", on_chat)
 
 ## ステップ 6
 
-``||agent:place down||`` コマンドの後で、``||agent:agent to move||`` **forward by 1** するようにコーディングし、そして ``||loops:while||`` ループを終了します。
+``||agent:place down||`` コマンドの後で、``||agent:agent to move||`` **forward by 1** するようにコーディングし、そして ``||loops:もし〇〇ならくりかえす||``を終了します。
 
 ```python
 def on_chat():

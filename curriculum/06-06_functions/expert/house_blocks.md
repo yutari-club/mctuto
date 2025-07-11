@@ -97,7 +97,7 @@ function roof () {
 ```
 
 ## ステップ 9
-別の ``||loops:repeat||`` ループを取得し、**4** 回に設定します。``||agent:place down||`` ブロックを追加し、次に ``||agent:move||`` ブロックを追加して **forward by 1** に設定します。この ``||loops:repeat||`` ループを前の repeat loop の中、``||agent:agent move||`` ブロック **back by 4** の上にドラッグします。
+別の ``||loops:repeat||`` ループを取得し、**4** 回に設定します。``||agent:place down||`` ブロックを追加し、次に ``||agent:移動させる||`` ブロックを追加して **forward by 1** に設定します。この ``||loops:repeat||`` ループを前の repeat loop の中、``||agent:agent move||`` ブロック **back by 4** の上にドラッグします。
 
 ```blocks
 function roof () {
@@ -115,7 +115,7 @@ function roof () {
 ```
 
 ## ステップ 10
-``||player:on chat||`` コマンドをワークスペースにドラッグし、**house** と名前を付けます。``||functions:function||`` を追加し、**walls** と **roof** の ``||advanced:functions||`` の両方を呼び出します。
+``||player:チャットコマンド||``をワークスペースにドラッグし、**house** と名前を付けます。``||functions:function||`` を追加し、**walls** と **roof** の ``||advanced:functions||`` の両方を呼び出します。
 
 ## ステップ 11
 **Play** ボタンを押して、Minecraftに入り、**house** コマンドをテストしてみましょう。

@@ -19,7 +19,7 @@ agent.teleportToPlayer()
 ```
 
 ## ステップ 2
-``||agent:detect||`` コマンドを評価する ``||logic:if then||`` 条件文を取得し、**block** と **forward** に設定してから、``||logic: if then||`` 条件文の中に ``||agent:turn||`` **left** ブロックを追加します。
+``||agent:〇〇がある[見つける]||`` コマンドを評価する ``||logic:if then||`` 条件文を取得し、**block** と **forward** に設定してから、``||logic: if then||`` 条件文の中に ``||agent:turn||`` **left** ブロックを追加します。
 
 ```blocks
 if (agent.detect(AgentDetection.Block, FORWARD)) {

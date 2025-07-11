@@ -1,7 +1,7 @@
 # エージェントの移動: JavaScript
 
 ## ステップ 1
-``||player:on chat||`` コマンドをコーディングし、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``をコーディングし、**"tp"** という名前を付けます。
 
 ```javascript
 player.onChat("tp", function () {
@@ -10,7 +10,7 @@ player.onChat("tp", function () {
 
 ## ステップ 2
 
-**tp** ``||player:on chat||`` コマンドの内側で、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
+**tp** ``||player:チャットコマンド||``の内側で、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```javascript
 player.onChat("tp", function () {
@@ -20,7 +20,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:on chat||`` コマンドをコーディングし、**"fd"** という名前を付けます。
+別の ``||player:チャットコマンド||``をコーディングし、**"fd"** という名前を付けます。
 
 ```javascript
 player.onChat("fd", function () {
@@ -29,7 +29,7 @@ player.onChat("fd", function () {
 
 ## ステップ 4
 
-``||player:on chat||`` **fd** コマンドの内側で、エージェントが ``||agent:move||`` するようにコーディングし、**forward by 5** に設定します。
+``||player:チャットコマンド||`` **fd** コマンドの内側で、エージェントが ``||agent:移動させる||`` するようにコーディングし、**forward by 5** に設定します。
 
 ```javascript
 player.onChat("fd", function () {
@@ -39,7 +39,7 @@ player.onChat("fd", function () {
 
 ## ステップ 5
 
-別の ``||player:on chat||`` コマンドをコーディングし、**"lt"** という名前を付けます。
+別の ``||player:チャットコマンド||``をコーディングし、**"lt"** という名前を付けます。
 
 ```javascript
 player.onChat("lt", function () {
@@ -48,7 +48,7 @@ player.onChat("lt", function () {
 
 ## ステップ 6
 
-``||player:on chat||`` **lt** コマンドの内側で、エージェントが ``||agent:turn||`` するようにコーディングし、**turn left** に設定します。
+``||player:チャットコマンド||`` **lt** コマンドの内側で、エージェントが ``||agent:turn||`` するようにコーディングし、**turn left** に設定します。
 
 ```javascript
 player.onChat("lt", function () {
@@ -58,7 +58,7 @@ player.onChat("lt", function () {
 
 ## ステップ 7
 
-さらに別の ``||player:on chat||`` コマンドを作成し、**"rt"** という名前を付けます。
+さらに別の ``||player:チャットコマンド||``を作成し、**"rt"** という名前を付けます。
 
 ```javascript
 player.onChat("rt", function () {

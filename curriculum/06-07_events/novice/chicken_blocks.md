@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:on chat||``コマンドを取得して、**"chicken"**と名前をつけます。
+``||player:チャットコマンド||``コマンドを取得して、**"chicken"**と名前をつけます。
 
 ```blocks
 player.onChat("chicken", function (){ 
@@ -12,7 +12,7 @@ player.onChat("chicken", function (){
 
 ## ステップ 2
 
-``||mobs:spawn animal||``を取得して、``||player:on chat||``コマンドの中にドラッグします。``||mobs:spawn animal||``で**chicken**を選んで、座標は(0, 0, 0)のままにします。これは3D空間(x, y, z)でのプレイヤーの現在位置です。
+``||mobs:spawn animal||``を取得して、``||player:チャットコマンド||``コマンドの中にドラッグします。``||mobs:spawn animal||``で**chicken**を選んで、座標は(0, 0, 0)のままにします。これは3D空間(x, y, z)でのプレイヤーの現在位置です。
 
 ```blocks
 player.onChat("chicken", function () { 
@@ -38,7 +38,7 @@ Minecraftに行って、**t**を押してチャットを開き、「chicken」�
 
 ## ステップ 5
 
-にわとりが1匹だけだとさみしいです。``||loops:repeat||``ブロックを取得して、**100**回に設定します。``||mobs:spawn animal||``を``||loops:repeat||`` **100**の中にドラッグして、それから``||loops:repeat||`` 100を**chicken**の``||player:on chat||``コマンドの中にドラッグします。
+にわとりが1匹だけだとさみしいです。``||loops:repeat||``ブロックを取得して、**100**回に設定します。``||mobs:spawn animal||``を``||loops:repeat||`` **100**の中にドラッグして、それから``||loops:repeat||`` 100を**chicken**の``||player:チャットコマンド||``コマンドの中にドラッグします。
 
 Minecraftに行って、**t**を押してチャットを開き、「chicken」と入力します。上を見上げると、プレイヤーの10ブロック上から100匹のにわとりが空から落ちてくるのが見えます。
 

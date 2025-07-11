@@ -10,7 +10,7 @@
 ``||agent:agent set block||`` を**tripwire**に設定(せってい)し、カウントを**64**に設定(せってい)する。
 
 ## ステップ2
-``||loops:while||``ブロックを使(つか)い、``||loops:while||``ブロックの中(なか)に条件(じょうけん)を入(い)れる。 
+``||loops:もし〇〇ならくりかえす||``ブロックを使(つか)い、``||loops:もし〇〇ならくりかえす||``ブロックの中(なか)に条件(じょうけん)を入(い)れる。 
 
 #### ~ tutorialhint
 
@@ -25,7 +25,7 @@ player.onChat("hazing", function () {
 
 ``` 
 ## ステップ3
-``||loops:while||``ブロックの中(なか)に ``||agent: agent place||``ブロックと ``||agent: agent move||``ブロックを追加(ついか)する。
+``||loops:もし〇〇ならくりかえす||``ブロックの中(なか)に ``||agent: agent place||``ブロックと ``||agent: agent move||``ブロックを追加(ついか)する。
 
 ```blocks
 player.onChat("run", function () {

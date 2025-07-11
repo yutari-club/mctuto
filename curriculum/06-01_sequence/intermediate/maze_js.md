@@ -1,7 +1,7 @@
 # エージェントの迷路: JavaScript
 
 ## ステップ 1
-``||player:on chat||`` コマンドをコーディングし、**tp** という名前を付けて、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
+``||player:チャットコマンド||``をコーディングし、**tp** という名前を付けて、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```javascript
 player.onChat("tp", function () {
@@ -10,7 +10,7 @@ player.onChat("tp", function () {
 
 ## ステップ 2
 
-別の ``||player:on chat||`` コマンドをコーディングし、**side1** という名前を付けて、エージェントが ``||agent:place on move||`` するようにコーディングし、**true** に設定します。``||agent:agent set item||`` コマンドを追加し、カウントを **64** に設定します。
+別の ``||player:チャットコマンド||``をコーディングし、**side1** という名前を付けて、エージェントが ``||agent:place on move||`` するようにコーディングし、**true** に設定します。``||agent:agent set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```javascript
 player.onChat("side1", function () { 
@@ -65,7 +65,7 @@ player.onChat("side1", function () {
 
 ## ステップ 6
 
-エージェントが ``||agent:turn||`` **left**、``||agent:move||`` **forward by 2**、そして再び ``||agent:turn||`` **left** するようにコーディングします。
+エージェントが ``||agent:turn||`` **left**、``||agent:移動させる||`` **forward by 2**、そして再び ``||agent:turn||`` **left** するようにコーディングします。
 
 ```javascript
 player.onChat("side1", function () { 
@@ -84,7 +84,7 @@ player.onChat("side1", function () {
 
 ## ステップ 7
 
-新しい ``||player:on chat||`` コマンドをコーディングし、**side2** という名前を付けます。エージェントが ``||agent:place on move||`` を **true** にするようにコーディングします。``||agent:agent set item||`` コマンドを追加し、カウントを **64** に設定します。
+新しい ``||player:チャットコマンド||``をコーディングし、**side2** という名前を付けます。エージェントが ``||agent:place on move||`` を **true** にするようにコーディングします。``||agent:agent set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```javascript
 player.onChat("side2", function () { 
@@ -95,7 +95,7 @@ player.onChat("side2", function () {
 
 ## ステップ 8
 
-エージェントが ``||agent:move||`` **forward by 7** し、次に ``||agent:turn||`` **left** するようにコーディングします。
+エージェントが ``||agent:移動させる||`` **forward by 7** し、次に ``||agent:turn||`` **left** するようにコーディングします。
 
 ```javascript
 player.onChat("side2", function () { 
@@ -107,7 +107,7 @@ player.onChat("side2", function () {
 
 ## ステップ 9
 
-エージェントが ``||agent:move||`` **forward by 5** し、次に ``||agent:turn||`` **right** するようにコーディングします。
+エージェントが ``||agent:移動させる||`` **forward by 5** し、次に ``||agent:turn||`` **right** するようにコーディングします。
 
 ```javascript
 player.onChat("side2", function () { 
@@ -121,7 +121,7 @@ player.onChat("side2", function () {
 
 ## ステップ 10
 
-最後に、エージェントが ``||agent:move||`` **forward by 3** するようにコーディングします。
+最後に、エージェントが ``||agent:移動させる||`` **forward by 3** するようにコーディングします。
 
 ```javascript
 player.onChat("side2", function () { 

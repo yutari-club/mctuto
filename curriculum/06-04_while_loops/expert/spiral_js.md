@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**"spiral"** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**"spiral"** という名前を付けます。
 
 ```javascript
 player.onChat("spiral", function () {
@@ -11,7 +11,7 @@ player.onChat("spiral", function () {
 
 ## ステップ 2
 
-エージェントが ``||agent:agent inspects||`` ブロック **forward** が **gold** のブロックと等しくない間の ``||loops:while||`` ループをコーディングします。
+エージェントが ``||agent:agent inspects||`` ブロック **forward** が **gold** のブロックと等しくない間の ``||loops:もし〇〇ならくりかえす||``をコーディングします。
 
 ```javascript
 player.onChat("spiral", function () {
@@ -23,7 +23,7 @@ player.onChat("spiral", function () {
 
 ## ステップ 3
 
-``||loops:while||`` ループの内側に入る ``||logic:if-else||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
+``||loops:もし〇〇ならくりかえす||``の内側に入る ``||logic:if-else||`` 文をコーディングします。エージェントが **forward** でブロックを ``||agent:does NOT detect||`` する場合、**1** ブロック **forward** に ``||agent:moves||`` するという条件から始めます。
 
 ```javascript
 player.onChat("spiral", function () {

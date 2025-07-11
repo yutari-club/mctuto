@@ -1,7 +1,7 @@
 # エージェントの迷路: Python
 
 ## ステップ 1
-``||player:on chat||`` コマンドをコーディングし、**tp** という名前を付けて、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
+``||player:チャットコマンド||``をコーディングし、**tp** という名前を付けて、エージェントが ``||agent:teleport to player||`` するようにコーディングします。
 
 ```python
 def on_chat():
@@ -11,7 +11,7 @@ player.on_chat("fence", on_chat)
 
 ## ステップ 2
 
-別の ``||player:on chat||`` コマンドをコーディングし、**side1** という名前を付けて、エージェントが ``||agent:place on move||`` するようにコーディングし、**true** に設定します。``||agent:set item||`` コマンドを追加し、カウントを **64** に設定します。
+別の ``||player:チャットコマンド||``をコーディングし、**side1** という名前を付けて、エージェントが ``||agent:place on move||`` するようにコーディングし、**true** に設定します。``||agent:set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```python
 def on_chat():
@@ -34,7 +34,7 @@ player.on_chat("side1", on_chat2)
 
 ## ステップ 4
 
-エージェントが **5** で ``||agent:move forward||``、``||agent:turn||`` **right**、そして再び ``||agent:move||`` **forward by 5** するようにコーディングします。
+エージェントが **5** で ``||agent:move forward||``、``||agent:turn||`` **right**、そして再び ``||agent:移動させる||`` **forward by 5** するようにコーディングします。
 
 ```python
 def on_chat2(): 
@@ -65,7 +65,7 @@ def on_chat2():
 
 ## ステップ 6
 
-エージェントが ``||agent:turn||`` **left**、``||agent:move||`` **forward by 2**、そして再び ``||agent:turn||`` **left** するようにコーディングします。
+エージェントが ``||agent:turn||`` **left**、``||agent:移動させる||`` **forward by 2**、そして再び ``||agent:turn||`` **left** するようにコーディングします。
 
 ```python
 def on_chat2(): 
@@ -84,7 +84,7 @@ player.on_chat("side1", on_chat2)
 
 ## ステップ 7
 
-新しい ``||player:on chat||`` コマンドをコーディングし、**side2** という名前を付けます。エージェントが ``||agent:place on move||`` を **true** にするようにコーディングします。``||agent:set item||`` コマンドを追加し、カウントを **64** に設定します。
+新しい ``||player:チャットコマンド||``をコーディングし、**side2** という名前を付けます。エージェントが ``||agent:place on move||`` を **true** にするようにコーディングします。``||agent:set item||`` コマンドを追加し、カウントを **64** に設定します。
 
 ```python
 def on_chat3(): 
@@ -95,7 +95,7 @@ def on_chat3():
 
 ## ステップ 8
 
-エージェントが ``||agent:move||`` **forward by 7** し、次に ``||agent:turn||`` **left** するようにコーディングします。
+エージェントが ``||agent:移動させる||`` **forward by 7** し、次に ``||agent:turn||`` **left** するようにコーディングします。
 
 ```python
 def on_chat3(): 
@@ -107,7 +107,7 @@ player.on_chat("side2", on_chat3)
 
 ## ステップ 9
 
-エージェントが ``||agent:move||`` **forward by 5** し、次に ``||agent:turn||`` **right** するようにコーディングします。
+エージェントが ``||agent:移動させる||`` **forward by 5** し、次に ``||agent:turn||`` **right** するようにコーディングします。
 
 ```python
 def on_chat3(): 
@@ -121,7 +121,7 @@ player.on_chat("side2", on_chat3)
 
 ## ステップ 10
 
-最後に、エージェントが ``||agent:move||`` **forward by 3** するようにコーディングします。
+最後に、エージェントが ``||agent:移動させる||`` **forward by 3** するようにコーディングします。
 
 ```python
 def on_chat3(): 

@@ -1,7 +1,7 @@
 # エージェント楽しい関数の改造: ブロック
 
 ## ステップ 1
-次の ``||player:on chat||`` コマンド **carrot**、**chicken**、**snowball** が用意されています。
+次の ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** が用意されています。
 
 ```template
 player.onChat("carrot", function () {
@@ -29,7 +29,7 @@ player.onChat("snowball", function () {
 ```
 
 ## ステップ 2
-用意されている **carrot** ``||player:on chat||`` コマンドの名前を **torches** に変更します。``||agent:set block or item||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
+用意されている **carrot** ``||player:チャットコマンド||``の名前を **torches** に変更します。``||agent:set block or item||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
 
 ```blocks
 player.onChat("torches", function () {
@@ -71,7 +71,7 @@ player.onItemInteracted(BLAZE_ROD, function () {
 **Play** ボタンを押して、Minecraftに戻り、チャットに **torches**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
 
 ## ステップ 6
-用意されている他の ``||player:on chat||`` コマンド **chicken** と **snowball** を変更します。このコーディング体験では、異なる効果を選択できます。
+用意されている他の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更します。このコーディング体験では、異なる効果を選択できます。
 
 ## ステップ 7
 **Play** ボタンを押して、Minecraftに戻り、チャットに **chicken** と **snowball** コマンドを入力して何が起こるか見てみましょう。

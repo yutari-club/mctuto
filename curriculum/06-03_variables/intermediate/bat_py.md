@@ -1,7 +1,7 @@
 # コウモリの洞窟: Python
 
 ## ステップ 1
-``||player:on chat||`` コマンドを追加し、**cave** という名前を付けます。
+``||player:チャットコマンド||``を追加し、**cave** という名前を付けます。
 
 ```python
 def on_chat():
@@ -11,7 +11,7 @@ player.on_chat("cave", on_chat)
 
 ## ステップ 2
 
-プレイヤーが **"Dig a cave"** と入力して ``||player:say||`` するようにコーディングし、``||player:on chat||`` コマンドにドラッグします。
+プレイヤーが **"Dig a cave"** と入力して ``||player:say||`` するようにコーディングし、``||player:チャットコマンド||``にドラッグします。
 
 ```python
 def on_chat(): 

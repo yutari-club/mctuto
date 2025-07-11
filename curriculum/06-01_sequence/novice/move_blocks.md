@@ -1,7 +1,7 @@
 # エージェントの移動: ブロック
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**"tp"** という名前を付けます。
 
 ```blocks
 player.onChat("tp", function () {
@@ -10,7 +10,7 @@ player.onChat("tp", function () {
 
 ## ステップ 2
 
-``||agent:agent teleport to player||`` を取得し、**tp** ``||player:on chat||`` コマンドの内側にドラッグします。
+``||agent:agent teleport to player||`` を取得し、**tp** ``||player:チャットコマンド||``の内側にドラッグします。
 
 ```blocks
 player.onChat("tp", function () {
@@ -20,7 +20,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:on chat||`` コマンドを取得し、**"fd"** という名前を付けます。
+別の ``||player:チャットコマンド||``を取得し、**"fd"** という名前を付けます。
 
 ```blocks
 player.onChat("fd", function () {
@@ -39,7 +39,7 @@ player.onChat("fd", function () {
 
 ## ステップ 5
 
-別の ``||player:on chat||`` コマンドを取得し、**"lt"** という名前を付けます。
+別の ``||player:チャットコマンド||``を取得し、**"lt"** という名前を付けます。
 
 ```blocks
 player.onChat("lt", function () {
@@ -48,7 +48,7 @@ player.onChat("lt", function () {
 
 ## ステップ 6
 
-``||agent:agent turn||`` を取得し、**turn left** に設定します。それを ``||player:on chat||`` **lt** コマンドにドラッグします。
+``||agent:agent turn||`` を取得し、**turn left** に設定します。それを ``||player:チャットコマンド||`` **lt** コマンドにドラッグします。
 
 ```blocks
 player.onChat("lt", function () {
@@ -58,7 +58,7 @@ player.onChat("lt", function () {
 
 ## ステップ 7
 
-別の ``||player:on chat||`` コマンドを取得し、**"rt"** という名前を付けます。
+別の ``||player:チャットコマンド||``を取得し、**"rt"** という名前を付けます。
 
 ```blocks
 player.onChat("rt", function () {
@@ -68,7 +68,7 @@ player.onChat("rt", function () {
 
 ## ステップ 8
 
-別の ``||agent:agent turn||`` ブロックを取得し、**turn right** に設定してから、``||agent:agent||`` **turn right** を ``||player:on chat||`` **rt** コマンドにドラッグします。
+別の ``||agent:agent turn||`` ブロックを取得し、**turn right** に設定してから、``||agent:agent||`` **turn right** を ``||player:チャットコマンド||`` **rt** コマンドにドラッグします。
 
 ```blocks
 player.onChat("rt", function () {

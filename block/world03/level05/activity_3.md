@@ -69,7 +69,7 @@ function 種(たね)植(う)え () {
 
 もし``||agent:下(した)のブロック||``が ``||blocks:ラピスラズビ||``と**等(ひと)しい (=)**場合(ばあい)、``||agent:右折(うせつ)||``、``||agent:前(まえ)に移動(いどう)||``、 ``||agent:右折(うせつ)||``を行(おこな)う必要(ひつよう)があります。
 
-<!-- Add an ``||logic:if||`` statement to the ``||player:on chat||`` command. 
+<!-- Add an ``||logic:if||`` statement to the ``||player:チャットコマンド||`` command. 
 Within the **true** of the ``||logic:if||`` block add a ``||logic:" " = " "||`` block. 
 If when ``||agent:agent inspects block down||`` is **equal (=)** to ``||blocks:lapis lazuli||`` the agent needs to ``||agent: turn right||``, ``||agent:move forward||`` and ``||agent:turn right||``.  -->
 
@@ -180,7 +180,7 @@ function 種(たね)植(う)え () {
 ## Step 4
 最後(さいご)に ``||functions: 呼(よ)び出(だ)し 畝(うね)||`` を ``||player:チャットを入力(にゅうりょく)した時(とき)||`` コマンドの下(した)に ``||logic:もし||`` を追加(ついか)するよ。 
 
-<!-- Finally add another ``||functions: call plantSection||`` within the ``||player:on chat||`` command outside of the ``||logic:if||`` statement.   -->
+<!-- Finally add another ``||functions: call plantSection||`` within the ``||player:チャットコマンド||`` command outside of the ``||logic:if||`` statement.   -->
 
 #### ~ tutorialhint
 ``` blocks

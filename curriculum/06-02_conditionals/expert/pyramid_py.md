@@ -1,7 +1,7 @@
 # エージェントのピラミッド: Python
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
+``||player:チャットコマンド||``を作成し、**"pyramid"** という名前を付けて、2番目の引数を **function (size)** に設定します。
 
 ```python
 def on_chat(size):

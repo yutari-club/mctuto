@@ -1,7 +1,7 @@
 # コウモリの洞窟: ブロック
 
 ## ステップ 1
-既存の ``||player:on chat||`` コマンドの名前を **cave** に変更します。
+既存の ``||player:チャットコマンド||``の名前を **cave** に変更します。
 
 ```blocks
 player.onChat("cave", function () {
@@ -10,7 +10,7 @@ player.onChat("cave", function () {
 
 ## ステップ 2
 
-``||player:player say||`` コマンドを取得し、**"Dig a cave"** と入力して、``||player:on chat||`` コマンドにドラッグします。
+``||player:player say||`` コマンドを取得し、**"Dig a cave"** と入力して、``||player:チャットコマンド||``にドラッグします。
 
 ```blocks
 player.onChat("cave", function () {
@@ -20,7 +20,7 @@ player.onChat("cave", function () {
 
 ## ステップ 3
 
-``||gameplay:time set||`` ブロックを取得し、**day** に設定して、``||player:on chat||`` **cave** コマンドの ``||player:say||`` コマンドの下にドラッグします。
+``||gameplay:time set||`` ブロックを取得し、**day** に設定して、``||player:チャットコマンド||`` **cave** コマンドの ``||player:say||`` コマンドの下にドラッグします。
 
 ```blocks
 player.onChat("cave", function () {
@@ -48,7 +48,7 @@ player.onChat("cave", function () {
 
 ## ステップ 5
 
-``||loops:repeat||`` ループを取得し、**50** 回に設定します。``||blocks:fill with||`` **air** ブロックをループの中にドラッグし、次に ``||loops:repeat||`` ループ全体を ``||player:on chat||`` **cave** コマンドの ``||gameplay:time set||`` **day** コマンドの下にドラッグします。
+``||loops:repeat||`` ループを取得し、**50** 回に設定します。``||blocks:fill with||`` **air** ブロックをループの中にドラッグし、次に ``||loops:repeat||`` ループ全体を ``||player:チャットコマンド||`` **cave** コマンドの ``||gameplay:time set||`` **day** コマンドの下にドラッグします。
 
 ```blocks
 player.onChat("cave", function () {
@@ -68,7 +68,7 @@ player.onChat("cave", function () {
 ## ステップ 6
 
 ``||variables:set variable||`` を取得し、**bat_cave** という新しい変数を割り当てます。``||player:player world position||`` を取得して、**bat_cave** 変数にドラッグします。
-新しく完成した ``||variables:set variable||`` **bat_cave** を ``||player:on chat||`` コマンド **cave** の ``||loops:repeat||`` ループ **50** の下にドラッグします。
+新しく完成した ``||variables:set variable||`` **bat_cave** を ``||player:チャットコマンド||`` **cave** の ``||loops:repeat||`` ループ **50** の下にドラッグします。
 
 ```blocks
 let batcave: Position = null
@@ -89,7 +89,7 @@ player.onChat("cave", function () {
 
 ## ステップ 7
 
-``||player:say||`` ブロックを取得し、"You have 10 seconds to go out before the bats arrive." とコーディングします。``||player:on chat||`` **cave** コマンドの **bat_cave** 変数の下にドラッグします。
+``||player:say||`` ブロックを取得し、"You have 10 seconds to go out before the bats arrive." とコーディングします。``||player:チャットコマンド||`` **cave** コマンドの **bat_cave** 変数の下にドラッグします。
 
 ```blocks
 player.say("You have 10 seconds to get out before the bats arrive.")
@@ -97,7 +97,7 @@ player.say("You have 10 seconds to get out before the bats arrive.")
 
 ## ステップ 8
 
-``||loops: pause||`` ループを取得し、**10** 秒（10,000 ms）に設定します。このループを ``||player:on chat||`` コマンドの最後にドラッグします。
+``||loops: pause||`` ループを取得し、**10** 秒（10,000 ms）に設定します。このループを ``||player:チャットコマンド||``の最後にドラッグします。
 
 ```blocks
 player.say("You have 10 seconds to get out before the bats arrive.")
@@ -107,7 +107,7 @@ player.on_chat("cave", on_chat)
 
 ## ステップ 9
 
-別の ``||player:player say||`` コマンドを取得し、プレイヤーが "Watch out for bats!" と言うようにコーディングします。新しく完成した ``||player:player say||`` を ``||player:on chat||`` コマンドの最後にドラッグします。
+別の ``||player:player say||`` コマンドを取得し、プレイヤーが "Watch out for bats!" と言うようにコーディングします。新しく完成した ``||player:player say||`` を ``||player:チャットコマンド||``の最後にドラッグします。
 
 ```blocks
 loops.pause(10000)
@@ -117,7 +117,7 @@ player.on_chat("cave", on_chat)
 
 ## ステップ 10
 
-``||gameplay:time set||`` **day**（ステップ3から）を複製し、**dusk** に設定します。``||player:on chat||`` コマンドの最後にドラッグします。
+``||gameplay:time set||`` **day**（ステップ3から）を複製し、**dusk** に設定します。``||player:チャットコマンド||``の最後にドラッグします。
 
 ```blocks
 gameplay.timeSet(gameplay.time(DUSK))
@@ -133,7 +133,7 @@ mobs.spawn(BAT, batcave)
 
 ## ステップ 12
 
-次に、**bat** ``||mobs:spawn animal||`` ステップを繰り返します。``||loops:repeat||`` ループを取得し、**200** 回に設定します。**bat** をループの中にドラッグします。ループ全体を ``||player:on chat||`` **cave** コマンドの ``||gameplay:time set||`` **dusk** ブロックの下にドラッグします。
+次に、**bat** ``||mobs:spawn animal||`` ステップを繰り返します。``||loops:repeat||`` ループを取得し、**200** 回に設定します。**bat** をループの中にドラッグします。ループ全体を ``||player:チャットコマンド||`` **cave** コマンドの ``||gameplay:time set||`` **dusk** ブロックの下にドラッグします。
 
 ```blocks
 for (let index = 0; index < 200; index++) {

@@ -1,7 +1,7 @@
 # エージェント楽しい関数: JavaScript
 
 ## ステップ 1
-"carrots"、"chicken"、"snowball" の ``||player:on chat||`` コマンドのコードが用意されています。
+"carrots"、"chicken"、"snowball" の ``||player:チャットコマンド||``のコードが用意されています。
 
 ```template
 player.onChat("carrot", function () {
@@ -29,7 +29,7 @@ player.onChat("snowball", function () {
 ```
 
 ## ステップ 2
-**blaze rod** が ``||player: used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:on chat||`` コマンドが実行されるようにコードを書きます。
+**blaze rod** が ``||player: used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きます。
 
 ```javascript
 player.onItemInteracted(BLAZE_ROD, function () {

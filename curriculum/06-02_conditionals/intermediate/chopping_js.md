@@ -2,7 +2,7 @@
 
 ## ステップ 1
 
-``||player:on chat||`` コマンドを作成し、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**"tp"** という名前を付けます。
 
 ```javascript
 player.onChat("tp", function () {
@@ -11,7 +11,7 @@ player.onChat("tp", function () {
 
 ## ステップ 2
 
-``||player:on chat||`` コマンドの内側で、エージェントがプレイヤーに ``||agent:teleport||`` するようにコーディングします。
+``||player:チャットコマンド||``の内側で、エージェントがプレイヤーに ``||agent:teleport||`` するようにコーディングします。
 
 ```javascript
 player.onChat("tp", function () {
@@ -47,7 +47,7 @@ player.onChat("chop", function () {
 
 ## ステップ 5
 
-**chop** ``||player:on chat||`` コマンドの内側の **height** 変数の直下に、**while the agent detects a block forward** で始まる ``||loops:while||`` ループを作成します。
+**chop** ``||player:チャットコマンド||``の内側の **height** 変数の直下に、**while the agent detects a block forward** で始まる ``||loops:もし〇〇ならくりかえす||``を作成します。
 
 ```javascript
 player.onChat("chop", function () {
@@ -59,7 +59,7 @@ player.onChat("chop", function () {
 
 ## ステップ 6
 
-``||loops:while||`` ループに追加して、**height** ``||variable: variable||`` を **height plus 1** の値に変更します。
+``||loops:もし〇〇ならくりかえす||``に追加して、**height** ``||variable: variable||`` を **height plus 1** の値に変更します。
 
 ```javascript
     while (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -69,7 +69,7 @@ player.onChat("chop", function () {
 
 ## ステップ 7
 
-``||loops:while||`` ループの中で、変数 **height** の下に、エージェントが **destroy up** するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の中で、変数 **height** の下に、エージェントが **destroy up** するようにコーディングします。
 
 また、**agent move up by 1** の行を追加します。
 
@@ -82,7 +82,7 @@ player.onChat("chop", function () {
 
 ## ステップ 8
 
-``||loops:while||`` ループの後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:repeat||`` ループの **times** 引数に挿入します。
+``||loops:もし〇〇ならくりかえす||``の後に ``||loops:for||`` ループを追加します。**height** 変数を ``||loops:repeat||`` ループの **times** 引数に挿入します。
 
 ```javascript
 for (let index = 0; index < height; index++) {

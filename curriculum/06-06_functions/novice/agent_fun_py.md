@@ -1,7 +1,7 @@
 # エージェント楽しい関数: Python
 
 ## ステップ 1
-ヒントに "carrots"、"chicken"、"snowball" の ``||player:on chat||`` コマンドのコードが用意されています。
+ヒントに "carrots"、"chicken"、"snowball" の ``||player:チャットコマンド||``のコードが用意されています。
 
 ```python
 def on_chat():
@@ -25,7 +25,7 @@ player.on_chat("snowball", on_chat3)
 ```
 
 ## ステップ 2
-blaze rod が ``||player:on item used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:on chat||`` コマンドが実行されるようにコードを書きます。
+blaze rod が ``||player:on item used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きます。
 
 ```python
 def item_interacted_blaze_rod():

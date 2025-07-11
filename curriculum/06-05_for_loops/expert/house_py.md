@@ -1,7 +1,7 @@
 # 家のForループ: Python
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作って、``||agent:エージェントがプレイヤーにテレポート||`` するようにします。名前を **tp** にします。 
+``||player:チャットコマンド||``を作って、``||agent:エージェントがプレイヤーにテレポート||`` するようにします。名前を **tp** にします。 
 
 ```python
 def on_chat():
@@ -10,7 +10,7 @@ player.on_chat("tp", on_chat)
 ```
 
 ## ステップ 2
-別の ``||player:on chat||`` コマンドを作って、名前を **walls** にします。
+別の ``||player:チャットコマンド||``を作って、名前を **walls** にします。
 
 ```python
 def on_chat2():
@@ -29,7 +29,7 @@ player.on_chat("walls", on_chat2)
 ```
 
 ## ステップ 4
-**walls** の ``||player:on chat||`` コマンドの中で、``||agent:移動||`` **上に1歩** を **3回** 繰り返す ``||loops:for||`` ループを作ります。
+**walls** の ``||player:チャットコマンド||``の中で、``||agent:移動||`` **上に1歩** を **3回** 繰り返す ``||loops:for||`` ループを作ります。
 
 ```python
  def on_chat2():
@@ -69,7 +69,7 @@ player.on_chat("walls", on_chat2)
 ```
 
 ## ステップ 7
-新しい ``||player:on chat||`` コマンドを作って、名前を **roof** にします。   
+新しい ``||player:チャットコマンド||``を作って、名前を **roof** にします。   
 
 ```python
 def on_chat3():
@@ -88,7 +88,7 @@ player.on_chat("roof", on_chat3)
 ```
 
 ## ステップ 9
-**roof** の ``||player:on chat||`` コマンドの中で、``||agent:エージェント移動||`` **後ろに4歩** と ``||agent:移動||`` **右に1歩** を **4回** 繰り返す ``||loops:for||`` ループを作ります。  
+**roof** の ``||player:チャットコマンド||``の中で、``||agent:エージェント移動||`` **後ろに4歩** と ``||agent:移動||`` **右に1歩** を **4回** 繰り返す ``||loops:for||`` ループを作ります。  
 	
 ```python
 def on_chat3():

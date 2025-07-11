@@ -10,7 +10,7 @@ player.on_chat("tp", on_chat)
 ```
 
 ## ステップ 2
-``||player:on chat||`` コマンドを作って、名前を **farm** にします。
+``||player:チャットコマンド||``を作って、名前を **farm** にします。
 
 ```python
 def on_chat():

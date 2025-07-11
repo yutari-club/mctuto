@@ -1,7 +1,7 @@
 # オセロットの囲い: ブロック
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**fence** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**fence** という名前を付けます。
 
 ```blocks
 player.onChat("fence", function () {
@@ -10,7 +10,7 @@ player.onChat("fence", function () {
 
 ## ステップ 2
 
-ツールボックスの **advanced** セクションに移動し、``||builder: builder||`` を見つけます。``||builder:teleport||`` を取得し、``||player: on chat||`` **fence** コマンドにドラッグします。``||positions: world coordinates||`` を取得し、座標を **-695, 9, 880** に設定します。``||builder:face||`` コマンドを追加し、**West (negative X)** に設定してから、``||player:on chat||`` **fence** コマンドの ``||builder:teleport||`` ブロックの下にドラッグします。
+ツールボックスの **advanced** セクションに移動し、``||builder: builder||`` を見つけます。``||builder:teleport||`` を取得し、``||player: on chat||`` **fence** コマンドにドラッグします。``||positions: world coordinates||`` を取得し、座標を **-695, 9, 880** に設定します。``||builder:face||`` コマンドを追加し、**West (negative X)** に設定してから、``||player:チャットコマンド||`` **fence** コマンドの ``||builder:teleport||`` ブロックの下にドラッグします。
 
 ```blocks
 player.onChat("1", function () {
@@ -21,7 +21,7 @@ player.onChat("1", function () {
 
 ## ステップ 3
 
-``||builder:move||`` を取得し、**forward by 21** に設定します。``||player:on chat||`` **fence** コマンドの ``||builder:face||`` **West** の下にドラッグします。
+``||builder:move||`` を取得し、**forward by 21** に設定します。``||player:チャットコマンド||`` **fence** コマンドの ``||builder:face||`` **West** の下にドラッグします。
 
 ```blocks
     builder.face(WEST)
@@ -32,7 +32,7 @@ player.onChat("1", function () {
 
 ## ステップ 4
 
-``||builder:turn||`` を追加し、**turn right** に設定します。``||player:on chat||`` **fence** コマンドの ``||builder:move||`` forward の下にドラッグします。
+``||builder:turn||`` を追加し、**turn right** に設定します。``||player:チャットコマンド||`` **fence** コマンドの ``||builder:move||`` forward の下にドラッグします。
 
 ```blocks
     builder.move(FORWARD, 21)
@@ -43,9 +43,9 @@ player.onChat("1", function () {
 
 ## ステップ 5
 
-別の ``||builder:move||`` ブロックを取得し、**forward by 9** に設定します。``||player:on chat||`` **fence** の ``||builder:turn||`` **right** ブロックの下にドラッグします。別の ``||builder:turn||`` コマンドを追加し、**right** に設定します。
+別の ``||builder:move||`` ブロックを取得し、**forward by 9** に設定します。``||player:チャットコマンド||`` **fence** の ``||builder:turn||`` **right** ブロックの下にドラッグします。別の ``||builder:turn||`` コマンドを追加し、**right** に設定します。
 
-``||builder: turn||`` を ``||player:on chat||`` **fence** コマンドの ``||builder:move||`` **forward** コマンドの下にドラッグします。
+``||builder: turn||`` を ``||player:チャットコマンド||`` **fence** コマンドの ``||builder:move||`` **forward** コマンドの下にドラッグします。
 
 ```blocks
     builder.turn(RIGHT_TURN)
@@ -56,7 +56,7 @@ player.onChat("1", function () {
 
 ## ステップ 6
 
-別の ``||builder:builder move||`` コマンドを追加し、**forward by 21** に設定します。``||builder:builder turn||`` ブロックを追加し、**turn right** に設定します。別の ``||builder:builder move||`` ブロックを取得し、**forward by 9** に設定します。これらの両方を ``||player:on chat||`` **fence** コマンドの最後の ``||builder:builder turn||`` **right** の下にドラッグします。
+別の ``||builder:builder move||`` コマンドを追加し、**forward by 21** に設定します。``||builder:builder turn||`` ブロックを追加し、**turn right** に設定します。別の ``||builder:builder move||`` ブロックを取得し、**forward by 9** に設定します。これらの両方を ``||player:チャットコマンド||`` **fence** コマンドの最後の ``||builder:builder turn||`` **right** の下にドラッグします。
 
 ```blocks
     builder.turn(RIGHT_TURN)
@@ -68,7 +68,7 @@ player.onChat("1", function () {
 
 ## ステップ 7
 
-長方形の周囲にフェンスを配置するには、``||builder:builder trace path from mark with||`` ブロックを追加し、**Oak Fence** に設定します。``||player:on chat||`` **fence** コマンドの最後の ``||builder:move||`` **forward** の下にドラッグします。
+長方形の周囲にフェンスを配置するには、``||builder:builder trace path from mark with||`` ブロックを追加し、**Oak Fence** に設定します。``||player:チャットコマンド||`` **fence** コマンドの最後の ``||builder:move||`` **forward** の下にドラッグします。
 
 ```blocks
     builder.move(FORWARD, 9)
@@ -78,7 +78,7 @@ player.onChat("1", function () {
 
 ## ステップ 8
 
-フェンスを完成させた後、``||mobs:spawn animal||`` を取得し、**ocelot** を選択します。``||math:pick random position||`` を追加し、フェンス内のこれらの座標に設定します：**(-20, 4, -58)** から **(-37, 4, -50)** まで、次にそれを ``||mobs:spawn animal||`` **ocelot** の位置に挿入します。**ocelot** を ``||player:on chat||`` **fence** コマンドの ``||builder:builder trace path from mark||`` **Oak Fence** の下にドラッグします。
+フェンスを完成させた後、``||mobs:spawn animal||`` を取得し、**ocelot** を選択します。``||math:pick random position||`` を追加し、フェンス内のこれらの座標に設定します：**(-20, 4, -58)** から **(-37, 4, -50)** まで、次にそれを ``||mobs:spawn animal||`` **ocelot** の位置に挿入します。**ocelot** を ``||player:チャットコマンド||`` **fence** コマンドの ``||builder:builder trace path from mark||`` **Oak Fence** の下にドラッグします。
 
 ```blocks
     builder.tracePath(OAK_FENCE)
@@ -91,7 +91,7 @@ player.onChat("1", function () {
 
 ## ステップ 9
 
-フェンス内に2番目のオセロットを生成するには、``||mobs:spawn animal||`` **ocelot** 全体を複製します。``||player:on chat||`` **fence** コマンドの既存の **ocelot** の下にドラッグします。
+フェンス内に2番目のオセロットを生成するには、``||mobs:spawn animal||`` **ocelot** 全体を複製します。``||player:チャットコマンド||`` **fence** コマンドの既存の **ocelot** の下にドラッグします。
 
 ```blocks
     mobs.spawn(OCELOT, randpos(
@@ -107,7 +107,7 @@ player.onChat("1", function () {
 
 ## ステップ 10
 
-**ocelot** 全体を複製し、動物を **wolf** に変更します。**wolf** を複製して、さらに2匹のオオカミをフェンス内に生成します。両方のオオカミを ``||player:on chat||`` **fence** コマンドの最後の **ocelot** の下にドラッグします。
+**ocelot** 全体を複製し、動物を **wolf** に変更します。**wolf** を複製して、さらに2匹のオオカミをフェンス内に生成します。両方のオオカミを ``||player:チャットコマンド||`` **fence** コマンドの最後の **ocelot** の下にドラッグします。
 
 ```blocks
     mobs.spawn(OCELOT, randpos(

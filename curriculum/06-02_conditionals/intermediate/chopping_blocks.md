@@ -1,7 +1,7 @@
 # 木を切る: ブロック
 
 ## ステップ 1
-``||player:on chat||`` コマンドを取得し、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``を取得し、**"tp"** という名前を付けます。
 
 ```blocks
 player.onChat("tp", function () {
@@ -9,7 +9,7 @@ player.onChat("tp", function () {
 ```
 
 ## ステップ 2
-エージェントの ``||agent:teleport to player||`` を取得し、**tp** ``||player:on chat||`` コマンドの内側にドラッグします。
+エージェントの ``||agent:teleport to player||`` を取得し、**tp** ``||player:チャットコマンド||``の内側にドラッグします。
 
 ```blocks
 player.onChat("tp", function () {
@@ -19,7 +19,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:on chat||`` コマンドを作成し、**"chop"** という名前を付けます。
+別の ``||player:チャットコマンド||``を作成し、**"chop"** という名前を付けます。
 
 ```blocks
 player.onChat("chop", function () {
@@ -28,7 +28,7 @@ player.onChat("chop", function () {
 
 ## ステップ 4
 
-新しい ``||variable: variable||`` を作成し、**height** という名前を付けて、**0** に設定します。この新しい変数を **chop** ``||player:on chat||`` コマンドにドラッグします。
+新しい ``||variable: variable||`` を作成し、**height** という名前を付けて、**0** に設定します。この新しい変数を **chop** ``||player:チャットコマンド||``にドラッグします。
 
 ```blocks
 let height = 0
@@ -39,7 +39,7 @@ player.onChat("chop", function () {
 
 ## ステップ 5
 
-``||loops: while||`` ループを取得し、ワークスペースにドラッグします。``||agent:agent detect||`` ブロックを取得し、**block** と **forward** に設定します。``||agent:detect||`` ブロックを ``||loops:while||`` ループの内側にドラッグし、次にwhileループを **chop** ``||player:on chat||`` コマンドの **height** 変数の直下にドラッグします。
+``||loops: while||`` ループを取得し、ワークスペースにドラッグします。``||agent:agent detect||`` ブロックを取得し、**block** と **forward** に設定します。``||agent:〇〇がある[見つける]||`` ブロックを ``||loops:もし〇〇ならくりかえす||``の内側にドラッグし、次にwhileループを **chop** ``||player:チャットコマンド||``の **height** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("chop", function () {
@@ -97,7 +97,7 @@ player.onChat("chop", function () {
 
 ## ステップ 9
 
-``||agent:move||`` ブロック（上記から）を複製し、**down** に変更します。``||agent:agent move down||`` を ``||loops:repeat||`` ループにドラッグします。``||agent: agent destroy||``（上記から）を複製し、**destroy forward** に変更します。``||agent:agent destroy forward||`` を ``||loops:repeat||`` ループにドラッグします。``||agent:move||`` の直下に配置します。
+``||agent:移動させる||`` ブロック（上記から）を複製し、**down** に変更します。``||agent:agent move down||`` を ``||loops:repeat||`` ループにドラッグします。``||agent: agent destroy||``（上記から）を複製し、**destroy forward** に変更します。``||agent:agent destroy forward||`` を ``||loops:repeat||`` ループにドラッグします。``||agent:移動させる||`` の直下に配置します。
 
 ```blocks
 let height = 0

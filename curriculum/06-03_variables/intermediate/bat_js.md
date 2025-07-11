@@ -1,7 +1,7 @@
 # コウモリの洞窟: JavaScript
 
 ## ステップ 1
-``||player:on chat||`` コマンドを追加し、**cave** という名前を付けます。
+``||player:チャットコマンド||``を追加し、**cave** という名前を付けます。
 
 ```javascript
 player.onChat("cave", function () {
@@ -10,7 +10,7 @@ player.onChat("cave", function () {
 
 ## ステップ 2
 
-プレイヤーが **"Dig a cave"** と入力して ``||player:say||`` するようにコーディングし、``||player:on chat||`` コマンドにドラッグします。
+プレイヤーが **"Dig a cave"** と入力して ``||player:say||`` するようにコーディングし、``||player:チャットコマンド||``にドラッグします。
 
 ```javascript
 player.onChat("cave", function () {

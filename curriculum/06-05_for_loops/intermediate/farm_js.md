@@ -10,7 +10,7 @@ player.onChat("tp", function () {
 ```
 
 ## ステップ 2
-``||player:on chat||`` コマンドを作って、名前を **farm** にします。
+``||player:チャットコマンド||``を作って、名前を **farm** にします。
 
 ```javascript
 player.onChat("farm", function () { 

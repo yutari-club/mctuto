@@ -2,7 +2,7 @@
 
 
 ## ステップ 1
-``||player:on chat||`` コマンドを作成し、**"destroy"** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**"destroy"** という名前を付けます。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -10,7 +10,7 @@ player.onChat("destroy", function () {
 ```
 
 ## ステップ 2
-``||player:on chat||`` コマンドの内側に ``||loops:while||`` ループを追加し、エージェントが前方で ``||agent:detects||`` ブロックを検出している間、ループが続くようにします。
+``||player:チャットコマンド||``の内側に ``||loops:もし〇〇ならくりかえす||``を追加し、エージェントが前方で ``||agent:detects||`` ブロックを検出している間、ループが続くようにします。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -20,7 +20,7 @@ player.onChat("destroy", function () {
 ```
 
 ## ステップ 3
-``||loops:while||`` ループの内側で、エージェントが **forward** を ``||agent:destroy||`` するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の内側で、エージェントが **forward** を ``||agent:破壊させる||`` するようにコーディングします。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -32,7 +32,7 @@ player.onChat("destroy", function () {
 
 ## ステップ 4
 
-``||loops:while||`` ループの内側の ``||agent:destroy forward||`` コードの後で、エージェントが **1** ブロック ``||agent:move forward||`` するようにコーディングします。
+``||loops:もし〇〇ならくりかえす||``の内側の ``||agent:destroy forward||`` コードの後で、エージェントが **1** ブロック ``||agent:move forward||`` するようにコーディングします。
 
 ```javascript
 player.onChat("destroy", function () {
@@ -45,7 +45,7 @@ player.onChat("destroy", function () {
 
 ## ステップ 5
 
-エージェントが ``||agent:moves forward||`` した後で **up** を ``||agent:destroy||`` するようにコーディングし、そして ``||loops:while||`` ループを **終了** します。
+エージェントが ``||agent:moves forward||`` した後で **up** を ``||agent:破壊させる||`` するようにコーディングし、そして ``||loops:もし〇〇ならくりかえす||``を **終了** します。
 
 ```javascript
 player.onChat("destroy", function () {
