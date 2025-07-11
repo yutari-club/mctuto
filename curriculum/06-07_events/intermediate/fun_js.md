@@ -41,7 +41,7 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 ```
 
 ## ステップ 5
-**golden apple**が``||player: on item used||``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントをコードします。
+**golden apple**が``||player:||○○が使われた時``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントをコードします。
 
 ```javascript
 player.onItemInteracted(GOLDEN_APPLE, function () {

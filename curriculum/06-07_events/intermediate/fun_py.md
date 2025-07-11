@@ -39,7 +39,7 @@ blocks.on_block_broken(PLANKS_OAK, block_broken_planks_oak)
 ```
 
 ## ステップ 5
-**golden apple**が``||player: on item used||``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントをコードします。
+**golden apple**が``||player:||○○が使われた時``されたときに、**すべてのにわとり**に**levitation**を``||mobs:apply||``し、持続時間を**10**、高さを**5**ブロックに設定するイベントをコードします。
 
 ```python
 def item_interacted_golden_apple():

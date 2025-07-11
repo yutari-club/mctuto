@@ -29,7 +29,7 @@ player.onChat("snowball", function () {
 ```
 
 ## ステップ 2
-用意されている **carrot** ``||player:チャットコマンド||``の名前を **torches** に変更します。``||agent:set block or item||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
+用意されている **carrot** ``||player:チャットコマンド||``の名前を **torches** に変更します。``||agent:スロットに設定させる||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
 
 ```blocks
 player.onChat("torches", function () {
@@ -57,7 +57,7 @@ player.onChat("torches", function () {
 ```
 
 ## ステップ 4
-新しい ``||player:on item used||`` コマンドを取得して **trident** を選択します。**torches** という名前の ``||player:run chat||`` コマンドを追加します。もう一つの ``||player:run chat||`` コマンドを追加して **chicken** と名前を付けます。もう一つの ``||player:run chat||`` コマンドを追加して **snowball** と名前を付けます。
+新しい ``||player:○○が使われた時||`` コマンドを取得して **trident** を選択します。**torches** という名前の ``||player:run chat||`` コマンドを追加します。もう一つの ``||player:run chat||`` コマンドを追加して **chicken** と名前を付けます。もう一つの ``||player:run chat||`` コマンドを追加して **snowball** と名前を付けます。
 
 ```blocks
 player.onItemInteracted(BLAZE_ROD, function () { 

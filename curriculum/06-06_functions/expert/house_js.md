@@ -9,7 +9,7 @@ function walls () {
 ```
 
 ## ステップ 2
-**walls** 関数の中で、エージェントに ``||agent:set block or item||`` をコードし、**Acacia Wood Planks** を **64** 個、スロット **1** に設定します。
+**walls** 関数の中で、エージェントに ``||agent:スロットに設定させる||`` をコードし、**Acacia Wood Planks** を **64** 個、スロット **1** に設定します。
 
 ```javascript
 function walls () {
@@ -45,7 +45,7 @@ function walls () {
 ```
 
 ## ステップ 5
-3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:for||`` ループの中の ``||agent: turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:place||`` をコードし、**down** に設定します。エージェントの ``||agent:移動させる||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:place||`` down の下にドラッグします。
+3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:for||`` ループの中の ``||agent: turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:置かせる||`` をコードし、**down** に設定します。エージェントの ``||agent:移動させる||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:置かせる||`` down の下にドラッグします。
 
 ```javascript
 function walls () {
@@ -73,7 +73,7 @@ function roof () {
 ```
 
 ## ステップ 7
-エージェントに ``||agent:set block or item||`` をコードし、**brick slab** に設定し、数を **64**、スロットを **1** に設定して、**roof** ``||functions:function||`` の中にドラッグします。また、エージェントに ``||agent:移動させる||`` **up by 1** をコードします。
+エージェントに ``||agent:スロットに設定させる||`` をコードし、**brick slab** に設定し、数を **64**、スロットを **1** に設定して、**roof** ``||functions:function||`` の中にドラッグします。また、エージェントに ``||agent:移動させる||`` **up by 1** をコードします。
 
 ```javascript
 function roof () {

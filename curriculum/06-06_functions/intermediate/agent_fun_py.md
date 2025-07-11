@@ -30,7 +30,7 @@ player.on_item_interacted(BLAZE_ROD, item_interacted_blaze_rod)
 ```
 
 ## ステップ 2
-用意されている **carrot** ``||player:チャットコマンド||``の名前を **torches** に変更します。``||agent:set block or item||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
+用意されている **carrot** ``||player:チャットコマンド||``の名前を **torches** に変更します。``||agent:スロットに設定させる||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
 
 ```python
 def on_chat():
@@ -58,7 +58,7 @@ player.on_chat("torches", on_chat)
 ```
 
 ## ステップ 4
-blaze rod が ``||player:on item used||`` されたときのコードを変更して、3つの ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにします。
+blaze rod が ``||player:○○が使われた時||`` されたときのコードを変更して、3つの ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにします。
 
 ```python
 def item_interacted_blaze_rod():

@@ -1,7 +1,7 @@
 # ループ: Javascript
 
 ## ステップ 1
-``||player:on item used||`` イベントをコードして、**Bone**に設定してください。
+``||player:○○が使われた時||`` イベントをコードして、**Bone**に設定してください。
 
 ```javascript
 player.onItemInteracted(BONE, function () { 
@@ -10,7 +10,7 @@ player.onItemInteracted(BONE, function () {
 ```
 
 ## ステップ 2
-``||player:on item used||`` イベントの中に、**6** 回繰り返す ``||loops:for||`` ループをコードしてください。
+``||player:○○が使われた時||`` イベントの中に、**6** 回繰り返す ``||loops:for||`` ループをコードしてください。
 
 ```javascript
 player.onItemInteracted(BONE, function () { 
@@ -32,7 +32,7 @@ player.onItemInteracted(BONE, function () {
 ```
 
 ## ステップ 4
-**Bone** ``||player:on item used||`` の中に、**4** 回繰り返す別の ``||loops:for||`` ループをコードしてください。
+**Bone** ``||player:○○が使われた時||`` の中に、**4** 回繰り返す別の ``||loops:for||`` ループをコードしてください。
 
 ```javascript
 player.onItemInteracted(BONE, function () { 

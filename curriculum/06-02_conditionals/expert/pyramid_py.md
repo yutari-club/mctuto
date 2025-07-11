@@ -22,7 +22,7 @@ player.on_chat("pyramid", on_chat)
 
 ## ステップ 3
 
-``||logic:もし||`` 文の内側で、エージェントが **sandstone** の ``||agent:set block or item||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
+``||logic:もし||`` 文の内側で、エージェントが **sandstone** の ``||agent:スロットに設定させる||`` を **size** 変数に **size** を掛けた値にするようにコーディングします—スロット1に。
 
 ```python
 if size > 0:

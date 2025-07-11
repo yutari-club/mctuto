@@ -23,7 +23,7 @@ player.onChat("pyramid", function (size)){
 
 ## ステップ 3
 
-``||agent:set block or item||`` を ``||logic:if-then||`` 条件文に追加し、**Sandstone** を選択します。``||math: return product||`` を **count** フィールドにドラッグし、**multiply** に設定して、**size** 変数を積（乗算テンプレート）の両方の引数にドラッグし、**in slot** 引数を **1** に設定します。
+``||agent:スロットに設定させる||`` を ``||logic:if-then||`` 条件文に追加し、**Sandstone** を選択します。``||math: return product||`` を **count** フィールドにドラッグし、**multiply** に設定して、**size** 変数を積（乗算テンプレート）の両方の引数にドラッグし、**in slot** 引数を **1** に設定します。
 
 ```blocks
 player.onChat("pyramid", function (size){ 

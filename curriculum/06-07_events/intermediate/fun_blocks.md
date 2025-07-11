@@ -53,7 +53,7 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 
 ## ステップ 7
 
-``||player:on item used||``を取得してワークスペースにドラッグし、**Golden Apple**に設定します。
+``||player:○○が使われた時||``を取得してワークスペースにドラッグし、**Golden Apple**に設定します。
 
 ## ステップ 8
 
@@ -61,7 +61,7 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 
 ## ステップ 9
 
-``||mobs:all animal||``ブロックを取得し、**chicken**に設定して``||mobs: apply to||``の**to**引数にドラッグし、完成した``||mobs:apply to||``ブロックを``||player: on item used||``にドラッグします。
+``||mobs:all animal||``ブロックを取得し、**chicken**に設定して``||mobs: apply to||``の**to**引数にドラッグし、完成した``||mobs:apply to||``ブロックを``||player:||○○が使われた時``にドラッグします。
 
 ```blocks
 player.onItemInteracted(GOLDEN_APPLE, function () { 

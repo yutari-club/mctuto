@@ -1,7 +1,10 @@
 # ループ: ブロック
 
 ## ステップ 1
-``||player:on item used||`` コマンドを取得して、**Bone**を選択してください。
+``||player:○○が使われた時||`` コマンドを取得して、**骨**を選択してください。
+```template
+{}
+```
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -10,7 +13,7 @@ player.onItemInteracted(BONE, function () {
 ```
 
 ## ステップ 2
-``||loops:くりかえし○○回||`` ループを取得して、**Bone** ``||player:on item used||`` の中にドラッグします。そして **6** 回繰り返すように設定してください。
+``||loops:くりかえし○○回||`` ループを取得して、``||player:骨が使われた時||`` の中にドラッグします。そして **6** 回繰り返すように設定してください。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -21,7 +24,7 @@ player.onItemInteracted(BONE, function () {
 ```
 
 ## ステップ 3
-``||mobs:spawn animal at||`` ブロックを取得して、``||loops:くりかえし○○回||`` ループの中にドラッグします。**Zombie Horse**を選択して、位置を(0,0,0)に設定してください。
+``||mobs:スポーンさせる||`` ブロックを取得して、``||loops:くりかえし○○回||`` ループの中にドラッグします。**ゾンビ ウマ**を選択して、位置を(0,0,0)に設定してください。
 
 **注意:** これはループの中で6回繰り返されます。
 
@@ -34,7 +37,7 @@ player.onItemInteracted(BONE, function () {
 ```
 
 ## ステップ 4
-別の ``||loops:くりかえし○○回||`` ループを取得して、**Bone** ``||player: on item used||`` の中にドラッグします。そして **4** 回繰り返すように設定してください。
+別の ``||loops:くりかえし○○回||`` ループを取得して、``||player:||骨が使われた時`` の中にドラッグします。そして **4** 回繰り返すように設定してください。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
@@ -48,7 +51,7 @@ player.onItemInteracted(BONE, function () {
 ```
 
 ## ステップ 5
-別の ``||mobs:spawn animal at||`` ブロックを取得して、新しい ``||loops:くりかえし○○回||`` ループの中にドラッグします。**Skeleton Horse**を選択して、位置を(0,0,0)に設定してください。
+別の ``||mobs:スポーンさせる||`` ブロックを取得して、新しい ``||loops:くりかえし○○回||`` ループの中にドラッグします。**スケルトン ウマ**を選択して、位置を(0,0,0)に設定してください。
 
 **注意:** これはループの中で **4** 回繰り返されます。
 
