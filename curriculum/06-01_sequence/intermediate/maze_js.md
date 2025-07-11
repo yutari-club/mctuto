@@ -34,7 +34,7 @@ player.onChat("side1", function () {
 
 ## ステップ 4
 
-エージェントが **5** で ``||agent:move forward||``、``||agent:agent turn||`` **right**、そして再び ``||agent:agent move||`` **forward by 5** するようにコーディングします。
+エージェントが **5** で ``||agent:move forward||``、``||agent:agent turn||`` **right**、そして再び ``||agent:移動させる||`` **forward by 5** するようにコーディングします。
 
 ```javascript
 player.onChat("side1", function () { 

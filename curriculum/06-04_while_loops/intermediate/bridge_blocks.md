@@ -1,8 +1,11 @@
 # 橋を建設: ブロック
 
-
 ## ステップ 1
 ``||player:チャットコマンド||``を取得し、**"build"** という名前を付けます。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("build", function () {
@@ -10,7 +13,11 @@ player.onChat("build", function () {
 ```
 
 ## ステップ 2
-``||agent:set block||`` を取得し、**oak wood planks**、数量 **64**、スロット **1** に設定します。新しく完成した ``||agent:set block||`` を ``||player:チャットコマンド||``の内側にドラッグします。
+``||agent:スロットに設定させる||`` を取得し、**オークの板材**、数量 **64**、スロット **1** に設定します。新しく完成した ``||agent:スロットに設定させる||`` を ``||player:チャットコマンド||``の内側にドラッグします。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("build", function () {
@@ -19,7 +26,11 @@ player.onChat("build", function () {
 ```
 
 ## ステップ 3
-``||agent:agent move||`` ブロックを取得し、**forward** に **1** ブロック移動するように設定し、``||agent:set||`` ブロックの後の ``||player:チャットコマンド||``にドラッグします。
+``||agent:移動させる||`` ブロックを取得し、**前** に **1** ブロック移動するように設定し、``||agent:スロットに設定させる||`` ブロックの後の ``||player:チャットコマンド||``にドラッグします。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("build", function () {
@@ -30,7 +41,11 @@ player.onChat("build", function () {
 
 ## ステップ 4
 
-``||loops:もし〇〇ならくりかえす||``を取得し、``||agent:agent move||`` **forward** ブロックの後の ``||player:チャットコマンド||``にドラッグします。``||logic:not||`` ブロックを取得し、``||loops:もし〇〇ならくりかえす||``の **true** の部分にドラッグします。``||agent:agent detect||`` ブロックを取得し、**block** と **down** に設定します。完成した ``||agent:agent detect||`` ブロックを **not** の括弧内にドラッグします。
+``||loops:もし〇〇ならくりかえす||``を取得し、``||agent:移動させる||``ブロックの後の ``||player:チャットコマンド||``内にドラッグします。``||logic:ではない||`` ブロックを取得し、``||loops:もし〇〇ならくりかえす||``の **偽** の部分にドラッグします。``||agent:〇〇がある[見つける]||`` ブロックを取得し、**ブロック** と **下** に設定します。完成した ``||agent:〇〇がある[見つける]||`` ブロックを **ではない** の括弧内にドラッグします。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("build", function () {
@@ -44,7 +59,11 @@ player.onChat("build", function () {
 
 ## ステップ 5
 
-``||agent:agent place||`` ブロックを取得し、**down** に設定して ``||loops:もし〇〇ならくりかえす||``の内側にドラッグします。
+``||agent:置かせる||`` ブロックを取得し、**下** に設定して ``||loops:もし〇〇ならくりかえす||``の内側にドラッグします。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("build", function () {
@@ -58,7 +77,11 @@ player.onChat("build", function () {
 
 ## ステップ 6
 
-既存の ``||agent:移動させる||`` **forward by 1** を右クリックして複製します。新しい ``||agent:移動させる||`` **forward by 1** を ``||agent:agent place||`` down ブロックの下の ``||loops:もし〇〇ならくりかえす||``にドラッグします。
+既存の ``||agent:前に1ブロック移動させる||``を右クリックして複製します。新しい ``||agent:前に1ブロック移動させる||``を ``||agent:下へ置かせる||``ブロックの下の ``||loops:もし〇〇ならくりかえす||``内にドラッグします。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("build", function () {
@@ -73,6 +96,10 @@ player.onChat("build", function () {
 
 ## ステップ 7
 **実行** ボタンを押して、Minecraftに入り、**t** を入力して **build** を試してみましょう。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("build", function () { 

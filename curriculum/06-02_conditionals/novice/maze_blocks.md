@@ -29,7 +29,7 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
 
 ## ステップ 3
 
-**(+)** 記号をクリックして ``||logic:if then||`` 条件文に ``||logic: else||`` を追加し、``||agent:agent move||`` **forward by 1** ブロックを入れます。
+**(+)** 記号をクリックして ``||logic:if then||`` 条件文に ``||logic: else||`` を追加し、``||agent:移動させる||`` **forward by 1** ブロックを入れます。
 
 **NOTE:** 完全な文は **if-else文** になります。
 

@@ -39,7 +39,7 @@ player.onChat("chop", function () {
 
 ## ステップ 5
 
-``||loops: while||`` ループを取得し、ワークスペースにドラッグします。``||agent:agent detect||`` ブロックを取得し、**block** と **forward** に設定します。``||agent:〇〇がある[見つける]||`` ブロックを ``||loops:もし〇〇ならくりかえす||``の内側にドラッグし、次にwhileループを **chop** ``||player:チャットコマンド||``の **height** 変数の直下にドラッグします。
+``||loops: while||`` ループを取得し、ワークスペースにドラッグします。``||agent:〇〇がある[見つける]||`` ブロックを取得し、**block** と **forward** に設定します。``||agent:〇〇がある[見つける]||`` ブロックを ``||loops:もし〇〇ならくりかえす||``の内側にドラッグし、次にwhileループを **chop** ``||player:チャットコマンド||``の **height** 変数の直下にドラッグします。
 
 ```blocks
 player.onChat("chop", function () {
@@ -61,7 +61,7 @@ player.onChat("chop", function () {
 
 ## ステップ 7
 
-``||agent:agent destroy||`` を取得し、**up** に設定します。``||loops: while||`` ループの変数 **height** の下にドラッグします。``||agent:agent move||`` を取得し、**up by 1** に設定します。``||agent:agent destroy||`` の直下の ``||loops: while||`` ループにドラッグします。
+``||agent:agent destroy||`` を取得し、**up** に設定します。``||loops: while||`` ループの変数 **height** の下にドラッグします。``||agent:移動させる||`` を取得し、**up by 1** に設定します。``||agent:agent destroy||`` の直下の ``||loops: while||`` ループにドラッグします。
 
 ```blocks
    let height = 0

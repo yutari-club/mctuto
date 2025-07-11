@@ -17,7 +17,7 @@ def walls():
 ```
 
 ## ステップ 3
-**walls** 関数の中で、``||agent:agent move||`` **up by 1** を **3** 回繰り返す ``||loops:for||`` ループをコードします。
+**walls** 関数の中で、``||agent:移動させる||`` **up by 1** を **3** 回繰り返す ``||loops:for||`` ループをコードします。
 
 ```python
 def walls():
@@ -27,7 +27,7 @@ def walls():
 ```
 
 ## ステップ 4
-**4** 回繰り返す別の ``||loops:for||`` ループをコードし、最初の ``||loops:for||`` ループの中、最初の ``||agent:agent move||`` の下にドラッグします。2番目のループで、``||agent:agent turn right||`` をコードします。
+**4** 回繰り返す別の ``||loops:for||`` ループをコードし、最初の ``||loops:for||`` ループの中、最初の ``||agent:移動させる||`` の下にドラッグします。2番目のループで、``||agent:agent turn right||`` をコードします。
 
 ```python
 def walls():
@@ -83,7 +83,7 @@ def roof():
 ```
 
 ## ステップ 9
-別の ``||loops:for||`` ループをコードし、**4** 回に設定します。このループの中で、``||agent:place down||`` を追加し、次に ``||agent:agent move||`` **forward by 1** を追加します。この ``||loops:for||`` ループを前のループの中、``||agent:agent move||`` **back by 4** の上に配置します。
+別の ``||loops:for||`` ループをコードし、**4** 回に設定します。このループの中で、``||agent:place down||`` を追加し、次に ``||agent:移動させる||`` **forward by 1** を追加します。この ``||loops:for||`` ループを前のループの中、``||agent:移動させる||`` **back by 4** の上に配置します。
 
 ```python
 def roof():

@@ -92,7 +92,7 @@ player.onChat("side1", function () {
 
 ## ステップ 9
 
-既存の ``||agent:agent move||`` **forward by 5** コマンドを右クリックし、**duplicate** を選択します。複製したエージェントを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
+既存の ``||agent:移動させる||`` **forward by 5** コマンドを右クリックし、**duplicate** を選択します。複製したエージェントを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
 
 **NOTE:** 複製機能は、ブロックでコーディングする際に時間を節約できます。
 
@@ -129,7 +129,7 @@ player.onChat("side1", function () {
 
 ## ステップ 12
 
-既存の ``||agent:agent move||`` **forward** コマンドを複製し、複製したものを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
+既存の ``||agent:移動させる||`` **forward** コマンドを複製し、複製したものを ``||player:チャットコマンド||`` **side1** コマンドの前のエージェントコマンドの下にドラッグします。
 
 ## ステップ 13
 
@@ -170,7 +170,7 @@ player.onChat("side2", function () {
 
 ## ステップ 17
 
-最初の ``||agent:agent move||`` ブロックを **forward by 7** に、最後の ``||agent:agent move||`` を **forward by 3** に設定します。
+最初の ``||agent:移動させる||`` ブロックを **forward by 7** に、最後の ``||agent:移動させる||`` を **forward by 3** に設定します。
 
 ## ステップ 18
 

@@ -2,14 +2,12 @@
 
 # エージェントによる通路破壊: ブロック
 
+## ステップ 1
+``||player:チャットコマンド||``の名前を **"destroy"** に変更します。
 
 ```template
 {}
 ```
-
-
-## ステップ 1
-``||player:チャットコマンド||``の名前を **"destroy"** に変更します。
 
 ```blocks
 player.onChat("destroy", function () {
@@ -18,6 +16,10 @@ player.onChat("destroy", function () {
 
 ## ステップ 2
 ``||player:チャットコマンド||``の内側に ``||loops:もし〇〇ならくりかえす||``を追加します。``||agent:〇〇がある[見つける]||`` ブロックを取得して、``||loops:もし〇〇ならくりかえす||``の **偽** の部分にドラッグします。``||agent:〇〇がある[見つける]||`` ブロックを **ブロック** と **前** に設定します。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("destroy", function () {
@@ -30,6 +32,10 @@ player.onChat("destroy", function () {
 ## ステップ 3
 ``||agent:破壊させる||`` ブロックを取得し、**前** に設定して、``||loops:もし〇〇ならくりかえす||``にドラッグします。
 
+```template
+{}
+```
+
 ```blocks
 player.onChat("destroy", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -41,6 +47,10 @@ player.onChat("destroy", function () {
 ## ステップ 4
 
 ``||agent:移動させる||`` ブロックを取得し、**前(まえ)** に **1** ブロック移動するように設定します。``||agent:移動させる||`` ブロックを ``||agent:破壊させる||`` ブロックの後の ``||loops:もし〇〇ならくりかえす||``にドラッグします。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("destroy", function () {
@@ -55,6 +65,10 @@ player.onChat("destroy", function () {
 
 ``||agent:破壊させる||`` ブロックを取得し、**上(うえ)** に設定します。``||agent:破壊させる||`` ブロックを ``||agent:移動させる||`` の後の ``||loops:もし〇〇ならくりかえす||``にドラッグします。
 
+```template
+{}
+```
+
 ```blocks
 player.onChat("destroy", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -68,6 +82,10 @@ player.onChat("destroy", function () {
 ## ステップ 6
 
 **実行** ボタンを押して、Minecraftに入り、**t** を入力して **destroy** を試してみましょう。
+
+```template
+{}
+```
 
 ```blocks
 player.onChat("destroy", function () { 

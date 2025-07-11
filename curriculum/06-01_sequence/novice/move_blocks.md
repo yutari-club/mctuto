@@ -29,7 +29,7 @@ player.onChat("fd", function () {
 
 ## ステップ 4
 
-``||agent:agent move||`` を取得し、**forward by 5** に設定します。
+``||agent:移動させる||`` を取得し、**forward by 5** に設定します。
 
 ```blocks
 player.onChat("fd", function () {

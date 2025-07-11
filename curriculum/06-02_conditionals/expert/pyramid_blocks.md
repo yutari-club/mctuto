@@ -70,7 +70,7 @@ player.onChat("pyramid", function (size){
 
 ## ステップ 7
 
-``||agent:agent move||`` ブロックを ``||loops:for||`` ループに追加し、最初の引数を **forward** に設定し、2番目の引数を **size** に設定します。
+``||agent:移動させる||`` ブロックを ``||loops:for||`` ループに追加し、最初の引数を **forward** に設定し、2番目の引数を **size** に設定します。
 
 ```blocks
         for (let i = 0; i <= 0 - 0; i++) { 
@@ -91,7 +91,7 @@ for (let i = 0; i <= 0 - 0; i++) {
 
 ## ステップ 9
 
-forループの外で、別の ``||agent:agent move||`` ブロックを追加し、**up by 1** に設定してから、``||logic:if-then||`` 条件文の最後にドラッグします。
+forループの外で、別の ``||agent:移動させる||`` ブロックを追加し、**up by 1** に設定してから、``||logic:if-then||`` 条件文の最後にドラッグします。
 
 ```blocks
    } 
@@ -102,7 +102,7 @@ forループの外で、別の ``||agent:agent move||`` ブロックを追加し
 
 ## ステップ 10
 
-``||agent:agent place on move||`` ブロックを追加し、**false** に設定して、``||logic:if-then||`` 条件文の最後にドラッグします。別の ``||agent:agent move||`` ブロックを追加し、**forward by 1** に設定して、``||logic:if-then||`` 条件文の最後にドラッグします。
+``||agent:agent place on move||`` ブロックを追加し、**false** に設定して、``||logic:if-then||`` 条件文の最後にドラッグします。別の ``||agent:移動させる||`` ブロックを追加し、**forward by 1** に設定して、``||logic:if-then||`` 条件文の最後にドラッグします。
 
 ```blocks
   agent.move(UP, 1) 

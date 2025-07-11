@@ -29,7 +29,7 @@
 
 ## Step 3
 エージェントは``||loops: もし〇〇ならくりかえし||``で**前(まえ)にブロックがない**[``||logic:ではなく||``+``||agent:前(まえ)にブロックがある||``]の間(あいだ)は配置(はいち)するよ。
-<!-- The Agent needs to place blocks in a row ``||loops: while||`` it does ``||logic:not||`` ``|| detect||`` a block **forward**.  -->
+<!-- The Agent needs to place blocks in a row ``||loops: while||`` it does ``||logic:ではない||`` ``|| detect||`` a block **forward**.  -->
 
 ## Step 4
 エージェントが完成(かんせい)させる浴槽(よくそう)には**4**つ辺(へん)があります。<br>

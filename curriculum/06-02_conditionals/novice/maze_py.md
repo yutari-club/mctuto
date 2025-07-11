@@ -12,7 +12,7 @@ if agent.detect(AgentDetection.BLOCK, FORWARD):
 
 ## ステップ 2
 
-``||logic: if||`` 文に ``||logic: else||`` を追加し、``||agent:agent move||`` **forward by 1** コマンドの指示を含めます。
+``||logic: if||`` 文に ``||logic: else||`` を追加し、``||agent:移動させる||`` **forward by 1** コマンドの指示を含めます。
 
 **NOTE:** 完全な文は ``||logic: if-else||`` 文になります。
 

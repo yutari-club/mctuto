@@ -14,8 +14,8 @@ if True:
 
 ## ステップ 1
 Write some code to make the Agent detect and avoid randomly placed blocks, as it moves through the course. To do this use an 
-`||logic:if else||` conditional with an **elif** conditional in between. For the **if** condition use two `||agent:agent detect||` commands 
-with an **and not** operator in between them. For the **elif** condition use two `||agent:agent detect||` commands 
+`||logic:if else||` conditional with an **elif** conditional in between. For the **if** condition use two `||agent:〇〇がある[見つける]||` commands 
+with an **and not** operator in between them. For the **elif** condition use two `||agent:〇〇がある[見つける]||` commands 
 with an **and** operator in between them. An example of two conditions with an **and not** operator:
 ```python
 agent.detect(AgentDetection.BLOCK, DIRECTION) and not agent.detect(AgentDetection.BLOCK, DIRECTION)

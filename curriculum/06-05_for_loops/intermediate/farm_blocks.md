@@ -41,7 +41,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 6
-``||agent:agent move||`` ブロックを取得して、**back by 7** に設定し、``||loops:repeat||`` ループの中にドラッグしてください。
+``||agent:移動させる||`` ブロックを取得して、**back by 7** に設定し、``||loops:repeat||`` ループの中にドラッグしてください。
 
 ```blocks
 player.onChat("farm", function () { 
@@ -53,7 +53,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 7
-別の ``||agent:agent move||`` を取得して、**right by 4** に設定し、``||loops:repeat||`` ループの中にドラッグしてループの一番下に配置してください。
+別の ``||agent:移動させる||`` を取得して、**right by 4** に設定し、``||loops:repeat||`` ループの中にドラッグしてループの一番下に配置してください。
 
 ```blocks
 player.onChat("farm", function () { 
