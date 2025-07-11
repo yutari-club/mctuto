@@ -1,4 +1,4 @@
-### @hideIteration true 
+### @hideIteration false
 
 # エージェントによる通路破壊: ブロック
 
