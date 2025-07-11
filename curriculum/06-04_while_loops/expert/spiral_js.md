@@ -2,10 +2,10 @@
 
 
 ## ステップ 1
-``||player:チャットコマンド||``を作って、**"spiral"** という名前を付けます。
+``||player:チャットコマンド||``を作って、**"3"** という名前を付けます。
 
 ```javascript
-player.onChat("spiral", function () {
+player.onChat("3", function () {
 })
 ```
 
@@ -14,7 +14,7 @@ player.onChat("spiral", function () {
 エージェントが前にあるブロックを調べて、**金** のブロックではない間続く ``||loops:もし〇〇ならくりかえす||``をコードで書きます。
 
 ```javascript
-player.onChat("spiral", function () {
+player.onChat("3", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
     	
     }
@@ -26,7 +26,7 @@ player.onChat("spiral", function () {
 ``||loops:もし〇〇ならくりかえす||``の中に ``||logic:もし-でなければ||`` 文をコードで書きます。エージェントが **前** にブロックを見つけない場合、**1** ブロック **前** に移動するという条件から始めます。
 
 ```javascript
-player.onChat("spiral", function () {
+player.onChat("3", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
         if (!(agent.detect(AgentDetection.Block, FORWARD))) {
             agent.move(FORWARD, 1)
@@ -42,7 +42,7 @@ player.onChat("spiral", function () {
 ``||logic:if-else statement||`` の ``||logic:でなければ||`` 句で、``||agent:turns||`` **left** するように記述します。
 
 ```javascript
-player.onChat("spiral", function () {
+player.onChat("3", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
         if (!(agent.detect(AgentDetection.Block, FORWARD))) {
             agent.move(FORWARD, 1)
@@ -57,7 +57,7 @@ player.onChat("spiral", function () {
 **実行** ボタンを押して、Minecraftに入り、**t** を入力して **spiral** を試してみましょう。
 
 ```javascript
-player.onChat("spiral", function () { 
+player.onChat("3", function () { 
     for (let index = 0; index < 2; index++) { 
         while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) { 
             if (!(agent.detect(AgentDetection.Block, FORWARD))) { 

@@ -1,12 +1,12 @@
 # 螺旋アクティビティ: Python
 
 ## ステップ 1
-``||player:チャットコマンド||``を作って、**"spiral"** という名前を付けます。
+``||player:チャットコマンド||``を作って、**"3"** という名前を付けます。
 
 ```python
 def on_chat():
     pass
-player.on_chat("spiral", on_chat)
+player.on_chat("3", on_chat)
 ```
 
 ## ステップ 2
@@ -17,7 +17,7 @@ player.on_chat("spiral", on_chat)
 def on_chat():
     while agent.inspect(AgentInspection.BLOCK, FORWARD) != GOLD_BLOCK:
         pass
-player.on_chat("spiral", on_chat)
+player.on_chat("3", on_chat)
 ```
 
 ## ステップ 3
@@ -31,7 +31,7 @@ def on_chat():
             agent.move(FORWARD, 1)
         else:
             pass
-player.on_chat("spiral", on_chat)
+player.on_chat("3", on_chat)
 ```
 
 ## ステップ 4
@@ -45,7 +45,7 @@ def on_chat():
             agent.move(FORWARD, 1)
         else:
             agent.turn(LEFT_TURN)
-player.on_chat("spiral", on_chat)
+player.on_chat("3", on_chat)
 ```
 
 ## ステップ 5
@@ -60,7 +60,7 @@ def on_chat():
             else: 
                 agent.turn(LEFT_TURN) 
         agent.move(UP, 3) 
-player.on_chat("spiral", on_chat) 
+player.on_chat("3", on_chat) 
 ```
 ```ghost
 agent.teleportToPlayer()

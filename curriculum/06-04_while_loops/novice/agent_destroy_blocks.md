@@ -3,14 +3,14 @@
 # エージェントによる通路破壊: ブロック
 
 ## ステップ 1
-``||player:チャットコマンド||``の名前を **"destroy"** に変更します。
+``||player:チャットコマンド||``の名前を **"1"** に変更します。
 
 ```template
 {}
 ```
 
 ```blocks
-player.onChat("destroy", function () {
+player.onChat("1", function () {
 })
 ```
 
@@ -22,7 +22,7 @@ player.onChat("destroy", function () {
 ```
 
 ```blocks
-player.onChat("destroy", function () {
+player.onChat("1", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
     	
     }
@@ -37,7 +37,7 @@ player.onChat("destroy", function () {
 ```
 
 ```blocks
-player.onChat("destroy", function () {
+player.onChat("1", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
         agent.destroy(FORWARD)
     }
@@ -53,7 +53,7 @@ player.onChat("destroy", function () {
 ```
 
 ```blocks
-player.onChat("destroy", function () {
+player.onChat("1", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
@@ -70,7 +70,7 @@ player.onChat("destroy", function () {
 ```
 
 ```blocks
-player.onChat("destroy", function () {
+player.onChat("1", function () {
     while (agent.detect(AgentDetection.Block, FORWARD)) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
@@ -88,7 +88,7 @@ player.onChat("destroy", function () {
 ```
 
 ```blocks
-player.onChat("destroy", function () { 
+player.onChat("1", function () { 
     while (agent.detect(AgentDetection.Block, FORWARD)) { 
         agent.destroy(FORWARD) 
         agent.move(FORWARD, 1) 

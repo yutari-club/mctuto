@@ -2,12 +2,12 @@
 
 
 ## ステップ 1
-``||player:チャットコマンド||``を作って、**"build"** という名前を付けます。
+``||player:チャットコマンド||``を作って、**"2"** という名前を付けます。
 
 ```python
 def on_chat():
     pass
-player.on_chat("build", on_chat)
+player.on_chat("2", on_chat)
 ```
 
 ## ステップ 2
@@ -16,7 +16,7 @@ player.on_chat("build", on_chat)
 ```python
 def on_chat():
     agent.set_item(PLANKS_OAK, 64, 1)
-player.on_chat("build", on_chat)
+player.on_chat("2", on_chat)
 ```
 
 ## ステップ 3
@@ -26,7 +26,7 @@ player.on_chat("build", on_chat)
 def on_chat():
     agent.set_item(PLANKS_OAK, 64, 1)
     agent.move(FORWARD, 1)
-player.on_chat("build", on_chat)
+player.on_chat("2", on_chat)
 ```
 
 ## ステップ 4
@@ -39,7 +39,7 @@ def on_chat():
     agent.move(FORWARD, 1)
     while not (agent.detect(AgentDetection.BLOCK, DOWN)):
         pass
-player.on_chat("build", on_chat)
+player.on_chat("2", on_chat)
 ```
 
 ## ステップ 5
@@ -52,7 +52,7 @@ def on_chat():
     agent.move(FORWARD, 1)
     while not (agent.detect(AgentDetection.BLOCK, DOWN)):
         agent.place(DOWN)
-player.on_chat("build", on_chat)
+player.on_chat("2", on_chat)
 ```
 
 ## ステップ 6
@@ -66,7 +66,7 @@ def on_chat():
     while not (agent.detect(AgentDetection.BLOCK, DOWN)):
         agent.place(DOWN)
         agent.move(FORWARD, 1)
-player.on_chat("build", on_chat)
+player.on_chat("2", on_chat)
 ```
 ## ステップ 7
 
@@ -79,7 +79,7 @@ def on_chat():
     while not (agent.detect(AgentDetection.BLOCK, DOWN)): 
         agent.place(DOWN) 
         agent.move(FORWARD, 1) 
-player.on_chat("build", on_chat) 
+player.on_chat("2", on_chat) 
 ```
 
 ```ghost

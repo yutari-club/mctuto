@@ -2,12 +2,12 @@
 
 
 ## ステップ 1
-``||player:チャットコマンド||``を作成し、**"destroy"** という名前を付けます。
+``||player:チャットコマンド||``を作成し、**"1"** という名前を付けます。
 
 ```python
 def on_chat():
     pass
-player.on_chat("destroy", on_chat)
+player.on_chat("1", on_chat)
 ```
 
 ## ステップ 2
@@ -17,7 +17,7 @@ player.on_chat("destroy", on_chat)
 def on_chat():
     while agent.detect(AgentDetection.BLOCK, FORWARD):
         pass
-player.on_chat("destroy", on_chat)
+player.on_chat("1", on_chat)
 ```
 
 ## ステップ 3
@@ -27,7 +27,7 @@ player.on_chat("destroy", on_chat)
 def on_chat():
     while agent.detect(AgentDetection.BLOCK, FORWARD):
         agent.destroy(FORWARD)
-player.on_chat("destroy", on_chat)
+player.on_chat("1", on_chat)
 ```
 
 ## ステップ 4
@@ -39,7 +39,7 @@ def on_chat():
     while agent.detect(AgentDetection.BLOCK, FORWARD):
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
-player.on_chat("destroy", on_chat)
+player.on_chat("1", on_chat)
 ```
 
 ## ステップ 5
@@ -52,7 +52,7 @@ def on_chat():
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
         agent.destroy(UP)
-player.on_chat("destroy", on_chat)
+player.on_chat("1", on_chat)
 ```
 ## ステップ 6
 
@@ -64,7 +64,7 @@ def on_chat():
         agent.destroy(FORWARD) 
         agent.move(FORWARD, 1) 
         agent.destroy(UP) 
-player.on_chat("destroy", on_chat) 
+player.on_chat("1", on_chat) 
 ```
 
 ```ghost

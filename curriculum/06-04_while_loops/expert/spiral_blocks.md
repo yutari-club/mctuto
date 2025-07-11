@@ -1,14 +1,14 @@
 # 螺旋アクティビティ: ブロック
 
 ## ステップ 1
-``||player:チャットコマンド||``を取って、**"spiral"** という名前を付けます。
+``||player:チャットコマンド||``を取って、**"3"** という名前を付けます。
 
 ```template
 {}
 ```
 
 ```blocks
-player.onChat("spiral", function () {
+player.onChat("3", function () {
 })
 ```
 
@@ -21,7 +21,7 @@ player.onChat("spiral", function () {
 ```
 
 ```blocks
-player.onChat("spiral", function () {
+player.onChat("3", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
     	
     }
@@ -37,7 +37,7 @@ player.onChat("spiral", function () {
 ```
 
 ```blocks
-player.onChat("spiral", function () {
+player.onChat("3", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
         if (!(agent.detect(AgentDetection.Block, FORWARD))) {
             agent.move(FORWARD, 1)
@@ -57,7 +57,7 @@ player.onChat("spiral", function () {
 ```
 
 ```blocks
-player.onChat("spiral", function () {
+player.onChat("3", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
         if (!(agent.detect(AgentDetection.Block, FORWARD))) {
             agent.move(FORWARD, 1)
@@ -76,7 +76,7 @@ player.onChat("spiral", function () {
 ```
 
 ```blocks
-player.onChat("spiral", function () { 
+player.onChat("3", function () { 
     for (let index = 0; index < 2; index++) { 
         while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) { 
             if (!(agent.detect(AgentDetection.Block, FORWARD))) { 

@@ -1,14 +1,14 @@
 # 橋を建設: ブロック
 
 ## ステップ 1
-``||player:チャットコマンド||``を取って、**"build"** という名前を付けます。
+``||player:チャットコマンド||``を取って、**"2"** という名前を付けます。
 
 ```template
 {}
 ```
 
 ```blocks
-player.onChat("build", function () {
+player.onChat("2", function () {
 })
 ```
 
@@ -20,7 +20,7 @@ player.onChat("build", function () {
 ```
 
 ```blocks
-player.onChat("build", function () {
+player.onChat("2", function () {
     agent.setItem(PLANKS_OAK, 64, 1)
 })
 ```
@@ -33,7 +33,7 @@ player.onChat("build", function () {
 ```
 
 ```blocks
-player.onChat("build", function () {
+player.onChat("2", function () {
     agent.setItem(PLANKS_OAK, 64, 1)
     agent.move(FORWARD, 1)
 })
@@ -48,7 +48,7 @@ player.onChat("build", function () {
 ```
 
 ```blocks
-player.onChat("build", function () {
+player.onChat("2", function () {
     agent.setItem(PLANKS_OAK, 64, 1)
     agent.move(FORWARD, 1)
     while (!(agent.detect(AgentDetection.Block, DOWN))) {
@@ -66,7 +66,7 @@ player.onChat("build", function () {
 ```
 
 ```blocks
-player.onChat("build", function () {
+player.onChat("2", function () {
     agent.setItem(PLANKS_OAK, 64, 1)
     agent.move(FORWARD, 1)
     while (!(agent.detect(AgentDetection.Block, DOWN))) {
@@ -84,7 +84,7 @@ player.onChat("build", function () {
 ```
 
 ```blocks
-player.onChat("build", function () {
+player.onChat("2", function () {
     agent.setItem(PLANKS_OAK, 64, 1)
     agent.move(FORWARD, 1)
     while (!(agent.detect(AgentDetection.Block, DOWN))) {
@@ -102,7 +102,7 @@ player.onChat("build", function () {
 ```
 
 ```blocks
-player.onChat("build", function () { 
+player.onChat("2", function () { 
     agent.setItem(PLANKS_OAK, 64, 1) 
     agent.move(FORWARD, 1) 
     while (!(agent.detect(AgentDetection.Block, DOWN))) { 
