@@ -2,6 +2,9 @@
 
 ## ステップ 1
 ``||player:チャットコマンド||``を取って、名前を **teleport** にします。``||agent:エージェントプレイヤーにテレポート||`` を取って、``||player:チャットコマンド||``の中にドラッグします。
+```template
+{}
+```
 
 ```blocks
 player.onChat("tp", function () { 

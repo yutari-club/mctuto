@@ -2,6 +2,9 @@
 
 ## ステップ 1
 ``||player:チャットコマンド||`` を **tp** に名前を変えてください。``||agent:自分の位置に戻す||`` を **tp** ``||player:チャットコマンド||`` の中にドラッグしてください。
+```template
+{}
+```
 
 ```blocks
 player.onChat("tp", function () {

@@ -37,7 +37,7 @@ player.onItemInteracted(BONE, function () {
 ```
 
 ## ステップ 4
-別の ``||loops:くりかえし○○回||`` ループを取って、``||player:||骨が使われた時`` の中にドラッグします。そして **4** 回繰り返すように設定します。
+別の ``||loops:くりかえし○○回||`` ループを取って、``||player:骨が使われた時`` の中にドラッグします。そして **4** 回繰り返すように設定します。
 
 ```blocks
 player.onItemInteracted(BONE, function () { 
