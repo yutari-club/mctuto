@@ -1,8 +1,8 @@
-# つながる壁: JavaScript
+# つながる壁(かべ): JavaScript
 
 ## ステップ 1
 
-``||player:チャットコマンド||``コマンドのコードを書いて、**"position"**と名前をつけましょう。
+``||player:チャットコマンド||``コマンドのコードを書(か)いて、**"position"**と名前(なまえ)をつけましょう。
 
 ```javascript
 player.onChat("position", function () {
@@ -11,7 +11,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 2
-変数**PlayerPosition**を作って、``||positions: world||``位置に設定しましょう。
+変数(へんすう)**PlayerPosition**を作(つく)って、``||positions: world||``位置(いち)に設定(せってい)しましょう。
 
 ```javascript
 let PlayerPosition: Position = null 
@@ -21,7 +21,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 3
-``||player:チャットコマンド||``コマンドの中で、変数**from_position**を作って、**PlayerPosition**に(6,0,0)を加えた値と等しく設定しましょう。
+``||player:チャットコマンド||``コマンドの中(なか)で、変数(へんすう)**from_position**を作(つく)って、**PlayerPosition**に(6,0,0)を加(くわ)えた値(ね)と等(ひと)しく設定(せってい)しましょう。
 	
 ```javascript
 let PlayerPosition: Position = null 
@@ -36,7 +36,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 4
-``||player:チャットコマンド||``コマンドの中で、変数**to_position**を作って、変数**PlayerPosition**に(-6,13,0)を加えた値と等しく設定しましょう。
+``||player:チャットコマンド||``コマンドの中(なか)で、変数(へんすう)**to_position**を作(つく)って、変数(へんすう)**PlayerPosition**に(-6,13,0)を加(くわ)えた値(ね)と等(ひと)しく設定(せってい)しましょう。
 
 ```javascript
 let PlayerPosition: Position = null
@@ -56,7 +56,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 5
-別の``||player:チャットコマンド||``コマンドのコードを書いて、**"wall"**と名前をつけましょう。
+別(べつ)の``||player:チャットコマンド||``コマンドのコードを書(か)いて、**"wall"**と名前(なまえ)をつけましょう。
 
 ```javascript
 player.onChat("wall", function () { 
@@ -65,7 +65,7 @@ player.onChat("wall", function () {
 ```
 
 ## ステップ 6
-**wall**の``||player:チャットコマンド||``コマンドの中で、``||blocks:fill and replace||``のコードを書いて、**from_position**変数から**to_position**変数まで**glass**に設定しましょう。
+**wall**の``||player:チャットコマンド||``コマンドの中(なか)で、``||blocks:fill and replace||``のコードを書(か)いて、**from_position**変数(へんすう)から**to_position**変数(へんすう)まで**glass**に設定(せってい)しましょう。
 
 ```javascript
 player.onChat("wall", function () {
@@ -79,7 +79,7 @@ player.onChat("wall", function () {
 ```
 
 ## ステップ 7
-``||blocks: on block broken||``を使って、**glass**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: random position||``に**diamond**ブロックを``||blocks:place||``するイベントのコードを書きましょう。
+``||blocks: on block broken||``を使(つか)って、**glass**ブロックが壊(こわ)されたときに、**from_position**変数(へんすう)から**to_position**変数(へんすう)の範囲(はんい)内(ない)で``||positions: random position||``に**diamond**ブロックを``||blocks:place||``するイベントのコードを書(か)きましょう。
 
 ```javascript
 blocks.onBlockBroken(GLASS, function () {
@@ -91,7 +91,7 @@ blocks.onBlockBroken(GLASS, function () {
 ```
 
 ## ステップ 8
-``||blocks: on block broken||``を使って、**diamond**ブロックが壊されたときに、**from_position**変数から**to_position**変数の範囲内で``||positions: random position||``に**orange wool**ブロックを``||blocks:place||``するイベントのコードを書きましょう。
+``||blocks: on block broken||``を使(つか)って、**diamond**ブロックが壊(こわ)されたときに、**from_position**変数(へんすう)から**to_position**変数(へんすう)の範囲(はんい)内(ない)で``||positions: random position||``に**orange wool**ブロックを``||blocks:place||``するイベントのコードを書(か)きましょう。
 
 ```javascript
 blocks.onBlockBroken(DIAMOND_BLOCK, function () {
@@ -103,7 +103,7 @@ blocks.onBlockBroken(DIAMOND_BLOCK, function () {
 ```
 
 ## ステップ 9
-**Play**ボタンを押してMinecraftに入り、すべてのイベントをテストします。**position**から始めて、次に**wall**を使います。**glassブロック**を壊して何が起こるかを見てみましょう。
+**Play**ボタンを押(お)してMinecraftに入(はい)り、すべてのイベントをテストします。**position**から始(はじ)めて、次(つぎ)に**wall**を使(つか)います。**glassブロック**を壊(こわ)して何(なに)が起(お)こるかを見(み)てみましょう。
 
 ```javascript
 let from_position: Position = null 

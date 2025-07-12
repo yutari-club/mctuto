@@ -1,7 +1,7 @@
-# エージェント楽しい関数: JavaScript
+# エージェント楽(たの)しい関数(かんすう): JavaScript
 
 ## ステップ 1
-"carrots"、"chicken"、"snowball" の ``||player:チャットコマンド||``のコードが用意されています。
+"carrots"、"chicken"、"snowball" の ``||player:チャットコマンド||``のコードが用意(ようい)されています。
 
 ```template
 player.onChat("carrot", function () {
@@ -29,7 +29,7 @@ player.onChat("snowball", function () {
 ```
 
 ## ステップ 2
-**blaze rod** が ``||player: used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きましょう。
+**blaze rod** が ``||player: used||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行(じっこう)されるようにコードを書(か)きましょう。
 
 ```javascript
 player.onItemInteracted(BLAZE_ROD, function () {
@@ -40,7 +40,7 @@ player.onItemInteracted(BLAZE_ROD, function () {
 ```
 
 ## ステップ 3
-**Play** ボタンを押して、Minecraftに戻り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
+**Play** ボタンを押(お)して、Minecraftに戻(もど)り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力(にゅうりょく)して何(なに)が起(お)こるか見(み)てみましょう。
 
 ```javascript
 player.onChat("carrot", function () {

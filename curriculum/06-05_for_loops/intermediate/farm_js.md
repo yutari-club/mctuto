@@ -1,7 +1,7 @@
-# 農場: JavaScript
+# 農場(のうじょう): JavaScript
 
 ## ステップ 1
-``||player:チャットコマンド||`` を作って、名前を **tp** にします。エージェントが ``||agent:プレイヤーにテレポート||`` するようにコードを書きます。
+``||player:チャットコマンド||`` を作(つく)って、名前(なまえ)を **tp** にします。エージェントが ``||agent:プレイヤーにテレポート||`` するようにコードを書(か)きます。
 
 ```javascript
 player.onChat("tp", function () {
@@ -10,7 +10,7 @@ player.onChat("tp", function () {
 ```
 
 ## ステップ 2
-``||player:チャットコマンド||``を作って、名前を **farm** にします。
+``||player:チャットコマンド||``を作(つく)って、名前(なまえ)を **farm** にします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -19,7 +19,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 3
-``||agent:エージェント||`` が **ニンジン** を **64個** スロット **1** に設定するようにコードを書きます。
+``||agent:エージェント||`` が **ニンジン** を **64個(こ)** スロット **1** に設定(せってい)するようにコードを書(か)きます。
 
 ```javascript
 player.onChat("farm", function () {
@@ -28,7 +28,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 4
-``||loops:for||`` ループを作って、**2回** 繰り返すようにします。
+``||loops:for||`` ループを作(つく)って、**2回(かい)** 繰(く)り返(かえ)すようにします。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -40,7 +40,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 5
-``||loops:for||`` ループの中で、``||agent:エージェント||`` が **後ろに7歩** 移動するようにコードを書きます。
+``||loops:for||`` ループの中(なか)で、``||agent:エージェント||`` が **後(うし)ろに7歩(ほ)** 移動(いどう)するようにコードを書(か)きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -52,7 +52,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 6
-``||agent:エージェント移動||`` **後ろ** コードの後に、``||agent: エージェント||`` が **右に4歩** 移動するようにコードを書きます。
+``||agent:エージェント移動(いどう)||`` **後(うし)ろ** コードの後(あと)に、``||agent: エージェント||`` が **右(みぎ)に4歩(ほ)** 移動(いどう)するようにコードを書(か)きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -65,7 +65,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 7
-``||loops:for||`` ループを作って、**7回** 繰り返すようにします。これを最初の ``||loops:for||`` ループの中に置きますが、``||agent:移動||`` 後ろコードの上に置きます。
+``||loops:for||`` ループを作(つく)って、**7回(かい)** 繰(く)り返(かえ)すようにします。これを最初(さいしょ)の ``||loops:for||`` ループの中(なか)に置(お)きますが、``||agent:移動(いどう)||`` 後(うし)ろコードの上(うえ)に置(お)きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -81,7 +81,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 8
-中の ``||loops:for||`` ループの中で、``||agent:エージェント||`` が **前** を耕すようにコードを書きます。
+中(なか)の ``||loops:for||`` ループの中(なか)で、``||agent:エージェント||`` が **前(まえ)** を耕(たがや)すようにコードを書(か)きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -97,7 +97,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 9
-``||agent:エージェント耕す||`` の後に、``||agent:エージェント||`` が **前に1歩** 移動するようにコードを書きます。
+``||agent:エージェント耕(たがや)す||`` の後(あと)に、``||agent:エージェント||`` が **前(まえ)に1歩(ほ)** 移動(いどう)するようにコードを書(か)きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -114,7 +114,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 10
-``||agent:エージェント移動||`` 前の後に、``||agent:エージェント||`` が下に置くようにコードを書きます。
+``||agent:エージェント移動(いどう)||`` 前(まえ)の後(あと)に、``||agent:エージェント||`` が下(もと)に置(お)くようにコードを書(か)きます。
 
 ```javascript
 player.onChat("farm", function () { 
@@ -132,7 +132,7 @@ player.onChat("farm", function () {
 ```
 
 ## ステップ 11
-**Play** ボタンを押して、Minecraftに入って、すべてのイベントをテストしましょう。
+**Play** ボタンを押(お)して、Minecraftに入(はい)って、すべてのイベントをテストしましょう。
 
 
 ```javascript

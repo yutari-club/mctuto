@@ -1,9 +1,9 @@
-# エージェントの迷路: Python
+# エージェントの迷路(めいろ): Python
 
 
 ## ステップ 1
 
-エージェントが前方にブロックを検出するかどうかを評価する ``||logic: if then||`` 文を作って。**true** と評価された場合、左に曲がります。
+エージェントが前方(ぜんぽう)にブロックを検出(けんしゅつ)するかどうかを評価(ひょうか)する ``||logic: if then||`` 文(ぶん)を作(つく)って。**true** と評価(ひょうか)された場合(ばあい)、左(ひだり)に曲(ま)がります。
 
 ```python
 if agent.detect(AgentDetection.BLOCK, FORWARD):
@@ -12,9 +12,9 @@ if agent.detect(AgentDetection.BLOCK, FORWARD):
 
 ## ステップ 2
 
-``||logic: if||`` 文に ``||logic: else||`` を追加し、``||agent:移動させる||`` **forward by 1** コマンドの指示を含めます。
+``||logic: if||`` 文(ぶん)に ``||logic: else||`` を追加(ついか)し、``||agent:移動(いどう)させる||`` **forward by 1** コマンドの指示(しじ)を含(ふく)めます。
 
-**NOTE:** 完全な文は ``||logic: if-else||`` 文になります。
+**NOTE:** 完全(かんぜん)な文(ぶん)は ``||logic: if-else||`` 文(ぶん)になります。
 
 ```python
         agent.turn(LEFT_TURN)
@@ -24,7 +24,7 @@ if agent.detect(AgentDetection.BLOCK, FORWARD):
 
 ## ステップ 3
 
-``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に置きます。これにより、これらのステップは停止するまで続きます。
+``||logic: if-else||`` 文(ぶん)を ``||loops: forever||`` ループの中(なか)に置(お)きます。これにより、これらのステップは停止(ていし)するまで続(つづ)きます。
 
 ```python
 def on_forever():
@@ -35,7 +35,7 @@ def on_forever():
 loops.forever(on_forever)
 ```
 ## ステップ 5
-**Play** ボタンを押し、Minecraftでコードを試してみましょう。
+**Play** ボタンを押(お)し、Minecraftでコードを試(ため)してみましょう。
 
 ```ghost
 agent.teleportToPlayer()

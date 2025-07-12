@@ -1,7 +1,7 @@
-# イベントを楽しもう: ブロック
+# イベントを楽(たの)しもう: ブロック
 
 ## ステップ 1
-``||player: on player walk||``ブロックと``||mobs:spawn||``ブロックを取ってワークスペースにドラッグしましょう。``||mobs: projectile||``ブロックを``||mobs:spawn||``ブロックの**animal parameter**にドラッグし、**fireworks rocket**を選択します。
+``||player: on player walk||``ブロックと``||mobs:spawn||``ブロックを取(と)ってワークスペースにドラッグしましょう。``||mobs: projectile||``ブロックを``||mobs:spawn||``ブロックの**animal parameter**にドラッグし、**fireworks rocket**を選択(せんたく)します。
 
 ```blocks
 player.onTravelled(WALK, function () { 
@@ -10,7 +10,7 @@ player.onTravelled(WALK, function () {
 ```
 ## ステップ 2
 
-位置の(y)座標をプレイヤーの位置から**10ブロック**上に変更します(0, **10**, 0)。
+位置(いち)の(y)座標(ざひょう)をプレイヤーの位置(いち)から**10ブロック**上(うえ)に変更(へんこう)します(0, **10**, 0)。
 
 ```blocks
 player.onTravelled(WALK, function () { 
@@ -18,7 +18,7 @@ player.onTravelled(WALK, function () {
 }) 
 ```
 ## ステップ 3
-``||loops:くりかえし○○回||``ループを``||player:on player walk||``にドラッグし、**25回**に設定します。``||mobs:spawn||``ブロックは``||loops:くりかえし○○回||``ループの中に入れます。
+``||loops:くりかえし○○回(かい)||``ループを``||player:on player walk||``にドラッグし、**25回(かい)**に設定(せってい)します。``||mobs:spawn||``ブロックは``||loops:くりかえし○○回(かい)||``ループの中(なか)に入(い)れます。
 
 ```blocks
 player.onTravelled(WALK, function () {
@@ -29,10 +29,10 @@ player.onTravelled(WALK, function () {
 ```
 
 ## ステップ 4
-``||blocks:on broken||``ブロックを取ってワークスペースにドラッグし、**oak wood**ブロックを選択しましょう。
+``||blocks:on broken||``ブロックを取(と)ってワークスペースにドラッグし、**oak wood**ブロックを選択(せんたく)しましょう。
 
 ## ステップ 5
-``||mobs:spawn||``ブロックを追加し、**chicken**に設定して、位置の(y)座標をプレイヤーの位置から**10ブロック**上に変更します(0, **10**, 0)。
+``||mobs:spawn||``ブロックを追加(ついか)し、**chicken**に設定(せってい)して、位置(いち)の(y)座標(ざひょう)をプレイヤーの位置(いち)から**10ブロック**上(うえ)に変更(へんこう)します(0, **10**, 0)。
 
 ```blocks
 blocks.onBlockBroken(PLANKS_OAK, function () { 
@@ -41,7 +41,7 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 ```
 
 ## ステップ 6
-``||loops:くりかえし○○回||``ループを``||blocks:on broken||``ブロックの中で``||mobs:spawn||``ブロックの周りに追加し、``||loops:くりかえし○○回||``ループを**25回**に設定します。
+``||loops:くりかえし○○回(かい)||``ループを``||blocks:on broken||``ブロックの中(なか)で``||mobs:spawn||``ブロックの周(まわ)りに追加(ついか)し、``||loops:くりかえし○○回(かい)||``ループを**25回(かい)**に設定(せってい)します。
 
 ```blocks
 blocks.onBlockBroken(PLANKS_OAK, function () { 
@@ -53,15 +53,15 @@ blocks.onBlockBroken(PLANKS_OAK, function () {
 
 ## ステップ 7
 
-``||player:○○が使われた時||``を取ってワークスペースにドラッグし、**Golden Apple**に設定しましょう。
+``||player:○○が使(つか)われた時(とき)||``を取(と)ってワークスペースにドラッグし、**Golden Apple**に設定(せってい)しましょう。
 
 ## ステップ 8
 
-``||mobs: apply to||``ブロックを取ってワークスペースにドラッグし、**levitation**を選択し、持続時間を**10**、増幅器を**5**に設定しましょう。
+``||mobs: apply to||``ブロックを取(と)ってワークスペースにドラッグし、**levitation**を選択(せんたく)し、持続(じぞく)時間(じかん)を**10**、増幅器(ぞうふくき)を**5**に設定(せってい)しましょう。
 
 ## ステップ 9
 
-``||mobs:all animal||``ブロックを取って、**chicken**に設定して``||mobs: apply to||``の**to**引数にドラッグし、完成した``||mobs:apply to||``ブロックを``||player:||○○が使われた時``にドラッグしましょう。
+``||mobs:all animal||``ブロックを取(と)って、**chicken**に設定(せってい)して``||mobs: apply to||``の**to**引数(ひきすう)にドラッグし、完成(かんせい)した``||mobs:apply to||``ブロックを``||player:||○○が使(つか)われた時(とき)``にドラッグしましょう。
 
 ```blocks
 player.onItemInteracted(GOLDEN_APPLE, function () { 
@@ -69,7 +69,7 @@ player.onItemInteracted(GOLDEN_APPLE, function () {
 }) 
 ```
 ## ステップ 10
-**Play**ボタンを押してMinecraftに入り、すべてのイベントをテストします。
+**Play**ボタンを押(お)してMinecraftに入(はい)り、すべてのイベントをテストします。
 
 
 ```blocks

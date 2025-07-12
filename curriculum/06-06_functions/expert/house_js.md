@@ -1,7 +1,7 @@
-# 家の関数: JavaScript
+# 家(いえ)の関数(かんすう): JavaScript
 
 ## ステップ 1
-``||functions:function||`` をコードで作って、**walls** と名前を付けましょう。
+``||functions:function||`` をコードで作(つく)って、**walls** と名前(なまえ)を付(つ)けましょう。
 
 ```javascript
 function walls () {
@@ -9,7 +9,7 @@ function walls () {
 ```
 
 ## ステップ 2
-**walls** 関数の中で、エージェントに ``||agent:スロットに設定させる||`` をコードで作って、**Acacia Wood Planks** を **64** 個、スロット **1** に設定しましょう。
+**walls** 関数(かんすう)の中(なか)で、エージェントに ``||agent:スロットに設定(せってい)させる||`` をコードで作(つく)って、**Acacia Wood Planks** を **64** 個(こ)、スロット **1** に設定(せってい)しましょう。
 
 ```javascript
 function walls () {
@@ -18,7 +18,7 @@ function walls () {
 ```
 
 ## ステップ 3
-**walls** 関数の中で、``||agent:移動させる||`` **up by 1** を **3** 回繰り返す ``||loops:for||`` ループをコードで作りましょう。
+**walls** 関数(かんすう)の中(なか)で、``||agent:移動(いどう)させる||`` **up by 1** を **3** 回(かい)繰(く)り返(かえ)す ``||loops:for||`` ループをコードで作(つく)りましょう。
 
 ```javascript
 function walls () {
@@ -30,7 +30,7 @@ function walls () {
 ```
 
 ## ステップ 4
-**4** 回繰り返す別の ``||loops:for||`` ループをコードし、最初の ``||loops:for||`` ループの中、最初の ``||agent:移動させる||`` の下にドラッグします。2番目のループで、``||agent:agent turn right||`` をコードします。
+**4** 回(かい)繰(く)り返(かえ)す別(べつ)の ``||loops:for||`` ループをコードし、最初(さいしょ)の ``||loops:for||`` ループの中(なか)、最初(さいしょ)の ``||agent:移動(いどう)させる||`` の下(した)にドラッグします。2番目(ばんめ)のループで、``||agent:agent turn right||`` をコードします。
 
 ```javascript
 function walls () {
@@ -45,7 +45,7 @@ function walls () {
 ```
 
 ## ステップ 5
-3番目の ``||loops:for||`` ループをコードし、2番目の ``||loops:for||`` ループの中の ``||agent: turn right||`` の上にドラッグして配置します。3番目の ``||loops:for||`` ループを **4** 回に設定します。最も内側の ``||loops:for||`` ループの中で、エージェントに ``||agent:置きます||`` をコードし、**down** に設定します。エージェントの ``||agent:移動させる||`` を追加し、**forward by 1** に設定して、最も内側の ``||loops:for||`` ループの中の ``||agent:置きます||`` down の下にドラッグします。
+3番目(ばんめ)の ``||loops:for||`` ループをコードし、2番目(ばんめ)の ``||loops:for||`` ループの中(なか)の ``||agent: turn right||`` の上(うえ)にドラッグして配置(はいち)します。3番目(ばんめ)の ``||loops:for||`` ループを **4** 回(かい)に設定(せってい)します。最(もっと)も内側(うちがわ)の ``||loops:for||`` ループの中(なか)で、エージェントに ``||agent:置(お)きます||`` をコードし、**down** に設定(せってい)します。エージェントの ``||agent:移動(いどう)させる||`` を追加(ついか)し、**forward by 1** に設定(せってい)して、最(もっと)も内側(うちがわ)の ``||loops:for||`` ループの中(なか)の ``||agent:置(お)きます||`` down の下(した)にドラッグします。
 
 ```javascript
 function walls () {
@@ -64,7 +64,7 @@ function walls () {
 ```
 
 ## ステップ 6
-新しい ``||functions:function||`` をコードし、**roof** と名前を付けます。
+新(あたら)しい ``||functions:function||`` をコードし、**roof** と名前(なまえ)を付(つ)けます。
 
 ```javascript
 function roof () {
@@ -73,7 +73,7 @@ function roof () {
 ```
 
 ## ステップ 7
-エージェントに ``||agent:スロットに設定させる||`` をコードし、**brick slab** に設定し、数を **64**、スロットを **1** に設定して、**roof** ``||functions:function||`` の中にドラッグします。また、エージェントに ``||agent:移動させる||`` **up by 1** をコードします。
+エージェントに ``||agent:スロットに設定(せってい)させる||`` をコードし、**brick slab** に設定(せってい)し、数(かず)を **64**、スロットを **1** に設定(せってい)して、**roof** ``||functions:function||`` の中(なか)にドラッグします。また、エージェントに ``||agent:移動(いどう)させる||`` **up by 1** をコードします。
 
 ```javascript
 function roof () {
@@ -83,7 +83,7 @@ function roof () {
 ```
 
 ## ステップ 8
-**roof** ``||functions:function||`` の中で、``||loops:for||`` ループをコードし、**4** 回に設定します。ループの中で、エージェントに ``||agent:移動させる||`` **back by 4** をコードし、次にエージェントに ``||agent:移動させる||`` **right by 1** をコードします。
+**roof** ``||functions:function||`` の中(なか)で、``||loops:for||`` ループをコードし、**4** 回(かい)に設定(せってい)します。ループの中(なか)で、エージェントに ``||agent:移動(いどう)させる||`` **back by 4** をコードし、次(つぎ)にエージェントに ``||agent:移動(いどう)させる||`` **right by 1** をコードします。
 
 ```javascript
 function roof () {
@@ -97,7 +97,7 @@ function roof () {
 ```
 
 ## ステップ 9
-別の ``||loops:for||`` ループをコードし、**4** 回に設定します。このループの中で、``||agent:agent place down||`` を追加し、次に ``||agent:移動させる||`` **forward by 1** を追加します。この ``||loops:for||`` ループを前のループの中、``||agent:移動させる||`` **back by 4** の上に配置します。
+別(べつ)の ``||loops:for||`` ループをコードし、**4** 回(かい)に設定(せってい)します。このループの中(なか)で、``||agent:agent place down||`` を追加(ついか)し、次(つぎ)に ``||agent:移動(いどう)させる||`` **forward by 1** を追加(ついか)します。この ``||loops:for||`` ループを前(まえ)のループの中(なか)、``||agent:移動(いどう)させる||`` **back by 4** の上(うえ)に配置(はいち)します。
 
 ```javascript
 function roof () {
@@ -115,7 +115,7 @@ function roof () {
 ```
 
 ## ステップ 10
-``||player:チャットコマンド||``をコードし、**house** と名前を付けて、**walls** と **roof** の ``||functions:functions||`` の両方を呼び出すようにします。
+``||player:チャットコマンド||``をコードし、**house** と名前(なまえ)を付(つ)けて、**walls** と **roof** の ``||functions:functions||`` の両方(りょうほう)を呼(よ)び出(だ)すようにします。
 
 ```javascript
 player.onChat("house", function () {
@@ -126,7 +126,7 @@ player.onChat("house", function () {
 
 
 ## ステップ 11
-Minecraftに入り、**house** 関数をテストしてみましょう。
+Minecraftに入(はい)り、**house** 関数(かんすう)をテストしてみましょう。
 
 ```javascript
 function walls () {

@@ -1,8 +1,8 @@
-# エージェントの迷路: Javascript
+# エージェントの迷路(めいろ): Javascript
 
 ## ステップ 1
 
-エージェントが前方にブロックを検出するかどうかを評価する ``||logic:if then||`` コマンドを作って。**true** と評価された場合、左に曲がります。
+エージェントが前方(ぜんぽう)にブロックを検出(けんしゅつ)するかどうかを評価(ひょうか)する ``||logic:if then||`` コマンドを作(つく)って。**true** と評価(ひょうか)された場合(ばあい)、左(ひだり)に曲(ま)がります。
 
 ```javascript
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -12,9 +12,9 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
 
 ## ステップ 2
 
-``||logic: if-statement||`` に ``||logic: else||`` 文を追加し、その中に ``||agent:移動させる||`` **forward by 1** の指示を含めます。
+``||logic: if-statement||`` に ``||logic: else||`` 文(ぶん)を追加(ついか)し、その中(なか)に ``||agent:移動(いどう)させる||`` **forward by 1** の指示(しじ)を含(ふく)めます。
 
-**NOTE:** 完全な文は ``||logic: if else||`` 文になります。
+**NOTE:** 完全(かんぜん)な文(ぶん)は ``||logic: if else||`` 文(ぶん)になります。
 
 ```javascript
 if (agent.detect(AgentDetection.Block, FORWARD)) {
@@ -26,7 +26,7 @@ if (agent.detect(AgentDetection.Block, FORWARD)) {
 
 ## ステップ 3
 
-``||logic: if-else||`` 文を ``||loops: forever||`` ループの中に置きます。これにより、これらのステップは停止するまで続きます。
+``||logic: if-else||`` 文(ぶん)を ``||loops: forever||`` ループの中(なか)に置(お)きます。これにより、これらのステップは停止(ていし)するまで続(つづ)きます。
 
 ```javascript
 loops.forever(function () {
@@ -39,7 +39,7 @@ loops.forever(function () {
 ```
 
 ## ステップ 5
-**Play** ボタンを押し、Minecraftでコードを試してみましょう。
+**Play** ボタンを押(お)し、Minecraftでコードを試(ため)してみましょう。
 
 ```ghost 
 agent.teleportToPlayer()

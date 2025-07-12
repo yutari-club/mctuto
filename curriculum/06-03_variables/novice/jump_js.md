@@ -1,7 +1,7 @@
 # メガジャンプ: JavaScript
 
 ## ステップ 1
-**"jump"** という名前の ``||player:チャットコマンド||``を追加します。
+**"jump"** という名前(なまえ)の ``||player:チャットコマンド||``を追加(ついか)します。
 
 ```javascript
 player.onChat("jump", function () { 
@@ -10,7 +10,7 @@ player.onChat("jump", function () {
 
 ## ステップ 2
 
-``||player:chat||`` コマンドの中にコードを追加して、プレイヤーを位置 **(0,100,0)** に ``||player:teleport||`` します（現在の位置より100ブロック高い位置）。
+``||player:chat||`` コマンドの中(なか)にコードを追加(ついか)して、プレイヤーを位置(いち) **(0,100,0)** に ``||player:teleport||`` します（現在(げんざい)の位置(いち)より100ブロック高(たか)い位置(いち)）。
 
 ```javascript
 player.onChat("jump", function () { 
@@ -20,12 +20,12 @@ player.onChat("jump", function () {
 
 ## ステップ 3
 
-Minecraftでチャットに jump と入力して試してみましょう。
+Minecraftでチャットに jump と入力(にゅうりょく)して試(ため)してみましょう。
 
 
 ## ステップ 4
 
-"jump" チャットコマンドに **num1** という名前の ``||variable: variable||`` を追加します。
+"jump" チャットコマンドに **num1** という名前(なまえ)の ``||variable: variable||`` を追加(ついか)します。
 
 ```javascript
     player.onChat("jump", function (num1) { 
@@ -35,7 +35,7 @@ Minecraftでチャットに jump と入力して試してみましょう。
 
 ## ステップ 5
 
-``||player:teleport||`` 位置の **100** を ``||variable||`` **num1** に変更します。
+``||player:teleport||`` 位置(いち)の **100** を ``||variable||`` **num1** に変更(へんこう)します。
 
 ```javascript
    player.onChat("jump", function (num1) { 
@@ -46,7 +46,7 @@ Minecraftでチャットに jump と入力して試してみましょう。
 
 ## ステップ 6
 
-Minecraftでチャットに jump と数字を入力して試してみましょう。（例：jump 50 または jump 100）
+Minecraftでチャットに jump と数字(すうじ)を入力(にゅうりょく)して試(ため)してみましょう。（例(れい)：jump 50 または jump 100）
 
 
 ```javascript

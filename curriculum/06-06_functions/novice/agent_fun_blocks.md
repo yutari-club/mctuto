@@ -1,7 +1,7 @@
-# エージェント楽しい関数: ブロック
+# エージェント楽(たの)しい関数(かんすう): ブロック
 
 ## ステップ 1
-``||player:チャットコマンド||`` **carrot**、``||player:チャットコマンド||`` **chicken**、``||player:チャットコマンド||`` **snowball** が用意されています。
+``||player:チャットコマンド||`` **carrot**、``||player:チャットコマンド||`` **chicken**、``||player:チャットコマンド||`` **snowball** が用意(ようい)されています。
 
 ```template
 player.onChat("carrot", function () {
@@ -29,7 +29,7 @@ player.onChat("snowball", function () {
 ```
 
 ## ステップ 2
-新しい ``||player:○○が使われた時||`` を取って **Blaze Rod** を選択しましょう。``||player:run chat||`` コマンドを追加して **carrot** と名前を付けます。もう一つの ``||player:run chat||`` コマンドを取って **chicken** と名前を付けます。3つ目の ``||player:run chat||`` コマンドを取って **snowball** と名前を付けます。
+新(あたら)しい ``||player:○○が使(つか)われた時(とき)||`` を取(と)って **Blaze Rod** を選択(せんたく)しましょう。``||player:run chat||`` コマンドを追加(ついか)して **carrot** と名前(なまえ)を付(つ)けます。もう一(ひと)つの ``||player:run chat||`` コマンドを取(と)って **chicken** と名前(なまえ)を付(つ)けます。3つ目(め)の ``||player:run chat||`` コマンドを取(と)って **snowball** と名前(なまえ)を付(つ)けます。
 
 ```blocks
 player.onItemInteracted(BLAZE_ROD, function () {
@@ -41,5 +41,5 @@ player.onItemInteracted(BLAZE_ROD, function () {
 
 ## ステップ 3
 
-**Play** ボタンを押して、Minecraftに戻り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
+**Play** ボタンを押(お)して、Minecraftに戻(もど)り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力(にゅうりょく)して何(なに)が起(お)こるか見(み)てみましょう。
 

@@ -1,7 +1,7 @@
-# エージェント楽しい関数: Python
+# エージェント楽(たの)しい関数(かんすう): Python
 
 ## ステップ 1
-ヒントに "carrots"、"chicken"、"snowball" の ``||player:チャットコマンド||``のコードが用意されています。
+ヒントに "carrots"、"chicken"、"snowball" の ``||player:チャットコマンド||``のコードが用意(ようい)されています。
 
 ```python
 def on_chat():
@@ -25,7 +25,7 @@ player.on_chat("snowball", on_chat3)
 ```
 
 ## ステップ 2
-blaze rod が ``||player:○○が使われた時||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行されるようにコードを書きましょう。
+blaze rod が ``||player:○○が使(つか)われた時(とき)||`` されたときに、**carrot**、**chicken**、**snowball** の ``||player:チャットコマンド||``が実行(じっこう)されるようにコードを書(か)きましょう。
 
 ```python
 def item_interacted_blaze_rod():
@@ -36,7 +36,7 @@ player.on_item_interacted(BLAZE_ROD, item_interacted_blaze_rod)
 ```
 
 ## ステップ 3
-**Play** ボタンを押して、Minecraftに戻り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
+**Play** ボタンを押(お)して、Minecraftに戻(もど)り、チャットに **carrot**、**chicken**、**snowball** コマンドを入力(にゅうりょく)して何(なに)が起(お)こるか見(み)てみましょう。
 
 
 ```python

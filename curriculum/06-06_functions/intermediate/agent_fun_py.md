@@ -1,7 +1,7 @@
-# エージェント楽しい関数の改造: Python
+# エージェント楽(たの)しい関数(かんすう)の改造(かいぞう): Python
 
 ## ステップ 1
-``||player:チャットコマンド||`` **carrot**、``||player:チャットコマンド||`` **chicken**、``||player:チャットコマンド||`` **snowball** が用意されています。ヒントを確認してください。
+``||player:チャットコマンド||`` **carrot**、``||player:チャットコマンド||`` **chicken**、``||player:チャットコマンド||`` **snowball** が用意(ようい)されています。ヒントを確認(かくにん)してください。
 
 ```python
 def on_chat():
@@ -30,7 +30,7 @@ player.on_item_interacted(BLAZE_ROD, item_interacted_blaze_rod)
 ```
 
 ## ステップ 2
-用意されている **carrot** ``||player:チャットコマンド||``の名前を **torches** に変更します。``||agent:スロットに設定させる||`` を **Torch** に変更し、数を **32** 個、スロット **1** に設定します。
+用意(ようい)されている **carrot** ``||player:チャットコマンド||``の名前(なまえ)を **torches** に変更(へんこう)します。``||agent:スロットに設定(せってい)させる||`` を **Torch** に変更(へんこう)し、数(かず)を **32** 個(こ)、スロット **1** に設定(せってい)します。
 
 ```python
 def on_chat():
@@ -40,9 +40,9 @@ player.on_chat("torches", on_chat)
 
 ## ステップ 3
 
-既存の ``||loops:for||`` ループを変更して、12回の植え付けサイクルを完了します。
+既存(きそん)の ``||loops:for||`` ループを変更(へんこう)して、12回(かい)の植(う)え付(つ)けサイクルを完了(かんりょう)します。
 
-**注意**: これは (4x3) または (3x4) のループで実現できます。
+**注意(ちゅうい)**: これは (4x3) または (3x4) のループで実現(じつげん)できます。
 
 ```python
 def on_chat():
@@ -58,7 +58,7 @@ player.on_chat("torches", on_chat)
 ```
 
 ## ステップ 4
-blaze rod が ``||player:○○が使われた時||`` されたときのコードを変更して、3つの ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代わりに **torches** ``||player:on chat|`` コマンドを実行するようにしましょう。
+blaze rod が ``||player:○○が使(つか)われた時(とき)||`` されたときのコードを変更(へんこう)して、3つの ``||player:チャットコマンド||`` **carrot**、**chicken**、**snowball** すべてが **carrot** チャットコマンドの代(か)わりに **torches** ``||player:on chat|`` コマンドを実行(じっこう)するようにしましょう。
 
 ```python
 def item_interacted_blaze_rod():
@@ -69,10 +69,10 @@ player.on_item_interacted(BLAZE_ROD, item_interacted_blaze_rod)
 ```
 
 ## ステップ 5
-**Play** ボタンを押して、Minecraftに戻り、チャットに **torches**、**chicken**、**snowball** コマンドを入力して何が起こるか見てみましょう。
+**Play** ボタンを押(お)して、Minecraftに戻(もど)り、チャットに **torches**、**chicken**、**snowball** コマンドを入力(にゅうりょく)して何(なに)が起(お)こるか見(み)てみましょう。
 
 ## ステップ 6
-**Play** ボタンを押して、コードを書くところに戻り、用意されている他の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更しましょう。
+**Play** ボタンを押(お)して、コードを書(か)くところに戻(もど)り、用意(ようい)されている他(ほか)の ``||player:チャットコマンド||`` **chicken** と **snowball** を変更(へんこう)しましょう。
 
 ## ステップ 7
-**Play** ボタンを押して、Minecraftに戻り、チャットに **chicken** と **snowball** コマンドを入力して何が起こるか見てみましょう。
+**Play** ボタンを押(お)して、Minecraftに戻(もど)り、チャットに **chicken** と **snowball** コマンドを入力(にゅうりょく)して何(なに)が起(お)こるか見(み)てみましょう。

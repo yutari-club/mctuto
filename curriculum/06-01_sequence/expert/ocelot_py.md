@@ -1,7 +1,7 @@
-# オセロットの囲い: Python
+# オセロットの囲(かこ)い: Python
 
 ## ステップ 1
-``||player:チャットコマンド||``のコードを書いて、**fence** という名前を付けます。
+``||player:チャットコマンド||``のコードを書(か)いて、**fence** という名前(なまえ)を付(つ)けます。
 
 ```python
 def on_chat():
@@ -11,7 +11,7 @@ player.on_chat("fence", on_chat)
 
 ## ステップ 2
 
-世界位置 **-695, 9, 880** で **West** を向いた ``||builder:builder teleport||`` のコードを書きましょう。
+世界(せかい)位置(いち) **-695, 9, 880** で **West** を向(む)いた ``||builder:builder teleport||`` のコードを書(か)きましょう。
 
 ```python
 def on_chat():
@@ -64,7 +64,7 @@ player.on_chat("1", on_chat)
 
 ## ステップ 7
 
-長方形の周りにフェンスを置くには、ビルダーが **Oak Fence** で構築しながら以前のパスを ``||builder:trace||`` するコードを書きましょう。
+長方形(ちょうほうけい)の周(まわ)りにフェンスを置(お)くには、ビルダーが **Oak Fence** で構築(こうちく)しながら以前(いぜん)のパスを ``||builder:trace||`` するコードを書(か)きましょう。
 
 ```python
     builder.move(FORWARD, 9)
@@ -74,7 +74,7 @@ player.on_chat("1", on_chat)
 
 ## ステップ 8
 
-作ったばかりのフェンスの中に1匹の **ocelot** をランダムに ``||mobs:spawn||`` しましょう。
+作(つく)ったばかりのフェンスの中(なか)に1匹(ひき)の **ocelot** をランダムに ``||mobs:spawn||`` しましょう。
 
 ```python
     builder.trace_path(OAK_FENCE)
@@ -84,7 +84,7 @@ player.on_chat("1", on_chat)
 
 ## ステップ 9
 
-作ったばかりのフェンスの中に別の **ocelot** をランダムに ``||mobs:spawn||`` しましょう。
+作(つく)ったばかりのフェンスの中(なか)に別(べつ)の **ocelot** をランダムに ``||mobs:spawn||`` しましょう。
 
 ```python
     mobs.spawn(OCELOT, randpos(world(-698, 9, 870), world(-715, 9, 880)))
@@ -94,7 +94,7 @@ player.on_chat("1", on_chat)
 
 ## ステップ 10
 
-作ったばかりのフェンスの中に2匹のオオカミをランダムに ``||mobs:spawn||`` しましょう。
+作(つく)ったばかりのフェンスの中(なか)に2匹(ひき)のオオカミをランダムに ``||mobs:spawn||`` しましょう。
 
 ```python
     mobs.spawn(OCELOT, randpos(world(-20, 4, -58), world(-37, 4, -50)))
@@ -105,7 +105,7 @@ player.on_chat("1", on_chat)
 
 ## ステップ 11
 
-Minecraftに戻り、コードをテストしてみましょう。
+Minecraftに戻(もど)り、コードをテストしてみましょう。
 
 ```python
 def on_chat():

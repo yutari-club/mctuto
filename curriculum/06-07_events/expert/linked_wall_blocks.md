@@ -1,7 +1,7 @@
-# つながる壁: ブロック
+# つながる壁(かべ): ブロック
 
 ## ステップ 1
-既存の``||player:チャットコマンド||``コマンドの名前を**"position"**に変更します。
+既存(きそん)の``||player:チャットコマンド||``コマンドの名前(なまえ)を**"position"**に変更(へんこう)します。
 
 ```blocks
 player.onChat("position", function () { 
@@ -10,7 +10,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 2
-``|||variable:new variable||``を作って、**PlayerPosition**と名前をつけましょう。次に、``||player:player world position||``を変数の設定の"**0**"パラメーターにドラッグしましょう。
+``|||variable:new variable||``を作(つく)って、**PlayerPosition**と名前(なまえ)をつけましょう。次(つぎ)に、``||player:player world position||``を変数(へんすう)の設定(せってい)の"**0**"パラメーターにドラッグしましょう。
 
 ```blocks
 let PlayerPosition: Position = null 
@@ -20,9 +20,9 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 3
-別の``|||variable: variable||``を作って、**from_position**と名前をつけましょう。次に、``||positions:+ (add position)||``ブロックを変数の設定の"**0**"引数にドラッグしましょう。
+別(べつ)の``|||variable: variable||``を作(つく)って、**from_position**と名前(なまえ)をつけましょう。次(つぎ)に、``||positions:+ (add position)||``ブロックを変数(へんすう)の設定(せってい)の"**0**"引数(ひきすう)にドラッグしましょう。
 
-この``||variable:variable||``を``||player:チャットコマンド||``コマンドの最後にドラッグしましょう。**PlayerPosition**の``||variable:variable||``を取って、新しい**from_position**変数の上の座標セットにドラッグしましょう。**下の**座標を（**6**, 0, 0）に設定しましょう。
+この``||variable:variable||``を``||player:チャットコマンド||``コマンドの最後(さいご)にドラッグしましょう。**PlayerPosition**の``||variable:variable||``を取(と)って、新(あたら)しい**from_position**変数(へんすう)の上(かみ)の座(ざ)標(しめ)セットにドラッグしましょう。**下(した)の**座標(ざひょう)を（**6**, 0, 0）に設定(せってい)しましょう。
 
 ```blocks
 let PlayerPosition: Position = null 
@@ -37,9 +37,9 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 4
-別の``|||variable: variable||``を作って、**to_position**と名前をつけましょう。次に、``||positions:+ (add position)||``を変数の設定の"**0**"引数にドラッグしましょう。
+別(べつ)の``|||variable: variable||``を作(つく)って、**to_position**と名前(なまえ)をつけましょう。次(つぎ)に、``||positions:+ (add position)||``を変数(へんすう)の設定(せってい)の"**0**"引数(ひきすう)にドラッグしましょう。
 
-この``||variable:variable||``を``||player:チャットコマンド||``コマンドの最後にドラッグしましょう。**PlayerPosition**の``||variable:variable||``を取って、新しい**to_position**変数の上の座標セットにドラッグしましょう。**下の**座標を（**-6, 13, 0**）に設定しましょう。
+この``||variable:variable||``を``||player:チャットコマンド||``コマンドの最後(さいご)にドラッグしましょう。**PlayerPosition**の``||variable:variable||``を取(と)って、新(あたら)しい**to_position**変数(へんすう)の上(かみ)の座(ざ)標(しめ)セットにドラッグしましょう。**下(した)の**座標(ざひょう)を（**-6, 13, 0**）に設定(せってい)しましょう。
 
 ```blocks
 let from_position: Position = null 
@@ -58,7 +58,7 @@ player.onChat("position", function () {
 ```
 
 ## ステップ 5
-別の``||player:チャットコマンド||``コマンドを取って、**"wall"**と名前をつけましょう。
+別(べつ)の``||player:チャットコマンド||``コマンドを取(と)って、**"wall"**と名前(なまえ)をつけましょう。
 
 ```blocks
 player.onChat("wall", function () { 
@@ -67,7 +67,7 @@ player.onChat("wall", function () {
 ```
 
 ## ステップ 6
-``||blocks:fill with||``ブロックを挿入し、**Glass**に設定しましょう。**from_position**の``||variable:variable||``を取って、**Glass**の``||blocks:fill||``コマンドの**from**引数にドラッグしましょう。また、**to_position**の``||variable:variable||``を取って、**Glass**の``||blocks:fill||``コマンドの**to**引数にドラッグしましょう。
+``||blocks:fill with||``ブロックを挿入(そうにゅう)し、**Glass**に設定(せってい)しましょう。**from_position**の``||variable:variable||``を取(と)って、**Glass**の``||blocks:fill||``コマンドの**from**引数(ひきすう)にドラッグしましょう。また、**to_position**の``||variable:variable||``を取(と)って、**Glass**の``||blocks:fill||``コマンドの**to**引数(ひきすう)にドラッグしましょう。
 
 ```blocks
 player.onChat("wall", function () { 
@@ -81,7 +81,7 @@ player.onChat("wall", function () {
 ```
 
 ## ステップ 7
-``||blocks: on block broken||``コマンドを取って、**Glass**に設定しましょう。``||blocks:place||``ブロックを挿入し、**Diamond**に設定しましょう。``||positions:pick random position||``ブロックを**Diamond**の``||blocks:place||``ブロックの**at**引数にドラッグしましょう。**from_position**変数を取って、**Diamond**の``||blocks:place||``ブロックの**from**引数にドラッグしましょう。**to_position**変数を取って、**Diamond**の``||blocks:place||``ブロックの**to**引数にドラッグしましょう。
+``||blocks: on block broken||``コマンドを取(と)って、**Glass**に設定(せってい)しましょう。``||blocks:place||``ブロックを挿入(そうにゅう)し、**Diamond**に設定(せってい)しましょう。``||positions:pick random position||``ブロックを**Diamond**の``||blocks:place||``ブロックの**at**引数(ひきすう)にドラッグしましょう。**from_position**変数(へんすう)を取(と)って、**Diamond**の``||blocks:place||``ブロックの**from**引数(ひきすう)にドラッグしましょう。**to_position**変数(へんすう)を取(と)って、**Diamond**の``||blocks:place||``ブロックの**to**引数(ひきすう)にドラッグしましょう。
 
 ```blocks
 blocks.onBlockBroken(AIR, function () { 
@@ -93,7 +93,7 @@ blocks.onBlockBroken(AIR, function () {
 ```
 
 ## ステップ 8
-``||blocks:on block broken||``ブロック構造をコピーします。**Glass**を**Diamond**に変更し、**Diamond**の``||blocks:place||``ブロックを**Orange Wool**に変更します。
+``||blocks:on block broken||``ブロック構造(こうぞう)をコピーします。**Glass**を**Diamond**に変更(へんこう)し、**Diamond**の``||blocks:place||``ブロックを**Orange Wool**に変更(へんこう)します。
 
 ```blocks
 blocks.onBlockBroken(DIAMOND_BLOCK, function () { 
@@ -105,7 +105,7 @@ blocks.onBlockBroken(DIAMOND_BLOCK, function () {
 ```
 
 ## ステップ 9
-**Play**ボタンを押してMinecraftに入り、すべてのイベントをテストします。**position**から始めて、次に**wall**を使います。**glassブロック**を壊して何が起こるかを見てみましょう。
+**Play**ボタンを押(お)してMinecraftに入(はい)り、すべてのイベントをテストします。**position**から始(はじ)めて、次(つぎ)に**wall**を使(つか)います。**glassブロック**を壊(こわ)して何(なに)が起(お)こるかを見(み)てみましょう。
 
 ```blocks
 let from_position: Position = null 

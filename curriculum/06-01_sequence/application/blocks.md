@@ -1,7 +1,7 @@
 # チュートリアル
 
 ## ステップ 1
-Redstoneを使って閉回路の例を作ります。
+Redstoneを使(つか)って閉(しめ)回路(かいろ)の例(れい)を作(つく)ります。
 
 ```ghost
 player.onChat("run", function () {

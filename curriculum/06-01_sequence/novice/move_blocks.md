@@ -1,7 +1,7 @@
-# エージェントの移動: ブロック
+# エージェントの移動(いどう): ブロック
 
 ## ステップ 1
-``||player:チャットコマンド||``を作って、**"tp"** という名前を付けます。
+``||player:チャットコマンド||``を作(つく)って、**"tp"** という名前(なまえ)を付(つ)けます。
 
 ```blocks
 player.onChat("tp", function () {
@@ -10,7 +10,7 @@ player.onChat("tp", function () {
 
 ## ステップ 2
 
-``||agent:agent teleport to player||`` を取って、**tp** ``||player:チャットコマンド||``の中にドラッグしましょう。
+``||agent:agent teleport to player||`` を取(と)って、**tp** ``||player:チャットコマンド||``の中(なか)にドラッグしましょう。
 
 ```blocks
 player.onChat("tp", function () {
@@ -20,7 +20,7 @@ player.onChat("tp", function () {
 
 ## ステップ 3
 
-別の ``||player:チャットコマンド||``を取って、**"fd"** という名前を付けます。
+別(べつ)の ``||player:チャットコマンド||``を取(と)って、**"fd"** という名前(なまえ)を付(つ)けます。
 
 ```blocks
 player.onChat("fd", function () {
@@ -29,7 +29,7 @@ player.onChat("fd", function () {
 
 ## ステップ 4
 
-``||agent:移動させる||`` を取って、**forward by 5** に設定しましょう。
+``||agent:移動(いどう)させる||`` を取(と)って、**forward by 5** に設定(せってい)しましょう。
 
 ```blocks
 player.onChat("fd", function () {
@@ -39,7 +39,7 @@ player.onChat("fd", function () {
 
 ## ステップ 5
 
-別の ``||player:チャットコマンド||``を取って、**"lt"** という名前を付けます。
+別(べつ)の ``||player:チャットコマンド||``を取(と)って、**"lt"** という名前(なまえ)を付(つ)けます。
 
 ```blocks
 player.onChat("lt", function () {
@@ -48,7 +48,7 @@ player.onChat("lt", function () {
 
 ## ステップ 6
 
-``||agent:agent turn||`` を取って、**turn left** に設定しましょう。それを ``||player:チャットコマンド||`` **lt** コマンドにドラッグしましょう。
+``||agent:agent turn||`` を取(と)って、**turn left** に設定(せってい)しましょう。それを ``||player:チャットコマンド||`` **lt** コマンドにドラッグしましょう。
 
 ```blocks
 player.onChat("lt", function () {
@@ -58,7 +58,7 @@ player.onChat("lt", function () {
 
 ## ステップ 7
 
-別の ``||player:チャットコマンド||``を取って、**"rt"** という名前を付けます。
+別(べつ)の ``||player:チャットコマンド||``を取(と)って、**"rt"** という名前(なまえ)を付(つ)けます。
 
 ```blocks
 player.onChat("rt", function () {
@@ -68,7 +68,7 @@ player.onChat("rt", function () {
 
 ## ステップ 8
 
-別の ``||agent:agent turn||`` ブロックを取って、**turn right** に設定してから、``||agent:agent||`` **turn right** を ``||player:チャットコマンド||`` **rt** コマンドにドラッグしましょう。
+別(べつ)の ``||agent:agent turn||`` ブロックを取(と)って、**turn right** に設定(せってい)してから、``||agent:agent||`` **turn right** を ``||player:チャットコマンド||`` **rt** コマンドにドラッグしましょう。
 
 ```blocks
 player.onChat("rt", function () {
@@ -79,7 +79,7 @@ player.onChat("rt", function () {
 
 ## ステップ 9
 
-**Play** ボタンを押し、Minecraftに戻り、**t** を押してチャットを開いて、コマンド **tp**、**rt**、**lt**、**fd** を一つずつ入力して何が起こるかを見てみましょう。
+**Play** ボタンを押(お)し、Minecraftに戻(もど)り、**t** を押(お)してチャットを開(ひら)いて、コマンド **tp**、**rt**、**lt**、**fd** を一(ひと)つずつ入力(にゅうりょく)して何(なに)が起(お)こるかを見(み)てみましょう。
 
 
 ```blocks
