@@ -11,6 +11,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **言語**: TypeScript（ES5ターゲット）
 - **プラットフォーム**: MakeCode for Minecraft
 - **対象**: Minecraft Education Edition
+- **Webサイト**: Jekyll（GitHub Pages）
+- **テーマ**: jekyll-theme-hacker
 
 ## プロジェクト構成
 
@@ -18,24 +20,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - `main.ts` - メインのプログラムファイル（現在空）
 - `test.ts` - テストファイル（現在コメント1行のみ）
-- `pxt.json` - MakeCodeプロジェクトの設定ファイル
+- `pxt.json` - MakeCodeプロジェクトの設定ファイル（240個のチュートリアルファイルを含む）
 - `tsconfig.json` - TypeScript設定（ES5ターゲット、noImplicitAny有効）
+- `_config.yml` - Jekyll設定ファイル（GitHub Pages用）
+- `index.md` - メインページ（4つのゲーミフィケーション世界へのリンク）
 
 ### ディレクトリ構造
 
 1. **`block/`** - ブロックプログラミング用の教材
-   - `world01/` - 基本的なプログラミング学習（エージェント移動、ブロック操作）
-   - `world02/` - 中級プログラミング学習（データ収集、分析）
-   - `world03/` - 上級プログラミング学習（カスタムブロック）
-   - `world04/` - AI・機械学習関連（Pattern Recognition、Terrain Mapping、Sustainable Farming等）
+   - `world00/` - 基本的なチュートリアル（ChickenRain、FlowerTrail）
+   - `world01/` - 動物保護：基本的なプログラミング学習（エージェント移動、ブロック操作、6レベル）
+   - `world02/` - 惑星探索：中級プログラミング学習（データ収集、分析、6レベル）
+   - `world03/` - タイムトラベル：上級プログラミング学習（カスタムブロック、6レベル）
+   - `world04/` - AI・機械学習関連（Pattern Recognition、Terrain Mapping、Sustainable Farming、Ocean Observations、Water Quality）
 
 2. **`python/`** - Pythonプログラミング教材
-   - `lesson1/` ～ `lesson10/` - 段階的な学習教材
+   - `lesson1/` ～ `lesson10/` - 段階的な学習教材（各レッスンに複数のアクティビティ）
 
 3. **`_locales/ja/`** - 日本語ローカライゼーション
-   - MakeCode用の文字列リソース
+   - `mctuto-strings.json` - UI文字列の日本語訳
+   - `mctuto-jsdoc-strings.json` - JSDocコメントの日本語訳
 
-4. **`チュートリアル/`** - 日本語チュートリアル（順番とシーケンス）
+4. **`_site/`** - Jekyll生成された静的サイト（自動生成、編集不要）
 
 5. **`curriculum/`** - 段階的プログラミング学習教材
    - `06-01_sequence/` - エージェント移動、迷路構築、オセロット囲い（12ファイル）
@@ -83,7 +89,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 開発コマンド
 
+### MakeCode関連
 MakeCode for Minecraftプロジェクトの性質上、特別なビルドコマンドはありません。MakeCodeエディタでの編集・実行が基本です。
+
+### Jekyll（GitHub Pages）関連
+```bash
+# ローカルでJekyllサイトをビルド・プレビュー
+bundle install    # 初回のみ：依存関係をインストール
+bundle exec jekyll serve    # ローカルサーバーを起動（http://localhost:4000）
+bundle exec jekyll build    # 静的サイトを_siteディレクトリにビルド
+```
+
+### ファイル検索・編集時のコツ
+```bash
+# 特定のチュートリアルファイルを検索
+find . -name "*.md" | grep "activity_1"
+
+# 翻訳が必要なファイルを検索
+find . -name "*.md" | grep -E "(world0[1-4]|curriculum)" | head -10
+
+# 複数のマークダウンファイルを一括編集する場合
+find ./curriculum -name "*.md" | head -5 | xargs ls -la
+```
 
 ## 開発時の注意事項
 
@@ -149,3 +176,21 @@ MakeCode for Minecraftプロジェクトの性質上、特別なビルドコマ�
 - **実践的**: Minecraft内での実際のプログラミング体験
 - **多言語対応**: 英語・日本語対応
 - **AI教育**: 基本的な機械学習概念の学習支援
+
+## プロジェクトのアーキテクチャ理解
+
+### MakeCodeプロジェクト構造
+- **pxt.json**: 240個のチュートリアルファイルが登録されており、MakeCodeエディタでアクセス可能
+- **カスタムブロック**: `block/world03/` と `block/world04/` にTypeScriptで実装
+- **多言語対応**: `_locales/ja/` でUI文字列とドキュメントの日本語化
+
+### Jekyll サイト構造
+- **GitHub Pages**: 自動的にJekyllでビルドされ、Webサイトとして公開
+- **テーマ**: hacker テーマを使用してプログラミング教材らしい見た目
+- **ナビゲーション**: index.mdから各world（世界）へのリンク構造
+
+### 教材の階層構造
+1. **世界（World）**: テーマ別の大きなカテゴリ
+2. **レベル（Level）**: 各世界内での段階的学習
+3. **アクティビティ**: 具体的なプログラミング課題
+4. **難易度**: novice → intermediate → expert → application
