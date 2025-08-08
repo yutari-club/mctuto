@@ -1,5 +1,10 @@
 ### @hideIteration true 
 
+
+```template
+{}
+```
+
 # チュートリアル
 
 ## ステップ 1

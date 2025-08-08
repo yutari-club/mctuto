@@ -24,7 +24,7 @@ Then use these functions in a `||loops:for||` loop to make the Agent pass over e
 
 ## ステップ 2 
 **Part 2:** Add to the code to make the Agent till the grass blocks that it passes over and plant a sapling.
-Do this by adding an `||logic:if else||` conditional, that inspects for grass blocks, in the function that moves the Agent forward. 
+Do this by adding an `||logic:もし〇〇なら||` conditional, that inspects for grass blocks, in the function that moves the Agent forward. 
 
 ```template
 //Place your functions below #  

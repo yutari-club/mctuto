@@ -25,7 +25,7 @@
 ``||logic: でなければ||``の場合(ばあい)、エージェントは``||variables:blockB|||``を設定(せってい)し、ブロックを置(お)き、``||variables:countを -1 だけ増(ふ)やす|||``。<br>
 
 
-<!-- ``||logic: If||`` ``||count||`` = **0**, then agent needs to set ``||variable:blockA||``, ``||agent:destroy down||``, ``||agent:place down||`` and ``||variable:change the count by 1||``. ``||logic: Else||`` the Agent needs to set ``||blockB||``, place blocks and ``||change count by -1||``.   -->
+<!-- ``||logic: If||`` ``||count||`` = **0**, then agent needs to set ``||variable:blockA||``, ``||agent:destroy down||``, ``||agent:place down||`` and ``||variable:change the count by 1||``. ``||でなければ||`` the Agent needs to set ``||blockB||``, place blocks and ``||change count by -1||``.   -->
 
 ## Step 3
 エージェントは``||loops: もし〇〇ならくりかえし||``で**前(まえ)にブロックがない**[``||logic:ではなく||``+``||agent:前(まえ)にブロックがある||``]の間(あいだ)は配置(はいち)するよ。
