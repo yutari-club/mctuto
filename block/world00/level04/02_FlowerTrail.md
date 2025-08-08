@@ -5,7 +5,7 @@
 
 ## はじめに @showdialog
 足跡(あしあと)を**花(はな)の道(みち)**にしよう。
-![花(はな)の道(みち)](https://raw.githubusercontent.com/yutari-club/mctuto/refs/heads/master/block/world00/level04/02_FlowerTrail.gif)
+![花(はな)の道(みち)](https://raw.githubusercontent.com/yutari-club/mctuto/refs/heads/master/block/world00/level04/02_FlowerTrail.webp)
 
 
 ## 歩(ある)いた時(とき)…？

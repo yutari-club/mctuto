@@ -20,7 +20,7 @@
 1. キーボードの [**1** ]キーを押(お)してプログラムの名前(なまえ)を入力(にゅうりょく)する
 1. キーボードの [**Enter**]キーを押(お)して実行(じっこう)する
 
-![MakeCodeの使(つか)い方(かた)](https://raw.githubusercontent.com/yutari-club/mctuto/refs/heads/master/block/world01/level01/welcome.gif)
+![MakeCodeの使(つか)い方(かた)](https://raw.githubusercontent.com/yutari-club/mctuto/refs/heads/master/block/world01/level01/welcome.webp)
 
 ## やってみよう
 1. マウスで``||player:チャットコマンド||``の「 **jump** 」をクリックする
