@@ -10,7 +10,10 @@
       "Bash(echo:*)",
       "Bash(\"/c/Users/pisuk/AppData/Local/Microsoft/WinGet/Packages/Google.Libwebp_Microsoft.Winget.Source_8wekyb3d8bbwe/libwebp-1.5.0-windows-x64/bin/cwebp\" -q 80 \"C:\\work\\github_yutari-club\\mctuto\\block\\world00\\level01\\world_icon.jpeg\" -o \"C:\\work\\github_yutari-club\\mctuto\\block\\world00\\level01\\world_icon.jpeg.webp\")",
       "Bash(git add:*)",
-      "Bash(gif2webp:*)"
+      "Bash(gif2webp:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
