@@ -12,7 +12,7 @@
 たとえば1羽(わ)のニワトリ... 
 
 いや、たくさんのニワトリを雨(あめ)のようにふらせよう！
-![ニワトリの雨(あめ)](https://yutari-club.github.io/mctuto/block/world00/level04/01_ChickenRain.gif)
+![ニワトリの雨(あめ)](https://raw.githubusercontent.com/yutari-club/mctuto/refs/heads/master/block/world00/level04/01_ChickenRain.gif)
 
 
 ## チャットコマンド
