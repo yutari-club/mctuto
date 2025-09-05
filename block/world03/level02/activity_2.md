@@ -5,7 +5,7 @@
 ### @explicitHints 1
 
 
-# サンドキャッスル
+# 砂の城
 <!-- # Sandcastle! -->
 
 ## Step 1

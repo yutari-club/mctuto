@@ -29,7 +29,7 @@ Start by creating and setting ``||variable:height||`` and ``||variable:quantity|
 ## Step 3
 ``||logic: もし||``ブロックの上(うえ)に、``||variables:ブロック数(すう)を 1 だけ増(ふ)やす||``と``||player: 送信(そうしん)する||``を追加(ついか)するよ。``||player: 送信(そうしん)する||``に``||variables:ブロック数(すう)||``を設定(せってい)することで何個(なんこ)のブロックを集(あつ)めたかがわかります。<br>
 
-次(つぎ)に、``||blocks: 柱状(ちゅうじょう)のクォーツのブロックが破壊(はかい)され時(どき)||`` に、このブロックをいれることで、ブロックを壊(こわ)しながら集(あつ)めた数(かず)を表示(ひょうじ)できるようにするよ。<br>
+次(つぎ)に、``||blocks: クォーツブロックが破壊(はかい)され時(とき)||`` に、このブロックをいれることで、ブロックを壊(こわ)しながら集(あつ)めた数(かず)を表示(ひょうじ)できるようにするよ。<br>
 
 全(すべ)てのブロックを集(あつ)め終(お)わると、「十分(じゅうぶん)なブロックを集(あつ)めました！」というメッセージが表示(ひょうじ)するよ。<br>
 
@@ -44,7 +44,7 @@ When you are done, you will see the message "Collected enough blocks!".  -->
 ``` 
 
 ```ghost
-blocks.onPillarQuartzBlockBroken(function () {
+blocks.onBlockBroken(function () {
     total_blocks += 1
     if (total_blocks == height * quantity) {
         player.say("Collected enough blocks!")
