@@ -5,7 +5,7 @@
 ### @explicitHints 1
 
 
-# クォーツの採掘(さいくつ)!
+# 柱(はしら)を作(つく)る!
 <!-- # Mining Quartz! -->
 
 ## Step 1
@@ -29,10 +29,11 @@ Start by creating and setting ``||variable:height||`` and ``||variable:quantity|
 ## Step 3
 ``||logic: もし||``ブロックの上(うえ)に、``||variables:ブロック数(すう)を 1 だけ増(ふ)やす||``と``||player: 送信(そうしん)する||``を追加(ついか)するよ。``||player: 送信(そうしん)する||``に``||variables:ブロック数(すう)||``を設定(せってい)することで何個(なんこ)のブロックを集(あつ)めたかがわかります。<br>
 
-次(つぎ)に、``||blocks: クォーツブロックが破壊(はかい)され時(とき)||`` に、このブロックをいれることで、ブロックを壊(こわ)しながら集(あつ)めた数(かず)を表示(ひょうじ)できるようにするよ。<br>
+次(つぎ)に、``||blocks: 白色のコンクリートブロックが破壊(はかい)され時(とき)||`` に、このブロックをいれることで、ブロックを壊(こわ)しながら集(あつ)めた数(かず)を表示(ひょうじ)できるようにするよ。<br>
 
 全(すべ)てのブロックを集(あつ)め終(お)わると、「十分(じゅうぶん)なブロックを集(あつ)めました！」というメッセージが表示(ひょうじ)するよ。<br>
 
+ブロックを集(あつ)め終(お)わったら柱(はしら)を作(つく)って完了(かんりょう)だよ！<br>
 
 
 <!-- Now add a ``||variable:change total blocks||`` by 1 command and ``||player: say||`` ``||variable:total blocks||``, so that you know how many blocks you have collected. 
@@ -44,7 +45,7 @@ When you are done, you will see the message "Collected enough blocks!".  -->
 ``` 
 
 ```ghost
-blocks.onBlockBroken(function () {
+blocks.onBlockBroken(WHITE_CONCRETE, function () {
     total_blocks += 1
     if (total_blocks == height * quantity) {
         player.say("Collected enough blocks!")
