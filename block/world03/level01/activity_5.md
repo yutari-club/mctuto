@@ -44,7 +44,7 @@ player.onTravelled(WALK, function () {
     walk = true
 })
 loops.forever(function () {
-    if (walk == true && "" == "") {
+    if (walk && true ) {
     	
     }
 })
@@ -54,7 +54,7 @@ loops.forever(function () {
 ```ghost
 let climb = false
 let walk = false
-let _break = false
+let sneak = false
 player.onTravelled(CLIMB, function () {
     climb = true
 })
@@ -62,10 +62,10 @@ player.onTravelled(WALK, function () {
     walk = true
 })
 blocks.onBlockBroken(STONE, function () {
-    _break = true
+    sneak = true
 })
 loops.forever(function () {
-    if (walk == true && climb == (true && _break == true)) {
+    if (walk && climb  && sneak)) {
         gameplay.setWeather(RAIN)
     }
 })

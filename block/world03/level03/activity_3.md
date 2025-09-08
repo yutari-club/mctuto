@@ -39,7 +39,7 @@
 ブロックを配置(はいち)する前(まえ)に``||variables:count||``を**0**に設定(せってい)するよ。<br>
 
 
-There are **4** sides of reservoir that the Agent needs to complete, so add a ``||loops: repeat||`` block. Set the ``||count||`` to **0** before sending the Agent to place blocks.
+<!-- There are **4** sides of reservoir that the Agent needs to complete, so add a ``||loops: repeat||`` block. Set the ``||count||`` to **0** before sending the Agent to place blocks. -->
 
 ```template
 let count = 0
