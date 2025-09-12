@@ -20,6 +20,6 @@ Then create ``||player:チャットコマンド||`` command and add ``||agent: t
 player.onChat("plantSeed", function () {
     agent.till(FORWARD)
     agent.place(FORWARD)
+    player.say("")
 })
-player.say("")
 ```

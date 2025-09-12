@@ -8,15 +8,15 @@
 <!-- # Build a Town Hall! -->
 
 ## Step 1
-**種(たね)植(う)え**関数(かんすう)を作成(さくせい)しました。<br>
+**種植え**関数(かんすう)を作成(さくせい)しました。<br>
 
 これは、前(まえ)のアクティビティで使用(しよう)したコードだよ。<br>
 
 次(つぎ)に ``||player:入力(にゅうりょく)した時(とき)||`` コマンドをワークスペースにドラッグし、**run**という名前(なまえ)を付(つ)けます。<br>
 
-``||loops:くりかえし||``を追加(ついか)し、**高度(こうど)なブロック**セクションをクリックし、**関数(かんすう)**をクリックし、``||functions:呼(よ)び出(だ)し 種(たね)植(う)え||``をループにドラッグするよ。<br>
+``||loops:くりかえし||``を追加(ついか)し、**高度(こうど)なブロック**セクションをクリックし、**関数(かんすう)**をクリックし、``||functions:呼(よ)び出(だ)し 種植え||``をループにドラッグするよ。<br>
 
-エージェントが**種(たね)植(う)え**関数(かんすう)を何回(なんかい)繰(く)り返(かえ)す必か数(かぞ)えてしてね。
+エージェントが**種植え**関数(かんすう)を何回(なんかい)繰(く)り返(かえ)す必か数(かぞ)えてしてね。
 
 <!-- We created a function **plantSeed** for you. 
 It is simply the code that you used for the previous activity. 
@@ -35,7 +35,7 @@ It is also a good practice to leave notes about the code that's written, like th
 /**
  * 関数(かんすう)を使(つか)えば、コードを簡単(かんたん)に再(さい)利用(りよう)できる。
  */
-function 種(たね)植(う)え () {
+function 種植え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     agent.place(DOWN)
@@ -48,6 +48,6 @@ player.onChat("plantSection", function () {
         plantSeed()
     }
     agent.move(FORWARD, 1)
+    player.say("")
 })
-player.say("")
 ```

@@ -10,8 +10,8 @@
 
 ## Step 1
 
-**種(たね)植(う)え**と**畝(うね)**の2つの関数(かんすう)が用意(ようい)されている。
-``||player: チャットを入力(にゅうりょく)した時(とき)||`` を作成(さくせい)し、その中(なか)で``||functions: 呼(よ)び出(だ)し 畝(うね)||``を呼(よ)び出(だ)するよ。<br>
+**種植え**と**野菜を植える土の列**の2つの関数(かんすう)が用意(ようい)されている。
+``||player: チャットを入力(にゅうりょく)した時(とき)||`` を作成(さくせい)し、その中(なか)で``||functions: 呼(よ)び出(だ)し 野菜を植える土の列||``を呼(よ)び出(だ)するよ。<br>
 
 ``||agent: エージェントの周(まわ)りのブロック||``の種類(しゅるい)を調(しら)べる ``||logic: もし||``を追加(ついか)する。<br>
 
@@ -19,7 +19,7 @@
 
 ``||logic: でなければ||``の中(なか)では ``||agent: 下(した)のブロック||``が``||blocks: クオーツ||``なら``||agent: 左向(ひだりむ)き||``、 ``||agent: 前(まえ)に移動(いどう)||``、 ``||agent: 左向(ひだりむ)き||``とするよ。 <br>
 
-最後(さいご)に ``||functions: 呼(よ)び出(だ)し 畝(うね)||``を配置(はいち)するよ。
+最後(さいご)に ``||functions: 呼(よ)び出(だ)し 野菜を植える土の列||``を配置(はいち)するよ。
 <!-- Two functions **plantSeed** and **plantSection** are provided for youの. 
 Create a new ``||player:チャットコマンド||`` command and ``||functions: call plantSection||`` within it. 
 Add an ``||logic: if||`` statement that checks if ``||agent: agent inspects block down||`` .  
@@ -30,10 +30,10 @@ Finally ``||functions: call plantSection||``. -->
 #### ~ tutorialhint
 ``` blocks
 player.onChat("run", function () {
-    畝(うね)()
+    野菜を植える土の列()
 })
 // @hide
-function 畝(うね) () {
+function 野菜を植える土の列 () {
 }
 ```
 
@@ -41,16 +41,16 @@ function 畝(うね) () {
 /**
  * 関数(かんすう)の中(なか)で関数(かんすう)を呼(よ)び出(だ)している
  */
-function 畝(うね) () {
+function 野菜を植える土の列 () {
     for (let index = 0; index < 11; index++) {
-        種(たね)植(う)え()
+        種植え()
     }
     agent.move(FORWARD, 1)
 }
  /**
  * エージェントの下(した)にブロックがない場合(ばあい)は種(たね)を植(う)えないようにコードを修正(しゅうせい)した。
  */
-function 種(たね)植(う)え () {
+function 種植え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     if (agent.detect(AgentDetection.Block, DOWN)) {
@@ -76,7 +76,7 @@ If when ``||agent:agent inspects block down||`` is **equal (=)** to ``||blocks:l
 #### ~ tutorialhint
 ``` blocks
 player.onChat("run", function () {
-    畝(うね)()
+    野菜を植える土の列()
     if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)
@@ -85,7 +85,7 @@ player.onChat("run", function () {
 
 })
 // @hide
-function 畝(うね) () {
+function 野菜を植える土の列 () {
 }
 ```
 
@@ -93,16 +93,16 @@ function 畝(うね) () {
 /**
  * 関数(かんすう)の中(なか)で関数(かんすう)を呼(よ)び出(だ)している
  */
-function 畝(うね) () {
+function 野菜を植える土の列 () {
     for (let index = 0; index < 11; index++) {
-        種(たね)植(う)え()
+        種植え()
     }
     agent.move(FORWARD, 1)
 }
  /**
  * エージェントの下(した)にブロックがない場合(ばあい)は種(たね)を植(う)えないようにコードを修正(しゅうせい)した。
  */
-function 種(たね)植(う)え () {
+function 種植え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     if (agent.detect(AgentDetection.Block, DOWN)) {
@@ -134,7 +134,7 @@ The agent needs to ``||agent:turn left||``, ``||agent:move forward||`` and ``||a
 #### ~ tutorialhint
 ``` blocks
 player.onChat("run", function () {
-    畝(うね)()
+    野菜を植える土の列()
     if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)
@@ -147,7 +147,7 @@ player.onChat("run", function () {
 
 })
 // @hide
-function 畝(うね) () {
+function 野菜を植える土の列 () {
 }
 ```
 
@@ -155,16 +155,16 @@ function 畝(うね) () {
 /**
  * 関数(かんすう)の中(なか)で関数(かんすう)を呼(よ)び出(だ)している
  */
-function 畝(うね) () {
+function 野菜を植える土の列 () {
     for (let index = 0; index < 11; index++) {
-        種(たね)植(う)え()
+        種植え()
     }
     agent.move(FORWARD, 1)
 }
  /**
  * エージェントの下(した)にブロックがない場合(ばあい)は種(たね)を植(う)えないようにコードを修正(しゅうせい)した。
  */
-function 種(たね)植(う)え () {
+function 種植え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     if (agent.detect(AgentDetection.Block, DOWN)) {
@@ -178,14 +178,14 @@ function 種(たね)植(う)え () {
 ```
 
 ## Step 4
-最後(さいご)に ``||functions: 呼(よ)び出(だ)し 畝(うね)||`` を ``||player:チャットを入力(にゅうりょく)した時(とき)||`` コマンドの下(した)に ``||logic:もし||`` を追加(ついか)するよ。 
+最後(さいご)に ``||functions: 呼(よ)び出(だ)し 野菜を植える土の列||`` を ``||player:チャットを入力(にゅうりょく)した時(とき)||`` コマンドの下(した)に ``||logic:もし||`` を追加(ついか)するよ。 
 
 <!-- Finally add another ``||functions: call plantSection||`` within the ``||player:チャットコマンド||`` command outside of the ``||logic:もし||`` statement.   -->
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("run", function () {
-    畝(うね)()
+    野菜を植える土の列()
     if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)
@@ -195,10 +195,10 @@ player.onChat("run", function () {
         agent.move(FORWARD, 1)
         agent.turn(LEFT_TURN)
     }
-    畝(うね)()
+    野菜を植える土の列()
 })
 // @hide
-function 畝(うね) () {
+function 野菜を植える土の列 () {
 }
 ```
 
@@ -206,16 +206,16 @@ function 畝(うね) () {
 /**
  * 関数(かんすう)の中(なか)で関数(かんすう)を呼(よ)び出(だ)している
  */
-function 畝(うね) () {
+function 野菜を植える土の列 () {
     for (let index = 0; index < 11; index++) {
-        種(たね)植(う)え()
+        種植え()
     }
     agent.move(FORWARD, 1)
 }
  /**
  * エージェントの下(した)にブロックがない場合(ばあい)は種(たね)を植(う)えないようにコードを修正(しゅうせい)した。
  */
-function 種(たね)植(う)え () {
+function 種植え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     if (agent.detect(AgentDetection.Block, DOWN)) {
@@ -235,7 +235,7 @@ function 種(たね)植(う)え () {
 
 ```ghost
 player.onChat("turn", function () {
-    畝(うね)()
+    野菜を植える土の列()
     if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)
@@ -245,7 +245,8 @@ player.onChat("turn", function () {
         agent.move(FORWARD, 1)
         agent.turn(RIGHT_TURN)
     }
-    畝(うね)()
+    野菜を植える土の列()
+    player.say("")
 })
-player.say("")
+
 ```

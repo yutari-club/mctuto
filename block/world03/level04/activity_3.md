@@ -38,6 +38,6 @@ player.onChat("town_hall", function (length, width, height) {
         }
         agent.move(UP, 1)
     }
+    player.say("")
 })
-player.say("")
 ```

@@ -52,7 +52,7 @@ player.onChat("left", function (num1) {
 player.onChat("collect", function () {
     agent.destroy(DOWN)
     agent.collectAll()
+    player.say("")
 })
-player.say("")
 ```
 

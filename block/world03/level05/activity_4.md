@@ -8,7 +8,7 @@
 <!-- # Beets! -->
 
 ## Step 1
-３つの関数(かんすう)、``||functions: 種(たね)植(う)え||``と``||functions: 畝(うね)||``、``||functions: 方向転換(ほうこうてんかん)||``が用意(ようい)されいます。<br>
+３つの関数(かんすう)、``||functions: 種植え||``と``||functions: 野菜を植える土の列||``、``||functions: 方向転換||``が用意(ようい)されいます。<br>
 
 まず、新(あたら)しい``||player: チャットを入力(にゅうりょく)した時(とき)||``を作成(さくせい)し、``||loops:もし、くりかえし||`` を追加(ついか)するよ。<br>
 
@@ -21,23 +21,23 @@ First, create  a new ``||player:チャットコマンド||`` command and add you
 /**
  * 関数(かんすう)の中(なか)で関数(かんすう)を呼(よ)び出(だ)している
  */
-function 畝(うね) () {
+function 野菜を植える土の列 () {
     for (let index = 0; index < 11; index++) {
-        種(たね)植(う)え()
+        種植え()
     }
     agent.move(FORWARD, 1)
 }
  /**
  * エージェントの下(した)にブロックがない場合(ばあい)、種(たね)を植(う)えないようにコードを修正(しゅうせい)した。
  */
-function 種(たね)植(う)え () {
+function 種植え () {
     agent.till(FORWARD)
     agent.move(FORWARD, 1)
     if (agent.detect(AgentDetection.Block, DOWN)) {
         agent.place(DOWN)
     }
 }
-function 方向転換(ほうこうてんかん) () {
+function 方向転換 () {
     if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)
@@ -55,12 +55,12 @@ function 方向転換(ほうこうてんかん) () {
 ```ghost
 player.onChat("plant", function () {
     while (agent.inspect(AgentInspection.Block, DOWN) != GOLD_BLOCK) {
-        畝(うね)()
-        方向転換(ほうこうてんかん)()
+        野菜を植える土の列()
+        方向転換()
     }
 })
 
-function 方向転換(ほうこうてんかん) () {
+function 方向転換 () {
     if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)

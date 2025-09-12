@@ -50,8 +50,8 @@ player.onChat("build-simple", function (size, height) {
         }
         agent.move(UP, 1)
     }
+    player.say("")
 })
-player.say("")
 ```
 
 
