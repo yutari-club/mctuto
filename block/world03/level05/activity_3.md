@@ -203,6 +203,8 @@ function 野菜を植える土の列 () {
 ```
 
 ```template
+agent.setItem(BEETROOT_SEEDS, 1, 1)
+
 /**
  * 関数(かんすう)の中(なか)で関数(かんすう)を呼(よ)び出(だ)している
  */
