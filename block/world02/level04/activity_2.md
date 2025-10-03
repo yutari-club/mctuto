@@ -13,7 +13,7 @@
 
 そうでなければ**右(みぎ)**に**移動(いどう)**する必要(ひつよう)がある。<br>
 
-同(どう)(おな)じループの中(なか)で、もしエージントが**下(した)**のブロックを**検査(けんさ)**し、それが**丸石(まるいし)(まるいし)**か**砂利(じゃり)(じゃり)**であれば、**下(した)**に**破壊(はかい)**し、すべてを**収集(しゅうしゅう)**する必要(ひつよう)があります。
+同(どう)(おな)じループの中(なか)で、もしエージントが**下(した)**のブロックを**検査(けんさ)**し、それが**丸石(まるいし)**か**砂利(じゃり)**であれば、**下(した)**に**破壊(はかい)**し、すべてを**収集(しゅうしゅう)**する必要(ひつよう)があります。
 <!-- While **inspecting the block down** that is **not** **packed ice**, if the Agent **detects the block right**, then it needs to **move forward**. Otherwise it needs to **move right**. Within the same loop, if the Agent **inspects the block down** and it is either **cobblestone** **or** **gravel**, then it needs to **destroy down** and **collect all**.  -->
 
 
