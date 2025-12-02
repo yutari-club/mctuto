@@ -8,18 +8,20 @@
 ### @explicitHints true
 ### @flyoutOnly 0
 
-# Activity 3 – Detecting Anomalies.
+# アクティビティ 3 - 異常(いじょう)を発見(はっけん)しよう
 
-## Step 1
-In this Activity, you have to use the dataset that you made, inside a machine learning algorithm. The algorithm needs to search for anomalies in the dataset
-and outline them on the map. First use an `||AI: machine learning||` coding block inside of a `||loops: on start||` coding block.
+## ステップ 1
+このアクティビティでは、作(つく)ったデータセットを機械(きかい)学習(がくしゅう)アルゴリズムの中(なか)で使(つか)う必要(ひつよう)があるよ。<br>
+アルゴリズムはデータセットの中(なか)の異常(いじょう)を探(さが)して、マップ上(じょう)に輪郭(りんかく)を描(えが)く必要(ひつよう)があるんだ。<br>
+まず`||loops: on start||`コーディングブロックの中(なか)に`||AI: machine learning||`コーディングブロックを使(つか)ってみよう。
 
-## Step 2
-Inside of that, place an `||Datasets: input dataset||` coding block. Then place an `||AI: analyze data||` coding block.
+## ステップ 2
+その中(なか)に`||Datasets: input dataset||`コーディングブロックを置(お)いてみよう。<br>
+それから`||AI: analyze data||`コーディングブロックを置(お)こう。
 
-## Step 3
-We have now imported and analyzed the data, the algorithm should have a result. However, so that we can see the result on the map place an 
-`||Output: show locations||` coding block.
+## ステップ 3
+データを読(よ)み込(こ)んで分析(ぶんせき)したので、アルゴリズムに結果(けっか)が出(で)ているはずだよ。<br>
+でもマップ上(じょう)で結果(けっか)を見(み)ることができるように、`||Output: show locations||`コーディングブロックを置(お)いてみよう。
 
 
 ```ghost
