@@ -73,7 +73,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 翻訳作業の進捗
 
-### 完了済み
+### Curriculum（カリキュラム）
 - ✅ **06-01_sequence** - 12ファイル（100%）
 - ✅ **06-02_conditionals** - 12ファイル（100%）
 - ✅ **06-03_variables** - 15ファイル（100%）
@@ -82,10 +82,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - ✅ **06-06_functions** - 12ファイル（100%）
 - ✅ **06-07_events** - 12ファイル（100%）
 
-### 未翻訳
-なし
+**カリキュラム合計**: 87/87ファイル完了（100%）
 
-**合計**: 87/87ファイル完了（100%）
+### Block（ブロックプログラミング）
+- ✅ **world04 AI教材** - PatternRecognition, MappingTerrain, SustainableFarming, OceanObservations, WaterQuality（完了）
+- ✅ **world04/customBlocks/AIBlocks.ts** - カスタムブロックの`//% block=`コメント翻訳完了
+
+### Python（Pythonプログラミング）
+- ✅ **lesson1-10** - 全レッスン・全アクティビティ（100%）
+  - タイトル、ステップ説明、tutorialhint、テンプレートコメントすべて翻訳完了
+  - 合計50+ファイル
+
+**全体**: すべての教材が小学生向けふりがな付き日本語に翻訳済み
 
 ## 開発コマンド
 
@@ -162,6 +170,47 @@ find ./curriculum -name "*.md" | head -5 | xargs ls -la
 - 「Drag it to the workspace」 → 「それをワークスペースにドラッグします」
 - 「Set the parameter to 5」 → 「パラメータを5に設定します」
 - 「The agent will move forward」 → 「エージェントが前に進みます」
+
+### テンプレートコメントの翻訳パターン
+- `//Replace the lines below with your code #` → `//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #`
+- `//Make the Agent move forward` → `//エージェントを前(まえ)に動(うご)かす`
+- `//for loop set to 5` → `//forループを5に設定(せってい)`
+- `//if conditional with Agent detect condition` → `//if条件(じょうけん)文(ぶん)とエージェント検知(けんち)条件(じょうけん)`
+
+### Gitコミットメッセージのパターン
+翻訳作業のコミットメッセージは以下のフォーマットを使用：
+```
+[対象範囲]: [作業内容]
+
+- [詳細1]
+- [詳細2]
+
+小学生向けにふりがな付きでわかりやすい日本語に翻訳
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
+
+例：
+```
+python lesson6とlesson9: 残りの未翻訳部分を完全に日本語化
+
+lesson6:
+- activity1.md: テンプレートコメントを翻訳
+- activity2.md: テンプレートコメントを翻訳
+
+lesson9:
+- activity1.md: テンプレートコメントを翻訳
+- activity2.md: タイトル、ステップ説明、tutorialhintを翻訳
+- activity3.md: タイトル、ステップ説明を翻訳
+
+小学生向けにふりがな付きでわかりやすい日本語に翻訳
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
 
 ## カスタムブロックの開発パターン
 
