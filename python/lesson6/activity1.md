@@ -30,13 +30,13 @@ agent.detect(AgentDetection.BLOCK, LEFT)
 **1000**msは**1**秒(びょう)だよ。
 
 ```template
-//Replace the lines below with your code #    
-//for loop set to 7                            |Part 1
-//Add the operator NOT to the condition below          |Part 2 
-//if conditional with an Agent detect condition|Part 1
-//Make the Agent move forward                  |Part 1
-//if conditional with an Agent detect condition                |Part 3
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//forループを7に設定(せってい)                            |パート 1
+//下(した)の条件(じょうけん)にNOT演算子(えんざんし)を追加(ついか)          |パート 2
+//if条件(じょうけん)文(ぶん)とエージェント検知(けんち)条件(じょうけん)|パート 1
+//エージェントを前(まえ)に動(うご)かす                  |パート 1
+//if条件(じょうけん)文(ぶん)とエージェント検知(けんち)条件(じょうけん)                |パート 3
 loops.pause(2000)
-//Make the Agent move forward                                  |Part 3
-//End of loop
+//エージェントを前(まえ)に動(うご)かす                                  |パート 3
+//ループの終(お)わり
 ```

@@ -23,14 +23,14 @@ while True:
 条件(じょうけん)を**True**に設定(せってい)した`||loops:もし〇〇ならくりかえす||`ループは継続的(けいぞくてき)に繰(く)り返(かえ)すよ。 
 
 ```template
-//Replace with your functions below #
-//Replace with comment about function below      
-//Declare function                                
-//If conditional with test for block condition (LIGHT_BLUE_CONCRETE)
-//Make the Agent move right
-//Elif conditional with test for block condition (RED_CONCRETE)
-//Make the Agent move left
-//Replace the lines below with your code #    
-//While loop with True as condition 
-//Call function                      
+//下(した)に関数(かんすう)を置(お)き換(か)えてね #
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える
+//関数(かんすう)を宣言(せんげん)する
+//If条件(じょうけん)文(ぶん)とブロック条件(じょうけん)テスト (LIGHT_BLUE_CONCRETE)
+//エージェントを右(みぎ)に動(うご)かす
+//Elif条件(じょうけん)文(ぶん)とブロック条件(じょうけん)テスト (RED_CONCRETE)
+//エージェントを左(ひだり)に動(うご)かす
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//Whileループと条件(じょうけん)True
+//関数(かんすう)を呼(よ)び出(だ)す
 ```

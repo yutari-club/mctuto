@@ -34,14 +34,14 @@ agent.inspect(AgentInspection.BLOCK, FORWARD)
 ```template
 left = BLUE_GLAZED_TERRACOTTA
 right = PINK_GLAZED_TERRACOTTA
-//Replace the lines below with your code #
-//Change value of loop below from 9 to 21                     |Part 2
-//for loop set to 9                                   |Part 1
-//if else conditional with an Agent inspect condition |Part 1
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//下(した)のループの値(あたい)を9から21に変更(へんこう)                     |パート 2
+//forループを9に設定(せってい)                                   |パート 1
+//if else条件(じょうけん)文(ぶん)とエージェント検査(けんさ)条件(じょうけん) |パート 1
 agent.turn(LEFT_TURN)
-//elif conditional with an Agent inspect condition            |Part 2
-//Make the agent turn right                                   |Part 2
-//else part of the if else conditional                |Part 1
-//Make the agent move forward                         |Part 1
-//End of loop                                         |Part 1
+//elif条件(じょうけん)文(ぶん)とエージェント検査(けんさ)条件(じょうけん)            |パート 2
+//エージェントを右(みぎ)に回転(かいてん)させる                                   |パート 2
+//if else条件(じょうけん)文(ぶん)のelse部分(ぶぶん)                |パート 1
+//エージェントを前(まえ)に動(うご)かす                         |パート 1
+//ループの終(お)わり                                         |パート 1
 ```
