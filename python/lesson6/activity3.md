@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# アクティビティ 3 -  Getting through. 
+# アクティビティ 3 - 通(とお)り抜(ぬ)けよう 
 
 ```python
 agent.detect(AgentDetection.BLOCK, FORWARD) 
@@ -13,25 +13,26 @@ if True:
 ```
 
 ## ステップ 1
-Write some code to make the Agent detect and avoid randomly placed blocks, as it moves through the course. To do this use an 
-`||logic:もし〇〇なら||` conditional with an **elif** conditional in between. For the **if** condition use two `||agent:〇〇がある[見つける]||` commands 
-with an **and not** operator in between them. For the **elif** condition use two `||agent:〇〇がある[見つける]||` commands 
-with an **and** operator in between them. An example of two conditions with an **and not** operator:
+エージェントがコースを進(すす)む間(あいだ)に、ランダムに置(お)かれたブロックを見(み)つけて避(さ)けるようなコードを書(か)いてみよう。<br>
+そのためには、`||logic:もし〇〇なら||`条件(じょうけん)文(ぶん)と**elif**条件(じょうけん)文(ぶん)を組(く)み合(あ)わせて使(つか)おう。<br>
+**if**条件(じょうけん)では、2つの`||agent:〇〇がある[見つける]||`コマンドを**and not**演算子(えんざんし)でつなげて使(つか)おう。<br>
+**elif**条件(じょうけん)では、2つの`||agent:〇〇がある[見つける]||`コマンドを**and**演算子(えんざんし)でつなげて使(つか)おう。<br>
+**and not**演算子(えんざんし)を使(つか)った2つの条件(じょうけん)の例(れい)：
 ```python
 agent.detect(AgentDetection.BLOCK, DIRECTION) and not agent.detect(AgentDetection.BLOCK, DIRECTION)
 ```
 
-### ~ tutorialhint 
-When using more than one condition together you can use an **and** or **and not** to check multiple states. 
+### ~ tutorialhint
+複数(ふくすう)の条件(じょうけん)を一緒(いっしょ)に使(つか)うときは、**and**や**and not**を使(つか)って複数(ふくすう)の状態(じょうたい)をチェックできるよ。 
 
 ```template
-//Replace the lines below with your code #    
-//for loop set to 23                                            
-//if else conditional with two Agent detect commands, seperated by an and not operator
-agent.move(LEFT, 1)                              
-//elif conditional with two Agent detect commands, seperated by an and operator
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//forループを23に設定(せってい)
+//if else条件(じょうけん)文(ぶん)、2つのエージェント検知(けんち)コマンドをand not演算子(えんざんし)でつなぐ
+agent.move(LEFT, 1)
+//elif条件(じょうけん)文(ぶん)、2つのエージェント検知(けんち)コマンドをand演算子(えんざんし)でつなぐ
 agent.move(RIGHT, 2)
-//else part of the else if conditional             
-agent.move(FORWARD, 1)                                   
-//End of loop                                       
+//else if条件(じょうけん)文(ぶん)のelse部分(ぶぶん)
+agent.move(FORWARD, 1)
+//ループの終(お)わり
 ```

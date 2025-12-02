@@ -1,5 +1,5 @@
 ### @explicitHints true
-# アクティビティ 3 - Cleaning up.
+# アクティビティ 3 - 掃除(そうじ)をしよう
 
 ```python
 for i in range(2):
@@ -10,29 +10,30 @@ agent.drop_all(FORWARD)
 ```
 
 ## ステップ 1
-**Part 1:** Write some code so that the Agent will go over every block of the small carpet and pick up the dirt.
-### ~ tutorialhint 
-Don't forget that, in this case, two loops should not have the same variable name.
+**パート 1:** エージェントが小(ちい)さなカーペットのすべてのブロックの上(うえ)を通(とお)って、汚(よご)れを拾(ひろ)うようなコードを書(か)いてみよう。
+### ~ tutorialhint
+この場合(ばあい)、2つのループは同(おな)じ変数(へんすう)名(めい)を使(つか)ってはいけないことを忘(わす)れないでね。
 
 ## ステップ 2
-**Part 2:** Edit the same code so that the Agent does the same thing but for the larger carpet. Do this by repeating the code **3** times,
-using a `||loops:for||` loop. At the end try to make the Agent drop all of the dirt in the trash to its **right**. 
-### ~ tutorialhint 
-Remember that you will need to use double indentation in your code.
+**パート 2:** 同(おな)じコードを編集(へんしゅう)して、エージェントが大(おお)きなカーペットに対(たい)しても同(おな)じことをするようにしよう。<br>
+`||loops:for||`ループを使(つか)って、コードを**3**回(かい)繰(く)り返(かえ)すことでやってみよう。<br>
+最後(さいご)に、エージェントがすべての汚(よご)れを**右(みぎ)**のゴミ箱(ばこ)に落(お)とすようにしてみよう。
+### ~ tutorialhint
+コードで二重(にじゅう)インデントを使(つか)う必要(ひつよう)があることを忘(わす)れないでね。
 
 ```template
-//Replace the lines below with your code #    
-//loop number 3                                 | Part 2
-//loop number 1                        | Part 1
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//ループ番号(ばんごう)3                                 | パート 2
+//ループ番号(ばんごう)1                        | パート 1
 agent.collect_all()
 agent.move(FORWARD, 1)
-//end of loop 1
+//ループ1の終(お)わり
 agent.move(RIGHT, 1)
-//loop number 2                        | Part 1
-//make the Agent collect all           | Part 1  
-//make the Agent move back             | Part 1  
-//end of loop 2
-//make the Agent move right                     | Part 2
-//end of loop 3  
-//make the Agent drop all to the right          | Part 2  
+//ループ番号(ばんごう)2                        | パート 1
+//エージェントにすべて集(あつ)めさせる           | パート 1
+//エージェントを戻(もど)す             | パート 1
+//ループ2の終(お)わり
+//エージェントを右(みぎ)に動(うご)かす                     | パート 2
+//ループ3の終(お)わり
+//エージェントに右(みぎ)にすべて落(お)とさせる          | パート 2
 ```

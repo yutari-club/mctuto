@@ -34,18 +34,18 @@ Beef = world(-21, 45, -29)
 Chicken = world(-21, 45, -27)
 Biscuit = world(-21, 45, -25)
 Vitamins = world(-21, 45, -23)
-// Replace the lines below with your code #   
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
 Dog_Food=[Bone, Beef, Chicken, Biscuit]
-//Add the variable Vitamins to the list using the append method | Step 2
-//Remove the variable Beef using the pop method                          | Step 3
+//appendメソッドを使(つか)って変数(へんすう)Vitaminsをリストに追加(ついか) | ステップ 2
+//popメソッドを使(つか)って変数(へんすう)Beefを削除(さくじょ)                          | ステップ 3
 
-blocks.place(REDSTONE_BLOCK, Dog_Food[0]) 
-//Change the numerical value of the list below         | Step 1
 blocks.place(REDSTONE_BLOCK, Dog_Food[0])
-//Change the numerical value of the list below         | Step 1
-blocks.place(REDSTONE_BLOCK, Dog_Food[0]) 
-//Change the numerical value of the list below         | Step 1
-blocks.place(REDSTONE_BLOCK, Dog_Food[0])   
-//Change the numerical value of the list below                  | Step 2
-blocks.place(REDSTONE_BLOCK, Dog_Food[0]) 
+//下(した)のリストの数値(すうち)を変更(へんこう)         | ステップ 1
+blocks.place(REDSTONE_BLOCK, Dog_Food[0])
+//下(した)のリストの数値(すうち)を変更(へんこう)         | ステップ 1
+blocks.place(REDSTONE_BLOCK, Dog_Food[0])
+//下(した)のリストの数値(すうち)を変更(へんこう)         | ステップ 1
+blocks.place(REDSTONE_BLOCK, Dog_Food[0])
+//下(した)のリストの数値(すうち)を変更(へんこう)                  | ステップ 2
+blocks.place(REDSTONE_BLOCK, Dog_Food[0])
 ```
