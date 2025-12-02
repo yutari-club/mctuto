@@ -1,37 +1,37 @@
 ### @explicitHints true
 
-# アクティビティ 3 - What is the cats name?
+# アクティビティ 3 - 猫(ねこ)の名前(なまえ)は何(なん)だろう？
 
 ```python
 player.say("hi")
 ```
 
 ## ステップ 1
-Set the last name in the list of cat names to now equal the string **Shadow**. 
-Change the value inside the `||player:say||` command so that it displays the **last** name in the list. 
-Then press the **select a cat** button and choose the cat shown in the chat.   
-### ~ tutorialhint 
-To change a value in a list use: List_Name[positional value] = "New Cat Name" .
+猫(ねこ)の名前(なまえ)リストの最後(さいご)の名前(なまえ)を、文字列(もじれつ)**Shadow**に変更(へんこう)してみよう。<br>
+`||player:say||`コマンドの中(なか)の値(あたい)を変更(へんこう)して、リストの**最後(さいご)**の名前(なまえ)が表示(ひょうじ)されるようにしよう。<br>
+それから**select a cat**ボタンを押(お)して、チャットに表示(ひょうじ)された猫(ねこ)を選(えら)ぼう。
+### ~ tutorialhint
+リストの値(あたい)を変更(へんこう)するには、次(つぎ)のように使(つか)うよ： List_Name[位置(いち)の値(あたい)] = "新(あたら)しい猫(ねこ)の名前(なまえ)" 。
 
 ## ステップ 2
-Sort the list of cat names alphabetically using the **sort** method. 
-Then change the value inside the `||player:say||` command so that it displays the **fourth** name in the list.   
-Don't forget, lists count from 0, so the 4th item won't be `Cat_Names[4]`.    
-Then press the **select a cat** button and choose the cat shown in the chat.   
-### ~ tutorialhint 
-Remember that list positions start from zero. 
+**sort**メソッドを使(つか)って、猫(ねこ)の名前(なまえ)リストをアルファベット順(じゅん)に並(なら)べ替(か)えてみよう。<br>
+それから`||player:say||`コマンドの中(なか)の値(あたい)を変更(へんこう)して、リストの**4番目(ばんめ)**の名前(なまえ)が表示(ひょうじ)されるようにしよう。<br>
+忘(わす)れないでね、リストは0から数(かぞ)えるから、4番目(ばんめ)のアイテムは`Cat_Names[4]`ではないよ。<br>
+それから**select a cat**ボタンを押(お)して、チャットに表示(ひょうじ)された猫(ねこ)を選(えら)ぼう。
+### ~ tutorialhint
+リストの位置(いち)は0から始(はじ)まることを忘(わす)れないでね。
 
 ## ステップ 3
-Reverse the list of cat names using the **reverse** method. 
-Keep the same value inside the `||player:say||` command.
-Then press the **select a cat** button and choose the cat shown in the chat.   
+**reverse**メソッドを使(つか)って、猫(ねこ)の名前(なまえ)リストを逆順(ぎゃくじゅん)にしてみよう。<br>
+`||player:say||`コマンドの中(なか)の値(あたい)は同(おな)じままにしておこう。<br>
+それから**select a cat**ボタンを押(お)して、チャットに表示(ひょうじ)された猫(ねこ)を選(えら)ぼう。   
 
 ```template
 Cat_Names= ["Smokey", "Oreo", "Sammy", "Patch", "Princess", "Snowy"]
-//Replace the lines below with your code #   
-//Change the last name to shadow           | Step 1
-//Sort the names alphabetically in the list         | Step 2
-//Reverse all names                                          | Step 3 
-//Change the value of the list below | Step 1,2,3
-player.say(Cat_Names[0])  
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//最後(さいご)の名前(なまえ)をShadowに変更(へんこう)           | ステップ 1
+//リストの名前(なまえ)をアルファベット順(じゅん)に並(なら)べ替(か)える         | ステップ 2
+//すべての名前(なまえ)を逆順(ぎゃくじゅん)にする                                          | ステップ 3
+//下(した)のリストの値(あたい)を変更(へんこう) | ステップ 1,2,3
+player.say(Cat_Names[0])
 ```

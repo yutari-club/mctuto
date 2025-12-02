@@ -9,26 +9,26 @@ world(0, 0, 0)
 ```
 
 ## ステップ 1
-Minecraftワールドで**左(ひだり)**から**右(みぎ)**へ並(なら)んでいる動物(どうぶつ)たちを、**My_list**という名前(なまえ)のリストに書(か)き出(だ)すコードを作(つく)ってみよう。 
-すでにあるコマンドの後(あと)に、`||mobs:spawn mob at position||`コマンドを**4つ**追加(ついか)で配置(はいち)してみよう。 Use the information from the signs 
-on the pens to complete these commands. 
+Minecraftワールドで**左(ひだり)**から**右(みぎ)**へ並(なら)んでいる動物(どうぶつ)たちを、**My_list**という名前(なまえ)のリストに書(か)き出(だ)すコードを作(つく)ってみよう。<br>
+すでにあるコマンドの後(あと)に、`||mobs:spawn mob at position||`コマンドを**4つ**追加(ついか)で配置(はいち)してみよう。<br>
+囲(かこ)いの看板(かんばん)の情報(じょうほう)を使(つか)って、これらのコマンドを完成(かんせい)させよう。
 
-### ~ tutorialhint 
-Remember that list positions start from zero. 
+### ~ tutorialhint
+リストの位置(いち)は0から始(はじ)まることを忘(わす)れないでね。 
 
-```template 
+```template
 location1 = world(-2, 40, -11)
 location2 = world(-2, 40, -5)
 location3 = world(-8, 40, -0)
 location4 = world(-13, 40, -5)
 location5 = world(-13, 40, -11)
-//Replace the lines below with your code #   
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
 
-//list of animals 
+//動物(どうぶつ)のリスト
 
 mobs.spawn(My_list[0], location1)
-//spawn the third mob from the list at location2
-//spawn the fifth mob from the list at location3
-//spawn the second mob from the list at location4
-//spawn the fourth mob from the list at location5
+//リストの3番目(ばんめ)の動物(どうぶつ)をlocation2に出現(しゅつげん)させる
+//リストの5番目(ばんめ)の動物(どうぶつ)をlocation3に出現(しゅつげん)させる
+//リストの2番目(ばんめ)の動物(どうぶつ)をlocation4に出現(しゅつげん)させる
+//リストの4番目(ばんめ)の動物(どうぶつ)をlocation5に出現(しゅつげん)させる
 ```

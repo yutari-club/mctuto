@@ -8,27 +8,29 @@ item +=1
 ```
 
 ## ステップ 1
-Look at tv monitor number 1 and calculate the sum shown by creating a new variable called **cost**. Run the code to show the total cost in the chat.
-Press the matching button for that total. 
+テレビモニター1を見(み)て、**cost**という新(あたら)しい変数(へんすう)を作(つく)って表示(ひょうじ)されている合計(ごうけい)を計算(けいさん)しよう。<br>
+コードを実行(じっこう)して、チャットに合計(ごうけい)コストを表示(ひょうじ)してね。<br>
+その合計(ごうけい)に合(あ)うボタンを押(お)そう。
 
 ## ステップ 2
-Look at tv monitor number two. You now need to add a new crop, **pumpkin**. Do this by creating a variable called **pumpkin** and then set its value
-as a formula that is the difference between the variables **berries** and **apple**. Add the new variable **pumpkin** to the variable **cost**. Then run the 
-code and press the correct button. 
+テレビモニター2を見(み)よう。今度(こんど)は新(あたら)しい作物(さくもつ)の**pumpkin**を追加(ついか)する必要(ひつよう)があるよ。<br>
+**pumpkin**という変数(へんすう)を作(つく)って、その値(あたい)を**berries**変数(へんすう)と**apple**変数(へんすう)の差(さ)として設定(せってい)してみよう。<br>
+新(あたら)しい変数(へんすう)**pumpkin**を変数(へんすう)**cost**に追加(ついか)しよう。それからコードを実行(じっこう)して、正(ただ)しいボタンを押(お)そう。
 
-## ステップ 3 
-Look at the last tv monitor, the value of the crops **apple** and **melon** have now changed. **Apple** has increased in price by **2**, 
-and **melon** has decreased in price by **3**. Account for this change in your code by using **+=** and **-=** operators.
+## ステップ 3
+最後(さいご)のテレビモニターを見(み)よう。作物(さくもつ)**apple**と**melon**の値(あたい)が変(か)わったよ。<br>
+**Apple**の価格(かかく)は**2**上(あ)がり、**melon**の価格(かかく)は**3**下(さ)がったんだ。<br>
+**+=** と **-=** 演算子(えんざんし)を使(つか)って、この変化(へんか)をコードに反映(はんえい)させよう。
 
 ```template
 apple = 10
 melon = 15
 berries = 20
 potato = 2
-//Replace the lines below with your code #
-//replace with pumpkin variable | Step 2
-//apple change                          | Step 3
-//melon change                          | Step 3
-//cost variable        | Step 1
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//pumpkin変数(へんすう)に置(お)き換(か)える | ステップ 2
+//appleの変化(へんか)                          | ステップ 3
+//melonの変化(へんか)                          | ステップ 3
+//cost変数(へんすう)        | ステップ 1
 player.say(cost)
 ``` 

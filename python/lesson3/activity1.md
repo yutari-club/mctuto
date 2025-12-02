@@ -9,25 +9,25 @@
 ## ステップ 1
 **b**と**c**という**2つ**の新(あたら)しい変数(へんすう)を作(つく)ってみよう。**b**の値(ね)は**melon**に、**c**の値(ね)は**apple**にしよう。 
 ### ~ tutorialhint
-Remember to use quotes with strings.
+文字列(もじれつ)には引用符(いんようふ)を使(つか)うことを忘(わす)れないでね。
  
 ## ステップ 2
 壁(かべ)のモニターを見(み)て、フルーツ変数(へんすう)の値(ね)をその順番(じゅんばん)に合(あ)わせて変更(へんこう)しよう。 
 コードを実行(じっこう)して、チャットに表示(ひょうじ)された順番(じゅんばん)と同(おな)じようにフルーツボタンを押(お)して、すべてのライトが点(つ)くようにしよう。 
 
 ```template
-//Replace the lines below with your code #
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
 a = "berries"
-//variable b | Step 1  
-//variable c | Step 1  
+//変数(へんすう)b | ステップ 1
+//変数(へんすう)c | ステップ 1
 d = a
-//fruit variable      | Step 2  
+//fruit変数(へんすう)      | ステップ 2
 player.say(fruit)
 
-//fruit variable      | Step 2  
+//fruit変数(へんすう)      | ステップ 2
 player.say(fruit)
 
-//fruit variable      | Step 2  
+//fruit変数(へんすう)      | ステップ 2
 player.say(fruit)
 
 fruit = d

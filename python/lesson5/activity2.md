@@ -25,16 +25,16 @@ agent.turn(LEFT)
 大(おお)きなコードをインデントするには、インデントしたいコードをすべて選択(せんたく)して**tab**キーを押(お)してね。 
 
 ```template
-//Replace the lines below with your code #    
-//loop number 2 set to 3                              | Part 2
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//ループ2を3に設定(せってい)                              | パート 2
 agent.collect_all()
 agent.move(FORWARD, 7)
 agent.drop_all(FORWARD)
-//loop number 1                              | Part 1
-//make the Agent turn left 20 times          | Part 1 
-//end of loop 1
-//make the Agent collect all                 | Part 1          
-//make the Agent move back                   | Part 1
-//make the Agent drop everything to the left | Part 1
-//end of loop 2
+//ループ1                              | パート 1
+//エージェントを左(ひだり)に20回(かい)回転(かいてん)させる          | パート 1
+//ループ1の終(お)わり
+//エージェントにすべて拾(ひろ)わせる                 | パート 1
+//エージェントを後(うし)ろに動(うご)かす                   | パート 1
+//エージェントにすべてを左(ひだり)に落(お)とさせる | パート 1
+//ループ2の終(お)わり
 ```
