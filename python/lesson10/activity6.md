@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# Depths of the earth. 
+# 地球(ちきゅう)の深(ふか)いところ 
 
 ```python
 agent.move(FORWARD, 5)
@@ -26,6 +26,6 @@ while True:
 ```
 
 ## ステップ 1
-Make the Agent mine the diamond ore behind it, and then drop the mined diamond into the collection area at the other end. Make the Agent return, 
-mine the emerald ore that will appear and drop it in the collection area. 
+エージェントに後(うし)ろのダイヤモンド鉱石(こうせき)を採掘(さいくつ)させて、採(と)れたダイヤモンドを反対側(はんたいがわ)の収集(しゅうしゅう)エリアに落(お)とさせよう。<br>
+エージェントを戻(もど)して、出現(しゅつげん)するエメラルド鉱石(こうせき)を採掘(さいくつ)して、それも収集(しゅうしゅう)エリアに落(お)とさせよう。 
 

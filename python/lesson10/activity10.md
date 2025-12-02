@@ -1,7 +1,7 @@
 ### @explicitHints true
 ### @hideIteration true 
 
-# Do I need to list it out? 
+# リストに書(か)き出(だ)す必要(ひつよう)がある？ 
 
 ```python
 agent.move(FORWARD, 5)
@@ -27,10 +27,11 @@ while True:
 ```
 
 ## ステップ 1
-You have been given a list. Delete the quotes (**'**) from the begining and end of each line. To find what block type the Agent should stand on, **sort** the list alphabetically
-and get the **second** block from the list. Stand on the correct block type and press the button to teleport the Agent there. 
-To find what block type your player should stand on **reverse**  the list and **pop** the **fourth** block in the list. 
-Get the **sixth** block from the list and stand on that block. 
+リストが与(あた)えられているよ。各行(かくぎょう)の最初(さいしょ)と最後(さいご)にある引用符(いんようふ)(**'**)を削除(さくじょ)してみよう。<br>
+エージェントが立(た)つべきブロックタイプを見(み)つけるには、リストをアルファベット順(じゅん)に**ソート**して、リストの**2番目(ばんめ)**のブロックを取得(しゅとく)しよう。<br>
+正(ただ)しいブロックタイプの上(うえ)に立(た)って、ボタンを押(お)してエージェントをそこにテレポートさせよう。<br>
+プレイヤーが立(た)つべきブロックタイプを見(み)つけるには、リストを**逆順(ぎゃくじゅん)**にして、リストの**4番目(ばんめ)**のブロックを**ポップ**しよう。<br>
+リストの**6番目(ばんめ)**のブロックを取得(しゅとく)して、そのブロックの上(うえ)に立(た)とう。
 
 ```template
 'block_list = ["DIAMOND", "ICE", "EMERALD", "STONE", "WOOD", "GOLD", "QUARTZ"]'

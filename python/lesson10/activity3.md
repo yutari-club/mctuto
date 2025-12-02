@@ -1,7 +1,7 @@
 ### @explicitHints true
 ### @hideIteration true 
 
-# Diamond or dirt?
+# ダイヤモンドか土(つち)か？
 
 ```python
 agent.move(FORWARD, 5)
@@ -27,8 +27,9 @@ while True:
 ```
 
 ## ステップ 1
-Write some code to calculate the answers to these four expressions. You need to get the Agent to the gold block, do this by placing a diamond or dirt
-block, from the chest, depending on the answer of the expression. From left to right, if the answer is 1 place a diamond block, if its 0 place a dirt block. 
+この4つの式(しき)の答(こた)えを計算(けいさん)するコードを書(か)いてみよう。エージェントを金(きん)ブロックまで行(い)かせる必要(ひつよう)があるよ。<br>
+式(しき)の答(こた)えに応(おう)じて、チェストからダイヤモンドブロックか土(つち)ブロックを置(お)いてね。<br>
+左(ひだり)から右(みぎ)へ、答(こた)えが1ならダイヤモンドブロックを置(お)き、0なら土(つち)ブロックを置(お)こう。
 ```python
 1. 10000 / 10000 + 64.64 + 64.64 - 72 - 57.28
 2. 64 / 4 + 64 / 64 - 128 / 8 - 1
@@ -36,12 +37,12 @@ block, from the chest, depending on the answer of the expression. From left to r
 4. 8 - 9 + 7 + 32 * 2 - 64 / 2 - 38
 ```
 ```template
-//Calculate the expression: 10000 / 10000 + 64.64 + 64.64 - 72 - 57.28 
+//式(しき)を計算(けいさん): 10000 / 10000 + 64.64 + 64.64 - 72 - 57.28
 //
-//Calculate the expression: 64 / 4 + 64 / 64 - 128 / 8 - 1 
+//式(しき)を計算(けいさん): 64 / 4 + 64 / 64 - 128 / 8 - 1
 //
-//Calculate the expression: 19283746 / 19283746 - 1 + 1000 / 100 - 9
+//式(しき)を計算(けいさん): 19283746 / 19283746 - 1 + 1000 / 100 - 9
 //
-//Calculate the expression: 8 - 9 + 7 + 32 * 2 - 64 / 2 - 38 
+//式(しき)を計算(けいさん): 8 - 9 + 7 + 32 * 2 - 64 / 2 - 38
 ```
 

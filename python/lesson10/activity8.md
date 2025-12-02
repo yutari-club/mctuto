@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# Diamond rush. 
+# ダイヤモンドラッシュ 
 
 ```python
 agent.move(FORWARD, 5)
@@ -26,10 +26,10 @@ while True:
 ```
 
 ## ステップ 1
-Delete the quotes (**'**) from the begining and end of each line. 
-Finish the code so that the Agent moves towards the gold block and counts each diamond block it passes over.   
-At the end, when the Agent reaches to the gold block, the Agent should then place the number of diamond blocks it passed over, in front of it, 
-,one by one. These blocks will be automatically stacked by a piston.  
+各行(かくぎょう)の最初(さいしょ)と最後(さいご)にある引用符(いんようふ)(**'**)を削除(さくじょ)してみよう。<br>
+エージェントが金(きん)ブロックに向(む)かって移動(いどう)しながら、通(とお)り過(す)ぎたダイヤモンドブロックの数(かず)を数(かぞ)えるようにコードを完成(かんせい)させよう。<br>
+最後(さいご)に、エージェントが金(きん)ブロックに到達(とうたつ)したら、通(とお)り過(す)ぎたダイヤモンドブロックの数(かず)だけ、前(まえ)に1つずつブロックを置(お)くようにしよう。<br>
+これらのブロックはピストンで自動的(じどうてき)に積(つ)み重(かさ)なるよ。
 ```template
 'diamond = 0'
 'for index in range(11):'

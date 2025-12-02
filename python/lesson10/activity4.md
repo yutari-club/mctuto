@@ -1,7 +1,7 @@
 ### @explicitHints true
 ### @hideIteration true 
 
-# Spring arrival
+# 春(はる)の訪(おとず)れ
 
 ```python
 agent.move(FORWARD, 5)
@@ -27,9 +27,9 @@ while True:
 ```
 
 ## ステップ 1
-In the coding window you have a been given a code that does not work. Delete the quotes (**'**) from the begining and end of each line. 
-This code is supposed to plant flowers on each block of grass by making the Agent move through the area row by row.
-Can you finish the code by adding a conditional and debugging the main loop?
+コーディングウィンドウに、動(うご)かないコードが用意(ようい)されているよ。各行(かくぎょう)の最初(さいしょ)と最後(さいご)にある引用符(いんようふ)(**'**)を削除(さくじょ)してみよう。<br>
+このコードは、エージェントをエリア内(ない)で行(ぎょう)ごとに移動(いどう)させながら、各草(くさ)ブロックに花(はな)を植(う)えるためのものだよ。<br>
+条件(じょうけん)文(ぶん)を追加(ついか)して、メインループをデバッグして、コードを完成(かんせい)させられるかな？
 ```template
 'for index in range(4):'
 '   for index2 in range(8):'

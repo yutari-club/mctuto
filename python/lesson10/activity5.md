@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# Row by row.
+# 行(ぎょう)ごとに進(すす)もう
 
 ```python
 agent.move(FORWARD, 5)
@@ -26,4 +26,4 @@ while True:
 ```
 
 ## ステップ 1
-Can you make the Agent move over every block in the area sideways, row by row, without it turning? 
+エージェントが回転(かいてん)せずに、エリア内(ない)のすべてのブロックの上(うえ)を横(よこ)に、行(ぎょう)ごとに移動(いどう)するようにできるかな？ 

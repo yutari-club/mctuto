@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# The Agent labyrinth.
+# エージェントの迷路(めいろ)
 
 ```python
 agent.move(FORWARD, 5)
@@ -26,8 +26,8 @@ while True:
 ```
 
 ## ステップ 1
-Navigate the Agent through the maze. Write some code to use the colored blocks as forward, left, and right control directions for the Agent to move in.
-Then control the Agent to the end of the maze by standing on the colored blocks. 
+エージェントを迷路(めいろ)の中(なか)を進(すす)ませよう。色(いろ)のついたブロックを前(まえ)、左(ひだり)、右(みぎ)の移動(いどう)方向(ほうこう)の指示(しじ)として使(つか)うコードを書(か)いてみよう。<br>
+それから、色(いろ)のついたブロックの上(うえ)に立(た)って、エージェントを迷路(めいろ)の終(お)わりまで誘導(ゆうどう)しよう。
 
 ### ~ tutorialhint
-Try using a endlessly repeating while loop.
+無限(むげん)に繰(く)り返(かえ)すwhileループを使(つか)ってみてね。
