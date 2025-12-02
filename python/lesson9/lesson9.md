@@ -1,5 +1,5 @@
 ### @explicitHints true
-# Agent Invader  
+# エージェントインベーダー  
 
 ```python
 pos(0, 0, 0)
@@ -25,74 +25,76 @@ while True:
 ```
 
 ## ステップ 1
-**Activity 1 - Game controls:**
-There are two 'buttons' on the controller, blue is to make the Agent move left and red is to make the Agent move right. Write some code 
-so that when you stand on the red or blue blocks the Agent moves in the correct direction. Use the test for block command below, to check if a block 
-is in a certain position:
+**アクティビティ 1 - ゲームコントロール:**
+コントローラーには**2つ**の「ボタン」があるよ。青(あお)いボタンはエージェントを左(ひだり)に動(うご)かし、赤(あか)いボタンはエージェントを右(みぎ)に動(うご)かすよ。<br>
+赤(あか)または青(あお)のブロックの上(うえ)に立(た)ったときに、エージェントが正(ただ)しい方向(ほうこう)に動(うご)くようなコードを書(か)いてみよう。<br>
+下(した)の`||blocks: test for block||`コマンドを使(つか)って、ブロックが特定(とくてい)の位置(いち)にあるかどうかを確認(かくにん)してね：
 ```python
 blocks.test_for_block(BLOCK_NAME, pos(0, 0, 0))
 ```
 
 ### ~ tutorialhint
-A `||loops:もし〇〇ならくりかえす||` loop with the condition set to **True** will repeat continuously. Do **not** delete any pregiven code in the coding window.
+条件(じょうけん)を**True**に設定(せってい)した`||loops:もし〇〇ならくりかえす||`ループは、ずっと繰(く)り返(かえ)し続(つづ)けるよ。<br>
+コーディングウィンドウにあらかじめ書(か)かれているコードは削除(さくじょ)**しないで**ね。
 
 ## ステップ 2
-**Activity 2 - Firing system -**
-**Part 1:** Write another function to make the Agent shoot the gold blocks above it.
-Use a `||mobs: mob spawn||` command with **FIREWORKS_ROCKET** to shoot. Each gold block shot needs to be replaced with an **AIR** block, to make it disappear.
-Use an `||agent: agent position||` command to get the Agent's position.
-Use an add positions command with an `||agent: agent position||` command inside, to get the position of the **AIR** block. 
-The two commands together look like:
-```python 
+**アクティビティ 2 - 発射(はっしゃ)システム -**
+**パート 1:** エージェントが上(うえ)にある金(きん)ブロックを撃(う)つための関数(かんすう)を書(か)いてみよう。<br>
+撃(う)つためには、`||mobs: mob spawn||`コマンドで**FIREWORKS_ROCKET**を使(つか)おう。<br>
+撃(う)たれた金(きん)ブロックは、消(き)えるように**AIR**ブロックに置(お)き換(か)える必要(ひつよう)があるよ。<br>
+エージェントの位置(いち)を取得(しゅとく)するには`||agent: agent position||`コマンドを使(つか)おう。<br>
+**AIR**ブロックの位置(いち)を取得(しゅとく)するには、`||agent: agent position||`コマンドを含(ふく)む位置(いち)の追加(ついか)コマンドを使(つか)おう。<br>
+2つのコマンドを組(く)み合(あ)わせると次(つぎ)のようになるよ：
+```python
 positions.add(agent.get_position(), pos(0, 0, 0))
 ```
 ## ステップ 3
-**Part 2:** Add to the code to make the Agent shoot at the second row of gold blocks, using an additional `||logic: elif||`
-conditional. 
+**パート 2:** 追加(ついか)の`||logic: elif||`条件(じょうけん)文(ぶん)を使(つか)って、エージェントが2列目(れつめ)の金(きん)ブロックを撃(う)てるようにコードを追加(ついか)してみよう。 
 
-## Step 4
-**Activity 3 - Scoring system:**
-In the code you have been given a variable named `||variables:score||`, add **1** to the variable each time the Agent shoots a gold block.
-Edit the condition in the while loop, so that it only loops when `||variables:score||` is less than or equal to **15**. 
-Add two splash screens at the start and the end of the game using the `||gameplay:show title||` command. Declare the `||variable:score||` variable
-as global, using the command:
+## ステップ 4
+**アクティビティ 3 - スコアシステム:**
+コードには`||variables:score||`という名前(なまえ)の変数(へんすう)が用意(ようい)されているよ。<br>
+エージェントが金(きん)ブロックを撃(う)つたびに、この変数(へんすう)に**1**を追加(ついか)してみよう。<br>
+whileループの条件(じょうけん)を編集(へんしゅう)して、`||variables:score||`が**15**以下(いか)のときだけループするようにしよう。<br>
+`||gameplay:show title||`コマンドを使(つか)って、ゲームの最初(さいしょ)と最後(さいご)に2つのスプラッシュ画面(がめん)を追加(ついか)してね。<br>
+次(つぎ)のコマンドを使(つか)って、`||variable:score||`変数(へんすう)をグローバル変数(へんすう)として宣言(せんげん)しよう：
 ```
-global score 
+global score
 ```
 
 ### ~ tutorialhint
-**<=** means **less than or equal to**.
+**<=** は **以下(いか)（より小(ちい)さいか等(ひと)しい）** を意味(いみ)するよ。
 
 
 ```template
-//Replace with your functions below #
-//Declare function 2                                                          |Act. 2 Part 1
-//Declare score variable as global                                                           |Act. 3      
-//If conditional, test for block condition, Agent pos + 2                     |Act. 2 Part 1
-//Spawn firework rockets at Agent position                                    |Act. 2 Part 1
-//Pause for 100ms                                                             |Act. 2 Part 1
-//Place AIR block at Agent pos + 2                                            |Act. 2 Part 1
-//Add 1 to the variable score                                                                |Act. 3
-//Elif conditional, test for block condition, Agent pos + 3                   |Act. 2 Part 2
-//Spawn firework rockets at Agent position                                    |Act. 2 Part 2
-//Pause for 100ms                                                             |Act. 2 Part 2
-//Place AIR block at Agent pos + 3                                            |Act. 2 Part 2
-//Add 1 to the variable score                                                                |Act. 3
-//Replace with comment about function below                           |Act. 1      
-//Declare function                                                    |Act. 1
-//If conditional with test for block condition (LIGHT_BLUE_CONCRETE)  |Act. 1
-//Make the Agent move right                                           |Act. 1
-//Elif conditional with test for block condition (RED_CONCRETE)       |Act. 1
-//Make the Agent move left                                            |Act. 1
-//Replace the lines below with your code #  
+//下(した)の関数(かんすう)に置(お)き換(か)えてね #
+//関数(かんすう)2を宣言(せんげん)                                                          |Act. 2 パート 1
+//score変数(へんすう)をグローバルとして宣言(せんげん)                                                           |Act. 3
+//If条件(じょうけん)文(ぶん)、ブロック条件(じょうけん)テスト、エージェント位置(いち) + 2                     |Act. 2 パート 1
+//エージェントの位置(いち)で花火(はなび)ロケットを発射(はっしゃ)                                    |Act. 2 パート 1
+//100ms一時(いちじ)停止(ていし)                                                             |Act. 2 パート 1
+//エージェント位置(いち) + 2にAIRブロックを配置(はいち)                                            |Act. 2 パート 1
+//変数(へんすう)scoreに1を追加(ついか)                                                                |Act. 3
+//Elif条件(じょうけん)文(ぶん)、ブロック条件(じょうけん)テスト、エージェント位置(いち) + 3                   |Act. 2 パート 2
+//エージェントの位置(いち)で花火(はなび)ロケットを発射(はっしゃ)                                    |Act. 2 パート 2
+//100ms一時(いちじ)停止(ていし)                                                             |Act. 2 パート 2
+//エージェント位置(いち) + 3にAIRブロックを配置(はいち)                                            |Act. 2 パート 2
+//変数(へんすう)scoreに1を追加(ついか)                                                                |Act. 3
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)えてね                           |Act. 1
+//関数(かんすう)を宣言(せんげん)                                                    |Act. 1
+//If条件(じょうけん)文(ぶん)とブロック条件(じょうけん)テスト (LIGHT_BLUE_CONCRETE)  |Act. 1
+//エージェントを右(みぎ)に動(うご)かす                                           |Act. 1
+//Elif条件(じょうけん)文(ぶん)とブロック条件(じょうけん)テスト (RED_CONCRETE)       |Act. 1
+//エージェントを左(ひだり)に動(うご)かす                                            |Act. 1
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
 score = 0
-//Add a start splash screen using the gameplay title command                                 |Act. 3
-//Change while loop to only loop when score is <= 15                                         |Act. 3
-//While loop with True as condition                                   |Act. 1
-//Call function                                                       |Act. 1
-//Call function 2                                                             |Act. 2 Part 1
-//Add a end splash screen using the gameplay title command                                   |Act. 3
-//Spawn lighting bolt on Agent position                                                      |Act. 3  
+//gameplay titleコマンドを使(つか)って開始(かいし)スプラッシュ画面(がめん)を追加(ついか)                                 |Act. 3
+//whileループをscoreが15以下(いか)のときだけループするように変更(へんこう)                                         |Act. 3
+//条件(じょうけん)をTrueにしたWhileループ                                   |Act. 1
+//関数(かんすう)を呼(よ)び出(だ)す                                                       |Act. 1
+//関数(かんすう)2を呼(よ)び出(だ)す                                                             |Act. 2 パート 1
+//gameplay titleコマンドを使(つか)って終了(しゅうりょう)スプラッシュ画面(がめん)を追加(ついか)                                   |Act. 3
+//エージェントの位置(いち)に雷(かみなり)を発射(はっしゃ)                                                      |Act. 3
 if score > 15
 player.execute("scoreboard players set @p score 15")
 ```
