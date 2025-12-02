@@ -26,24 +26,24 @@ def function_name():
 `||agent:set active slot||`コマンドを使(つか)ってエージェントの**1番目(ばんめ)**と**2番目(ばんめ)**のスロットを切(き)り替(か)えてみよう。  
 
 ```template
-//Replace with your functions below #
-//Replace with comment about function below   |Part 1   
-//Declare your function                       |Part 1
-//Set the Agent's inventory slot to 1                 |Part 2
-//Make the Agent till to its left             |Part 1
-//Make the Agent place a sapling to its left  |Part 1
-//Set the Agent's inventory slot to 2                 |Part 2
-//Make the Agent place fertilizer to its left         |Part 2
-//Make the Agent place fertilizer to its left         |Part 2
-//Make the Agent place fertilizer to its left         |Part 2
-//Make the Agent place fertilizer to its left         |Part 2
-//Make the Agent place fertilizer to its left         |Part 2
-//Make the Agent place fertilizer to its left         |Part 2
-//Replace the lines below with your code #    
+//下(した)に関数(かんすう)を置(お)き換(か)えてね #
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える   |パート 1
+//関数(かんすう)を宣言(せんげん)する                       |パート 1
+//エージェントのインベントリスロットを1に設定(せってい)                 |パート 2
+//エージェントに左側(ひだりがわ)を耕(たがや)させる             |パート 1
+//エージェントに左側(ひだりがわ)に苗(なえ)を植(う)えさせる  |パート 1
+//エージェントのインベントリスロットを2に設定(せってい)                 |パート 2
+//エージェントに左側(ひだりがわ)に肥料(ひりょう)を置(お)かせる         |パート 2
+//エージェントに左側(ひだりがわ)に肥料(ひりょう)を置(お)かせる         |パート 2
+//エージェントに左側(ひだりがわ)に肥料(ひりょう)を置(お)かせる         |パート 2
+//エージェントに左側(ひだりがわ)に肥料(ひりょう)を置(お)かせる         |パート 2
+//エージェントに左側(ひだりがわ)に肥料(ひりょう)を置(お)かせる         |パート 2
+//エージェントに左側(ひだりがわ)に肥料(ひりょう)を置(お)かせる         |パート 2
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
 agent.move(FORWARD, 1)
-//Call your function                          |Part 1
-//Make the Agent move forward                 |Part 1
-//Call your function                          |Part 1
-//Make the Agent move forward                 |Part 1
-//Call your function                          |Part 1                 
+//関数(かんすう)を呼(よ)び出(だ)す                          |パート 1
+//エージェントを前(まえ)に動(うご)かす                 |パート 1
+//関数(かんすう)を呼(よ)び出(だ)す                          |パート 1
+//エージェントを前(まえ)に動(うご)かす                 |パート 1
+//関数(かんすう)を呼(よ)び出(だ)す                          |パート 1
 ```

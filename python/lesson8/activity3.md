@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# アクティビティ 3 - Pasture of trees. 
+# アクティビティ 3 - 木(き)の牧草地(ぼくそうち)を作(つく)ろう 
 
 ```python
 agent.turn(RIGHT_TURN)
@@ -19,43 +19,43 @@ elif:
 ```
 
 ## ステップ 1
-**Part 1:** Write three new functions with different sequences, one to make the Agent **move forward**, one to **turn left**, and one to **turn right**. 
-Then use these functions in a `||loops:for||` loop to make the Agent pass over every block in the area, row by row, until it reaches the gold block.
+**パート 1:** 3つの新(あたら)しい関数(かんすう)を書(か)いてみよう。1つはエージェントを**前進(ぜんしん)**させる関数(かんすう)、1つは**左(ひだり)に回転(かいてん)**させる関数(かんすう)、1つは**右(みぎ)に回転(かいてん)**させる関数(かんすう)だよ。<br>
+それから、これらの関数(かんすう)を`||loops:for||`ループの中(なか)で使(つか)って、エージェントがエリア内(ない)のすべてのブロックを行(ぎょう)ごとに通(とお)って、金(きん)ブロックに到達(とうたつ)するようにしよう。
 
-## ステップ 2 
-**Part 2:** Add to the code to make the Agent till the grass blocks that it passes over and plant a sapling.
-Do this by adding an `||logic:もし〇〇なら||` conditional, that inspects for grass blocks, in the function that moves the Agent forward. 
+## ステップ 2
+**パート 2:** コードに追加(ついか)して、エージェントが通(とお)る草(くさ)ブロックを耕(たがや)して苗(なえ)を植(う)えるようにしよう。<br>
+エージェントを前進(ぜんしん)させる関数(かんすう)の中(なか)に、草(くさ)ブロックを検査(けんさ)する`||logic:もし〇〇なら||`条件(じょうけん)文(ぶん)を追加(ついか)してやってみよう。 
 
 ```template
-//Place your functions below #  
-//Add to the comment below, as it has now changed             |Part 2
-//Replace with comment about function below           |Part 1    
-//Declare function 1                                  |Part 1
-//For loop 1 set to 9                                 |Part 1
-//If else conditional with Agent inspect condition            |Part 2
-//Add function that plants saplings                           |Part 2
-//Place the command below in the else part of the conditional |Part 2
-//Make the Agent move forward                         |Part 1
-//End of loop 1
-//Replace with comment about function below           |Part 1    
-//Declare function 2                                  |Part 1
-//Make the Agent turn right                           |Part 1
-//Make the Agent move forward                         |Part 1
-//Make the Agent turn right                           |Part 1
-//Replace with comment about function below           |Part 1    
-//Declare function 3                                  |Part 1
-//Make the Agent turn left                            |Part 1
+//下(した)に関数(かんすう)を置(お)いてね #
+//下(した)のコメントに追加(ついか)、内容(ないよう)が変(か)わったため             |パート 2
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える           |パート 1
+//関数(かんすう)1を宣言(せんげん)する                                  |パート 1
+//Forループ1を9に設定(せってい)                                 |パート 1
+//If else条件(じょうけん)文(ぶん)とエージェント検査(けんさ)条件(じょうけん)            |パート 2
+//苗(なえ)を植(う)える関数(かんすう)を追加(ついか)                           |パート 2
+//下(した)のコマンドを条件(じょうけん)文(ぶん)のelse部分(ぶぶん)に置(お)く |パート 2
+//エージェントを前(まえ)に動(うご)かす                         |パート 1
+//ループ1の終(お)わり
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える           |パート 1
+//関数(かんすう)2を宣言(せんげん)する                                  |パート 1
+//エージェントを右(みぎ)に回転(かいてん)させる                           |パート 1
+//エージェントを前(まえ)に動(うご)かす                         |パート 1
+//エージェントを右(みぎ)に回転(かいてん)させる                           |パート 1
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える           |パート 1
+//関数(かんすう)3を宣言(せんげん)する                                  |パート 1
+//エージェントを左(ひだり)に回転(かいてん)させる                            |パート 1
     agent.move(FORWARD, 1)
-//Make the Agent turn left                            |Part 1
-//Replace with comment about function below                   |Part 2 
-//Declare function 4                                          |Part 2
-//Make the Agent move forward                                 |Part 2
-//Make the till back                                          |Part 2
-//Make the place back                                         |Part 2
-//Replace the lines below with your code #
-//For loop 2 set to 4                                 |Part 1
-//Call function to make Agent move forward            |Part 1
-//Call function to make Agent turn right              |Part 1
-//Call function to make Agent move forward            |Part 1
-//Call function to make Agent turn left               |Part 1                       
+//エージェントを左(ひだり)に回転(かいてん)させる                            |パート 1
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える                   |パート 2
+//関数(かんすう)4を宣言(せんげん)する                                          |パート 2
+//エージェントを前(まえ)に動(うご)かす                                 |パート 2
+//後(うし)ろを耕(たがや)す                                          |パート 2
+//後(うし)ろに置(お)く                                         |パート 2
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//Forループ2を4に設定(せってい)                                 |パート 1
+//エージェントを前進(ぜんしん)させる関数(かんすう)を呼(よ)び出(だ)す            |パート 1
+//エージェントを右(みぎ)に回転(かいてん)させる関数(かんすう)を呼(よ)び出(だ)す              |パート 1
+//エージェントを前進(ぜんしん)させる関数(かんすう)を呼(よ)び出(だ)す            |パート 1
+//エージェントを左(ひだり)に回転(かいてん)させる関数(かんすう)を呼(よ)び出(だ)す               |パート 1
 ```

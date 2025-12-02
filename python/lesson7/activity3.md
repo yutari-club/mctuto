@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# アクティビティ 3 - Home reconstruction. 
+# アクティビティ 3 - 家(いえ)を再建(さいけん)しよう 
 
 ```python
 agent.turn(LEFT_TURN)
@@ -12,31 +12,30 @@ while True:
 ```
 
 ## ステップ 1
-**Part 1:** Write some code to make the Agent follow the guideline of Redstone dust and place blocks to its left to make the small house's foundation.
-Use **two** `||loops:もし〇〇ならくりかえす||` loops with **two** sequences, one for the straight sections and one for the outside corners. 
+**パート 1:** エージェントがレッドストーンダストのガイドラインに従(したが)って、左側(ひだりがわ)にブロックを置(お)いて小(ちい)さな家(いえ)の基礎(きそ)を作(つく)るようなコードを書(か)いてみよう。<br>
+**2つ**の`||loops:もし〇〇ならくりかえす||`ループと**2つ**のシーケンスを使(つか)おう。1つは直線部分(ちょくせんぶぶん)用(よう)で、もう1つは外側(そとがわ)の角(かど)用(よう)だよ。
 
-## ステップ 2 
-**Part 2:** Add to the code to make the Agent build the foundation of a larger house. Write a additional `||loops:もし〇〇ならくりかえす||` loop with 
-an additional sequences for the inside corners.  
-### ~ tutorialhint 
-When writing the sequence for the inside corners it needs to include a part where 
-the Agent needs to move one block beyond the outline to place a block, and then move back. 
+## ステップ 2
+**パート 2:** コードを追加(ついか)して、エージェントが大(おお)きな家(いえ)の基礎(きそ)を作(つく)れるようにしよう。<br>
+内側(うちがわ)の角(かど)用(よう)に、もう1つの`||loops:もし〇〇ならくりかえす||`ループとシーケンスを追加(ついか)してみよう。
+### ~ tutorialhint
+内側(うちがわ)の角(かど)のシーケンスを書(か)くときは、エージェントがブロックを置(お)くために輪郭線(りんかくせん)から1ブロック先(さき)に移動(いどう)して、それから戻(もど)る部分(ぶぶん)を入(い)れる必要(ひつよう)があるよ。 
 
 ```template
-//Replace the lines below with your code #    
-//While loop 1 with an Agent detect condition |Part 1
-//Make the Agent place a block to its left    |Part 1       
-//Make the Agent move forward                 |Part 1 
-//While loop 2 with an Agent detect condition |Part 1
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//Whileループ1とエージェント検知(けんち)条件(じょうけん) |パート 1
+//エージェントに左側(ひだりがわ)にブロックを置(お)かせる    |パート 1
+//エージェントを前(まえ)に動(うご)かす                 |パート 1
+//Whileループ2とエージェント検知(けんち)条件(じょうけん) |パート 1
 agent.turn(LEFT_TURN)
-//Make the Agent move forward                 |Part 1
-//End of while loop 2
-//While loop 3 with an Agent detect condition         |Part 2
-//Make the Agent place a block to its left            |Part 2        
-//Make the Agent move forward                         |Part 2
-//Make the Agent place a block to its left            |Part 2        
-//Make the Agent move back                            |Part 2
-//Make the Agent turn right                           |Part 2                 
-//End of while loop 3
-//End of while loop 1                        
+//エージェントを前(まえ)に動(うご)かす                 |パート 1
+//Whileループ2の終(お)わり
+//Whileループ3とエージェント検知(けんち)条件(じょうけん)         |パート 2
+//エージェントに左側(ひだりがわ)にブロックを置(お)かせる            |パート 2
+//エージェントを前(まえ)に動(うご)かす                         |パート 2
+//エージェントに左側(ひだりがわ)にブロックを置(お)かせる            |パート 2
+//エージェントを戻(もど)す                            |パート 2
+//エージェントを右(みぎ)に回転(かいてん)させる                           |パート 2
+//Whileループ3の終(お)わり
+//Whileループ1の終(お)わり
 ```

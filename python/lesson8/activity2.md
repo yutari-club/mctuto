@@ -1,6 +1,6 @@
 ### @explicitHints true
 
-# アクティビティ 2 - Breaking boulders.
+# アクティビティ 2 - 岩(いわ)を壊(こわ)そう
 
 ```python
 agent.destroy(FORWARD)
@@ -17,38 +17,38 @@ else:
 ```
 
 ## ステップ 1
-**Part 1:** Write some code to make the Agent move forward while breaking and collecting each **stone** block in its way.
+**パート 1:** エージェントが前進(ぜんしん)しながら、進路(しんろ)にある**石(いし)**ブロックを壊(こわ)して集(あつ)めるコードを書(か)いてみよう。
 ### ~ tutorialhint
-Agent inspect condition command structure:  
+エージェント検査(けんさ)条件(じょうけん)コマンドの構造(こうぞう)：
 ```python
 agent.inspect(AgentInspection.BLOCK, DIRECTION) == BLOCK_TYPE
 ```
 
-## ステップ 2 
-**Part 2:** Add to the code to now make the Agent till and plant saplings on the **grass** blocks.  
+## ステップ 2
+**パート 2:** コードに追加(ついか)して、エージェントが**草(くさ)**ブロックを耕(たがや)して苗(なえ)を植(う)えるようにしよう。
 ### ~ tutorialhint
-Agent inspect condition command structure:  
+エージェント検査(けんさ)条件(じょうけん)コマンドの構造(こうぞう)：
 ```python
 agent.inspect(AgentInspection.BLOCK, DIRECTION) == BLOCK_TYPE
 ```
 
 ```template
-//Place your functions below #
-//Replace with comment about function below                  |Part 1   
-//Declare function 1                                         |Part 1
-//Make the Agent destroy the block forward                   |Part 1
+//下(した)に関数(かんすう)を置(お)いてね #
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える                  |パート 1
+//関数(かんすう)1を宣言(せんげん)する                                         |パート 1
+//エージェントに前(まえ)のブロックを破壊(はかい)させる                   |パート 1
     agent.move(FORWARD, 1)
-//Replace with comment about function below                          |Part 2   
-//Declare function 2                                                 |Part 2
-//Make the Agent move forward                                        |Part 2
-//Make the Agent till back                                           |Part 2
-//Make the Agent place back                                          |Part 2
-//Replace the lines below with your code #  
-//For loop set to 12                                         |Part 1
-//If else conditional with Agent inspect condition for STONE |Part 1
-//Call function for removing rocks                           |Part 1
-//Elif conditional with Agent inspect condition for GRASS            |Part 2            
-//Call function for planting trees                                   |Part 2
-//Else part of if else conditional                           |Part 1
-//Make the Agent move forward                                |Part 1          
+//下(した)の関数(かんすう)についてのコメントに置(お)き換(か)える                          |パート 2
+//関数(かんすう)2を宣言(せんげん)する                                                 |パート 2
+//エージェントを前(まえ)に動(うご)かす                                        |パート 2
+//エージェントに後(うし)ろを耕(たがや)させる                                           |パート 2
+//エージェントに後(うし)ろに置(お)かせる                                          |パート 2
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//Forループを12に設定(せってい)                                         |パート 1
+//If else条件(じょうけん)文(ぶん)とエージェント検査(けんさ)条件(じょうけん)(STONE用(よう)) |パート 1
+//岩(いわ)を取(と)り除(のぞ)く関数(かんすう)を呼(よ)び出(だ)す                           |パート 1
+//Elif条件(じょうけん)文(ぶん)とエージェント検査(けんさ)条件(じょうけん)(GRASS用(よう))            |パート 2
+//木(き)を植(う)える関数(かんすう)を呼(よ)び出(だ)す                                   |パート 2
+//If else条件(じょうけん)文(ぶん)のElse部分(ぶぶん)                           |パート 1
+//エージェントを前(まえ)に動(うご)かす                                |パート 1
 ```

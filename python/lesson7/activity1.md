@@ -19,12 +19,12 @@ while True:
 ### ~ tutorialhint
 エージェントにブロックを渡(わた)す必要(ひつよう)はないよ。すでにインベントリに必要(ひつよう)なブロックが入(はい)っているからね。  
 ```template
-//Replace the lines below with your code #     
-//While loop with an Agent detect condition |Part 1
-//Make the Agent place a block to its right         |Part 2
-//Make the Agent move up                            |Part 2
-//Make the Agent place a block to its right         |Part 2
-//Make the Agent move back down                     |Part 2:
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//Whileループとエージェント検知(けんち)条件(じょうけん) |パート 1
+//エージェントに右側(みぎがわ)にブロックを置(お)かせる         |パート 2
+//エージェントを上(うえ)に動(うご)かす                            |パート 2
+//エージェントに右側(みぎがわ)にブロックを置(お)かせる         |パート 2
+//エージェントを下(した)に戻(もど)す                     |パート 2
     agent.move(FORWARD, 1)
-//End of while loop                                
+//Whileループの終(お)わり
 ```

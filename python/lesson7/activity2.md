@@ -1,6 +1,6 @@
 ### @explicitHints true
 ### @hideIteration true 
-# アクティビティ 2 - Firebreak. 
+# アクティビティ 2 - 防火帯(ぼうかたい)を作(つく)ろう 
 
 ```python
 agent.turn(LEFT_TURN)
@@ -12,20 +12,20 @@ while True:
 ```
 
 ## ステップ 1
-Write some code to make the Agent move forward when there is Redstone dust in front of it.
-While moving forward the Agent should make a one-block high wall to its left.
-When it encounters a change in terrain height the Agent needs to move up and continue the wall.
+エージェントの前(まえ)にレッドストーンダストがあるときに前進(ぜんしん)するコードを書(か)いてみよう。<br>
+前進(ぜんしん)しながら、エージェントが左側(ひだりがわ)に1ブロックの高(たか)さの壁(かべ)を作(つく)るようにしよう。<br>
+地形(ちけい)の高(たか)さが変(か)わったときは、エージェントが上(うえ)に移動(いどう)して壁(かべ)を続(つづ)けるようにしよう。
 
 ```template
-//Replace the lines below with your code #
-//While loop 1 with an Agent detect Redstone condition 
-//While loop 2 with an Agent detect block condition 
+//下(した)の行(ぎょう)をあなたのコードに置(お)き換(か)えてね #
+//Whileループ1とエージェントのレッドストーン検知(けんち)条件(じょうけん)
+//Whileループ2とエージェントのブロック検知(けんち)条件(じょうけん)
 agent.place(LEFT)
-//Make the Agent move up                            
-//Make the Agent place a block to its left         
-//Make the Agent move forward
-//End of while loop 2
-//Make the Agent place a block to its left         
-//Make the Agent move forward
-//End while loop 1                         
+//エージェントを上(うえ)に動(うご)かす
+//エージェントに左側(ひだりがわ)にブロックを置(お)かせる
+//エージェントを前(まえ)に動(うご)かす
+//Whileループ2の終(お)わり
+//エージェントに左側(ひだりがわ)にブロックを置(お)かせる
+//エージェントを前(まえ)に動(うご)かす
+//Whileループ1の終(お)わり
 ```
