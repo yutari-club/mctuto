@@ -19,6 +19,7 @@ enum ML {
 }
 
 //% color="#8c800b"
+//% block="入力"
 namespace Input{
 
     //% block="場所(ばしょ)1の写真(しゃしん)データ"
@@ -137,6 +138,7 @@ namespace Input{
 }
 
 //% color="#4C97FF"
+//% block="データセット"
 namespace Datasets{
 
     //% block="データセットを作成(さくせい)"
@@ -377,6 +379,7 @@ namespace AI {
 }
 
 //% color="#2d854e"
+//% block="出力"
 namespace Output {
 
     //% block="エージェントがセンサー1に到達(とうたつ)"
@@ -434,6 +437,7 @@ namespace Output {
 }
 
 //% color="#ED82B6"
+//% block="テスト"
 namespace Test{
 
     //% block="テストループ"
