@@ -19,7 +19,7 @@
 
 #### ~ tutorialhint 
 - ブロックは、鉱石(こうせき)である**鉄(てつ)**、**金(きん)**と、宝石(ほうせき)である**エメラルド**、**ダイヤモンド**の**2**種類(しゅるい)に分(わ)けられる。
-- **一番(いちばん)遠(えん)(とお)く**にある**鉄(てつ)**を**最後(さいご)**に回収(かいしゅう)することなる。
+- **一番(いちばん)遠(とお)く**にある**鉄(てつ)**を**最後(さいご)**に回収(かいしゅう)することなる。
 
 <!-- While **inspecting the block down** that is **not packed ice**, program the Agent to locate, **destroy** and **collect** the following blocks: **iron**, **gold**, **emerald** and **diamond**.  -->
 

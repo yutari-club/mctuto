@@ -14,7 +14,7 @@
 	<video controls>
 	  <source src="02_石を収集.mp4" type="video/mp4" />
 	</video>
-1. **鉱物(こうぶつ)(こうぶつ)を収集(しゅうしゅう)**
+1. **鉱物(こうぶつ)を収集(しゅうしゅう)**
 	<br>
 
 	<video controls>

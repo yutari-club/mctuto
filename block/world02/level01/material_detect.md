@@ -5,7 +5,7 @@
 ### @explicitHints 1
 
 
-# 最初(さいしょ)の材料(ざいりょう)(ざいりょう)を探(さが)す
+# 最初(さいしょ)の材料(ざいりょう)を探(さが)す
 <!-- # Detecting your first material -->
 
 

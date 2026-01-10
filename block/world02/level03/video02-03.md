@@ -20,7 +20,7 @@
 	<video controls>
 	  <source src="03_ローバーを追跡せよ.mp4" type="video/mp4" />
 	</video>
-1. **ローバーを修理(しゅうり)(しゅうり)する**
+1. **ローバーを修理(しゅうり)する**
 	<br>
 
 	<video controls>

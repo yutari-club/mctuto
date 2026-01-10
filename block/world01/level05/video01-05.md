@@ -1,25 +1,25 @@
 # 01.動物(どうぶつ)保護(ほご)
 ## 05.灰色(はいいろ)オオカミ
 
-1. **鶏小屋(とりごや)(とりごや)**
+1. **鶏小屋(とりごや)**
 	<br>
 
 	<video controls>
 	  <source src="01_ニワトリ.mp4" type="video/mp4" />
 	</video>
-1. **羊(ひつじ)(ひつじ)飼(うまかい)(か)い**
+1. **羊(ひつじ)飼(か)い**
 	<br>
 
 	<video controls>
 	  <source src="02_ヒツジ.mp4" type="video/mp4" />
 	</video>
-1. **撃退(げきたい)(げきたい)装置(そうち) (そうち)**
+1. **撃退(げきたい)装置(そうち)**
 	<br>
 
 	<video controls>
 	  <source src="03_ワイヤー.mp4" type="video/mp4" />
 	</video>
-1. **草取(くさとり)(と)り**
+1. **草取(くさと)り**
 	<br>
 
 	<video controls>
