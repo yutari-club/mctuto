@@ -1,6 +1,6 @@
 {
     "name": "mctuto",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -242,7 +242,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.1.27",
+        "target": "2.2.5",
         "targetId": "minecraft"
     },
     "supportedTargets": [
