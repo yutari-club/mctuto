@@ -16,24 +16,21 @@
 
 ```template
 player.onChat("material", function () {
-    for (let index = 0; index < 3; index++) {
+    while (Ture) {
         agent.move(LEFT, 1)
-        if (agent.inspect(AgentInspection.Block, FORWARD) == GOLD_BLOCK) {
-            
-        }
     }
+    agent.destroy(FORWARD)
+    agent.collectAll()
 })
 ```
 
 ```ghost
 player.onChat("1", function () {
-    for (let index = 0; index < 3; index++) {
+    while (agent.inspect(AgentInspection.Block, FORWARD) != GOLD_BLOCK) {
         agent.move(LEFT, 1)
-        if (agent.inspect(AgentInspection.Block, FORWARD) == GOLD_BLOCK) {
-            agent.destroy(FORWARD)
-            agent.collectAll()
-        }
     }
+    agent.destroy(FORWARD)
+    agent.collectAll()
     player.say("")
 })
 ```
