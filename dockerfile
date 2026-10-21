@@ -4,7 +4,7 @@
 # GitHub Pages（Jekyll 3.9.x）を使用する場合は、次の行のコメントを解除します：
 # FROM ruby:2.7-alpine3.15
 # Jekyllの最新バージョンを使用する場合は、次の行のコメントを解除します：
-FROM ruby:3.3-slim-bullseye
+FROM ruby:3.3-slim-bookworm
 
 # 必要なパッケージをインストール
 RUN apt-get update && apt-get install -y \

@@ -16,7 +16,7 @@
 
 ```template
 player.onChat("material", function () {
-    while (Ture) {
+    while (true) {
         agent.move(LEFT, 1)
     }
     agent.destroy(FORWARD)
